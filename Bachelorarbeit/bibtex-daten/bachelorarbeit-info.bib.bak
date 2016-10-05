@@ -1,0 +1,28 @@
+% Encoding: UTF-8
+
+@Book{VladimirCherkassky2007,
+  title         = {Learning from Data: Concepts, Theory, and Methods},
+  publisher     = {JOHN WILEY \& SONS INC},
+  year          = {2007},
+  author        = {Vladimir Cherkassky, Filip M. Mulier},
+  __markedentry = {[nilus:]},
+  date          = {2007-09-11},
+  ean           = {9780471681823},
+  isbn          = {0471681822},
+  pagetotal     = {538},
+  url           = {http://www.ebook.de/de/product/6482075/vladimir_cherkassky_filip_m_mulier_learning_from_data_concepts_theory_and_methods.html},
+}
+
+@Book{Poole2010,
+  title         = {Artificial Intelligence},
+  publisher     = {CAMBRIDGE UNIVERSITY PRESS},
+  year          = {2010},
+  author        = {David L Poole},
+  __markedentry = {[nilus:6]},
+  date          = {2010-04-11},
+  ean           = {9780521519007},
+  isbn          = {0521519004},
+  url           = {http://www.ebook.de/de/product/9650505/david_l_poole_artificial_intelligence.html},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
