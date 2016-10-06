@@ -822,6 +822,36 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\begin_inset FloatList algorithm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -1919,7 +1949,7 @@ begin{center}
 
 
 \begin_inset Graphics
-	filename /home/nilus/Dokumente/LyxBachelorarbeit/images/beispiel.png
+	filename images/beispiel.png
 
 \end_inset
 
@@ -2006,7 +2036,7 @@ begin{center}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-An example for hierachy in edge detection
+Example for hierachy in edge detection
 \end_layout
 
 \end_inset
@@ -2058,7 +2088,233 @@ Evaluation of the optimal clustercount
 \end_layout
 
 \begin_layout Standard
-Evaluation of k-means colorsegmentation
+The results reported from Siddheswar Ray and Rose H.
+ Turi 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ray1999"
+
+\end_inset
+
+ on synthetic images described in 2.3, could mostly be verified.
+ On very simple images as seen in Fig 4.1 the automatically specified clustercoun
+t matches the actual used colors.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beispiel.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/beispiel2.png
+	scale 37.5
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/beispiel3.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simple generated images with known used number of colours
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Surprisingly the calculated optimal clustercount using the RGB colorspace
+ and a maximal clustercount of 25 in Figure 4.2 was labeled as 10 instead
+ of the expected 5 clusers.
+ This error occurs due to the different numbers of colors used in the different
+ shapes.
+ Each rectangle consists of only of one specific color, while the circle
+ can be distinguished into several RGB-values at the border to achieve an
+ effect of anti aliasing.
+ In this specific case the circle consists of 49 different RGB values.
+ Due to the relationship of inter cluster distance and intra clusterdistance
+ the circle is split into 5 different clusters.
+ The conversion into HSV did not result in an calculated clustercount of
+ 5 either, instead it went up to 13 using the euclidian distance as distance
+ meassurement.
+ As described in 2.4 the different nature of the RGB colorspace and HSV colorspac
+e results in different distances in between colors.
+ Many of the 49 RGB colors will probably share the same hue value, but can
+ be further clustered according to the saturation and brightness, which
+ oviously results in different clusters than in RGB colorspace and hence
+ the rise of the calculated optimal clustercount.
+\end_layout
+
+\begin_layout Standard
+Given that the used colors in a natural images is expected to be a lot higher
+ than 53, the performed clustering will never be on a comparable fine level.
+ The decrease of the intra cluster distance would lead to a lower inter
+ cluster distance and supposably the validity would increase.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/circle.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/circle_HSV.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simple generated image including a circle converted into HSV
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Increasing the number of circles and adding more colors overall as seen
+ in Figure 4.3 the automatic clustercount in simple images seems to be correct
+ in RGB colorspace.
+ The image is built of 4564 RGB values and the right clustercount of 10
+ is calculated.
+ Transfering this image into the HSV colorspace resulted in an optimal clusterco
+unt of 7 using the normal euclidian distance.
+ The conversion into the HSV colorspace is expected to be closer to the
+ human expectation in natural images.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Fußnote auf 2.4, oder Liternaturnachweis
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/4564colors.jpg
+	scale 40
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/colors_to_HSV.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simple generated image build of 4564 RGB values converted into HSV
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
