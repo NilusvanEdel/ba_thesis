@@ -154,7 +154,7 @@ theorems-ams
 \output_sync 0
 \bibtex_command default
 \index_command default
-\float_placement h
+\float_placement H
 \paperfontsize 12
 \spacing other 1.2
 \use_hyperref false
@@ -2087,6 +2087,10 @@ Test and results
 Evaluation of the optimal clustercount
 \end_layout
 
+\begin_layout Subsection
+On synthehic images
+\end_layout
+
 \begin_layout Standard
 The results reported from Siddheswar Ray and Rose H.
  Turi 
@@ -2171,20 +2175,8 @@ Surprisingly the calculated optimal clustercount using the RGB colorspace
 e results in different distances in between colors.
  Many of the 49 RGB colors will probably share the same hue value, but can
  be further clustered according to the saturation and brightness, which
- oviously results in different clusters than in RGB colorspace.
- Hence the rise of the calculated optimal clustercount, usually the conversion
- into the HSV colorspace is expected to be more precise in natural images.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Fußnote auf 2.4, oder Liternaturnachweis
-\end_layout
-
-\end_inset
-
-
+ oviously results in different clusters than in RGB colorspace and hence
+ the rise of the calculated optimal clustercount.
 \end_layout
 
 \begin_layout Standard
@@ -2272,7 +2264,74 @@ Increasing the number of circles and adding more colors overall as seen
  is calculated.
  Transfering this image into the HSV colorspace resulted in an optimal clusterco
 unt of 7 using the normal euclidian distance.
- In natural images the HSV colorspace will probably be closer to the 
+ The conversion into the HSV colorspace is expected to be closer to the
+ human expectation in natural images.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Fußnote auf 2.4, oder Liternaturnachweis
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/4564colors.jpg
+	scale 40
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/colors_to_HSV.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Simple generated image build of 4564 RGB values converted into HSV
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+On real images
+\end_layout
+
+\begin_layout Standard
+Until now the clutercount was only tested on self generated images with
+ known optimal clustercount.
+ On real images the optimal clustercount is only vague estimable.
+ 
+\end_layout
+
+\begin_layout Standard
+The algorithm was tested clustering images of the Berkeley Segmentation
+ Dataset and provided satisfactory results as seen in Figure 4.4 - Figure
+ 4.8
 \end_layout
 
 \begin_layout Standard
@@ -2282,17 +2341,581 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/4564colors.jpg
-	scale 50
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
 
 \end_inset
 
 
+\begin_inset Graphics
+	filename images/2018.jpg
+	scale 40
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/2018_rgb_4.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/2018_hsv_12.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Simple generated image build of 4564 RGB values
+Real image example 1 from the Berkeley Database clusterd in RGB (k = 4)
+ and HSV (k = 12)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/3063.jpg
+	scale 40
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/3063_rgb_6.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/3063_hsv_9.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Real image example 2 from the Berkeley Database clusterd in RGB (k = 6)
+ and HSV (k = 9)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/5096.jpg
+	scale 40
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/5096_rgb_4.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/5096_hsv_12.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Real image example 3 from the Berkeley Database clusterd in RGB (k = 4)
+ and HSV (k = 12)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/6046.jpg
+	scale 40
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/6046_rgb_4.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/6046_hsv_6.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Real image example 4 from the Berkeley Database clusterd in RGB (k = 4)
+ and HSV (k = 6)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/8068.jpg
+	scale 40
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/8068_rgb_9.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/8068_hsv_7.png
+	scale 40
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Real image example 5 from the Berkeley Database clusterd in RGB (k = 9)
+ and HSV (k = 7)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Evaluation of 5d-feature vector
+\end_layout
+
+\begin_layout Standard
+Using a 5D-feature vector, consisting of the colorspace and the geomatric
+ features promises two main advantages.
+ Clustered regions would be closer to semantic knowledge, since regions
+ with same colors are now already split and hence the results are more useful
+ for comparing clusters over the cause of a video sequence.
+ The k-means algorithm itself might be used for clustering over several
+ frames into superclusters.
+\end_layout
+
+\begin_layout Standard
+Algorithm 3.2 could be used to determine the optimal clustercount for each
+ frame and the clustercenters of all frames can be seen as new data points,
+ which then again could be clustered.
+ The requirement to do so are reasonable results on clustering single images.
+ 
+\end_layout
+
+\begin_layout Standard
+To get reasonable images the 5d-feature vector has to be normalized first.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{5d-feature Vector: }\overrightarrow{v}=\begin{array}{c}
+r\\
+g\\
+b\\
+x\\
+y
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\overrightarrow{v}_{normalized}=\begin{array}{c}
+\frac{r}{255}\frac{1}{3}\\
+\frac{g}{255}\frac{1}{3}\\
+\frac{b}{255}\frac{1}{3}\\
+\frac{x}{\max X}\frac{1}{2}\alpha\\
+\frac{y}{\max Y}\frac{1}{2}\alpha
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ is the scaling factor.
+ Usually the colorspace will be seen as more important than the geometric
+ features.
+ 
+\end_layout
+
+\begin_layout Standard
+The same normalization procedure should theoratically be applied on the
+ variance calculation as well.
+ Unforunately due to the incoherent shape of the background it often has
+ the highest variance out of the calculated clusters.
+ Figure 4.9 shows an example of it, the white area is not part of the cluster.
+ The algorithm gets the right result for 
+\begin_inset Formula $k=2$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha=0.004$
+\end_inset
+
+ (a ratio of 250:1), but splits the background further for 
+\begin_inset Formula $k=3-5.$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Using the algorithm 2.2 to determine the optimal clustercount
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/beispiel_clusters.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/beispiel_clusters2.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/beispiel_clusters3.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example of single clusters when splitting the wrong cluster using a 5d-feature
+ vector
 \end_layout
 
 \end_inset
@@ -2310,11 +2933,19 @@ Simple generated image build of 4564 RGB values
 \end_layout
 
 \begin_layout Standard
-Evaluation of 5d-featuer vector/ optimal clustercount
-\end_layout
+Ignoring the geometrical features while calculating the variance lead to
+ better results in the case of Figure 4.9, but only by chance since the rectangle
+s were the first cluster in 
+\begin_inset Formula $k=2$
+\end_inset
 
-\begin_layout Standard
-Evaluation of the similarity meassurement 
+.
+ In order to split the right cluster a different meassurement than the variance
+ would be needed.
+ But even if the variance would be the right meassurement to find the right
+ cluster to split, there would still be the problem of finding the right
+ ratio of the geometrical features to the colorsprace.
+ 
 \end_layout
 
 \begin_layout Chapter
