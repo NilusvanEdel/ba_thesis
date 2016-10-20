@@ -13,15 +13,14 @@
 }
 
 @Book{Poole2010,
-  title         = {Artificial Intelligence},
-  publisher     = {CAMBRIDGE UNIVERSITY PRESS},
-  year          = {2010},
-  author        = {David L Poole},
-  __markedentry = {[nilus:]},
-  date          = {2010-04-11},
-  ean           = {9780521519007},
-  isbn          = {0521519004},
-  url           = {http://www.ebook.de/de/product/9650505/david_l_poole_artificial_intelligence.html},
+  title     = {Artificial Intelligence},
+  publisher = {CAMBRIDGE UNIVERSITY PRESS},
+  year      = {2010},
+  author    = {David L Poole},
+  date      = {2010-04-11},
+  ean       = {9780521519007},
+  isbn      = {0521519004},
+  url       = {http://www.ebook.de/de/product/9650505/david_l_poole_artificial_intelligence.html},
 }
 
 @Book{Pang-NingTan2005,
@@ -47,7 +46,20 @@
   year          = {1999},
   pages         = {137--143},
   organization  = {Calcutta, India},
+  __markedentry = {[nilus:]},
+}
+
+@Article{Bora2015,
+  author        = {Dibya Jyoti Bora and Anil Kumar Gupta and Fayaz Ahmad Khan},
+  title         = {Comparing the Performance of L*A*B* and HSV Color Spaces with Respect to Color Image Segmentation},
   __markedentry = {[nilus:6]},
+  abstract      = {Color image segmentation is a very emerging topic for image processing research. Since it has the ability to present the result in a way that is much more close to the human yes perceive, so todays more research is going on this area. Choosing a proper color space is a very important issue for color image segmentation process. Generally LAB and HSV are the two frequently chosen color spaces. In this paper a comparative analysis is performed between these two color spaces with respect to color image segmentation. For measuring their performance, we consider the parameters: mse and psnr . It is found that HSV color space is performing better than LAB.},
+  date          = {2015-06-04},
+  eprint        = {1506.01472v1},
+  eprintclass   = {cs.CV},
+  eprinttype    = {arXiv},
+  file          = {online:http\://arxiv.org/pdf/1506.01472v1:PDF},
+  keywords      = {cs.CV},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

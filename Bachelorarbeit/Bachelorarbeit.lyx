@@ -908,8 +908,8 @@ Clustering
 \end_layout
 
 \begin_layout Standard
-Clustering is a form of predictive modelling, hence it makes no difference
- in between input and output components.
+Clustering is a form of predictive modelling, it makes no difference in
+ between input and output components.
  These methods in general are called 
 \begin_inset Quotes gld
 \end_inset
@@ -922,6 +922,16 @@ unsupervised
  The opposite would be predictive clustering, for example regression and
  classification.
  
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Überarbeiten!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1080,13 +1090,6 @@ hard clustering
 \begin_inset Quotes grd
 \end_inset
 
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Poole2010"
-
-\end_inset
-
 , each sample is definetly placed in only one cluster.
  The second one is called 
 \begin_inset Quotes gld
@@ -1096,16 +1099,16 @@ soft clustering
 \begin_inset Quotes grd
 \end_inset
 
-
+ and in alternative each sample can belong to serveral clusters according
+ to a related probabilty distribution.
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Poole2010"
 
 \end_inset
 
- and in alternative each sample can belong to serveral clusters according
- to a related probabilty distribution.
- 
+
 \end_layout
 
 \begin_layout Section
@@ -1147,8 +1150,10 @@ The operation of k-means clustering starts with initializing random points
  until the desired number of clusters is generated.
  The next step is to asssign every training sample to the closest clustercenter
  and update it according to the mean of all clustermembers for each attribute.
- This has to be repeated until it converges or the number of changed fall
- below a certain 
+ This has to be repeated until it converges, due to bad initialiation points
+ this might never be achieved.
+ Hence the usual implementation either uses a limit for the number of iterations
+ or stops if the number of changes fall below a certain 
 \begin_inset Formula $\epsilon$
 \end_inset
 
@@ -1240,12 +1245,54 @@ Basic K-means algorithm
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-todo: implemt squared error distance etc.
+The k-means algorithm aims to minimize an objective squared error function:
+ 
 \end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+J=\sum_{j=1}^{k}\sum_{\forall i}|x_{i}^{j}-c_{j}|^{2}
+\]
+
+\end_inset
+
+, hereby 
+\begin_inset Formula $c_{k}$
+\end_inset
+
+is the coordinate vector of the 
+\begin_inset Formula $j$
+\end_inset
+
+th cluster and 
+\begin_inset Formula $\{x_{i}^{j}\}$
+\end_inset
+
+ are the points assigned to the 
+\begin_inset Formula $j$
+\end_inset
+
+th cluster.
+ The distance meassure can be chosen dependent on the task, but most of
+ the times the normal euclidian distance is used.
+ 
+\end_layout
+
+\begin_layout Standard
+One advange of k-means clustering is its low complexity but it has a weakness
+ in the requirement of getting an accurate number of clusters as input a
+ priori.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bora2015"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ChrisSolomon2011"
 
 \end_inset
 
@@ -1257,9 +1304,53 @@ K-means color segmentation
 \end_layout
 
 \begin_layout Standard
-The k-means algorithm is widely known as easy to implement clustering algorithm,
- one of the many applications is colorsegmentation.
+One of the many applications for the k-means clustering algorithm is colorsegmen
+tation.
+ Image segmentation in general is the process of splitting/ classifying
+ an image into several parts, so that each region builds a homogenous segment.
+ Combining any of the homogenous segments would result in a heterogenous
+ segment.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bora2015"
+
+\end_inset
+
  
+\end_layout
+
+\begin_layout Standard
+Segmentation algorithms are often the very first step in image processing.
+ Subsequent steps, as for example feature extraction and classification
+ are highly reliant on the successful generation of homogenous parts.
+ If the respective object can not be identified, it can certainly not be
+ classified.
+ The segmentation outcome will always be dependent on the underlying image
+ and the object, or feature which should be identified.
+ Thus there is no single perfect clustering for an image, this complicates
+ the evaluation process.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ChrisSolomon2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segmentation algorithm can be divided into two main groups.
+ The first one is the edge/boundary group, the associated algorithms aim
+ to detect edges to find boundaries in between groups of pixels.
+ The second group is region based and tries to order pixels according to
+ their mutual similarity.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ChrisSolomon2011"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -2404,9 +2495,10 @@ Until now the clutercount was only tested on self generated images with
 
 \begin_layout Standard
 The algorithm was tested clustering images of the Berkeley Segmentation
- Dataset and provided satisfactory results as seen in Figure 4.4 - Figure
- 4.8.
- 
+ Dataset and provided satisfactory results.
+ To evaluate the dynamic cluster count it was compared to the clusters generated
+ through incrementing the number of clusters as described in algorithm 2.2.
+ The evaluation however is bound to subjective perception.
 \end_layout
 
 \begin_layout Standard
@@ -2437,49 +2529,132 @@ status open
 
 
 \backslash
-begin{center}
+begin{subfigure}[c]{0.5
+\backslash
+textwidth}
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/2018.jpg
-	scale 40
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/2018_rgb_4.png
-	scale 40
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/2018_hsv_12.png
-	scale 40
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{center}
+includegraphics[width=1
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/2018.jpg
+} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Source image}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/2018_rg
+b_4_optimal.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{optimal k = 4} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/2018_rg
+b_5.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{k = 5} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/2018_rg
+b_10.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{k = 10} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
 \end_layout
 
 \end_inset
@@ -2491,15 +2666,7 @@ end{center}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Real image example 1 from the Berkeley Database clusterd in RGB 
-\begin_inset Formula $(k=4)$
-\end_inset
-
- and HSV (
-\begin_inset Formula $k=12)$
-\end_inset
-
-
+Snow shoes example from the Berkeley Database clustered in RGB-colorspace
 \end_layout
 
 \end_inset
@@ -2510,6 +2677,15 @@ Real image example 1 from the Berkeley Database clusterd in RGB
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The optimal cluster count of 4 in Fig 4.4 seems to retain most key features
+ of the image, the results seen in c) and b) seem to be similarly good and
+ the cluster count of 10 might be preferable due to the existance of a cluster
+ solely for the snow shoes.
+ The latter impression probably arises of our focus on the image center,
+ the clustering algorithm values each pixel likewise.
 \end_layout
 
 \begin_layout Standard
@@ -2526,48 +2702,142 @@ status open
 
 
 \backslash
-begin{center}
+begin{subfigure}[c]{0.5
+\backslash
+textwidth}
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/3063.jpg
-	scale 40
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/3063_rgb_6.png
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/3063_hsv_9.png
-	scale 40
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{center}
+includegraphics[width=1
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/3063.jpg
+} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Source image}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/3063_rgb_6_optima
+l.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{optimal k = 6} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/3063_rg
+b_3.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{k = 3} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/3063_rgb_8.png}
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{k = 8} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
 \end_layout
 
 \end_inset
@@ -2579,8 +2849,7 @@ end{center}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Real image example 2 from the Berkeley Database clusterd in RGB (k = 6)
- and HSV (k = 9)
+Airplane example from the Berkeley Database clustered in RGB-colorspace
 \end_layout
 
 \end_inset
@@ -2591,6 +2860,14 @@ Real image example 2 from the Berkeley Database clusterd in RGB (k = 6)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The calculated optimal cluster count of 6 in Fig 4.5 seems to be the most
+ adequate cluster number, although k=3 seems to highlight the plane better.
+ However k-means clustering is an sunsupervised algorithm without prior
+ knowledge, hence the cluster count of 6 retains more information of the
+ background as well.
 \end_layout
 
 \begin_layout Standard
@@ -2607,68 +2884,151 @@ status open
 
 
 \backslash
-begin{center}
+begin{subfigure}[c]{0.5
+\backslash
+textwidth}
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/5096.jpg
-	scale 40
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/5096_rgb_4.png
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/5096_hsv_12.png
-	scale 40
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{center}
+includegraphics[width=1
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/5096.jpg
+} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Source image}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/5096_rgb_4_optima
+l.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{optimal k = 4} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/5096_rg
+b_3.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{k = 3} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/5096_rgb_6.png}
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{k = 6} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Real image example 3 from the Berkeley Database clusterd in RGB 
-\begin_inset Formula $(k=4)$
-\end_inset
-
- and HSV 
-\begin_inset Formula $(k=12)$
-\end_inset
-
-
+Stone gate example from the Berkeley Database clustered in RGB-colorspace
 \end_layout
 
 \end_inset
@@ -2679,6 +3039,31 @@ Real image example 3 from the Berkeley Database clusterd in RGB
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The optimal cluster count of 4 in Figure 4.6 seems to maximise the inter
+ cluster distance and retains most visible features.
+ Increasing the clustercount mostly sharpens the edges, thus k = 4 seems
+ to be the right choice.
+ 
+\end_layout
+
+\begin_layout Standard
+Using the HSV-colorspace instead of the RGB-colorspace did not lead to considera
+bly better results.
+ Strikingly the calculated optimal clustercount was mostly higher in HSV
+ as for example seen in Figure 4.7.
+ Otherwise the same findings as in the RGB-colorspace could be made.
+ Overall the comparison did not favor any colorspace.
+ The results were on a subjective focus on the same level.
+ To determine which, colorspace should be used should depend on the final
+ task of the clustering algorithm.
+ Because the following work is rather on an abstract level than on implementing
+ the algorithm on a particular task and because the underlying algorithm
+ for determining the cluster count was originally propsed for the RGB colorspace
+, the latter one will be used on the implementation for video sequences.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2695,49 +3080,142 @@ status open
 
 
 \backslash
-begin{center}
+begin{subfigure}[c]{0.5
+\backslash
+textwidth}
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/6046.jpg
-	scale 40
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/6046_rgb_4.png
-	scale 40
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/6046_hsv_6.png
-	scale 40
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{center}
+includegraphics[width=0.5
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046.jpg
+} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Source image}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=0.5
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046_rgb_4.png}
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{optimal k = 4 (RGB)} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=0.5
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046_hs
+v_6.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{optimal k = 6 (HSV)} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=0.5
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046_hsv_6_to_rgb.
+png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{c) converted into RGB} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
 \end_layout
 
 \end_inset
@@ -2749,103 +3227,7 @@ end{center}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Real image example 4 from the Berkeley Database clusterd in RGB 
-\begin_inset Formula $(k=4)$
-\end_inset
-
- and HSV 
-\begin_inset Formula $(k=6)$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{center}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/8068.jpg
-	scale 40
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/8068_rgb_9.png
-	scale 40
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/8068_hsv_7.png
-	scale 40
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{center}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Real image example 5 from the Berkeley Database clusterd in RGB 
-\begin_inset Formula $(k=9)$
-\end_inset
-
- and HSV 
-\begin_inset Formula $(k=7)$
-\end_inset
-
-
+Comparison of results in RGB and HSV colorspaces
 \end_layout
 
 \end_inset
@@ -4032,7 +4414,7 @@ end{subtable}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The results produced on the video sequence of Figure 4.10
+The results produced on the video sequence of Figure 4.10 in RGB
 \end_layout
 
 \end_inset
@@ -4192,52 +4574,149 @@ status open
 
 
 \backslash
-begin{center}
+begin{subfigure}[c]{0.2
+\backslash
+textwidth} 
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/beispiel_clusters.png
-	scale 75
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/beispiel_clusters2.png
-	scale 75
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/beispiel_clusters3.png
-	scale 75
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{center}
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/beispiel.png}
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{source image} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.25
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/beispiel_clusters.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{cluster 1} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.2
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/beispiel_clusters2.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{cluster 2} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.2
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/beispiel_clusters3.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{cluster 3} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
 \end_layout
 
 \end_inset
@@ -4346,60 +4825,143 @@ status open
 
 
 \backslash
-begin{center}
+begin{subfigure}[c]{0.2
+\backslash
+textwidth}
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/beispiel.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/beispiel_clusters_background.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/contours0.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/contours1.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{center}
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/beispiel.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.2
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/beispiel_clusters_background.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.2
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]{images/contours0.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.2
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/contours1.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
 \end_layout
 
 \end_inset
@@ -4430,8 +4992,8 @@ The first image of 4.10 shows the image which will be clustered.
  clustercount.
  The first one will only hold the two red rectangles, while the second one
  will hold the background.
- The cluster containing the background can be seen in the second image.
- The last two images show the calculated boundaries.
+ The cluster containing the background can be seen in b).
+ The last two images c) and d) show the calculated boundaries.
  Unfortunately this boundaries can be calculated using any of the two clusters.
  Hence if adding the calculated polygons of each cluster to the number of
  clustercenters, the optimal clustercount would be determined as 4 instead
@@ -4636,48 +5198,118 @@ status open
 
 
 \backslash
-begin{center}
+begin{subfigure}[c]{1
+\backslash
+textwidth}
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/example_alt.png
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/example_altCluster.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/finalK_12cluster_9.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{center}
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=0.5
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/example_alt.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Source image}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/example_altCluster.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{flaws via polygon check}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/finalK_12cluster_9.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{flaws via k-means}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
 \end_layout
 
 \end_inset
@@ -4689,21 +5321,7 @@ end{center}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang ngerman
-The first image shows the original image, the second one the flaws of assigning
- pixels via polygon check, the last image shows the flaws of assigning via
- k-means clustering 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
 Comparison of boundary cluter assignment and k-means
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -4741,31 +5359,119 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/3063_binary.png
-	scale 30
+\begin_inset ERT
+status open
 
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset Graphics
-	filename images/3063_single_contour.png
-	scale 30
+\backslash
+begin{subfigure}[c]{0.31
+\backslash
+textwidth}
+\end_layout
 
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset Graphics
-	filename images/3063_all_contours.png
-	scale 30
+\backslash
+includegraphics[width=1.1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/3063_binary.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Binary image}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.31
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1.1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/3063_single_contour.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Best calculated contour}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.31
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1.1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/3063_all_contours.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{All contours in one image}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
 
 \end_inset
 
@@ -4776,20 +5482,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-From left to right: the binary image, the largest calculated contour (of
- 56), all contours printed in one image 
-\lang ngerman
-
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
 Example of a flawed boundary detection
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -4817,20 +5510,82 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/2018_binary.png
-	scale 50
+\begin_inset ERT
+status open
 
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset Graphics
-	filename images/2018_contours.png
-	scale 50
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/2018_binary.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Binary image of interesting cluster}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/2018_contours.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{All resulting contours in one image}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
 
 \end_inset
 
@@ -4841,20 +5596,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang ngerman
-The first image shows the resulting binary image of the cluster of interest,
- the second image shows all resulting contours 
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
 Second example of a flawed boundary detection
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -4922,6 +5664,9 @@ Creating super-clusters through comparison of clustercenter, which includes
  this ratio should furthermore be dynamic to be universal applicable.
  On some images the 5d-feature vectores could be tested with an approximate
  fitting ratio but could not produce the desired outcome.
+ This might be due to one of the big flaws of k-means clustering, it can
+ only produce spherically formed clusters, which is especially problematic
+ when the coordinates are included in the clustering process.
 \end_layout
 
 \begin_layout Standard
