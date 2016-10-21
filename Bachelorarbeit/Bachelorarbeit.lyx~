@@ -899,6 +899,70 @@ chaptername}{}
 Introduction
 \end_layout
 
+\begin_layout Standard
+K-means clustering is one of the most used clustering algorithms for image
+ segmentation.
+ Image segmentation is the basis for many image analysis techniques and
+ thus highly values reliable results and computing time.
+ While k-means clustering offers a great deal for the latter part, reliable
+ results are sensitive towards the chosen initial cluster number and positions.
+ 
+\end_layout
+
+\begin_layout Standard
+So far there exists no acknowledged general optimal solution to compute
+ the optimal number of clusters for any given data set a priori.
+ One common bypass is to run the algorithm several times with different
+ starting points.
+ Especially for image segmentation however, many proposals haven been made
+ to create good starting points for image k-means clustering.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ChrisSolomon2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The goal of this thesis is to adapt one of these algorithms to video sequences
+ and improve it through the gained knowledge from continuous frames.
+ The created clusters for each frame should then be compared to its predecessor,
+ to determine whether clusters of previous frames persisted.
+ Creating an algorithm to identify good starting positions for k-means clusterin
+g in video sequences can on its own already be used for video compression,
+ but could also be usefull for many fields of video analysis as for example
+ feature extraction and object recognition.
+ If a clusters contains most visible features of an object, the identification
+ of the serial identity of this particular clusters can be especially applicable
+ in fields as object tracking.
+\end_layout
+
+\begin_layout Standard
+The organization of this thesis is as follows.
+ Chapter 2 provides some information on clustering and image segmentation
+ fundamentals.
+ It introduces k-means clustering and an algorithm to find good starting
+ positions of k-means clustering in image segmentation.
+\end_layout
+
+\begin_layout Standard
+Chapter 3 specifies the underyling task of this bachelor thesis and presents
+ the developed procedures and algorithms.
+\end_layout
+
+\begin_layout Standard
+In chapter 4 the results of the performance evaluation are presented successivel
+yon synthetic and real data.
+ Thereby some necessary tweaks of the proposed methods are introduced and
+ implemented.
+\end_layout
+
+\begin_layout Standard
+Chapter 5 reviews the evaluation and concludes the thesis.
+\end_layout
+
 \begin_layout Chapter
 Theoretical basis
 \end_layout
@@ -908,26 +972,14 @@ Clustering
 \end_layout
 
 \begin_layout Standard
-Clustering is a form of predictive modelling, it makes no difference in
- between input and output components.
- These methods in general are called 
-\begin_inset Quotes gld
-\end_inset
-
-unsupervised
-\begin_inset Quotes grd
-\end_inset
-
- learning.
- The opposite would be predictive clustering, for example regression and
- classification.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Überarbeiten!
-\end_layout
+Clustering can be broadly described as classifiction of data into several
+ groups.
+ Clustering algorithm are unsupervised learning algorithm, which means they
+ make no difference in between input and output components.
+ They work without any a priori knowledge.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lucchese_colorimage"
 
 \end_inset
 
@@ -935,7 +987,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-The vague objective of clustering algorithm is to find 
+The vague objective is to find 
 \begin_inset Quotes gld
 \end_inset
 
@@ -1101,7 +1153,6 @@ soft clustering
 
  and in alternative each sample can belong to serveral clusters according
  to a related probabilty distribution.
- 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Poole2010"
@@ -1274,22 +1325,28 @@ th cluster and
 \end_inset
 
 th cluster.
- The distance meassure can be chosen dependent on the task, but most of
- the times the normal euclidian distance is used.
- 
-\end_layout
-
-\begin_layout Standard
-One advange of k-means clustering is its low complexity but it has a weakness
- in the requirement of getting an accurate number of clusters as input a
- priori.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011"
 
 \end_inset
 
+ It can be shown that the k-means algorithm converges to a local minimum.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fu1981"
 
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The relevant distance meassure can be chosen dependent on the task, but
+ most of the times the normal euclidian distance is used.
+ An advange of k-means clustering is its low complexity but it has a weakness
+ in the requirement of getting an accurate number of clusters as input a
+ priori.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bora2015"
@@ -1300,12 +1357,12 @@ key "Bora2015"
 \end_layout
 
 \begin_layout Section
-K-means color segmentation
+Image color segmentation
 \end_layout
 
 \begin_layout Standard
-One of the many applications for the k-means clustering algorithm is colorsegmen
-tation.
+One of the many applications for the k-means clustering algorithm is color
+ segmentation.
  Image segmentation in general is the process of splitting/ classifying
  an image into several parts, so that each region builds a homogenous segment.
  Combining any of the homogenous segments would result in a heterogenous
@@ -1350,11 +1407,36 @@ key "ChrisSolomon2011"
 
 \end_inset
 
+ 
+\end_layout
+
+\begin_layout Standard
+Color image segmentation usually residing in the second group.
+ Combined with texture segmentation, it is mostly used in tasks concered
+ about content based retrieval.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Lucchese_colorimage"
+
+\end_inset
+
+ Clustering algorithms share the same problem as region based segmentation
+ and can thus be used for color segmentation.
+ The problem of using k-means clustering for image segmentation is once
+ again the requirement to appoint the number of clusters beforehand.
+ If a good cluster count is known however it is optimal in minimizing the
+ average distortion.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Park1998"
+
+\end_inset
+
 
 \end_layout
 
 \begin_layout Section
-Optimal clustercount
+Finding the optimal numbers of clusters for k-means clustering
 \end_layout
 
 \begin_layout Standard
@@ -1682,8 +1764,8 @@ Assignment of Tasks
 \end_layout
 
 \begin_layout Standard
-One of the logical extensions of the k-means algorithm used for colorsegmentatio
-n seems to be to implement the algorithm not only on images, but on whole
+One of the logical extensions of the k-means algorithm used for color segmentati
+on seems to be to implement the algorithm not only on images, but on whole
  video sequences.
  The existing algorithms for determing the optimal clustercount could be
  transfered on whole videos, by simply processing them frame by frame.
@@ -1734,7 +1816,7 @@ Dynamic clustercount algorithm in video sequences
 \end_layout
 
 \begin_layout Standard
-Since colorsegmentation in video sequences and images are essentially the
+Since color segmentation in video sequences and images are essentially the
  same problem, the proposed algorithm by Siddheswar Ray and Rose H.
  Turi, would also work in videos.
 \begin_inset CommandInset citation
@@ -2030,7 +2112,7 @@ In order to find a suitable similarity meassurement for comparing clusters,
  it is important to keep track of the final goal.
  The fusion of severall similar clusters, into one super-cluster should
  finally provide information of the whole video.
- The basic k-means colorsegmentation algorithm as described in 2.2 and is
+ The basic k-means color segmentation algorithm as described in 2.2 and is
  repeatedly used in 2.3, would ultimately only provide minimal information
  via the culstercenters.
  
@@ -2138,7 +2220,7 @@ Example of wrong clustercount without including pixel coordinates
 \end_inset
 
 A different approach to include geomatrical knowledge, is to detect shapes
- in the already separated clusters, created by the kmeans colorsegmentation
+ in the already separated clusters, created by the kmeans color segmentation
  algorithm.
  The OpenCV library already implements the necessary functions for doing
  so.
@@ -5638,7 +5720,7 @@ Adapting the algorithm to generate an adaptive cluster count on video sequences
  On natural video sequences the results were satisfactory but did not always
  produce identical results in comparison to the independant calculated ones.
  The effective use of this algorithm would require some further improvements
- for most possible tasks, the computation time is impractical.
+ for most possible tasks, due to the high computation time.
  Even if the current cluster count constitutes a local minima the basic
  k-mean algorithm has to be repeated 4 times, otherwise it will aditionally
  be repeated up to the given maximal k.
@@ -5667,6 +5749,16 @@ Creating super-clusters through comparison of clustercenter, which includes
  This might be due to one of the big flaws of k-means clustering, it can
  only produce spherically formed clusters, which is especially problematic
  when the coordinates are included in the clustering process.
+\end_layout
+
+\begin_layout Standard
+The alternative approach combined the region based image segmentation of
+ k-means clustering with a boundary detection approach.
+ Although the splitting of clusters did ultimately not work in real images,
+ the found edges in single clusters showed some promise if combined with
+ semantic knowledge.
+ In a cases where a particular feature is recognized and should be tracked,
+ the serial identity might prove usefull.
 \end_layout
 
 \begin_layout Standard
