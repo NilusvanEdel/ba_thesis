@@ -61,16 +61,15 @@
 }
 
 @Book{ChrisSolomon2011,
-  title         = {Fundamentals of Digital Image Processing},
-  publisher     = {Wiley John + Sons},
-  year          = {2011},
-  author        = {Chris Solomon, Stuart Gibson},
-  __markedentry = {[nilus:]},
-  date          = {2011-01-11},
-  ean           = {9780470844731},
-  isbn          = {0470844736},
-  pagetotal     = {344},
-  url           = {http://www.ebook.de/de/product/3996688/chris_solomon_stuart_gibson_fundamentals_of_digital_image_processing.html},
+  title     = {Fundamentals of Digital Image Processing},
+  publisher = {Wiley John + Sons},
+  year      = {2011},
+  author    = {Chris Solomon, Stuart Gibson},
+  date      = {2011-01-11},
+  ean       = {9780470844731},
+  isbn      = {0470844736},
+  pagetotal = {344},
+  url       = {http://www.ebook.de/de/product/3996688/chris_solomon_stuart_gibson_fundamentals_of_digital_image_processing.html},
 }
 
 @Article{Lucchese_colorimage,
@@ -81,18 +80,46 @@
 }
 
 @Article{Park1998,
-  author        = {Sang Ho Park and Il Dong Yun and Sang Uk Lee},
-  title         = {Color image segmentation based on {3-D} clustering},
+  author    = {Sang Ho Park and Il Dong Yun and Sang Uk Lee},
+  title     = {Color image segmentation based on {3-D} clustering},
+  journal   = {Pattern Recognition},
+  year      = {1998},
+  volume    = {31},
+  number    = {8},
+  pages     = {1061--1076},
+  month     = {aug},
+  doi       = {10.1016/s0031-3203(97)00116-7},
+  publisher = {Elsevier {BV}},
+  url       = {http://dx.doi.org/10.1016/S0031-3203(97)00116-7},
+}
+
+@Article{Fu1981,
+  author        = {K.S. Fu and J.K. Mui},
+  title         = {A survey on image segmentation},
   journal       = {Pattern Recognition},
-  year          = {1998},
-  volume        = {31},
-  number        = {8},
-  pages         = {1061--1076},
-  month         = {aug},
-  __markedentry = {[nilus:6]},
-  doi           = {10.1016/s0031-3203(97)00116-7},
+  year          = {1981},
+  volume        = {13},
+  number        = {1},
+  pages         = {3--16},
+  month         = {jan},
+  __markedentry = {[nilus:]},
+  doi           = {10.1016/0031-3203(81)90028-5},
   publisher     = {Elsevier {BV}},
-  url           = {http://dx.doi.org/10.1016/S0031-3203(97)00116-7},
+  url           = {http://dx.doi.org/10.1016/0031-3203(81)90028-5},
+}
+
+@Manual{IBM_BigInsights,
+  title = {IBM BigInsights 4.1 documentation},
+}
+
+@InProceedings{Sural,
+  author        = {S. Sural and Gang Qian and S. Pramanik},
+  title         = {Segmentation and histogram generation using the {HSV} color space for image retrieval},
+  booktitle     = {Proceedings. International Conference on Image Processing},
+  publisher     = {Institute of Electrical and Electronics Engineers ({IEEE})},
+  __markedentry = {[nilus:6]},
+  doi           = {10.1109/icip.2002.1040019},
+  url           = {http://dx.doi.org/10.1109/ICIP.2002.1040019},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

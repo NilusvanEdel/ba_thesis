@@ -1,0 +1,2508 @@
+cars1_03:
+results adapted algorithm:
+
+SuperclusterPosition at 0   0 1 2 3 4 5 
+SuperclusterPosition at 1   0 1 2 3 4 5 
+SuperclusterPosition at 2   0 1 2 3 6 
+SuperclusterPosition at 3   0 1 2 3 6 
+SuperclusterPosition at 4   0 1 2 3 6 
+SuperclusterPosition at 5   0 1 2 3 6 
+SuperclusterPosition at 6   0 1 2 3 6 
+SuperclusterPosition at 7   0 1 2 3 6 
+SuperclusterPosition at 8   0 1 2 3 6 
+SuperclusterPosition at 9   0 1 2 3 6 
+SuperclusterPosition at 10   0 1 2 3 6 
+SuperclusterPosition at 11   0 1 2 3 6 
+SuperclusterPosition at 12   0 1 2 3 6 
+SuperclusterPosition at 13   0 1 2 3 6 
+SuperclusterPosition at 14   0 1 2 3 6 
+SuperclusterPosition at 15   0 1 2 3 6 
+SuperclusterPosition at 16   0 1 2 3 6 
+SuperclusterPosition at 17   0 1 2 3 6 
+SuperclusterPosition at 18   0 1 2 3 6 
+
+results dumb algorithm:
+SuperclusterPosition at 0   0 1 2 3 4 5 
+SuperclusterPosition at 1   0 1 2 3 4 5 
+SuperclusterPosition at 2   0 1 2 3 6 
+SuperclusterPosition at 3   0 1 2 3 6 
+SuperclusterPosition at 4   0 1 2 3 6 
+SuperclusterPosition at 5   0 1 2 3 6 
+SuperclusterPosition at 6   0 1 2 3 6 
+SuperclusterPosition at 7   0 3 2 4 1 5 
+SuperclusterPosition at 8   0 5 2 4 1 6 3 5 
+SuperclusterPosition at 9   0 7 2 4 1 6 3 5 
+SuperclusterPosition at 10   0 2 1 7 6 
+SuperclusterPosition at 11   0 2 1 7 6 
+SuperclusterPosition at 12   0 2 1 7 6 
+SuperclusterPosition at 13   0 2 1 7 6 
+SuperclusterPosition at 14   0 2 1 7 6 
+SuperclusterPosition at 15   0 2 1 7 6 
+SuperclusterPosition at 16   0 2 1 7 6 
+SuperclusterPosition at 17   0 2 1 7 6 
+SuperclusterPosition at 18   0 2 1 7 6 
+
+rabbits02_1-25:
+results adapted algorithm:
+SuperclusterPosition at 0   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 1   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 2   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 3   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 4   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 5   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 6   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 7   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 8   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 9   0 1 2 3 4 5 6 4 
+SuperclusterPosition at 10   0 1 2 3 4 5 8 7 
+SuperclusterPosition at 11   0 1 2 3 4 5 8 7 
+SuperclusterPosition at 12   0 1 2 3 4 5 8 7 
+SuperclusterPosition at 13   0 1 2 3 4 5 4 2 6 7 
+SuperclusterPosition at 14   0 1 2 3 4 5 6 2 7 7 
+SuperclusterPosition at 15   0 1 2 3 4 5 6 2 9 7 
+SuperclusterPosition at 16   0 1 2 3 4 5 6 2 9 7 
+SuperclusterPosition at 17   0 1 2 3 4 5 6 2 9 7 
+SuperclusterPosition at 18   0 1 2 3 4 5 6 2 9 7 
+SuperclusterPosition at 19   0 1 2 3 4 5 6 2 9 7 
+SuperclusterPosition at 20   0 1 2 3 4 5 6 2 9 7 
+SuperclusterPosition at 21   0 1 2 3 4 5 6 2 9 7 
+SuperclusterPosition at 22   0 1 2 3 4 5 6 2 9 7 
+SuperclusterPosition at 23   0 1 2 3 4 5 6 2 9 7 
+SuperclusterPosition at 24   0 1 2 3 4 5 6 2 9 7 
+
+results dumb algorithm:
+SuperclusterPosition at 0   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 1   0 1 2 3 4 5 7 6 
+SuperclusterPosition at 2   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 3   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 4   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 5   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 6   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 7   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 8   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 9   0 1 2 3 4 5 7 6 
+SuperclusterPosition at 10   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 11   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 12   0 1 2 3 4 5 6 7 
+SuperclusterPosition at 13   0 1 2 3 4 5 4 2 8 7 
+SuperclusterPosition at 14   0 1 2 4 8 5 
+SuperclusterPosition at 15   0 5 1 9 4 5 8 2 7 2 
+SuperclusterPosition at 16   0 1 3 4 8 5 7 2 
+SuperclusterPosition at 17   0 1 3 4 8 5 7 2 
+SuperclusterPosition at 18   0 1 3 4 8 5 7 2 
+SuperclusterPosition at 19   0 1 2 4 8 5 0 
+SuperclusterPosition at 20   10 1 2 4 8 5 0 
+SuperclusterPosition at 21   10 1 2 4 8 5 7 
+SuperclusterPosition at 22   10 1 3 4 8 5 0 2 7 5 
+SuperclusterPosition at 23   10 1 3 4 8 11 0 2 7 5 
+SuperclusterPosition at 24   10 11 1 9 4 5 0 2 8 7 
+
+video:
+adapted algorithm:
+SuperclusterPosition at 0   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 1   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 2   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 3   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 4   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 5   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 6   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 7   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 8   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 9   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 10   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 11   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 12   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 13   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 14   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 15   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 16   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 17   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 18   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 19   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 20   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 21   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 22   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 23   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 24   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 25   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 26   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 27   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 28   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 29   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 30   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 31   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 32   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 33   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 34   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 35   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 36   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 37   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 38   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 39   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 40   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 41   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 42   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 43   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 44   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 45   0 1 2 3 4 5 6 7 8 9 
+SuperclusterPosition at 46   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 47   8 5 2 4 3 7 6 
+SuperclusterPosition at 48   8 5 2 4 3 7 6 
+SuperclusterPosition at 49   8 5 2 4 3 7 6 
+SuperclusterPosition at 50   8 5 2 4 3 7 6 
+SuperclusterPosition at 51   8 5 2 4 3 7 6 
+SuperclusterPosition at 52   8 5 2 4 3 7 6 
+SuperclusterPosition at 53   8 5 2 4 3 7 6 
+SuperclusterPosition at 54   8 5 2 4 3 7 6 
+SuperclusterPosition at 55   8 5 2 4 3 7 6 
+SuperclusterPosition at 56   8 5 2 4 3 7 6 
+SuperclusterPosition at 57   8 5 2 4 3 7 6 
+SuperclusterPosition at 58   8 5 2 4 3 7 6 
+SuperclusterPosition at 59   8 5 2 4 3 7 6 
+SuperclusterPosition at 60   8 5 2 4 3 7 6 
+SuperclusterPosition at 61   8 5 2 4 3 7 6 
+SuperclusterPosition at 62   8 5 2 4 3 7 6 
+SuperclusterPosition at 63   8 5 2 4 3 7 6 
+SuperclusterPosition at 64   8 5 2 4 3 7 6 
+SuperclusterPosition at 65   8 5 2 4 3 7 6 
+SuperclusterPosition at 66   8 5 2 4 3 7 6 
+SuperclusterPosition at 67   8 5 2 4 3 7 6 
+SuperclusterPosition at 68   8 5 2 4 3 7 6 
+SuperclusterPosition at 69   8 5 2 4 3 7 6 
+SuperclusterPosition at 70   8 5 2 4 3 7 6 
+SuperclusterPosition at 71   8 5 2 4 3 7 6 
+SuperclusterPosition at 72   8 5 2 4 3 7 6 
+SuperclusterPosition at 73   0 3 2 2 5 9 6 7 8 
+SuperclusterPosition at 74   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 75   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 76   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 77   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 78   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 79   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 80   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 81   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 82   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 83   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 84   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 85   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 86   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 87   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 88   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 89   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 90   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 91   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 92   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 93   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 94   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 95   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 96   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 97   0 3 4 2 5 9 6 7 8 
+SuperclusterPosition at 98   8 5 2 3 4 7 6 
+SuperclusterPosition at 99   8 5 2 3 4 7 6 
+SuperclusterPosition at 100   8 5 2 3 4 7 6 
+SuperclusterPosition at 101   8 5 2 3 4 7 6 
+SuperclusterPosition at 102   8 5 2 3 4 7 6 
+SuperclusterPosition at 103   8 5 2 3 4 7 6 
+SuperclusterPosition at 104   8 5 2 3 4 7 6 
+SuperclusterPosition at 105   8 5 2 3 4 7 6 
+SuperclusterPosition at 106   8 5 2 3 4 7 6 
+SuperclusterPosition at 107   8 5 2 3 4 7 6 
+SuperclusterPosition at 108   8 5 2 3 4 7 6 
+SuperclusterPosition at 109   8 5 2 3 4 7 6 
+SuperclusterPosition at 110   8 5 2 3 4 6 7 
+SuperclusterPosition at 111   8 5 2 3 4 6 7 
+SuperclusterPosition at 112   8 5 2 3 4 6 7 
+SuperclusterPosition at 113   8 5 2 3 4 6 7 
+SuperclusterPosition at 114   8 5 2 3 4 6 7 
+SuperclusterPosition at 115   8 5 2 3 4 6 7 
+SuperclusterPosition at 116   8 5 2 3 4 7 6 
+SuperclusterPosition at 117   8 5 2 3 4 7 6 
+SuperclusterPosition at 118   8 5 2 3 4 7 6 
+SuperclusterPosition at 119   8 3 4 2 5 6 7 
+SuperclusterPosition at 120   8 3 4 2 5 6 7 
+SuperclusterPosition at 121   8 3 4 2 5 6 7 
+SuperclusterPosition at 122   8 3 4 2 5 6 7 
+SuperclusterPosition at 123   8 3 4 2 5 6 7 
+SuperclusterPosition at 124   8 3 4 2 5 6 7 
+SuperclusterPosition at 125   8 3 4 2 5 6 7 
+SuperclusterPosition at 126   8 3 4 2 5 6 7 
+SuperclusterPosition at 127   8 3 4 2 5 6 7 
+SuperclusterPosition at 128   8 3 4 2 5 6 7 
+SuperclusterPosition at 129   8 3 4 2 5 6 7 
+SuperclusterPosition at 130   8 3 4 2 5 6 7 
+SuperclusterPosition at 131   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 132   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 133   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 134   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 135   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 136   8 5 2 4 3 7 6 
+SuperclusterPosition at 137   8 5 2 4 3 7 6 
+SuperclusterPosition at 138   8 5 2 4 3 7 6 
+SuperclusterPosition at 139   8 5 2 4 3 7 6 
+SuperclusterPosition at 140   8 5 2 4 3 7 6 
+SuperclusterPosition at 141   8 5 2 4 3 7 6 
+SuperclusterPosition at 142   8 5 2 4 3 7 6 
+SuperclusterPosition at 143   8 5 2 4 3 7 6 
+SuperclusterPosition at 144   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 145   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 146   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 147   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 148   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 149   8 5 2 4 3 7 6 
+SuperclusterPosition at 150   8 5 2 4 3 7 6 
+SuperclusterPosition at 151   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 152   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 153   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 154   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 155   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 156   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 157   8 5 2 4 3 7 6 
+SuperclusterPosition at 158   8 5 2 4 3 7 6 
+SuperclusterPosition at 159   8 5 2 4 3 7 6 
+SuperclusterPosition at 160   8 5 2 4 3 7 6 
+SuperclusterPosition at 161   8 5 2 4 3 7 6 
+SuperclusterPosition at 162   8 5 2 4 3 7 6 
+SuperclusterPosition at 163   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 164   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 165   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 166   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 167   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 168   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 169   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 170   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 171   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 172   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 173   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 174   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 175   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 176   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 177   0 5 2 4 3 7 6 8 
+SuperclusterPosition at 178   8 3 4 2 5 5 6 7 9 
+SuperclusterPosition at 179   8 3 4 2 1 5 6 7 9 
+SuperclusterPosition at 180   8 3 4 2 1 5 9 7 6 
+SuperclusterPosition at 181   8 3 4 2 1 5 6 7 9 
+SuperclusterPosition at 182   8 3 4 2 1 5 9 7 6 
+SuperclusterPosition at 183   8 3 4 2 1 5 9 7 6 
+SuperclusterPosition at 184   0 3 9 2 1 6 5 8 
+SuperclusterPosition at 185   0 3 9 2 1 6 5 8 
+SuperclusterPosition at 186   0 3 9 2 1 6 5 8 
+SuperclusterPosition at 187   0 3 9 2 1 6 5 8 
+SuperclusterPosition at 188   0 3 9 2 1 6 5 8 
+SuperclusterPosition at 189   0 3 4 2 1 6 1 7 9 8 
+SuperclusterPosition at 190   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 191   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 192   0 3 4 2 1 6 1 7 9 8 
+SuperclusterPosition at 193   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 194   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 195   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 196   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 197   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 198   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 199   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 200   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 201   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 202   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 203   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 204   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 205   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 206   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 207   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 208   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 209   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 210   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 211   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 212   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 213   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 214   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 215   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 216   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 217   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 218   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 219   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 220   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 221   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 222   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 223   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 224   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 225   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 226   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 227   0 3 4 2 1 6 1 7 8 9 
+SuperclusterPosition at 228   0 3 4 2 1 9 1 7 8 6 
+SuperclusterPosition at 229   0 3 4 2 1 5 6 8 
+SuperclusterPosition at 230   0 3 4 2 1 5 6 8 
+SuperclusterPosition at 231   0 3 4 2 1 5 6 8 
+SuperclusterPosition at 232   0 3 4 2 1 5 6 8 
+SuperclusterPosition at 233   0 3 4 2 1 5 6 8 
+SuperclusterPosition at 234   8 3 4 2 1 5 6 
+SuperclusterPosition at 235   8 3 4 2 1 5 6 
+SuperclusterPosition at 236   8 3 4 2 1 9 7 6 
+SuperclusterPosition at 237   8 3 4 2 1 9 7 6 
+SuperclusterPosition at 238   8 3 4 2 1 9 7 6 
+SuperclusterPosition at 239   8 3 4 2 1 9 7 6 
+SuperclusterPosition at 240   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 241   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 242   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 243   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 244   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 245   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 246   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 247   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 248   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 249   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 250   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 251   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 252   8 3 9 4 1 7 6 
+SuperclusterPosition at 253   8 3 9 4 1 7 6 
+SuperclusterPosition at 254   8 3 9 4 1 7 6 
+SuperclusterPosition at 255   8 3 9 4 1 7 6 
+SuperclusterPosition at 256   8 3 9 4 1 7 6 
+SuperclusterPosition at 257   8 3 9 4 1 7 6 
+SuperclusterPosition at 258   8 3 9 4 1 7 6 
+SuperclusterPosition at 259   8 3 9 4 1 7 6 
+SuperclusterPosition at 260   8 3 9 4 1 7 6 
+SuperclusterPosition at 261   8 3 9 4 1 7 6 
+SuperclusterPosition at 262   8 3 9 4 1 7 6 
+SuperclusterPosition at 263   8 3 9 4 1 7 6 
+SuperclusterPosition at 264   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 265   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 266   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 267   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 268   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 269   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 270   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 271   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 272   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 273   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 274   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 275   0 3 9 4 1 5 6 8 
+SuperclusterPosition at 276   8 3 9 4 1 7 6 
+SuperclusterPosition at 277   8 3 9 4 1 7 6 
+SuperclusterPosition at 278   8 3 9 4 1 7 6 
+SuperclusterPosition at 279   8 3 9 4 1 7 6 
+SuperclusterPosition at 280   8 3 9 4 1 7 6 
+SuperclusterPosition at 281   8 3 9 4 1 7 6 
+SuperclusterPosition at 282   8 3 9 4 1 7 6 
+SuperclusterPosition at 283   8 3 9 4 1 7 6 
+SuperclusterPosition at 284   8 3 9 4 1 7 6 
+SuperclusterPosition at 285   8 3 9 4 1 5 6 
+SuperclusterPosition at 286   8 3 9 4 1 7 6 
+SuperclusterPosition at 287   8 3 9 4 1 7 6 
+SuperclusterPosition at 288   8 3 9 4 1 5 6 
+SuperclusterPosition at 289   8 3 9 4 1 5 6 
+SuperclusterPosition at 290   8 3 9 4 1 5 6 
+SuperclusterPosition at 291   8 3 9 4 1 5 6 
+SuperclusterPosition at 292   8 3 9 4 1 5 6 
+SuperclusterPosition at 293   8 3 9 4 1 5 6 
+SuperclusterPosition at 294   8 3 9 4 1 5 6 
+SuperclusterPosition at 295   8 3 9 4 1 5 6 
+SuperclusterPosition at 296   8 3 9 4 1 5 6 
+SuperclusterPosition at 297   8 3 9 4 1 5 6 
+SuperclusterPosition at 298   8 3 9 4 1 5 6 
+SuperclusterPosition at 299   8 3 9 4 1 5 6 
+SuperclusterPosition at 300   8 3 9 4 1 5 6 
+SuperclusterPosition at 301   8 3 9 4 1 5 6 
+SuperclusterPosition at 302   8 3 9 4 1 5 6 
+SuperclusterPosition at 303   8 3 9 4 1 5 6 
+SuperclusterPosition at 304   8 3 9 4 1 5 6 
+SuperclusterPosition at 305   8 3 9 4 1 5 6 
+SuperclusterPosition at 306   8 3 9 4 1 5 6 
+SuperclusterPosition at 307   8 3 9 4 1 5 6 
+SuperclusterPosition at 308   8 3 9 4 1 5 6 
+SuperclusterPosition at 309   8 3 9 4 1 5 6 
+SuperclusterPosition at 310   8 3 9 4 1 5 6 
+SuperclusterPosition at 311   8 3 9 4 1 5 6 
+SuperclusterPosition at 312   8 3 9 4 1 5 6 
+SuperclusterPosition at 313   8 3 9 4 1 5 6 
+SuperclusterPosition at 314   8 3 9 4 1 5 6 
+SuperclusterPosition at 315   8 3 9 4 1 5 6 
+SuperclusterPosition at 316   8 3 9 4 1 5 6 
+SuperclusterPosition at 317   8 3 9 4 1 5 6 
+SuperclusterPosition at 318   8 3 9 4 1 5 6 
+SuperclusterPosition at 319   8 3 9 4 1 5 6 
+SuperclusterPosition at 320   8 3 9 4 1 5 6 
+SuperclusterPosition at 321   8 3 9 4 1 5 6 
+SuperclusterPosition at 322   8 3 9 4 1 5 6 
+SuperclusterPosition at 323   8 3 9 4 1 5 6 
+SuperclusterPosition at 324   8 3 9 4 1 5 6 
+SuperclusterPosition at 325   8 3 9 4 1 5 6 
+SuperclusterPosition at 326   8 3 9 4 1 5 6 
+SuperclusterPosition at 327   8 3 9 4 1 5 6 
+SuperclusterPosition at 328   8 3 9 4 1 5 6 
+SuperclusterPosition at 329   8 3 9 4 1 5 6 
+SuperclusterPosition at 330   8 3 9 4 1 5 6 
+SuperclusterPosition at 331   8 3 9 4 1 5 6 
+SuperclusterPosition at 332   8 3 9 4 1 5 6 
+SuperclusterPosition at 333   8 3 9 4 1 5 6 
+SuperclusterPosition at 334   8 3 9 4 1 5 6 
+SuperclusterPosition at 335   8 3 9 4 1 5 6 
+SuperclusterPosition at 336   8 3 9 4 1 5 6 
+SuperclusterPosition at 337   8 3 9 4 1 5 6 
+SuperclusterPosition at 338   8 3 9 4 1 5 6 
+SuperclusterPosition at 339   8 3 9 4 1 5 6 
+SuperclusterPosition at 340   8 3 9 4 1 5 6 
+SuperclusterPosition at 341   8 3 9 4 1 5 6 
+SuperclusterPosition at 342   8 3 9 4 1 5 6 
+SuperclusterPosition at 343   8 3 9 4 1 5 6 
+SuperclusterPosition at 344   8 3 9 4 1 5 6 
+SuperclusterPosition at 345   8 3 9 4 1 5 6 
+SuperclusterPosition at 346   8 3 9 4 1 5 6 
+SuperclusterPosition at 347   8 3 9 4 1 5 6 
+SuperclusterPosition at 348   8 3 9 4 1 7 6 
+SuperclusterPosition at 349   8 3 9 4 1 7 6 
+SuperclusterPosition at 350   8 3 9 4 1 7 6 
+SuperclusterPosition at 351   8 3 9 4 1 7 6 
+SuperclusterPosition at 352   8 3 9 4 1 7 6 
+SuperclusterPosition at 353   8 3 9 4 1 7 6 
+SuperclusterPosition at 354   8 3 9 4 1 7 6 
+SuperclusterPosition at 355   8 3 9 4 1 7 6 
+SuperclusterPosition at 356   8 3 9 4 1 7 6 
+SuperclusterPosition at 357   8 3 9 4 1 7 6 
+SuperclusterPosition at 358   8 3 9 4 1 7 6 
+SuperclusterPosition at 359   8 3 9 4 1 7 6 
+SuperclusterPosition at 360   8 3 9 4 1 5 6 
+SuperclusterPosition at 361   8 3 9 4 1 5 6 
+SuperclusterPosition at 362   8 3 9 4 1 5 6 
+SuperclusterPosition at 363   8 3 9 4 1 5 6 
+SuperclusterPosition at 364   8 3 9 4 1 5 6 
+SuperclusterPosition at 365   8 3 9 4 1 5 6 
+SuperclusterPosition at 366   8 3 9 4 1 5 6 
+SuperclusterPosition at 367   8 3 9 4 1 5 6 
+SuperclusterPosition at 368   8 3 9 4 1 5 6 
+SuperclusterPosition at 369   8 3 9 4 1 5 6 
+SuperclusterPosition at 370   8 3 9 4 1 5 6 
+SuperclusterPosition at 371   8 3 9 4 1 5 6 
+SuperclusterPosition at 372   8 3 9 4 1 5 6 
+SuperclusterPosition at 373   8 3 9 4 1 5 6 
+SuperclusterPosition at 374   8 3 9 4 1 5 6 
+SuperclusterPosition at 375   8 3 9 4 1 5 6 
+SuperclusterPosition at 376   8 3 9 4 1 5 6 
+SuperclusterPosition at 377   8 3 9 4 1 5 6 
+SuperclusterPosition at 378   8 3 9 4 1 5 6 
+SuperclusterPosition at 379   8 3 9 4 1 5 6 
+SuperclusterPosition at 380   8 3 9 4 1 5 6 
+SuperclusterPosition at 381   8 3 9 4 1 5 6 
+SuperclusterPosition at 382   8 3 9 4 1 5 6 
+SuperclusterPosition at 383   8 3 9 4 1 5 6 
+SuperclusterPosition at 384   8 3 9 4 1 5 6 
+SuperclusterPosition at 385   8 3 9 4 1 5 6 
+SuperclusterPosition at 386   8 3 9 4 1 5 6 
+SuperclusterPosition at 387   8 3 9 4 1 5 6 
+SuperclusterPosition at 388   8 3 9 4 1 5 6 
+SuperclusterPosition at 389   8 3 9 4 1 5 6 
+SuperclusterPosition at 390   8 3 9 4 1 5 6 
+SuperclusterPosition at 391   8 3 9 4 1 5 6 
+SuperclusterPosition at 392   8 3 9 4 1 5 6 
+SuperclusterPosition at 393   8 3 9 4 1 5 6 
+SuperclusterPosition at 394   8 3 9 4 1 5 6 
+SuperclusterPosition at 395   8 3 9 4 1 5 6 
+SuperclusterPosition at 396   8 3 9 4 1 5 6 
+SuperclusterPosition at 397   8 3 9 4 1 5 6 
+SuperclusterPosition at 398   8 3 9 4 1 5 6 
+SuperclusterPosition at 399   8 3 9 4 1 5 6 
+SuperclusterPosition at 400   8 3 9 4 1 5 6 
+SuperclusterPosition at 401   8 3 9 4 1 5 6 
+SuperclusterPosition at 402   8 3 9 4 1 5 6 
+SuperclusterPosition at 403   8 3 9 4 1 5 6 
+SuperclusterPosition at 404   8 3 9 4 1 5 6 
+SuperclusterPosition at 405   8 3 9 4 1 5 6 
+SuperclusterPosition at 406   8 3 9 4 1 5 6 
+SuperclusterPosition at 407   8 3 9 4 1 5 6 
+SuperclusterPosition at 408   8 3 9 4 1 5 6 
+SuperclusterPosition at 409   8 3 9 4 1 5 6 
+SuperclusterPosition at 410   8 3 9 4 1 5 6 
+SuperclusterPosition at 411   8 3 9 4 1 5 6 
+SuperclusterPosition at 412   8 3 9 4 1 5 6 
+SuperclusterPosition at 413   8 3 9 4 1 5 6 
+SuperclusterPosition at 414   8 3 9 4 1 5 6 
+SuperclusterPosition at 415   8 3 9 4 1 5 6 
+SuperclusterPosition at 416   8 3 9 4 1 5 6 
+SuperclusterPosition at 417   8 3 9 4 1 5 6 
+SuperclusterPosition at 418   8 3 9 4 1 5 6 
+SuperclusterPosition at 419   8 3 9 4 1 5 6 
+SuperclusterPosition at 420   8 3 9 4 1 5 6 
+SuperclusterPosition at 421   8 3 9 4 1 5 6 
+SuperclusterPosition at 422   8 3 9 4 1 5 6 
+SuperclusterPosition at 423   8 3 9 4 1 5 6 
+SuperclusterPosition at 424   8 3 9 4 1 5 6 
+SuperclusterPosition at 425   8 3 9 4 1 5 6 
+SuperclusterPosition at 426   8 3 9 4 1 5 6 
+SuperclusterPosition at 427   8 3 9 4 1 5 6 
+SuperclusterPosition at 428   8 3 9 4 1 5 6 
+SuperclusterPosition at 429   8 3 9 4 1 5 6 
+SuperclusterPosition at 430   8 3 9 4 1 5 6 
+SuperclusterPosition at 431   8 3 9 4 1 5 6 
+SuperclusterPosition at 432   8 3 9 4 1 5 6 
+SuperclusterPosition at 433   8 3 9 4 1 5 6 
+SuperclusterPosition at 434   8 3 9 4 1 5 6 
+SuperclusterPosition at 435   8 3 9 4 1 5 6 
+SuperclusterPosition at 436   8 3 9 4 1 5 6 
+SuperclusterPosition at 437   8 3 9 4 1 5 6 
+SuperclusterPosition at 438   8 3 9 4 1 5 6 
+SuperclusterPosition at 439   8 3 9 4 1 5 6 
+SuperclusterPosition at 440   8 3 9 4 1 5 6 
+SuperclusterPosition at 441   8 3 9 4 1 5 6 
+SuperclusterPosition at 442   8 3 9 4 1 5 6 
+SuperclusterPosition at 443   8 3 9 4 1 5 6 
+SuperclusterPosition at 444   8 3 9 4 1 5 6 
+SuperclusterPosition at 445   8 3 9 4 1 5 6 
+SuperclusterPosition at 446   8 3 9 4 1 5 6 
+SuperclusterPosition at 447   8 3 9 4 1 5 6 
+SuperclusterPosition at 448   8 3 9 4 1 5 6 
+SuperclusterPosition at 449   8 3 9 4 1 5 6 
+SuperclusterPosition at 450   8 3 9 4 1 5 6 
+SuperclusterPosition at 451   8 3 9 4 1 5 6 
+SuperclusterPosition at 452   8 3 9 4 1 5 6 
+SuperclusterPosition at 453   8 3 9 4 1 5 6 
+SuperclusterPosition at 454   8 3 9 4 1 5 6 
+SuperclusterPosition at 455   8 3 9 4 1 5 6 
+SuperclusterPosition at 456   8 3 9 4 1 5 6 
+SuperclusterPosition at 457   8 3 9 4 1 5 6 
+SuperclusterPosition at 458   8 3 9 4 1 5 6 
+SuperclusterPosition at 459   8 3 9 4 1 5 6 
+SuperclusterPosition at 460   8 3 9 4 1 5 6 
+SuperclusterPosition at 461   8 3 9 4 1 5 6 
+SuperclusterPosition at 462   8 3 9 4 1 5 6 
+SuperclusterPosition at 463   8 3 9 4 1 5 6 
+SuperclusterPosition at 464   8 3 9 4 1 5 6 
+SuperclusterPosition at 465   8 3 9 4 1 5 6 
+SuperclusterPosition at 466   8 3 9 4 1 5 6 
+SuperclusterPosition at 467   8 3 9 4 1 5 6 
+SuperclusterPosition at 468   8 3 9 4 1 5 6 
+SuperclusterPosition at 469   8 3 9 4 1 5 6 
+SuperclusterPosition at 470   8 3 9 4 1 5 6 
+SuperclusterPosition at 471   8 3 9 4 1 5 6 
+SuperclusterPosition at 472   8 3 9 4 1 5 6 
+SuperclusterPosition at 473   8 3 9 4 1 5 6 
+SuperclusterPosition at 474   8 3 9 4 1 5 6 
+SuperclusterPosition at 475   8 3 9 4 1 5 6 
+SuperclusterPosition at 476   8 3 9 4 1 5 6 
+SuperclusterPosition at 477   8 3 9 4 1 5 6 
+SuperclusterPosition at 478   8 3 9 4 1 5 6 
+SuperclusterPosition at 479   8 3 9 4 1 5 6 
+SuperclusterPosition at 480   8 3 9 4 1 5 6 
+SuperclusterPosition at 481   8 3 9 4 1 5 6 
+SuperclusterPosition at 482   8 3 9 4 1 5 6 
+SuperclusterPosition at 483   8 3 9 4 1 5 6 
+SuperclusterPosition at 484   8 3 9 4 1 5 6 
+SuperclusterPosition at 485   8 3 9 4 1 5 6 
+SuperclusterPosition at 486   8 3 9 4 1 5 6 
+SuperclusterPosition at 487   8 3 9 4 1 5 6 
+SuperclusterPosition at 488   8 3 9 4 1 5 6 
+SuperclusterPosition at 489   8 3 9 4 1 5 6 
+SuperclusterPosition at 490   8 3 9 4 1 5 6 
+SuperclusterPosition at 491   8 3 9 4 1 5 6 
+SuperclusterPosition at 492   0 3 4 2 1 5 9 8 6 
+SuperclusterPosition at 493   8 3 4 2 1 1 9 7 6 
+SuperclusterPosition at 494   8 3 4 2 1 1 10 7 
+SuperclusterPosition at 495   8 3 4 2 1 5 10 
+SuperclusterPosition at 496   8 3 4 2 1 5 10 
+SuperclusterPosition at 497   8 3 4 2 1 5 10 
+SuperclusterPosition at 498   8 3 4 2 1 5 10 
+SuperclusterPosition at 499   8 3 4 2 1 5 10 
+SuperclusterPosition at 500   8 3 4 2 1 5 10 
+SuperclusterPosition at 501   8 3 4 2 1 5 10 
+SuperclusterPosition at 502   8 3 4 2 1 5 10 
+SuperclusterPosition at 503   8 3 4 2 1 5 10 
+SuperclusterPosition at 504   8 3 4 2 1 5 10 
+SuperclusterPosition at 505   8 3 4 2 1 5 10 
+SuperclusterPosition at 506   8 3 4 2 1 5 10 
+SuperclusterPosition at 507   8 3 4 2 1 5 10 
+SuperclusterPosition at 508   8 3 4 2 1 5 10 
+SuperclusterPosition at 509   8 3 4 2 1 5 10 
+SuperclusterPosition at 510   8 3 4 2 1 5 10 
+SuperclusterPosition at 511   8 3 4 2 1 5 10 
+SuperclusterPosition at 512   8 3 4 2 1 5 10 
+SuperclusterPosition at 513   8 3 4 2 1 5 10 
+SuperclusterPosition at 514   8 3 4 2 1 5 10 
+SuperclusterPosition at 515   8 3 4 2 1 5 10 
+SuperclusterPosition at 516   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 517   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 518   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 519   8 3 4 2 1 9 1 6 7 
+SuperclusterPosition at 520   8 3 4 2 1 9 1 6 7 
+SuperclusterPosition at 521   8 3 4 2 1 9 1 6 7 
+SuperclusterPosition at 522   8 3 4 2 1 9 1 6 7 
+SuperclusterPosition at 523   8 3 4 2 1 9 1 6 7 
+SuperclusterPosition at 524   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 525   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 526   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 527   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 528   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 529   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 530   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 531   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 532   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 533   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 534   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 535   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 536   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 537   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 538   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 539   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 540   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 541   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 542   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 543   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 544   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 545   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 546   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 547   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 548   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 549   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 550   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 551   8 3 4 2 1 9 5 6 
+SuperclusterPosition at 552   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 553   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 554   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 555   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 556   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 557   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 558   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 559   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 560   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 561   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 562   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 563   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 564   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 565   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 566   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 567   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 568   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 569   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 570   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 571   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 572   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 573   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 574   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 575   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 576   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 577   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 578   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 579   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 580   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 581   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 582   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 583   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 584   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 585   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 586   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 587   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 588   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 589   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 590   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 591   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 592   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 593   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 594   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 595   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 596   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 597   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 598   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 599   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 600   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 601   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 602   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 603   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 604   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 605   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 606   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 607   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 608   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 609   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 610   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 611   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 612   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 613   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 614   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 615   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 616   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 617   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 618   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 619   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 620   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 621   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 622   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 623   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 624   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 625   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 626   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 627   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 628   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 629   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 630   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 631   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 632   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 633   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 634   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 635   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 636   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 637   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 638   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 639   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 640   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 641   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 642   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 643   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 644   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 645   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 646   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 647   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 648   0 1 4 3 9 1 6 5 8 7 
+SuperclusterPosition at 649   0 1 4 3 9 1 6 5 8 7 
+SuperclusterPosition at 650   0 1 4 3 9 1 6 5 8 7 
+SuperclusterPosition at 651   0 1 4 3 9 1 6 5 8 7 
+SuperclusterPosition at 652   0 1 4 3 9 1 6 5 8 7 
+SuperclusterPosition at 653   0 1 4 3 9 1 6 5 8 7 
+SuperclusterPosition at 654   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 655   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 656   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 657   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 658   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 659   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 660   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 661   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 662   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 663   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 664   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 665   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 666   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 667   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 668   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 669   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 670   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 671   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 672   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 673   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 674   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 675   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 676   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 677   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 678   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 679   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 680   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 681   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 682   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 683   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 684   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 685   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 686   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 687   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 688   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 689   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 690   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 691   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 692   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 693   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 694   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 695   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 696   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 697   8 1 2 3 4 1 6 5 7 9 
+SuperclusterPosition at 698   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 699   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 700   8 1 2 3 4 1 6 5 7 9 
+SuperclusterPosition at 701   8 1 2 3 4 1 6 5 7 9 
+SuperclusterPosition at 702   8 1 2 3 4 1 6 5 7 9 
+SuperclusterPosition at 703   8 1 2 3 4 1 6 5 7 9 
+SuperclusterPosition at 704   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 705   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 706   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 707   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 708   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 709   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 710   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 711   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 712   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 713   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 714   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 715   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 716   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 717   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 718   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 719   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 720   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 721   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 722   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 723   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 724   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 725   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 726   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 727   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 728   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 729   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 730   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 731   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 732   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 733   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 734   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 735   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 736   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 737   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 738   8 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 739   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 740   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 741   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 742   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 743   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 744   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 745   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 746   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 747   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 748   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 749   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 750   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 751   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 752   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 753   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 754   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 755   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 756   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 757   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 758   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 759   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 760   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 761   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 762   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 763   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 764   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 765   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 766   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 767   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 768   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 769   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 770   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 771   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 772   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 773   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 774   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 775   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 776   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 777   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 778   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 779   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 780   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 781   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 782   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 783   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 784   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 785   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 786   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 787   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 788   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 789   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 790   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 791   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 792   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 793   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 794   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 795   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 796   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 797   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 798   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 799   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 800   0 1 2 3 4 1 6 5 8 9 
+SuperclusterPosition at 801   8 3 2 3 4 1 10 1 7 9 
+SuperclusterPosition at 802   8 3 2 3 4 1 10 1 7 9 
+SuperclusterPosition at 803   8 3 9 2 1 5 10 
+SuperclusterPosition at 804   8 3 9 2 1 5 10 
+SuperclusterPosition at 805   8 3 9 2 1 5 10 
+SuperclusterPosition at 806   8 3 9 2 1 5 10 
+SuperclusterPosition at 807   8 3 9 2 1 5 10 
+SuperclusterPosition at 808   8 3 9 2 1 5 10 
+SuperclusterPosition at 809   8 3 9 2 1 5 10 
+SuperclusterPosition at 810   8 3 9 2 1 5 10 
+SuperclusterPosition at 811   8 3 9 2 1 5 10 
+SuperclusterPosition at 812   8 3 9 2 1 5 10 
+SuperclusterPosition at 813   8 3 9 2 1 5 10 
+SuperclusterPosition at 814   8 3 9 2 1 5 10 
+SuperclusterPosition at 815   8 3 9 2 1 5 10 
+SuperclusterPosition at 816   8 3 9 2 1 5 10 
+SuperclusterPosition at 817   8 3 9 2 1 5 10 
+SuperclusterPosition at 818   8 3 9 2 1 5 10 
+SuperclusterPosition at 819   8 3 9 2 1 5 10 
+SuperclusterPosition at 820   8 3 9 2 1 5 10 
+SuperclusterPosition at 821   8 3 9 2 1 5 10 
+SuperclusterPosition at 822   8 3 9 2 1 5 10 
+SuperclusterPosition at 823   8 3 9 2 1 5 10 
+SuperclusterPosition at 824   8 3 9 2 1 5 10 
+SuperclusterPosition at 825   8 3 9 2 1 5 10 
+SuperclusterPosition at 826   8 3 9 2 1 5 10 
+SuperclusterPosition at 827   8 3 9 2 1 5 10 
+SuperclusterPosition at 828   8 3 9 2 1 5 10 
+SuperclusterPosition at 829   8 3 9 2 1 5 10 
+SuperclusterPosition at 830   8 3 9 2 1 5 10 
+SuperclusterPosition at 831   8 3 9 2 1 5 10 
+SuperclusterPosition at 832   8 3 9 2 1 5 10 
+SuperclusterPosition at 833   8 3 9 2 1 5 10 
+SuperclusterPosition at 834   8 3 9 2 1 5 10 
+SuperclusterPosition at 835   8 3 9 2 1 5 10 
+SuperclusterPosition at 836   8 3 9 2 1 5 10 
+SuperclusterPosition at 837   8 3 9 2 1 5 10 
+SuperclusterPosition at 838   8 3 9 2 1 5 10 
+SuperclusterPosition at 839   8 3 9 2 1 5 10 
+SuperclusterPosition at 840   8 3 9 2 1 5 10 
+SuperclusterPosition at 841   8 3 9 2 1 5 10 
+SuperclusterPosition at 842   8 3 9 2 1 5 10 
+SuperclusterPosition at 843   8 3 9 2 1 5 10 
+SuperclusterPosition at 844   8 3 9 2 1 5 10 
+SuperclusterPosition at 845   8 3 9 2 1 5 10 
+SuperclusterPosition at 846   8 3 9 2 1 5 10 
+SuperclusterPosition at 847   8 3 9 2 1 5 10 
+SuperclusterPosition at 848   8 3 9 2 1 5 10 
+SuperclusterPosition at 849   8 3 9 2 1 5 10 
+SuperclusterPosition at 850   8 3 9 2 1 5 10 
+SuperclusterPosition at 851   8 3 9 2 1 5 10 
+SuperclusterPosition at 852   8 3 9 2 1 5 10 
+SuperclusterPosition at 853   8 3 9 2 1 5 10 
+SuperclusterPosition at 854   8 3 9 2 1 5 10 
+SuperclusterPosition at 855   8 3 9 2 1 5 10 
+SuperclusterPosition at 856   8 3 9 2 1 5 10 
+SuperclusterPosition at 857   8 3 9 2 1 5 10 
+SuperclusterPosition at 858   8 3 9 2 1 5 10 
+SuperclusterPosition at 859   8 3 9 2 1 5 10 
+SuperclusterPosition at 860   8 3 9 2 1 5 10 
+SuperclusterPosition at 861   8 3 9 2 1 5 10 
+SuperclusterPosition at 862   8 3 9 2 1 5 10 
+SuperclusterPosition at 863   8 3 9 2 1 5 10 
+SuperclusterPosition at 864   8 3 9 2 1 5 10 
+SuperclusterPosition at 865   8 3 9 2 1 5 10 
+SuperclusterPosition at 866   8 3 9 2 1 5 10 
+SuperclusterPosition at 867   8 3 9 2 1 5 10 
+SuperclusterPosition at 868   8 3 9 2 1 5 10 
+SuperclusterPosition at 869   8 3 9 2 1 5 10 
+SuperclusterPosition at 870   8 3 9 2 1 5 10 
+SuperclusterPosition at 871   8 3 9 2 1 5 10 
+SuperclusterPosition at 872   8 3 9 2 1 5 10 
+SuperclusterPosition at 873   8 3 9 2 1 5 10 
+SuperclusterPosition at 874   8 3 9 2 1 5 10 
+SuperclusterPosition at 875   8 3 9 2 1 5 10 
+SuperclusterPosition at 876   8 3 9 2 1 5 10 
+SuperclusterPosition at 877   8 3 9 2 1 5 10 
+SuperclusterPosition at 878   8 3 9 2 1 5 10 
+SuperclusterPosition at 879   8 3 9 2 1 5 10 
+SuperclusterPosition at 880   8 3 9 2 1 5 10 
+SuperclusterPosition at 881   8 3 9 2 1 5 10 
+SuperclusterPosition at 882   8 3 9 2 1 5 10 
+SuperclusterPosition at 883   8 3 9 2 1 5 10 
+SuperclusterPosition at 884   8 3 9 2 1 5 10 
+SuperclusterPosition at 885   8 3 9 2 1 5 10 
+SuperclusterPosition at 886   8 3 9 2 1 5 10 
+SuperclusterPosition at 887   8 3 9 2 1 5 10 
+SuperclusterPosition at 888   8 3 9 2 1 5 10 
+SuperclusterPosition at 889   8 3 9 2 1 5 10 
+SuperclusterPosition at 890   8 3 9 2 1 5 10 
+SuperclusterPosition at 891   8 3 9 2 1 5 10 
+SuperclusterPosition at 892   8 3 9 2 1 5 10 
+SuperclusterPosition at 893   8 3 9 2 1 5 10 
+SuperclusterPosition at 894   8 3 9 2 1 5 10 
+SuperclusterPosition at 895   8 3 9 2 1 5 10 
+SuperclusterPosition at 896   8 3 9 2 1 5 10 
+SuperclusterPosition at 897   8 3 9 2 1 5 10 
+SuperclusterPosition at 898   8 3 9 2 1 5 10 
+SuperclusterPosition at 899   8 3 9 2 1 5 10 
+SuperclusterPosition at 900   8 3 9 2 1 5 10 
+SuperclusterPosition at 901   8 3 9 2 1 5 10 
+SuperclusterPosition at 902   8 3 9 2 1 5 10 
+SuperclusterPosition at 903   8 3 9 2 1 5 10 
+SuperclusterPosition at 904   8 3 9 2 1 5 10 
+SuperclusterPosition at 905   8 3 9 2 1 5 10 
+SuperclusterPosition at 906   8 3 9 2 1 5 10 
+SuperclusterPosition at 907   8 3 9 2 1 5 10 
+SuperclusterPosition at 908   8 3 9 2 1 5 10 
+SuperclusterPosition at 909   8 3 9 2 1 5 10 
+SuperclusterPosition at 910   8 3 9 2 1 5 10 
+SuperclusterPosition at 911   8 3 9 2 1 5 10 
+SuperclusterPosition at 912   8 3 9 2 1 5 10 
+SuperclusterPosition at 913   8 3 9 2 1 5 10 
+SuperclusterPosition at 914   8 3 9 2 1 5 10 
+SuperclusterPosition at 915   8 3 9 2 1 5 10 
+SuperclusterPosition at 916   8 3 9 2 1 5 10 
+SuperclusterPosition at 917   8 3 9 2 1 5 10 
+SuperclusterPosition at 918   8 3 9 2 1 5 10 
+SuperclusterPosition at 919   8 3 9 2 1 5 10 
+SuperclusterPosition at 920   8 3 9 2 1 5 10 
+SuperclusterPosition at 921   8 3 9 2 1 5 10 
+SuperclusterPosition at 922   8 3 9 2 1 5 10 
+SuperclusterPosition at 923   8 3 9 2 1 5 10 
+SuperclusterPosition at 924   8 3 9 2 1 5 10 
+SuperclusterPosition at 925   8 3 9 2 1 5 10 
+SuperclusterPosition at 926   8 3 9 2 1 5 10 
+SuperclusterPosition at 927   8 3 9 2 1 5 10 
+SuperclusterPosition at 928   8 3 9 2 1 5 10 
+SuperclusterPosition at 929   8 3 9 2 1 5 10 
+SuperclusterPosition at 930   8 3 9 2 1 5 10 
+SuperclusterPosition at 931   8 3 9 2 1 5 10 
+SuperclusterPosition at 932   8 3 9 2 1 5 10 
+SuperclusterPosition at 933   8 3 9 2 1 5 10 
+SuperclusterPosition at 934   8 3 9 2 1 5 10 
+SuperclusterPosition at 935   8 3 9 2 1 5 10 
+SuperclusterPosition at 936   8 3 9 2 1 5 10 
+SuperclusterPosition at 937   8 3 9 2 1 5 10 
+SuperclusterPosition at 938   8 3 9 2 1 5 10 
+SuperclusterPosition at 939   8 3 9 2 1 5 10 
+SuperclusterPosition at 940   8 3 9 2 1 5 10 
+SuperclusterPosition at 941   8 3 9 2 1 5 10 
+SuperclusterPosition at 942   8 3 9 2 1 5 10 
+SuperclusterPosition at 943   8 3 9 2 1 5 10 
+SuperclusterPosition at 944   8 3 9 2 1 5 10 
+SuperclusterPosition at 945   8 3 9 2 1 5 10 
+SuperclusterPosition at 946   8 3 9 2 1 5 10 
+SuperclusterPosition at 947   8 3 9 2 1 5 10 
+SuperclusterPosition at 948   8 3 9 2 1 5 10 
+SuperclusterPosition at 949   8 3 9 2 1 5 10 
+SuperclusterPosition at 950   8 3 9 2 1 5 10 
+SuperclusterPosition at 951   8 3 9 2 1 5 10 
+SuperclusterPosition at 952   8 3 9 2 1 5 10 
+SuperclusterPosition at 953   8 3 9 2 1 5 10 
+SuperclusterPosition at 954   8 3 9 2 1 5 10 
+SuperclusterPosition at 955   8 3 9 2 1 5 10 
+SuperclusterPosition at 956   8 3 9 2 1 5 10 
+SuperclusterPosition at 957   8 3 9 2 1 5 10 
+SuperclusterPosition at 958   8 3 9 2 1 5 10 
+SuperclusterPosition at 959   8 3 9 2 1 5 10 
+SuperclusterPosition at 960   8 3 9 2 1 5 10 
+SuperclusterPosition at 961   8 3 9 2 1 5 10 
+SuperclusterPosition at 962   8 3 9 2 1 5 10 
+SuperclusterPosition at 963   8 3 9 2 1 5 10 
+SuperclusterPosition at 964   8 3 9 2 1 5 10 
+SuperclusterPosition at 965   8 3 9 2 1 5 10 
+SuperclusterPosition at 966   8 3 9 2 1 5 10 
+SuperclusterPosition at 967   8 3 9 2 1 5 10 
+SuperclusterPosition at 968   8 3 9 2 1 5 10 
+SuperclusterPosition at 969   8 3 9 2 1 5 10 
+SuperclusterPosition at 970   8 3 9 2 1 5 10 
+SuperclusterPosition at 971   8 3 9 2 1 5 10 
+SuperclusterPosition at 972   8 3 9 2 1 5 10 
+SuperclusterPosition at 973   8 3 11 2 1 5 
+SuperclusterPosition at 974   8 3 4 2 1 5 11 8 
+SuperclusterPosition at 975   8 3 4 2 1 5 11 
+SuperclusterPosition at 976   8 3 4 2 1 5 11 
+SuperclusterPosition at 977   8 3 4 2 1 5 11 
+SuperclusterPosition at 978   8 3 4 2 1 5 11 
+SuperclusterPosition at 979   8 3 4 2 1 5 11 
+SuperclusterPosition at 980   8 3 4 2 1 5 11 
+SuperclusterPosition at 981   8 3 4 2 1 5 11 
+SuperclusterPosition at 982   8 3 4 2 1 5 11 
+SuperclusterPosition at 983   8 3 4 2 1 5 11 
+SuperclusterPosition at 984   8 3 4 2 1 5 11 
+SuperclusterPosition at 985   8 3 4 2 1 5 11 
+SuperclusterPosition at 986   8 3 4 2 1 5 11 
+SuperclusterPosition at 987   8 3 4 2 1 5 11 
+SuperclusterPosition at 988   8 3 4 2 1 5 11 
+SuperclusterPosition at 989   8 3 4 2 1 5 11 
+SuperclusterPosition at 990   8 3 4 2 1 5 11 
+SuperclusterPosition at 991   8 3 4 2 1 5 11 
+SuperclusterPosition at 992   8 3 4 2 1 5 11 
+SuperclusterPosition at 993   8 3 4 2 1 5 11 
+SuperclusterPosition at 994   8 3 4 2 1 5 11 
+SuperclusterPosition at 995   8 3 4 2 1 5 11 
+SuperclusterPosition at 996   8 3 9 2 1 5 10 
+SuperclusterPosition at 997   8 3 9 2 1 5 10 
+SuperclusterPosition at 998   8 3 9 2 1 5 10 
+SuperclusterPosition at 999   8 3 9 2 1 5 10 
+SuperclusterPosition at 1000   8 3 9 2 1 5 10 
+SuperclusterPosition at 1001   8 3 9 2 1 5 10 
+SuperclusterPosition at 1002   8 3 9 2 1 5 10 
+SuperclusterPosition at 1003   8 3 9 2 1 5 10 
+SuperclusterPosition at 1004   8 3 9 2 1 5 10 
+SuperclusterPosition at 1005   8 3 9 2 1 5 10 
+SuperclusterPosition at 1006   8 3 9 2 1 5 10 
+SuperclusterPosition at 1007   8 3 9 2 1 5 10 
+SuperclusterPosition at 1008   8 3 9 2 1 5 10 
+SuperclusterPosition at 1009   8 3 9 2 1 5 10 
+SuperclusterPosition at 1010   8 3 9 2 1 5 10 
+SuperclusterPosition at 1011   8 3 9 2 1 5 10 
+SuperclusterPosition at 1012   8 3 9 2 1 5 10 
+SuperclusterPosition at 1013   8 3 9 2 1 5 10 
+SuperclusterPosition at 1014   8 3 9 2 1 5 10 
+SuperclusterPosition at 1015   8 3 9 2 1 5 10 
+SuperclusterPosition at 1016   8 3 9 2 1 5 10 
+SuperclusterPosition at 1017   8 3 9 2 1 5 10 
+SuperclusterPosition at 1018   8 3 9 2 1 5 10 
+SuperclusterPosition at 1019   8 3 9 2 1 5 10 
+SuperclusterPosition at 1020   8 3 9 2 1 5 10 
+SuperclusterPosition at 1021   8 3 9 2 1 5 10 
+SuperclusterPosition at 1022   8 3 9 2 1 5 10 
+SuperclusterPosition at 1023   8 3 9 2 1 5 10 
+SuperclusterPosition at 1024   8 3 9 2 1 5 10 
+SuperclusterPosition at 1025   8 3 9 2 1 5 10 
+SuperclusterPosition at 1026   8 3 9 2 1 5 10 
+SuperclusterPosition at 1027   8 3 9 2 1 5 10 
+SuperclusterPosition at 1028   8 3 9 2 1 5 10 
+SuperclusterPosition at 1029   8 3 9 2 1 5 10 
+SuperclusterPosition at 1030   8 3 9 2 1 5 10 
+SuperclusterPosition at 1031   8 3 9 2 1 5 10 
+SuperclusterPosition at 1032   8 3 4 2 1 5 11 
+SuperclusterPosition at 1033   8 3 4 2 1 5 11 
+SuperclusterPosition at 1034   8 3 4 2 1 5 11 
+SuperclusterPosition at 1035   8 3 4 2 1 5 11 
+SuperclusterPosition at 1036   8 3 4 2 1 5 11 
+SuperclusterPosition at 1037   8 3 4 2 1 5 11 
+SuperclusterPosition at 1038   8 3 4 2 1 5 11 
+SuperclusterPosition at 1039   8 3 4 2 1 5 11 
+SuperclusterPosition at 1040   8 3 4 2 1 5 11 
+SuperclusterPosition at 1041   8 3 4 2 1 5 11 
+SuperclusterPosition at 1042   8 3 4 2 1 5 11 
+SuperclusterPosition at 1043   8 3 4 2 1 5 11 
+SuperclusterPosition at 1044   8 3 9 2 1 5 10 
+SuperclusterPosition at 1045   8 3 9 2 1 5 10 
+SuperclusterPosition at 1046   0 3 4 2 1 11 5 8 
+SuperclusterPosition at 1047   8 3 4 2 1 9 1 6 7 
+SuperclusterPosition at 1048   0 3 4 2 1 11 5 8 
+SuperclusterPosition at 1049   0 3 4 2 1 11 5 8 
+SuperclusterPosition at 1050   0 3 4 2 1 11 5 8 
+SuperclusterPosition at 1051   0 3 4 2 1 11 5 8 
+SuperclusterPosition at 1052   0 3 4 2 1 11 5 8 
+SuperclusterPosition at 1053   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1054   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1055   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1056   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1057   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1058   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1059   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1060   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1061   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1062   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1063   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1064   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1065   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1066   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1067   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1068   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1069   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1070   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1071   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1072   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1073   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1074   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1075   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1076   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1077   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1078   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1079   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1080   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1081   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1082   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1083   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1084   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1085   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1086   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1087   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1088   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1089   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1090   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1091   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1092   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1093   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1094   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1095   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1096   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1097   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1098   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1099   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1100   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1101   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1102   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1103   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1104   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1105   8 3 4 2 1 9 5 6 7 
+SuperclusterPosition at 1106   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1107   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1108   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1109   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1110   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1111   0 3 4 2 1 9 5 6 8 
+SuperclusterPosition at 1112   8 3 4 2 1 11 5 
+SuperclusterPosition at 1113   8 3 4 2 1 11 5 
+SuperclusterPosition at 1114   8 3 4 2 1 11 5 
+SuperclusterPosition at 1115   8 3 4 2 1 11 5 
+SuperclusterPosition at 1116   8 3 4 2 1 5 10 
+SuperclusterPosition at 1117   8 3 4 2 1 5 10 
+SuperclusterPosition at 1118   8 3 9 2 1 5 6 
+SuperclusterPosition at 1119   8 3 4 2 1 5 10 
+SuperclusterPosition at 1120   8 3 4 2 1 5 10 
+SuperclusterPosition at 1121   8 3 4 2 1 5 10 
+SuperclusterPosition at 1122   8 3 9 2 1 5 6 
+SuperclusterPosition at 1123   8 3 4 2 1 5 10 
+SuperclusterPosition at 1124   8 3 9 2 1 5 6 
+SuperclusterPosition at 1125   8 3 4 2 1 5 10 
+SuperclusterPosition at 1126   8 3 4 2 1 5 10 
+SuperclusterPosition at 1127   8 3 4 2 1 5 10 
+SuperclusterPosition at 1128   8 3 4 2 1 5 10 
+SuperclusterPosition at 1129   8 3 4 2 1 5 10 
+SuperclusterPosition at 1130   8 3 4 2 1 5 10 
+SuperclusterPosition at 1131   8 3 4 2 1 5 10 
+SuperclusterPosition at 1132   8 3 4 2 1 5 10 
+SuperclusterPosition at 1133   8 3 4 2 1 5 10 
+SuperclusterPosition at 1134   8 3 4 2 1 5 10 
+SuperclusterPosition at 1135   8 3 4 2 1 5 10 
+SuperclusterPosition at 1136   8 3 4 2 1 5 10 
+SuperclusterPosition at 1137   8 3 4 2 1 5 10 
+SuperclusterPosition at 1138   8 3 4 2 1 5 10 
+SuperclusterPosition at 1139   8 3 4 2 1 5 10 
+SuperclusterPosition at 1140   8 3 4 2 1 5 6 
+SuperclusterPosition at 1141   8 3 4 2 1 5 6 
+SuperclusterPosition at 1142   8 3 4 2 1 5 6 
+SuperclusterPosition at 1143   8 3 4 2 1 5 6 
+SuperclusterPosition at 1144   8 3 4 2 1 5 6 
+SuperclusterPosition at 1145   8 3 4 2 1 5 6 
+SuperclusterPosition at 1146   8 3 4 2 1 5 6 
+SuperclusterPosition at 1147   8 3 4 2 1 5 6 
+SuperclusterPosition at 1148   8 3 4 2 1 5 6 
+SuperclusterPosition at 1149   8 3 4 2 1 5 6 
+SuperclusterPosition at 1150   8 3 4 2 1 5 6 
+SuperclusterPosition at 1151   8 3 4 2 1 5 6 
+SuperclusterPosition at 1152   8 3 4 2 1 5 10 
+SuperclusterPosition at 1153   8 3 4 2 1 5 10 
+SuperclusterPosition at 1154   8 3 4 2 1 5 10 
+SuperclusterPosition at 1155   8 3 4 2 1 5 10 
+SuperclusterPosition at 1156   8 3 4 2 1 5 10 
+SuperclusterPosition at 1157   8 3 4 2 1 5 10 
+SuperclusterPosition at 1158   8 3 4 2 1 5 10 
+SuperclusterPosition at 1159   8 3 4 2 1 5 10 
+SuperclusterPosition at 1160   8 3 4 2 1 5 10 
+SuperclusterPosition at 1161   8 3 4 2 1 5 10 
+SuperclusterPosition at 1162   8 3 4 2 1 5 10 
+SuperclusterPosition at 1163   8 3 4 2 1 5 10 
+SuperclusterPosition at 1164   8 3 9 2 1 5 6 
+SuperclusterPosition at 1165   8 3 9 2 1 5 6 
+SuperclusterPosition at 1166   8 3 9 2 1 5 6 
+SuperclusterPosition at 1167   8 3 9 2 1 5 6 
+SuperclusterPosition at 1168   8 3 9 2 1 5 6 
+SuperclusterPosition at 1169   8 3 9 2 1 5 6 
+SuperclusterPosition at 1170   8 3 9 2 1 5 6 
+SuperclusterPosition at 1171   8 3 9 2 1 5 6 
+SuperclusterPosition at 1172   8 3 9 2 1 5 6 
+SuperclusterPosition at 1173   8 3 9 2 1 5 6 
+SuperclusterPosition at 1174   8 3 9 2 1 5 6 
+SuperclusterPosition at 1175   8 3 9 2 1 5 6 
+SuperclusterPosition at 1176   8 3 4 2 1 5 10 
+SuperclusterPosition at 1177   8 3 4 2 1 5 10 
+SuperclusterPosition at 1178   8 3 4 2 1 5 10 
+SuperclusterPosition at 1179   8 3 4 2 1 5 10 
+SuperclusterPosition at 1180   8 3 4 2 1 5 10 
+SuperclusterPosition at 1181   8 3 4 2 1 5 10 
+SuperclusterPosition at 1182   8 3 4 2 1 5 10 
+SuperclusterPosition at 1183   8 3 4 2 1 5 10 
+SuperclusterPosition at 1184   8 3 4 2 1 5 10 
+SuperclusterPosition at 1185   8 3 4 2 1 5 10 
+SuperclusterPosition at 1186   8 3 4 2 1 5 10 
+SuperclusterPosition at 1187   8 3 4 2 1 5 10 
+SuperclusterPosition at 1188   8 3 4 2 1 5 10 
+SuperclusterPosition at 1189   8 3 4 2 1 5 10 
+SuperclusterPosition at 1190   8 3 4 2 1 5 10 
+SuperclusterPosition at 1191   8 3 4 2 1 5 10 
+SuperclusterPosition at 1192   8 3 4 2 1 5 10 
+SuperclusterPosition at 1193   8 3 4 2 1 5 10 
+SuperclusterPosition at 1194   8 3 4 2 1 5 10 
+SuperclusterPosition at 1195   8 3 4 2 1 5 10 
+SuperclusterPosition at 1196   8 3 4 2 1 5 10 
+SuperclusterPosition at 1197   8 3 4 2 1 5 10 
+SuperclusterPosition at 1198   8 3 4 2 1 5 10 
+SuperclusterPosition at 1199   8 3 4 2 1 5 10 
+
+results dumb:
+Supercenter count: 15
+SuperclusterPosition at 0   0 1 2 3 4 5 6 
+SuperclusterPosition at 1   7 1 2 3 4 5 6 0 
+SuperclusterPosition at 2   0 1 2 3 4 5 6 
+SuperclusterPosition at 3   0 1 2 3 8 
+SuperclusterPosition at 4   0 3 4 2 1 5 6 
+SuperclusterPosition at 5   0 3 4 2 1 5 6 
+SuperclusterPosition at 6   0 3 4 2 1 5 6 
+SuperclusterPosition at 7   0 3 4 2 1 5 6 
+SuperclusterPosition at 8   0 3 4 2 1 5 6 
+SuperclusterPosition at 9   0 3 4 2 1 5 6 
+SuperclusterPosition at 10   0 3 4 2 1 5 6 
+SuperclusterPosition at 11   0 3 4 2 1 5 6 
+SuperclusterPosition at 12   0 3 4 2 1 5 6 
+SuperclusterPosition at 13   0 3 4 2 1 5 6 
+SuperclusterPosition at 14   0 1 2 3 8 
+SuperclusterPosition at 15   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 16   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 17   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 18   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 19   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 20   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 21   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 22   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 23   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 24   0 3 2 3 1 4 1 6 5 
+SuperclusterPosition at 25   0 1 3 3 4 1 6 
+SuperclusterPosition at 26   7 3 2 3 3 4 1 6 0 5 
+SuperclusterPosition at 27   0 3 2 2 3 8 1 5 
+SuperclusterPosition at 28   7 3 2 2 3 4 1 6 0 5 
+SuperclusterPosition at 29   7 3 9 2 3 4 1 6 0 5 
+SuperclusterPosition at 30   7 3 9 2 3 4 1 6 0 5 
+SuperclusterPosition at 31   7 3 9 2 3 4 1 6 0 5 
+SuperclusterPosition at 32   7 3 9 2 3 4 1 6 0 5 
+SuperclusterPosition at 33   7 3 9 2 3 4 1 6 0 5 
+SuperclusterPosition at 34   7 3 9 2 3 4 1 6 0 5 
+SuperclusterPosition at 35   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 36   0 3 9 2 4 1 6 
+SuperclusterPosition at 37   0 2 9 2 3 4 1 6 5 
+SuperclusterPosition at 38   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 39   7 2 9 2 3 8 1 0 
+SuperclusterPosition at 40   0 3 9 2 3 8 1 
+SuperclusterPosition at 41   0 3 9 2 3 8 1 
+SuperclusterPosition at 42   0 3 9 2 3 8 1 
+SuperclusterPosition at 43   0 3 9 2 3 8 1 
+SuperclusterPosition at 44   0 3 9 2 3 8 1 
+SuperclusterPosition at 45   0 3 9 2 3 8 1 
+SuperclusterPosition at 46   0 3 9 2 3 8 1 
+SuperclusterPosition at 47   0 3 2 3 9 1 6 
+SuperclusterPosition at 48   0 3 9 2 3 8 1 
+SuperclusterPosition at 49   0 3 9 2 3 8 1 
+SuperclusterPosition at 50   0 3 9 2 3 8 1 
+SuperclusterPosition at 51   0 3 9 2 3 8 1 
+SuperclusterPosition at 52   7 3 9 2 3 4 1 6 0 5 
+SuperclusterPosition at 53   0 2 9 2 3 4 1 6 5 
+SuperclusterPosition at 54   7 3 9 2 3 8 1 0 
+SuperclusterPosition at 55   0 3 9 2 3 4 3 6 5 
+SuperclusterPosition at 56   7 2 9 2 3 8 1 0 
+SuperclusterPosition at 57   7 3 9 2 3 8 1 0 
+SuperclusterPosition at 58   0 3 2 3 9 1 6 
+SuperclusterPosition at 59   7 3 9 2 3 8 1 0 
+SuperclusterPosition at 60   7 3 9 2 3 8 1 0 
+SuperclusterPosition at 61   7 3 9 2 3 8 1 0 
+SuperclusterPosition at 62   7 3 9 2 3 4 1 6 0 
+SuperclusterPosition at 63   7 3 9 2 3 4 1 6 0 
+SuperclusterPosition at 64   7 3 9 2 3 4 1 6 0 
+SuperclusterPosition at 65   7 3 9 2 3 4 1 6 0 
+SuperclusterPosition at 66   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 67   7 3 9 2 3 4 1 6 0 
+SuperclusterPosition at 68   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 69   0 3 2 2 4 1 6 
+SuperclusterPosition at 70   0 2 9 2 3 4 1 6 5 
+SuperclusterPosition at 71   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 72   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 73   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 74   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 75   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 76   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 77   0 3 9 2 3 4 1 6 5 
+SuperclusterPosition at 78   7 3 9 2 3 4 1 6 0 
+SuperclusterPosition at 79   0 3 9 2 3 8 1 
+SuperclusterPosition at 80   0 3 2 10 9 1 6 
+SuperclusterPosition at 81   7 10 2 2 3 4 1 6 0 
+SuperclusterPosition at 82   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 83   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 84   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 85   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 86   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 87   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 88   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 89   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 90   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 91   0 3 2 10 4 1 6 
+SuperclusterPosition at 92   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 93   0 10 9 2 3 1 8 
+SuperclusterPosition at 94   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 95   0 10 9 2 3 8 1 
+SuperclusterPosition at 96   0 10 9 2 3 8 1 
+SuperclusterPosition at 97   0 10 9 2 3 8 1 
+SuperclusterPosition at 98   0 10 9 2 3 8 1 
+SuperclusterPosition at 99   0 10 9 2 3 8 1 
+SuperclusterPosition at 100   0 10 9 2 3 8 1 
+SuperclusterPosition at 101   0 10 9 2 3 8 1 
+SuperclusterPosition at 102   0 3 2 10 9 1 6 
+SuperclusterPosition at 103   0 10 9 2 3 8 1 
+SuperclusterPosition at 104   0 10 9 2 3 8 1 
+SuperclusterPosition at 105   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 106   0 10 9 2 3 8 1 
+SuperclusterPosition at 107   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 108   0 10 9 2 3 8 1 
+SuperclusterPosition at 109   0 10 9 2 3 8 1 
+SuperclusterPosition at 110   0 10 9 2 3 8 1 
+SuperclusterPosition at 111   0 10 9 2 3 8 1 
+SuperclusterPosition at 112   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 113   7 3 9 10 4 1 6 0 
+SuperclusterPosition at 114   0 10 4 9 3 6 1 
+SuperclusterPosition at 115   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 116   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 117   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 118   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 119   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 120   0 10 9 2 3 8 1 
+SuperclusterPosition at 121   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 122   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 123   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 124   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 125   0 10 9 2 3 6 1 
+SuperclusterPosition at 126   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 127   7 10 9 2 3 4 1 6 0 
+SuperclusterPosition at 128   0 10 9 2 3 8 1 
+SuperclusterPosition at 129   0 10 9 2 3 8 1 
+SuperclusterPosition at 130   0 10 9 2 3 8 1 
+SuperclusterPosition at 131   0 10 9 2 3 8 1 
+SuperclusterPosition at 132   0 10 9 2 3 4 1 6 
+SuperclusterPosition at 133   0 10 9 2 3 4 3 6 1 
+SuperclusterPosition at 134   0 10 9 2 3 4 3 6 1 
+SuperclusterPosition at 135   0 10 9 2 3 4 3 6 1 
+SuperclusterPosition at 136   0 10 9 2 3 6 3 
+SuperclusterPosition at 137   0 10 9 2 10 4 3 6 1 
+SuperclusterPosition at 138   0 10 9 2 10 4 3 6 1 
+SuperclusterPosition at 139   0 10 9 2 10 4 3 6 1 
+SuperclusterPosition at 140   0 10 9 2 10 4 3 6 1 
+SuperclusterPosition at 141   0 10 9 2 10 4 3 6 1 
+SuperclusterPosition at 142   0 10 9 2 10 4 3 6 1 
+SuperclusterPosition at 143   0 10 9 2 10 4 3 6 1 
+SuperclusterPosition at 144   0 10 9 2 10 4 3 6 1 
+SuperclusterPosition at 145   0 10 9 2 3 4 6 
+SuperclusterPosition at 146   0 10 9 2 4 3 6 
+SuperclusterPosition at 147   0 2 4 9 10 6 3 
+SuperclusterPosition at 148   0 10 9 2 4 1 6 
+SuperclusterPosition at 149   0 10 9 2 4 1 6 
+SuperclusterPosition at 150   0 10 9 2 4 1 6 
+SuperclusterPosition at 151   0 10 9 2 4 1 6 
+SuperclusterPosition at 152   0 10 9 2 4 1 6 
+SuperclusterPosition at 153   0 10 9 2 4 1 6 
+SuperclusterPosition at 154   0 10 9 2 4 1 6 
+SuperclusterPosition at 155   0 10 9 2 4 1 6 
+SuperclusterPosition at 156   0 10 9 2 4 1 6 
+SuperclusterPosition at 157   0 2 4 9 10 6 1 
+SuperclusterPosition at 158   0 2 4 9 10 6 3 
+SuperclusterPosition at 159   0 2 4 9 10 4 10 6 5 
+SuperclusterPosition at 160   0 2 11 9 10 8 1 
+SuperclusterPosition at 161   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 162   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 163   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 164   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 165   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 166   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 167   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 168   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 169   0 2 11 9 10 6 3 
+SuperclusterPosition at 170   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 171   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 172   0 2 11 9 10 4 10 6 5 
+SuperclusterPosition at 173   0 2 11 9 10 8 1 
+SuperclusterPosition at 174   0 2 11 9 10 8 1 
+SuperclusterPosition at 175   0 2 11 9 10 8 1 
+SuperclusterPosition at 176   0 2 11 9 10 8 1 
+SuperclusterPosition at 177   0 2 11 9 10 8 1 
+SuperclusterPosition at 178   0 2 11 9 10 8 1 
+SuperclusterPosition at 179   0 2 11 9 10 8 1 
+SuperclusterPosition at 180   0 2 11 9 10 6 3 
+SuperclusterPosition at 181   0 2 11 9 10 8 1 
+SuperclusterPosition at 182   0 10 9 2 4 1 6 
+SuperclusterPosition at 183   0 10 9 2 4 1 6 
+SuperclusterPosition at 184   0 10 9 2 4 1 6 
+SuperclusterPosition at 185   0 2 11 2 10 4 5 6 
+SuperclusterPosition at 186   0 10 11 2 10 4 5 6 
+SuperclusterPosition at 187   0 10 11 2 10 4 5 6 
+SuperclusterPosition at 188   0 10 11 2 10 4 5 6 
+SuperclusterPosition at 189   0 10 11 2 10 4 5 6 
+SuperclusterPosition at 190   0 10 11 2 10 4 5 6 
+SuperclusterPosition at 191   0 2 4 9 10 6 3 
+SuperclusterPosition at 192   0 2 11 9 10 4 5 6 
+SuperclusterPosition at 193   0 2 11 9 10 4 5 6 
+SuperclusterPosition at 194   0 2 11 9 10 4 5 6 
+SuperclusterPosition at 195   0 2 11 9 10 4 5 6 
+SuperclusterPosition at 196   0 2 11 9 10 4 5 6 
+SuperclusterPosition at 197   0 2 11 9 10 4 5 6 
+SuperclusterPosition at 198   7 2 11 9 10 4 10 6 0 5 
+SuperclusterPosition at 199   0 2 4 9 10 1 6 
+SuperclusterPosition at 200   0 2 4 9 10 1 6 
+SuperclusterPosition at 201   0 2 4 9 10 1 6 
+SuperclusterPosition at 202   0 2 4 9 10 6 3 
+SuperclusterPosition at 203   0 2 4 9 10 1 6 
+SuperclusterPosition at 204   0 2 4 9 10 1 6 
+SuperclusterPosition at 205   0 2 4 9 10 1 6 
+SuperclusterPosition at 206   0 2 4 9 10 1 6 
+SuperclusterPosition at 207   0 2 4 9 10 1 6 
+SuperclusterPosition at 208   0 2 4 9 10 1 6 
+SuperclusterPosition at 209   0 2 4 9 10 1 6 
+SuperclusterPosition at 210   0 2 4 9 10 1 6 
+SuperclusterPosition at 211   7 2 11 2 10 4 10 6 0 5 
+SuperclusterPosition at 212   0 2 4 9 10 1 6 
+SuperclusterPosition at 213   0 2 4 9 10 6 3 
+SuperclusterPosition at 214   0 2 4 9 10 1 6 
+SuperclusterPosition at 215   0 2 4 9 10 1 6 
+SuperclusterPosition at 216   0 2 4 9 10 1 6 
+SuperclusterPosition at 217   0 2 4 9 10 1 6 
+SuperclusterPosition at 218   0 2 4 9 10 1 6 
+SuperclusterPosition at 219   0 2 4 9 10 1 6 
+SuperclusterPosition at 220   0 2 4 9 10 1 6 
+SuperclusterPosition at 221   0 2 4 9 10 1 6 
+SuperclusterPosition at 222   0 2 4 9 10 1 6 
+SuperclusterPosition at 223   0 2 4 9 10 1 6 
+SuperclusterPosition at 224   0 10 9 2 4 1 6 
+SuperclusterPosition at 225   0 2 4 9 10 6 3 
+SuperclusterPosition at 226   0 2 4 9 10 6 3 
+SuperclusterPosition at 227   0 2 4 9 10 6 3 
+SuperclusterPosition at 228   0 2 4 9 10 6 3 
+SuperclusterPosition at 229   0 2 4 9 10 6 3 
+SuperclusterPosition at 230   0 2 4 9 10 6 3 
+SuperclusterPosition at 231   0 10 9 4 2 3 6 
+SuperclusterPosition at 232   0 10 9 4 2 3 6 
+SuperclusterPosition at 233   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 234   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 235   0 10 9 2 4 1 6 
+SuperclusterPosition at 236   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 237   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 238   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 239   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 240   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 241   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 242   0 10 9 4 2 3 6 
+SuperclusterPosition at 243   0 10 9 4 2 3 6 
+SuperclusterPosition at 244   0 10 9 4 2 3 6 
+SuperclusterPosition at 245   0 10 9 4 2 3 6 
+SuperclusterPosition at 246   0 10 9 2 4 1 6 
+SuperclusterPosition at 247   0 10 9 4 2 3 8 
+SuperclusterPosition at 248   0 10 9 4 2 3 8 
+SuperclusterPosition at 249   0 10 9 4 2 3 8 
+SuperclusterPosition at 250   0 10 9 4 2 3 8 
+SuperclusterPosition at 251   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 252   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 253   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 254   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 255   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 256   0 10 9 4 2 3 8 
+SuperclusterPosition at 257   0 10 9 2 4 1 6 
+SuperclusterPosition at 258   0 10 9 4 2 3 8 
+SuperclusterPosition at 259   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 260   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 261   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 262   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 263   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 264   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 265   0 10 9 4 2 3 8 
+SuperclusterPosition at 266   0 10 9 4 2 3 8 
+SuperclusterPosition at 267   0 10 9 4 2 3 8 
+SuperclusterPosition at 268   0 10 9 2 4 1 6 
+SuperclusterPosition at 269   0 10 9 4 2 3 8 
+SuperclusterPosition at 270   0 10 9 4 2 3 8 
+SuperclusterPosition at 271   0 10 9 4 2 3 8 
+SuperclusterPosition at 272   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 273   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 274   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 275   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 276   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 277   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 278   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 279   0 10 9 2 4 1 6 
+SuperclusterPosition at 280   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 281   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 282   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 283   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 284   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 285   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 286   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 287   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 288   0 2 4 9 10 3 8 
+SuperclusterPosition at 289   0 2 4 9 10 3 8 
+SuperclusterPosition at 290   0 10 9 2 4 1 6 
+SuperclusterPosition at 291   0 2 4 9 10 3 8 
+SuperclusterPosition at 292   0 2 4 9 10 8 3 
+SuperclusterPosition at 293   0 2 4 9 10 8 3 
+SuperclusterPosition at 294   0 2 4 9 10 8 3 
+SuperclusterPosition at 295   7 2 4 9 10 8 3 0 
+SuperclusterPosition at 296   7 2 4 9 10 8 3 0 
+SuperclusterPosition at 297   7 2 4 9 10 8 3 0 
+SuperclusterPosition at 298   7 2 4 9 10 8 3 0 
+SuperclusterPosition at 299   7 2 4 9 10 8 3 0 
+SuperclusterPosition at 300   0 2 4 9 10 8 3 
+SuperclusterPosition at 301   0 10 9 2 4 1 6 
+SuperclusterPosition at 302   7 2 4 9 10 8 3 0 
+SuperclusterPosition at 303   7 2 4 9 10 8 3 0 
+SuperclusterPosition at 304   7 2 4 9 10 8 3 0 
+SuperclusterPosition at 305   0 2 4 9 10 8 3 
+SuperclusterPosition at 306   0 2 4 9 10 8 3 
+SuperclusterPosition at 307   0 2 4 9 10 8 3 
+SuperclusterPosition at 308   0 2 4 9 10 8 3 
+SuperclusterPosition at 309   0 2 4 9 10 8 3 
+SuperclusterPosition at 310   0 10 9 4 2 3 8 
+SuperclusterPosition at 311   0 10 9 4 2 3 8 
+SuperclusterPosition at 312   0 10 9 2 4 1 6 
+SuperclusterPosition at 313   0 10 9 2 4 1 6 
+SuperclusterPosition at 314   0 10 9 4 2 3 8 
+SuperclusterPosition at 315   0 10 9 4 2 3 8 
+SuperclusterPosition at 316   0 10 9 4 2 3 8 
+SuperclusterPosition at 317   0 10 9 4 2 3 8 
+SuperclusterPosition at 318   0 10 9 4 2 3 8 
+SuperclusterPosition at 319   0 10 9 4 2 3 8 
+SuperclusterPosition at 320   0 10 9 4 2 3 8 
+SuperclusterPosition at 321   0 10 9 4 2 3 8 
+SuperclusterPosition at 322   0 10 9 4 2 3 8 
+SuperclusterPosition at 323   0 10 9 4 2 3 8 
+SuperclusterPosition at 324   0 10 9 2 4 1 6 
+SuperclusterPosition at 325   0 10 9 4 2 3 8 
+SuperclusterPosition at 326   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 327   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 328   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 329   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 330   7 10 9 4 2 3 8 0 
+SuperclusterPosition at 331   0 10 9 4 2 3 8 
+SuperclusterPosition at 332   0 10 9 4 2 3 8 
+SuperclusterPosition at 333   0 10 9 4 2 3 8 
+SuperclusterPosition at 334   0 10 9 4 2 3 8 
+SuperclusterPosition at 335   0 10 9 2 4 1 6 
+SuperclusterPosition at 336   0 10 9 4 2 3 8 
+SuperclusterPosition at 337   0 10 9 4 2 3 8 
+SuperclusterPosition at 338   0 10 9 4 2 3 8 
+SuperclusterPosition at 339   0 10 9 4 2 3 8 
+SuperclusterPosition at 340   0 10 9 4 2 3 8 
+SuperclusterPosition at 341   0 10 9 4 2 3 8 
+SuperclusterPosition at 342   0 10 9 4 2 3 8 
+SuperclusterPosition at 343   0 10 9 4 2 3 8 
+SuperclusterPosition at 344   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 345   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 346   0 10 9 2 4 1 6 
+SuperclusterPosition at 347   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 348   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 349   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 350   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 351   0 2 4 9 10 3 8 
+SuperclusterPosition at 352   0 2 4 9 10 3 8 
+SuperclusterPosition at 353   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 354   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 355   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 356   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 357   0 10 11 2 4 1 6 
+SuperclusterPosition at 358   7 2 11 9 10 4 3 8 0 
+SuperclusterPosition at 359   0 2 11 9 10 4 1 8 
+SuperclusterPosition at 360   0 2 11 9 10 4 1 8 
+SuperclusterPosition at 361   0 2 11 9 10 4 1 8 
+SuperclusterPosition at 362   0 2 11 9 10 4 3 8 
+SuperclusterPosition at 363   0 2 11 9 10 4 3 8 
+SuperclusterPosition at 364   0 2 11 9 10 8 3 
+SuperclusterPosition at 365   0 2 11 9 10 8 3 
+SuperclusterPosition at 366   0 2 11 9 10 3 8 
+SuperclusterPosition at 367   0 2 11 9 10 3 8 
+SuperclusterPosition at 368   0 10 9 2 4 1 6 
+SuperclusterPosition at 369   0 2 11 9 10 3 8 
+SuperclusterPosition at 370   0 2 11 9 10 3 8 
+SuperclusterPosition at 371   0 2 11 9 10 1 8 
+SuperclusterPosition at 372   0 2 11 9 10 1 8 
+SuperclusterPosition at 373   0 2 11 9 10 1 8 
+SuperclusterPosition at 374   0 2 11 9 10 1 8 
+SuperclusterPosition at 375   0 2 11 9 10 1 8 
+SuperclusterPosition at 376   0 2 11 9 10 1 8 
+SuperclusterPosition at 377   0 2 11 9 10 1 8 
+SuperclusterPosition at 378   0 2 11 9 10 1 8 
+SuperclusterPosition at 379   0 10 9 2 4 1 6 
+SuperclusterPosition at 380   0 2 11 9 10 1 8 
+SuperclusterPosition at 381   0 2 11 9 10 1 8 
+SuperclusterPosition at 382   0 2 11 9 10 1 8 
+SuperclusterPosition at 383   0 2 11 9 10 1 8 
+SuperclusterPosition at 384   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 385   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 386   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 387   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 388   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 389   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 390   0 10 9 2 4 1 6 
+SuperclusterPosition at 391   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 392   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 393   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 394   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 395   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 396   7 2 11 9 10 3 8 0 
+SuperclusterPosition at 397   0 2 11 9 10 1 8 
+SuperclusterPosition at 398   0 2 11 9 10 1 8 
+SuperclusterPosition at 399   0 2 11 9 10 1 8 
+SuperclusterPosition at 400   0 2 11 9 10 1 8 
+SuperclusterPosition at 401   0 10 9 2 4 1 6 
+SuperclusterPosition at 402   0 2 11 9 10 1 8 
+SuperclusterPosition at 403   0 2 11 9 10 1 8 
+SuperclusterPosition at 404   0 2 11 9 10 1 8 
+SuperclusterPosition at 405   0 2 11 9 10 1 8 
+SuperclusterPosition at 406   0 2 11 9 10 1 8 
+SuperclusterPosition at 407   0 2 11 9 10 3 8 
+SuperclusterPosition at 408   0 2 11 9 10 1 8 
+SuperclusterPosition at 409   0 2 11 9 10 1 8 
+SuperclusterPosition at 410   0 2 11 9 10 3 8 
+SuperclusterPosition at 411   0 2 11 9 10 3 8 
+SuperclusterPosition at 412   0 10 9 2 4 3 6 
+SuperclusterPosition at 413   0 2 11 9 10 3 8 
+SuperclusterPosition at 414   0 2 11 9 10 3 8 
+SuperclusterPosition at 415   0 2 11 9 10 3 8 
+SuperclusterPosition at 416   0 2 11 9 10 3 8 
+SuperclusterPosition at 417   0 2 11 9 10 3 8 
+SuperclusterPosition at 418   0 2 11 9 10 3 8 
+SuperclusterPosition at 419   0 2 11 9 10 3 8 
+SuperclusterPosition at 420   0 2 11 9 10 3 8 
+SuperclusterPosition at 421   0 2 11 9 10 8 1 
+SuperclusterPosition at 422   0 2 11 9 10 8 1 
+SuperclusterPosition at 423   7 10 9 2 4 3 6 0 
+SuperclusterPosition at 424   0 10 9 2 4 1 6 
+SuperclusterPosition at 425   0 2 11 9 10 8 1 
+SuperclusterPosition at 426   0 2 11 9 10 8 3 0 
+SuperclusterPosition at 427   0 2 11 9 10 8 3 0 
+SuperclusterPosition at 428   0 2 11 9 10 1 8 
+SuperclusterPosition at 429   0 2 11 9 10 1 8 
+SuperclusterPosition at 430   0 2 11 9 10 1 8 
+SuperclusterPosition at 431   0 2 11 9 10 1 8 
+SuperclusterPosition at 432   0 2 11 9 10 1 8 
+SuperclusterPosition at 433   0 2 11 9 10 1 8 
+SuperclusterPosition at 434   0 2 11 9 10 1 8 
+SuperclusterPosition at 435   0 10 9 2 4 1 6 
+SuperclusterPosition at 436   0 2 11 9 10 1 8 
+SuperclusterPosition at 437   0 2 11 9 10 1 8 
+SuperclusterPosition at 438   0 2 11 9 10 3 8 
+SuperclusterPosition at 439   0 2 11 9 10 3 8 
+SuperclusterPosition at 440   0 2 11 9 10 8 1 
+SuperclusterPosition at 441   0 2 11 9 10 8 1 
+SuperclusterPosition at 442   0 2 4 9 10 3 8 
+SuperclusterPosition at 443   0 2 4 9 10 3 8 
+SuperclusterPosition at 444   0 2 4 9 10 3 8 
+SuperclusterPosition at 445   0 2 11 9 10 8 3 
+SuperclusterPosition at 446   0 10 9 2 4 3 6 
+SuperclusterPosition at 447   0 2 11 9 10 8 3 
+SuperclusterPosition at 448   0 2 11 9 10 8 3 
+SuperclusterPosition at 449   0 2 11 9 10 8 3 
+SuperclusterPosition at 450   7 2 11 9 10 8 10 1 4 0 
+SuperclusterPosition at 451   0 2 4 9 10 3 8 
+SuperclusterPosition at 452   0 2 4 9 10 3 8 
+SuperclusterPosition at 453   0 2 4 9 10 3 8 
+SuperclusterPosition at 454   0 2 4 9 10 3 8 
+SuperclusterPosition at 455   0 2 4 9 10 3 8 
+SuperclusterPosition at 456   0 2 4 9 10 3 8 
+SuperclusterPosition at 457   0 10 9 2 4 3 6 
+SuperclusterPosition at 458   0 2 4 9 10 3 8 
+SuperclusterPosition at 459   0 2 4 9 10 3 8 
+SuperclusterPosition at 460   0 2 4 9 10 3 8 
+SuperclusterPosition at 461   0 2 4 9 10 3 8 
+SuperclusterPosition at 462   0 2 4 9 10 3 8 
+SuperclusterPosition at 463   0 2 4 9 10 3 8 
+SuperclusterPosition at 464   0 2 4 9 10 3 8 
+SuperclusterPosition at 465   0 2 4 9 10 3 8 
+SuperclusterPosition at 466   0 2 4 9 10 3 8 
+SuperclusterPosition at 467   0 2 4 9 10 3 8 
+SuperclusterPosition at 468   0 10 9 2 4 3 6 
+SuperclusterPosition at 469   0 2 4 9 10 3 8 
+SuperclusterPosition at 470   0 2 4 9 10 3 8 
+SuperclusterPosition at 471   0 2 4 9 10 3 8 
+SuperclusterPosition at 472   0 2 4 9 10 3 8 
+SuperclusterPosition at 473   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 474   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 475   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 476   7 2 4 9 10 3 8 0 
+SuperclusterPosition at 477   0 2 4 9 10 1 8 
+SuperclusterPosition at 478   0 2 4 9 10 1 8 
+SuperclusterPosition at 479   0 10 9 2 4 1 6 
+SuperclusterPosition at 480   0 2 4 9 10 1 8 
+SuperclusterPosition at 481   0 2 4 9 10 1 8 
+SuperclusterPosition at 482   0 2 4 9 10 1 8 
+SuperclusterPosition at 483   0 2 4 9 10 1 8 
+SuperclusterPosition at 484   0 2 4 9 10 1 8 
+SuperclusterPosition at 485   0 2 4 9 10 1 8 
+SuperclusterPosition at 486   0 2 4 9 10 1 8 
+SuperclusterPosition at 487   0 2 4 9 10 1 8 
+SuperclusterPosition at 488   0 2 4 9 10 1 8 
+SuperclusterPosition at 489   0 2 4 9 10 1 8 
+SuperclusterPosition at 490   0 10 9 2 4 1 6 
+SuperclusterPosition at 491   0 2 4 9 10 1 8 
+SuperclusterPosition at 492   0 2 4 9 10 1 8 
+SuperclusterPosition at 493   0 2 4 9 10 1 8 
+SuperclusterPosition at 494   0 2 4 9 10 1 8 
+SuperclusterPosition at 495   7 2 11 2 10 4 3 8 0 5 
+SuperclusterPosition at 496   7 2 11 2 10 4 3 8 0 5 
+SuperclusterPosition at 497   7 2 11 2 10 4 3 8 0 5 
+SuperclusterPosition at 498   7 2 11 2 10 4 3 8 0 5 
+SuperclusterPosition at 499   7 2 11 2 10 4 3 8 0 5 
+SuperclusterPosition at 500   7 2 11 2 10 4 3 8 0 5 
+SuperclusterPosition at 501   0 10 9 2 4 1 6 
+SuperclusterPosition at 502   0 2 4 9 10 1 8 
+SuperclusterPosition at 503   0 2 4 9 10 1 8 
+SuperclusterPosition at 504   0 2 4 9 10 1 8 
+SuperclusterPosition at 505   0 2 4 9 10 1 8 
+SuperclusterPosition at 506   0 2 4 9 10 1 8 
+SuperclusterPosition at 507   0 2 4 9 10 1 8 
+SuperclusterPosition at 508   0 2 4 9 10 1 8 
+SuperclusterPosition at 509   0 2 4 9 10 1 8 
+SuperclusterPosition at 510   0 2 4 9 10 1 8 
+SuperclusterPosition at 511   0 2 4 9 10 1 8 
+SuperclusterPosition at 512   0 10 9 4 2 1 6 
+SuperclusterPosition at 513   0 2 4 9 10 1 8 
+SuperclusterPosition at 514   0 2 4 9 10 1 8 
+SuperclusterPosition at 515   0 2 4 9 10 1 8 
+SuperclusterPosition at 516   0 2 4 9 10 1 8 
+SuperclusterPosition at 517   0 2 4 9 10 1 8 
+SuperclusterPosition at 518   0 2 4 9 10 1 8 
+SuperclusterPosition at 519   0 2 4 9 10 1 8 
+SuperclusterPosition at 520   0 2 4 9 10 1 8 
+SuperclusterPosition at 521   0 2 4 9 10 1 8 
+SuperclusterPosition at 522   0 2 4 9 10 1 8 
+SuperclusterPosition at 523   0 10 9 4 2 1 6 
+SuperclusterPosition at 524   0 2 4 9 10 1 8 
+SuperclusterPosition at 525   0 2 4 9 10 1 8 
+SuperclusterPosition at 526   0 2 4 9 10 1 8 
+SuperclusterPosition at 527   0 2 4 9 10 1 8 
+SuperclusterPosition at 528   0 2 4 9 10 1 8 
+SuperclusterPosition at 529   0 2 4 9 10 1 8 
+SuperclusterPosition at 530   0 2 4 9 10 1 8 
+SuperclusterPosition at 531   0 2 4 9 10 1 8 
+SuperclusterPosition at 532   0 2 4 9 10 1 8 
+SuperclusterPosition at 533   0 2 4 9 10 1 8 
+SuperclusterPosition at 534   0 10 9 2 4 1 6 
+SuperclusterPosition at 535   0 10 9 4 2 1 6 
+SuperclusterPosition at 536   0 2 4 11 10 1 8 
+SuperclusterPosition at 537   0 2 4 11 10 1 8 
+SuperclusterPosition at 538   0 2 4 11 10 1 8 
+SuperclusterPosition at 539   0 2 4 11 10 1 8 
+SuperclusterPosition at 540   0 2 4 11 10 1 8 
+SuperclusterPosition at 541   0 2 4 11 10 1 8 
+SuperclusterPosition at 542   0 2 4 11 10 1 8 
+SuperclusterPosition at 543   0 2 4 11 10 1 8 
+SuperclusterPosition at 544   0 2 4 11 10 1 8 
+SuperclusterPosition at 545   0 2 4 11 10 1 8 
+SuperclusterPosition at 546   0 10 9 4 2 1 6 
+SuperclusterPosition at 547   0 2 4 11 10 1 8 
+SuperclusterPosition at 548   0 2 4 11 10 1 8 
+SuperclusterPosition at 549   0 2 4 11 10 1 8 
+SuperclusterPosition at 550   0 2 4 11 10 1 8 
+SuperclusterPosition at 551   0 2 4 11 10 1 8 
+SuperclusterPosition at 552   0 2 4 11 10 1 8 
+SuperclusterPosition at 553   0 2 4 11 10 1 8 
+SuperclusterPosition at 554   0 2 4 11 10 1 8 
+SuperclusterPosition at 555   0 2 4 11 10 1 8 
+SuperclusterPosition at 556   0 2 4 11 10 1 8 
+SuperclusterPosition at 557   0 10 9 4 2 1 6 
+SuperclusterPosition at 558   7 2 4 9 10 1 8 0 
+SuperclusterPosition at 559   0 2 4 11 10 1 8 
+SuperclusterPosition at 560   0 2 4 11 10 1 8 
+SuperclusterPosition at 561   0 2 4 11 10 1 8 
+SuperclusterPosition at 562   7 2 4 9 10 1 8 0 
+SuperclusterPosition at 563   7 2 4 9 10 1 8 0 
+SuperclusterPosition at 564   7 2 4 9 10 1 8 0 
+SuperclusterPosition at 565   7 2 4 9 10 1 8 0 
+SuperclusterPosition at 566   7 2 4 9 10 1 8 0 
+SuperclusterPosition at 567   7 2 4 9 10 1 8 0 
+SuperclusterPosition at 568   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 569   7 2 4 9 10 1 8 0 
+SuperclusterPosition at 570   7 2 4 9 10 1 8 0 
+SuperclusterPosition at 571   0 2 4 9 10 1 8 
+SuperclusterPosition at 572   0 2 4 9 10 1 8 
+SuperclusterPosition at 573   0 2 4 9 10 1 8 
+SuperclusterPosition at 574   0 2 4 9 10 1 8 
+SuperclusterPosition at 575   0 2 4 9 10 1 8 
+SuperclusterPosition at 576   0 2 4 9 10 1 8 
+SuperclusterPosition at 577   0 2 4 9 10 1 8 
+SuperclusterPosition at 578   0 2 4 9 10 1 8 
+SuperclusterPosition at 579   0 10 9 4 2 3 6 
+SuperclusterPosition at 580   0 2 4 11 10 1 8 
+SuperclusterPosition at 581   0 2 4 11 10 1 8 
+SuperclusterPosition at 582   0 2 4 11 10 1 8 
+SuperclusterPosition at 583   0 2 4 11 10 1 8 
+SuperclusterPosition at 584   0 2 4 9 10 1 6 
+SuperclusterPosition at 585   0 2 4 9 10 1 6 
+SuperclusterPosition at 586   0 2 4 9 10 1 6 
+SuperclusterPosition at 587   0 2 4 9 10 1 6 
+SuperclusterPosition at 588   0 2 4 9 10 1 6 
+SuperclusterPosition at 589   0 2 4 9 10 1 6 
+SuperclusterPosition at 590   0 10 9 4 2 3 6 
+SuperclusterPosition at 591   0 2 4 9 10 1 6 
+SuperclusterPosition at 592   0 2 4 9 10 1 6 
+SuperclusterPosition at 593   0 2 4 9 10 1 6 
+SuperclusterPosition at 594   0 2 4 9 10 1 6 
+SuperclusterPosition at 595   0 2 4 9 10 1 6 
+SuperclusterPosition at 596   0 2 4 9 10 1 6 
+SuperclusterPosition at 597   0 2 4 11 10 1 6 
+SuperclusterPosition at 598   0 2 4 11 10 1 6 
+SuperclusterPosition at 599   0 2 4 11 10 1 6 
+SuperclusterPosition at 600   0 2 4 11 10 1 6 
+SuperclusterPosition at 601   7 10 9 4 2 3 6 0 
+SuperclusterPosition at 602   0 2 4 11 10 1 6 
+SuperclusterPosition at 603   0 2 4 11 10 1 6 
+SuperclusterPosition at 604   0 2 4 11 10 1 6 
+SuperclusterPosition at 605   0 2 4 11 10 1 6 
+SuperclusterPosition at 606   0 2 4 11 10 1 6 
+SuperclusterPosition at 607   0 2 4 11 10 1 6 
+SuperclusterPosition at 608   0 2 4 11 10 1 6 
+SuperclusterPosition at 609   0 2 4 11 10 1 6 
+SuperclusterPosition at 610   0 2 4 11 10 1 6 
+SuperclusterPosition at 611   0 2 4 11 10 1 6 
+SuperclusterPosition at 612   0 10 9 4 2 3 6 
+SuperclusterPosition at 613   0 2 4 11 10 1 6 
+SuperclusterPosition at 614   0 2 4 11 10 1 6 
+SuperclusterPosition at 615   0 2 4 11 10 1 6 
+SuperclusterPosition at 616   0 2 4 11 10 1 6 
+SuperclusterPosition at 617   0 2 4 11 10 1 6 
+SuperclusterPosition at 618   0 2 4 11 10 1 6 
+SuperclusterPosition at 619   0 2 4 11 10 1 6 
+SuperclusterPosition at 620   0 2 4 11 10 1 6 
+SuperclusterPosition at 621   0 2 4 11 10 1 6 
+SuperclusterPosition at 622   0 2 4 11 10 1 6 
+SuperclusterPosition at 623   0 10 9 4 2 3 6 
+SuperclusterPosition at 624   0 2 4 11 10 1 6 
+SuperclusterPosition at 625   0 2 4 11 10 1 6 
+SuperclusterPosition at 626   0 2 4 11 10 1 6 
+SuperclusterPosition at 627   0 2 4 11 10 1 6 
+SuperclusterPosition at 628   0 2 4 11 10 1 6 
+SuperclusterPosition at 629   0 2 4 11 10 1 6 
+SuperclusterPosition at 630   0 2 4 11 10 1 6 
+SuperclusterPosition at 631   0 2 4 11 10 1 6 
+SuperclusterPosition at 632   0 2 4 11 10 1 6 
+SuperclusterPosition at 633   0 2 4 11 10 1 6 
+SuperclusterPosition at 634   0 10 9 4 2 3 6 
+SuperclusterPosition at 635   0 2 4 11 10 1 6 
+SuperclusterPosition at 636   0 2 4 11 10 1 6 
+SuperclusterPosition at 637   7 2 11 9 10 3 4 0 6 
+SuperclusterPosition at 638   0 2 11 9 10 1 8 
+SuperclusterPosition at 639   0 2 11 9 10 3 8 5 
+SuperclusterPosition at 640   0 2 11 9 10 1 8 
+SuperclusterPosition at 641   0 2 11 9 10 1 8 
+SuperclusterPosition at 642   0 2 11 9 10 1 8 
+SuperclusterPosition at 643   0 2 11 9 10 1 8 
+SuperclusterPosition at 644   0 2 11 9 10 1 8 
+SuperclusterPosition at 645   7 10 9 2 4 1 6 0 
+SuperclusterPosition at 646   0 10 9 11 2 1 6 
+SuperclusterPosition at 647   0 2 11 9 10 1 8 
+SuperclusterPosition at 648   0 2 11 9 10 1 8 
+SuperclusterPosition at 649   0 2 11 9 10 1 8 
+SuperclusterPosition at 650   0 2 11 9 10 1 8 
+SuperclusterPosition at 651   0 2 11 9 10 1 8 
+SuperclusterPosition at 652   0 2 11 9 10 1 8 
+SuperclusterPosition at 653   0 2 11 9 10 1 8 
+SuperclusterPosition at 654   0 2 11 9 10 1 8 
+SuperclusterPosition at 655   0 2 11 9 10 1 8 
+SuperclusterPosition at 656   0 2 11 9 10 1 8 
+SuperclusterPosition at 657   0 10 9 11 2 1 6 
+SuperclusterPosition at 658   0 2 11 9 10 1 8 
+SuperclusterPosition at 659   0 2 11 9 10 1 8 
+SuperclusterPosition at 660   0 2 11 9 10 1 8 
+SuperclusterPosition at 661   0 2 11 9 10 1 8 
+SuperclusterPosition at 662   0 2 11 9 10 1 8 
+SuperclusterPosition at 663   0 2 11 9 10 1 8 
+SuperclusterPosition at 664   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 665   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 666   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 667   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 668   0 10 9 11 2 1 6 
+SuperclusterPosition at 669   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 670   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 671   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 672   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 673   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 674   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 675   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 676   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 677   7 2 11 9 10 4 1 6 0 
+SuperclusterPosition at 678   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 679   0 10 9 11 2 1 6 
+SuperclusterPosition at 680   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 681   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 682   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 683   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 684   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 685   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 686   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 687   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 688   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 689   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 690   0 10 9 11 2 1 6 
+SuperclusterPosition at 691   7 2 11 9 10 4 1 6 0 
+SuperclusterPosition at 692   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 693   7 2 11 9 10 4 1 6 0 
+SuperclusterPosition at 694   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 695   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 696   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 697   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 698   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 699   0 2 11 9 10 4 3 6 5 
+SuperclusterPosition at 700   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 701   0 10 9 11 2 1 6 
+SuperclusterPosition at 702   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 703   0 2 11 9 10 4 1 6 
+SuperclusterPosition at 704   0 10 11 2 4 1 6 
+SuperclusterPosition at 705   0 10 11 2 4 1 6 
+SuperclusterPosition at 706   0 10 11 2 4 1 6 
+SuperclusterPosition at 707   0 10 11 2 4 1 6 
+SuperclusterPosition at 708   0 10 11 2 4 1 6 
+SuperclusterPosition at 709   0 10 11 2 4 1 6 
+SuperclusterPosition at 710   0 10 11 2 4 1 6 
+SuperclusterPosition at 711   0 10 11 2 4 1 6 
+SuperclusterPosition at 712   0 10 11 4 2 1 6 
+SuperclusterPosition at 713   0 10 11 2 4 1 6 
+SuperclusterPosition at 714   0 10 11 2 4 1 6 
+SuperclusterPosition at 715   0 10 11 2 4 1 6 
+SuperclusterPosition at 716   0 10 11 2 4 1 6 
+SuperclusterPosition at 717   0 2 4 9 10 8 1 
+SuperclusterPosition at 718   0 2 4 9 10 8 1 
+SuperclusterPosition at 719   0 2 4 9 10 8 1 
+SuperclusterPosition at 720   0 2 4 9 10 8 1 
+SuperclusterPosition at 721   0 2 4 9 10 8 1 
+SuperclusterPosition at 722   0 2 4 9 10 8 1 
+SuperclusterPosition at 723   0 10 9 4 2 1 6 
+SuperclusterPosition at 724   0 2 4 9 10 8 1 
+SuperclusterPosition at 725   0 2 4 9 10 8 1 
+SuperclusterPosition at 726   0 2 4 9 10 8 1 
+SuperclusterPosition at 727   0 2 4 9 10 12 1 6 
+SuperclusterPosition at 728   0 2 4 9 10 12 1 6 
+SuperclusterPosition at 729   0 2 4 9 10 12 1 6 
+SuperclusterPosition at 730   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 731   0 2 4 9 10 8 1 0 
+SuperclusterPosition at 732   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 733   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 734   0 10 9 4 2 1 6 
+SuperclusterPosition at 735   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 736   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 737   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 738   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 739   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 740   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 741   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 742   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 743   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 744   0 2 4 9 10 8 1 
+SuperclusterPosition at 745   0 10 9 4 2 1 6 
+SuperclusterPosition at 746   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 747   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 748   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 749   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 750   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 751   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 752   0 2 4 9 10 8 1 
+SuperclusterPosition at 753   0 2 4 9 10 8 1 
+SuperclusterPosition at 754   0 2 4 9 10 8 1 
+SuperclusterPosition at 755   0 2 4 9 10 8 1 
+SuperclusterPosition at 756   7 10 11 2 12 1 6 0 
+SuperclusterPosition at 757   0 10 9 4 2 1 6 
+SuperclusterPosition at 758   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 759   0 2 4 9 10 8 1 
+SuperclusterPosition at 760   0 2 4 9 10 8 1 
+SuperclusterPosition at 761   0 2 4 9 10 8 1 
+SuperclusterPosition at 762   0 2 4 9 10 8 1 
+SuperclusterPosition at 763   0 2 4 9 10 8 1 
+SuperclusterPosition at 764   0 2 4 9 10 8 1 
+SuperclusterPosition at 765   0 2 4 9 10 8 1 
+SuperclusterPosition at 766   0 2 4 9 10 8 1 
+SuperclusterPosition at 767   0 2 4 9 10 8 1 
+SuperclusterPosition at 768   0 10 9 4 2 1 6 
+SuperclusterPosition at 769   0 2 4 9 10 8 1 
+SuperclusterPosition at 770   0 2 4 9 10 8 1 
+SuperclusterPosition at 771   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 772   0 2 4 9 10 8 1 
+SuperclusterPosition at 773   0 2 4 9 10 8 1 
+SuperclusterPosition at 774   0 2 4 9 10 8 1 
+SuperclusterPosition at 775   0 2 4 9 10 8 1 
+SuperclusterPosition at 776   0 2 4 9 10 8 1 
+SuperclusterPosition at 777   0 2 4 9 10 8 1 
+SuperclusterPosition at 778   0 2 4 9 10 8 1 
+SuperclusterPosition at 779   0 10 9 4 2 1 6 
+SuperclusterPosition at 780   0 2 4 9 10 6 1 
+SuperclusterPosition at 781   0 2 4 9 10 6 1 
+SuperclusterPosition at 782   0 2 4 9 10 6 1 
+SuperclusterPosition at 783   0 2 4 9 10 6 1 
+SuperclusterPosition at 784   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 785   0 2 4 9 10 6 1 
+SuperclusterPosition at 786   7 2 4 9 10 6 1 0 
+SuperclusterPosition at 787   7 2 4 9 10 6 1 0 
+SuperclusterPosition at 788   7 2 4 9 10 6 1 0 
+SuperclusterPosition at 789   7 2 4 9 10 6 1 0 
+SuperclusterPosition at 790   0 10 9 4 2 1 6 
+SuperclusterPosition at 791   7 2 4 9 10 6 1 0 
+SuperclusterPosition at 792   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 793   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 794   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 795   7 2 4 9 10 8 1 0 
+SuperclusterPosition at 796   0 2 4 9 10 8 1 
+SuperclusterPosition at 797   0 2 11 9 10 12 3 6 5 
+SuperclusterPosition at 798   0 2 4 9 10 1 6 
+SuperclusterPosition at 799   0 2 4 9 10 1 6 
+SuperclusterPosition at 800   0 2 4 9 10 1 6 
+SuperclusterPosition at 801   0 10 9 4 2 1 6 
+SuperclusterPosition at 802   0 2 4 9 10 1 6 
+SuperclusterPosition at 803   0 2 4 9 10 1 6 
+SuperclusterPosition at 804   0 2 4 9 10 1 6 
+SuperclusterPosition at 805   0 2 4 9 10 1 6 
+SuperclusterPosition at 806   0 2 4 9 10 1 6 
+SuperclusterPosition at 807   0 2 4 9 10 8 3 5 
+SuperclusterPosition at 808   0 2 8 9 3 
+SuperclusterPosition at 809   0 2 8 9 3 
+SuperclusterPosition at 810   0 2 12 9 3 1 6 
+SuperclusterPosition at 811   7 2 11 9 10 6 3 5 0 12 
+SuperclusterPosition at 812   0 10 9 4 2 1 6 
+SuperclusterPosition at 813   7 2 11 9 10 6 3 5 0 12 
+SuperclusterPosition at 814   7 2 11 9 10 6 3 5 0 12 
+SuperclusterPosition at 815   7 2 11 9 10 6 3 5 0 12 
+SuperclusterPosition at 816   7 2 11 9 10 6 3 5 0 12 
+SuperclusterPosition at 817   0 2 4 9 10 8 1 
+SuperclusterPosition at 818   0 2 4 9 10 8 1 
+SuperclusterPosition at 819   0 2 4 9 10 8 1 
+SuperclusterPosition at 820   0 2 4 9 10 6 1 
+SuperclusterPosition at 821   0 2 4 9 10 6 1 
+SuperclusterPosition at 822   0 2 4 9 10 6 1 
+SuperclusterPosition at 823   0 10 9 4 2 1 6 
+SuperclusterPosition at 824   0 2 12 9 10 1 6 
+SuperclusterPosition at 825   0 2 12 9 10 1 6 
+SuperclusterPosition at 826   0 2 12 9 10 1 6 
+SuperclusterPosition at 827   0 2 12 9 10 1 6 
+SuperclusterPosition at 828   0 2 12 9 10 1 6 
+SuperclusterPosition at 829   0 2 12 9 10 1 6 
+SuperclusterPosition at 830   0 2 12 9 10 1 6 
+SuperclusterPosition at 831   0 2 12 9 10 1 6 
+SuperclusterPosition at 832   0 2 12 9 10 1 6 
+SuperclusterPosition at 833   0 2 12 9 10 1 6 
+SuperclusterPosition at 834   0 10 9 4 2 1 6 
+SuperclusterPosition at 835   0 2 12 9 10 1 6 
+SuperclusterPosition at 836   0 2 12 9 10 1 6 
+SuperclusterPosition at 837   0 2 12 9 10 1 6 
+SuperclusterPosition at 838   0 2 12 9 10 1 6 
+SuperclusterPosition at 839   0 2 12 9 10 1 6 
+SuperclusterPosition at 840   0 2 12 9 10 1 6 
+SuperclusterPosition at 841   0 2 12 9 10 1 6 
+SuperclusterPosition at 842   0 2 12 9 10 1 6 
+SuperclusterPosition at 843   0 2 12 9 10 1 6 
+SuperclusterPosition at 844   0 2 12 9 10 1 6 
+SuperclusterPosition at 845   0 10 9 4 2 1 6 
+SuperclusterPosition at 846   0 2 12 9 10 1 6 
+SuperclusterPosition at 847   0 2 12 9 10 1 6 
+SuperclusterPosition at 848   0 2 12 9 10 1 6 
+SuperclusterPosition at 849   0 2 12 9 10 1 6 
+SuperclusterPosition at 850   0 2 4 9 10 1 6 0 
+SuperclusterPosition at 851   0 2 4 9 10 1 6 
+SuperclusterPosition at 852   0 2 12 9 10 1 6 
+SuperclusterPosition at 853   0 2 12 9 10 1 6 
+SuperclusterPosition at 854   0 2 12 9 10 1 6 
+SuperclusterPosition at 855   0 2 12 9 10 1 6 
+SuperclusterPosition at 856   0 10 9 4 2 1 6 
+SuperclusterPosition at 857   0 2 12 9 10 1 6 
+SuperclusterPosition at 858   0 2 12 9 10 1 6 
+SuperclusterPosition at 859   0 2 12 9 10 1 6 
+SuperclusterPosition at 860   0 2 12 9 10 1 6 
+SuperclusterPosition at 861   0 2 12 9 10 1 6 
+SuperclusterPosition at 862   0 2 12 9 10 1 6 
+SuperclusterPosition at 863   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 864   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 865   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 866   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 867   7 10 11 2 12 1 6 0 
+SuperclusterPosition at 868   0 2 11 9 10 12 6 1 
+SuperclusterPosition at 869   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 870   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 871   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 872   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 873   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 874   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 875   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 876   0 2 11 9 10 12 1 6 
+SuperclusterPosition at 877   0 2 4 9 10 8 1 
+SuperclusterPosition at 878   0 2 4 9 10 8 1 
+SuperclusterPosition at 879   0 2 11 9 10 12 6 1 
+SuperclusterPosition at 880   0 2 4 9 10 8 1 
+SuperclusterPosition at 881   0 2 4 9 10 8 1 
+SuperclusterPosition at 882   0 2 4 9 10 8 1 
+SuperclusterPosition at 883   0 2 4 9 10 8 1 
+SuperclusterPosition at 884   0 2 4 9 10 8 1 
+SuperclusterPosition at 885   0 2 4 9 10 8 1 
+SuperclusterPosition at 886   0 2 4 9 10 8 1 
+SuperclusterPosition at 887   0 2 4 9 10 1 8 
+SuperclusterPosition at 888   0 2 4 9 10 1 8 
+SuperclusterPosition at 889   0 2 12 9 10 1 6 
+SuperclusterPosition at 890   0 2 11 2 10 12 6 1 
+SuperclusterPosition at 891   0 2 12 9 10 1 6 
+SuperclusterPosition at 892   0 2 12 9 10 1 6 
+SuperclusterPosition at 893   0 2 12 9 10 1 6 
+SuperclusterPosition at 894   0 2 11 9 10 12 3 6 5 
+SuperclusterPosition at 895   0 2 11 9 10 12 3 6 5 
+SuperclusterPosition at 896   0 2 11 9 10 12 3 6 5 
+SuperclusterPosition at 897   0 2 11 9 10 12 3 6 5 
+SuperclusterPosition at 898   0 2 4 9 10 1 8 
+SuperclusterPosition at 899   0 2 11 9 10 12 3 6 5 
+SuperclusterPosition at 900   0 2 11 9 10 12 3 6 5 
+SuperclusterPosition at 901   7 2 11 9 10 12 6 1 0 
+SuperclusterPosition at 902   0 2 11 9 10 12 3 6 5 
+SuperclusterPosition at 903   0 2 11 9 10 12 3 6 5 
+SuperclusterPosition at 904   0 2 4 9 10 6 5 
+SuperclusterPosition at 905   0 10 9 2 12 5 6 
+SuperclusterPosition at 906   0 10 9 2 12 5 6 
+SuperclusterPosition at 907   0 10 9 2 12 5 6 
+SuperclusterPosition at 908   0 10 9 2 12 5 6 
+SuperclusterPosition at 909   0 10 9 2 12 5 6 
+SuperclusterPosition at 910   0 10 9 2 12 5 6 
+SuperclusterPosition at 911   0 10 9 2 12 5 6 
+SuperclusterPosition at 912   7 2 11 2 10 12 6 1 0 
+SuperclusterPosition at 913   0 10 9 2 12 5 6 
+SuperclusterPosition at 914   7 10 9 2 10 11 6 5 0 12 
+SuperclusterPosition at 915   0 10 11 2 3 12 6 
+SuperclusterPosition at 916   0 10 11 2 3 12 6 
+SuperclusterPosition at 917   0 2 4 11 10 6 5 
+SuperclusterPosition at 918   0 10 11 2 3 12 6 
+SuperclusterPosition at 919   7 10 9 2 3 11 6 5 0 12 
+SuperclusterPosition at 920   7 10 9 2 3 11 6 5 0 12 
+SuperclusterPosition at 921   7 10 9 2 3 11 6 5 0 12 
+SuperclusterPosition at 922   7 10 9 2 3 11 6 5 0 12 
+SuperclusterPosition at 923   7 2 11 9 3 4 6 1 0 
+SuperclusterPosition at 924   7 10 9 2 3 11 6 5 0 12 
+SuperclusterPosition at 925   7 10 9 2 3 11 6 5 0 12 
+SuperclusterPosition at 926   7 10 9 2 3 11 6 5 0 12 
+SuperclusterPosition at 927   0 2 11 9 3 12 1 6 0 
+SuperclusterPosition at 928   0 2 11 9 3 12 1 6 0 
+SuperclusterPosition at 929   0 2 11 9 3 12 1 6 0 
+SuperclusterPosition at 930   0 2 11 9 3 12 1 6 0 
+SuperclusterPosition at 931   0 2 4 9 3 6 5 
+SuperclusterPosition at 932   0 10 9 2 1 4 6 
+SuperclusterPosition at 933   0 10 9 2 1 4 6 
+SuperclusterPosition at 934   7 2 11 2 3 4 6 1 0 
+SuperclusterPosition at 935   0 3 9 2 4 5 6 
+SuperclusterPosition at 936   0 3 9 2 4 5 6 
+SuperclusterPosition at 937   0 3 9 2 4 5 6 
+SuperclusterPosition at 938   0 3 9 2 4 5 6 
+SuperclusterPosition at 939   0 10 9 2 1 4 6 
+SuperclusterPosition at 940   0 10 9 2 1 4 6 
+SuperclusterPosition at 941   0 10 9 2 1 4 6 
+SuperclusterPosition at 942   0 10 9 2 1 4 6 
+SuperclusterPosition at 943   0 2 11 2 3 12 1 6 0 
+SuperclusterPosition at 944   0 10 11 2 3 8 5 
+SuperclusterPosition at 945   7 10 9 2 3 4 6 1 0 
+SuperclusterPosition at 946   0 10 9 2 3 12 3 6 5 
+SuperclusterPosition at 947   0 10 9 2 3 12 3 6 5 
+SuperclusterPosition at 948   0 10 9 2 3 12 3 6 5 
+SuperclusterPosition at 949   0 10 9 2 3 12 3 6 5 
+SuperclusterPosition at 950   0 10 9 2 3 12 3 6 5 
+SuperclusterPosition at 951   0 10 9 2 3 12 3 6 5 
+SuperclusterPosition at 952   0 10 9 2 3 12 3 6 5 
+SuperclusterPosition at 953   0 10 9 2 3 12 3 6 5 
+SuperclusterPosition at 954   0 10 11 2 3 8 1 
+SuperclusterPosition at 955   0 10 11 2 3 8 1 
+SuperclusterPosition at 956   7 10 9 2 3 4 6 1 0 
+SuperclusterPosition at 957   0 10 9 2 3 12 1 6 
+SuperclusterPosition at 958   0 10 11 2 3 8 1 
+SuperclusterPosition at 959   0 10 11 2 3 8 1 
+SuperclusterPosition at 960   0 10 11 2 3 8 1 
+SuperclusterPosition at 961   0 10 11 2 3 8 1 
+SuperclusterPosition at 962   0 10 11 2 3 8 1 
+SuperclusterPosition at 963   0 10 11 2 3 8 1 
+SuperclusterPosition at 964   0 10 11 2 3 8 1 
+SuperclusterPosition at 965   0 10 11 2 3 8 1 
+SuperclusterPosition at 966   0 10 11 2 3 8 1 
+SuperclusterPosition at 967   7 10 9 2 3 4 6 1 0 
+SuperclusterPosition at 968   0 10 11 2 3 8 5 
+SuperclusterPosition at 969   0 10 11 2 3 8 5 
+SuperclusterPosition at 970   0 10 11 2 3 8 5 
+SuperclusterPosition at 971   0 10 9 2 3 12 5 6 
+SuperclusterPosition at 972   0 10 9 2 3 12 5 6 
+SuperclusterPosition at 973   0 10 9 2 3 12 5 6 
+SuperclusterPosition at 974   0 10 9 2 3 12 5 6 
+SuperclusterPosition at 975   0 10 9 2 3 12 5 6 
+SuperclusterPosition at 976   0 10 9 2 3 12 5 6 
+SuperclusterPosition at 977   0 10 9 2 3 12 5 6 
+SuperclusterPosition at 978   0 3 2 10 4 5 6 
+SuperclusterPosition at 979   7 10 9 10 3 4 6 1 0 
+SuperclusterPosition at 980   0 10 9 10 3 12 5 6 
+SuperclusterPosition at 981   0 10 4 2 3 5 8 
+SuperclusterPosition at 982   0 10 4 2 3 5 8 
+SuperclusterPosition at 983   0 10 4 2 3 5 8 
+SuperclusterPosition at 984   0 10 4 2 3 5 8 
+SuperclusterPosition at 985   0 10 4 2 3 5 8 
+SuperclusterPosition at 986   0 10 4 2 3 5 8 
+SuperclusterPosition at 987   0 10 4 2 3 5 8 
+SuperclusterPosition at 988   0 10 4 2 3 5 8 
+SuperclusterPosition at 989   0 10 4 2 3 5 8 
+SuperclusterPosition at 990   7 10 9 10 3 4 6 1 0 
+SuperclusterPosition at 991   0 10 4 2 3 5 8 
+SuperclusterPosition at 992   0 10 4 2 3 5 8 
+SuperclusterPosition at 993   0 10 4 2 3 5 8 
+SuperclusterPosition at 994   0 10 4 2 3 5 8 
+SuperclusterPosition at 995   0 10 4 2 3 5 8 
+SuperclusterPosition at 996   0 10 4 2 3 5 8 
+SuperclusterPosition at 997   0 10 4 2 3 5 8 
+SuperclusterPosition at 998   0 10 4 2 3 5 8 
+SuperclusterPosition at 999   0 10 4 2 3 5 8 
+SuperclusterPosition at 1000   0 10 4 2 3 5 8 
+SuperclusterPosition at 1001   7 10 9 10 3 4 6 1 0 
+SuperclusterPosition at 1002   0 10 4 2 3 5 8 
+SuperclusterPosition at 1003   0 10 4 2 3 5 8 
+SuperclusterPosition at 1004   0 3 2 4 10 5 8 
+SuperclusterPosition at 1005   0 3 2 4 10 5 8 
+SuperclusterPosition at 1006   0 3 2 4 10 5 8 
+SuperclusterPosition at 1007   0 3 2 4 10 5 8 
+SuperclusterPosition at 1008   0 3 2 4 10 5 8 
+SuperclusterPosition at 1009   0 3 2 4 10 5 8 
+SuperclusterPosition at 1010   0 10 4 2 3 5 8 
+SuperclusterPosition at 1011   0 10 4 2 3 5 8 
+SuperclusterPosition at 1012   7 10 9 10 3 4 6 1 0 
+SuperclusterPosition at 1013   0 10 4 2 3 5 8 
+SuperclusterPosition at 1014   0 10 4 2 3 5 8 
+SuperclusterPosition at 1015   0 10 4 2 3 5 8 
+SuperclusterPosition at 1016   0 10 4 2 3 5 8 
+SuperclusterPosition at 1017   0 10 4 2 3 5 8 
+SuperclusterPosition at 1018   0 10 4 2 3 5 8 
+SuperclusterPosition at 1019   0 10 4 2 3 5 8 
+SuperclusterPosition at 1020   0 10 4 2 3 5 8 
+SuperclusterPosition at 1021   0 10 4 2 3 5 8 
+SuperclusterPosition at 1022   0 10 4 2 3 5 8 
+SuperclusterPosition at 1023   7 10 9 10 3 4 6 1 0 
+SuperclusterPosition at 1024   0 3 2 12 10 5 8 
+SuperclusterPosition at 1025   0 10 12 2 3 5 8 
+SuperclusterPosition at 1026   0 10 12 2 3 5 8 
+SuperclusterPosition at 1027   0 10 12 2 3 5 8 
+SuperclusterPosition at 1028   0 10 12 2 3 5 8 
+SuperclusterPosition at 1029   0 10 12 2 3 5 8 
+SuperclusterPosition at 1030   0 10 12 2 3 5 8 
+SuperclusterPosition at 1031   0 10 12 2 3 5 8 
+SuperclusterPosition at 1032   0 10 12 2 3 5 8 
+SuperclusterPosition at 1033   0 10 12 2 3 5 8 
+SuperclusterPosition at 1034   7 10 9 10 3 4 6 1 0 
+SuperclusterPosition at 1035   0 10 12 2 3 5 8 
+SuperclusterPosition at 1036   0 10 12 2 3 5 8 
+SuperclusterPosition at 1037   0 10 12 2 3 5 8 
+SuperclusterPosition at 1038   0 10 12 2 3 5 8 
+SuperclusterPosition at 1039   0 10 12 2 3 5 8 
+SuperclusterPosition at 1040   0 10 12 2 3 5 8 
+SuperclusterPosition at 1041   0 10 12 2 3 5 8 
+SuperclusterPosition at 1042   0 10 12 2 3 5 8 
+SuperclusterPosition at 1043   0 10 12 2 3 5 8 
+SuperclusterPosition at 1044   0 10 12 2 3 5 8 
+SuperclusterPosition at 1045   7 10 9 10 3 4 6 1 0 
+SuperclusterPosition at 1046   0 10 12 2 3 5 8 
+SuperclusterPosition at 1047   0 10 12 2 3 5 8 
+SuperclusterPosition at 1048   0 10 12 2 3 5 8 
+SuperclusterPosition at 1049   0 10 12 2 3 5 8 
+SuperclusterPosition at 1050   0 10 12 2 3 5 8 
+SuperclusterPosition at 1051   0 10 12 2 3 5 8 
+SuperclusterPosition at 1052   0 10 12 2 3 5 8 
+SuperclusterPosition at 1053   0 10 12 2 3 5 8 
+SuperclusterPosition at 1054   0 10 12 2 3 5 8 
+SuperclusterPosition at 1055   0 10 12 2 3 5 8 
+SuperclusterPosition at 1056   7 10 9 10 3 4 6 1 0 
+SuperclusterPosition at 1057   0 10 12 2 3 5 8 
+SuperclusterPosition at 1058   0 10 12 2 3 5 8 
+SuperclusterPosition at 1059   0 10 12 2 3 5 8 
+SuperclusterPosition at 1060   0 10 12 2 3 5 8 
+SuperclusterPosition at 1061   0 10 12 2 3 5 8 
+SuperclusterPosition at 1062   0 10 12 2 3 5 8 
+SuperclusterPosition at 1063   0 10 12 2 3 5 8 
+SuperclusterPosition at 1064   0 10 12 2 3 5 8 
+SuperclusterPosition at 1065   0 10 12 2 3 5 8 
+SuperclusterPosition at 1066   0 10 12 2 3 5 8 
+SuperclusterPosition at 1067   7 10 9 10 3 4 6 1 0 
+SuperclusterPosition at 1068   0 10 12 2 3 5 8 
+SuperclusterPosition at 1069   0 10 12 2 3 5 8 
+SuperclusterPosition at 1070   0 10 12 2 3 5 8 
+SuperclusterPosition at 1071   0 10 12 2 3 5 8 
+SuperclusterPosition at 1072   0 10 12 2 3 5 8 
+SuperclusterPosition at 1073   0 10 12 2 3 5 8 
+SuperclusterPosition at 1074   0 10 12 2 3 5 8 
+SuperclusterPosition at 1075   0 10 12 2 3 5 8 
+SuperclusterPosition at 1076   0 10 9 10 3 12 5 8 0 
+SuperclusterPosition at 1077   0 3 9 10 3 12 5 8 0 
+SuperclusterPosition at 1078   7 3 9 10 3 4 6 1 0 
+SuperclusterPosition at 1079   0 10 9 10 3 12 5 8 0 
+SuperclusterPosition at 1080   0 3 9 10 3 12 5 8 
+SuperclusterPosition at 1081   0 3 9 10 3 12 5 8 
+SuperclusterPosition at 1082   0 3 9 10 3 12 5 8 
+SuperclusterPosition at 1083   0 3 9 10 3 12 5 8 
+SuperclusterPosition at 1084   0 3 9 10 3 12 1 8 0 
+SuperclusterPosition at 1085   0 3 9 10 3 12 5 8 
+SuperclusterPosition at 1086   0 3 9 10 3 12 5 8 
+SuperclusterPosition at 1087   0 3 9 10 3 12 1 8 0 
+SuperclusterPosition at 1088   0 3 9 10 3 12 1 8 0 
+SuperclusterPosition at 1089   7 3 2 10 4 1 6 0 
+SuperclusterPosition at 1090   0 3 9 10 13 
+SuperclusterPosition at 1091   0 10 9 10 3 12 1 8 0 
+SuperclusterPosition at 1092   0 3 9 10 3 12 1 8 0 
+SuperclusterPosition at 1093   0 3 9 10 3 12 1 8 0 
+SuperclusterPosition at 1094   0 3 9 10 3 12 1 6 0 
+SuperclusterPosition at 1095   0 3 9 10 3 12 1 6 0 
+SuperclusterPosition at 1096   0 3 9 10 3 12 1 6 0 
+SuperclusterPosition at 1097   0 3 9 10 3 12 1 6 0 
+SuperclusterPosition at 1098   0 3 9 10 3 12 1 6 0 
+SuperclusterPosition at 1099   0 3 9 10 3 12 1 6 0 
+SuperclusterPosition at 1100   0 3 9 10 3 12 1 6 0 
+SuperclusterPosition at 1101   0 3 9 10 13 
+SuperclusterPosition at 1102   0 10 9 10 3 12 1 6 0 
+SuperclusterPosition at 1103   0 3 9 10 3 12 1 6 0 
+SuperclusterPosition at 1104   0 3 2 10 1 4 8 
+SuperclusterPosition at 1105   0 3 2 10 1 4 8 
+SuperclusterPosition at 1106   0 3 2 10 1 4 8 
+SuperclusterPosition at 1107   0 3 2 10 4 5 8 
+SuperclusterPosition at 1108   0 3 2 10 1 4 8 
+SuperclusterPosition at 1109   0 3 2 10 1 4 8 
+SuperclusterPosition at 1110   0 3 2 10 4 5 8 
+SuperclusterPosition at 1111   0 3 2 10 4 5 8 
+SuperclusterPosition at 1112   0 3 2 10 13 
+SuperclusterPosition at 1113   0 3 2 10 4 5 8 
+SuperclusterPosition at 1114   0 3 2 10 4 5 8 
+SuperclusterPosition at 1115   0 3 2 10 4 5 8 
+SuperclusterPosition at 1116   0 3 2 10 4 5 8 
+SuperclusterPosition at 1117   0 3 2 10 4 5 8 
+SuperclusterPosition at 1118   0 3 2 10 4 5 8 
+SuperclusterPosition at 1119   0 3 2 10 4 5 8 
+SuperclusterPosition at 1120   0 3 2 10 4 5 8 
+SuperclusterPosition at 1121   0 3 2 10 4 5 8 
+SuperclusterPosition at 1122   0 3 2 10 4 5 8 
+SuperclusterPosition at 1123   0 3 2 10 13 
+SuperclusterPosition at 1124   0 3 2 10 4 5 8 
+SuperclusterPosition at 1125   0 3 2 10 4 5 8 
+SuperclusterPosition at 1126   0 3 2 10 4 5 8 
+SuperclusterPosition at 1127   0 3 2 10 4 5 8 
+SuperclusterPosition at 1128   0 3 2 10 4 5 6 
+SuperclusterPosition at 1129   0 3 2 10 4 5 6 
+SuperclusterPosition at 1130   7 10 9 10 3 12 5 6 0 
+SuperclusterPosition at 1131   7 10 9 10 3 12 1 6 0 5 
+SuperclusterPosition at 1132   7 3 9 10 3 12 1 6 0 5 
+SuperclusterPosition at 1133   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1134   0 1 2 3 13 
+SuperclusterPosition at 1135   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1136   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1137   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1138   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1139   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1140   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1141   7 3 9 10 1 12 1 6 0 5 
+SuperclusterPosition at 1142   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1143   0 3 4 2 1 5 6 
+SuperclusterPosition at 1144   0 3 4 2 1 5 6 
+SuperclusterPosition at 1145   0 1 2 3 13 
+SuperclusterPosition at 1146   0 3 4 2 1 5 6 
+SuperclusterPosition at 1147   0 3 11 10 1 13 5 
+SuperclusterPosition at 1148   0 3 11 10 1 13 5 
+SuperclusterPosition at 1149   0 3 11 10 1 13 5 
+SuperclusterPosition at 1150   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1151   0 3 9 10 1 12 5 6 
+SuperclusterPosition at 1152   0 3 4 2 1 5 6 
+SuperclusterPosition at 1153   0 3 9 10 1 12 1 6 5 
+SuperclusterPosition at 1154   0 3 9 10 1 12 1 6 5 
+SuperclusterPosition at 1155   0 3 9 10 1 12 1 6 5 
+SuperclusterPosition at 1156   0 1 10 3 11 1 8 
+SuperclusterPosition at 1157   0 3 4 2 3 1 6 
+SuperclusterPosition at 1158   0 3 4 2 3 1 6 
+SuperclusterPosition at 1159   0 3 4 2 3 1 6 
+SuperclusterPosition at 1160   0 3 4 2 3 1 6 
+SuperclusterPosition at 1161   0 3 4 2 3 1 6 
+SuperclusterPosition at 1162   0 3 4 2 3 1 6 
+SuperclusterPosition at 1163   0 3 4 2 3 1 6 
+SuperclusterPosition at 1164   0 3 11 10 3 1 13 
+SuperclusterPosition at 1165   0 3 11 10 3 1 13 
+SuperclusterPosition at 1166   0 3 11 10 3 1 13 
+SuperclusterPosition at 1167   0 3 10 3 11 1 8 
+SuperclusterPosition at 1168   0 3 11 10 3 1 13 
+SuperclusterPosition at 1169   0 3 11 10 3 1 13 
+SuperclusterPosition at 1170   0 14 11 10 3 3 13 5 
+SuperclusterPosition at 1171   0 14 13 2 3 1 
+SuperclusterPosition at 1172   0 14 11 10 3 1 13 0 
+SuperclusterPosition at 1173   0 14 11 10 3 1 13 
+SuperclusterPosition at 1174   0 14 11 10 3 1 13 
+SuperclusterPosition at 1175   0 14 11 10 3 1 13 
+SuperclusterPosition at 1176   0 14 11 10 3 1 13 
+SuperclusterPosition at 1177   0 14 11 10 3 1 13 
+SuperclusterPosition at 1178   0 3 10 14 11 1 8 
+SuperclusterPosition at 1179   0 14 11 10 3 1 13 
+SuperclusterPosition at 1180   0 14 11 10 3 1 13 
+SuperclusterPosition at 1181   0 14 11 10 3 1 13 
+SuperclusterPosition at 1182   0 14 11 10 3 1 13 
+SuperclusterPosition at 1183   0 14 11 10 3 1 13 
+SuperclusterPosition at 1184   0 14 11 10 3 1 13 
+SuperclusterPosition at 1185   0 14 11 10 3 1 13 
+SuperclusterPosition at 1186   0 14 11 10 3 1 13 
+SuperclusterPosition at 1187   0 14 11 10 3 1 13 
+SuperclusterPosition at 1188   0 14 11 10 3 1 13 
+SuperclusterPosition at 1189   0 3 10 14 11 1 8 
+SuperclusterPosition at 1190   0 14 11 10 3 1 13 
+SuperclusterPosition at 1191   0 14 11 10 3 1 13 
+SuperclusterPosition at 1192   0 14 11 10 3 1 13 
+SuperclusterPosition at 1193   0 14 11 10 3 1 13 
+SuperclusterPosition at 1194   0 14 11 10 3 1 13 
+SuperclusterPosition at 1195   0 14 11 10 3 1 13 
+SuperclusterPosition at 1196   0 14 4 10 3 1 6 
+SuperclusterPosition at 1197   0 14 4 10 3 1 6 
+SuperclusterPosition at 1198   0 14 4 10 3 1 6 
+SuperclusterPosition at 1199   0 14 4 10 3 1 6 
+
+Process finished with exit code 0
+
+
