@@ -626,7 +626,7 @@ The adjusted best validity measure will be the smallest validity in
 between the range of $\text{val}(k)$ and $\text{val}(k_{\max})$.
 
 It is important to notice that this algorithm is supposed to be used for image
-segmentation in RGB-color space, although it can also be implemented
+segmentation in RGB color space, although it can also be implemented
 on a different feature space as long as the attributes can be scaled
 properly.
 
@@ -662,7 +662,7 @@ non-linearity. Moving in a certain direction inside the cube might not produce
 a color that is perceptually consistent with the change in each of
 the channels.
 
-The HSV-color space is closer to the human perception of color, because
+The HSV color space is closer to the human perception of color, because
 it is easier to think of a color in terms of H(ue), S(aturation) and
 V(alue). The value determines the brightness. The color space can
 % the thing you're showing is not a hexagon, but a cone...
@@ -671,7 +671,7 @@ the Intensity. Hue is defined as an angle in the range $[0,2\pi]$
 and Saturation is the depth or purity of the color, it is measured
 as a radial distance from the central axis \cite{Sural}.
 
-The HSV-color space is advantageous in comparison to the RGB-color
+The HSV color space is advantageous in comparison to the RGB color
 space in color based image segmentation, because image objects are
 more consistently contained in the resulting hue field than in the
 channels of the RGB representation. This applies in particular to
@@ -927,43 +927,42 @@ the remaining contours are all enclosed in contour 2.
 
 \subsection{On synthetic images}
 
-The results reported from Siddheswar Ray and Rose H. Turi \cite{Ray1999}
-on synthetic images described in 2.3, could mostly be verified. On
+The results reported by Siddheswar Ray and Rose H. Turi \cite{Ray1999}
+on synthetic images described in 2.3 could mostly be verified. On
 very simple images as seen in Fig 4.1 the automatically specified
-cluster count matches the actual used colors. Notice that this section
-is only concerned about color segmentation.
+cluster count matches the actually used colors. Note that this section
+is only concerned with color segmentation.
 
 \begin{figure}[H]
 \includegraphics[scale=0.75]{images/beispiel}~\includegraphics[scale=0.375]{images/beispiel2}~\includegraphics{images/beispiel3}\caption{Simple generated images with known used number of colours (2, 5, 4)}
 \end{figure}
 
-Surprisingly the calculated optimal cluster count using the RGB color
+Surprisingly, the calculated optimal cluster count using the RGB color
 space and a maximal cluster count of 25 in Figure 4.2 was determined
 as 10 instead of the expected 5 clusters. This error occurs due to
-the different numbers of colors used in differing shapes. Each rectangle
-consists of only of one specific color, whereas the circle can be
-distinguished into several RGB-values. The core of the circle and
-everything in close distance has only one color value, but the closer
-the distance to the boundary the more the color changes in order to
-achieve an effect of anti-aliasing, this can be seen in Figure 4.3.
-Anti-aliasing makes the rectangle shape of pixels on a computer display
-less visible for the human eye. In this specific case the circle consists
+the fact that more than one color is used in one shape. Each rectangle
+consists of only of one specific color, whereas the circle contains
+several RGB values. The core of the circle and
+everything in close proximity has only one color value, but closer
+to the boundary the color changes in order to
+achieve an effect of anti-aliasing (Figure 4.2).
+In this specific case the circle consists
 of 49 different RGB values. Due to the relationship of inter cluster
 distance and intra cluster distance the circle is split into 5 different
 clusters. The conversion into HSV did not result in a calculated cluster
 count of 5 either; instead it went up to 13 (keeping the Euclidean
 distance as distance measurement). As described in 2.4 the different
-nature of the RGB color space and HSV color space results in different
-distances in between colors. Many of the 49 RGB colors will probably
+nature of the RGB and HSV color spaces result in different
+distances between colors. Many of the 49 RGB colors will probably
 share the same hue value, but can be further clustered according to
-the saturation and brightness. Therefore this results in different
-clusters in comparison to the RGB color space and with it to a rise
+their saturation and brightness. Therefore, this results in different
+clusters in comparison to the RGB color space and thereby to a rise
 of the calculated optimal cluster count.
 
-Given that the used colors in a natural images are expected to be
-a lot more than 53, the performed clustering will never be on a comparable
+Given that the number of colors occurring in natural images are expected to be
+a lot higher than 53, the performed clustering will never be on a comparably
 fine level. The decrease of the intra cluster distance would lead
-to a lower inter cluster distance and supposedly the validity would
+to a lower inter cluster distance and presumably the validity would
 increase.
 
 \begin{figure}[H]
@@ -985,7 +984,7 @@ increase.
 \end{figure}
 
 Increasing the number of circles and adding more colors overall to
-testing images as for example seen in Figure 4.3, resulted in a correct
+testing images (Figure 4.3), resulted in a correct
 computation of the cluster count in RGB color space. The particular
 image is built of 4564 RGB values and the right cluster count of 10
 is calculated. Transferring this image into the HSV color space resulted
@@ -1010,17 +1009,16 @@ in the computation of 10 as well.
 
 \subsection{On real images}
 
-Until now the cluster count was only tested on self-generated images
-with known optimal cluster count. On real images this is usually only
-roughly estimable.
+Until now the cluster count was only tested on synthetic images
+with a known optimal cluster count. On real images this count can usually only be estimated.
 
-The algorithm was tested clustering images of the Berkeley Segmentation
-Dataset\cite{Arbelaez2011} and provided satisfactory results. To
-evaluate the dynamic cluster count the clustered images, were compared
+The algorithm was tested on images of the Berkeley Segmentation
+Dataset \cite{Arbelaez2011} and provided satisfactory results. To
+evaluate the dynamic cluster count, the clustered images were compared
 to the images generated with a higher/lower number of clusters. These
 are also generated with Algorithm 2.2. It increments the number of
-clusters succesively until $k_{\max}$ is reached, hence the images
-in the range from k = 2 to k = $k_{\max}$can be used for comparison
+clusters successively until $k_{\max}$ is reached. Therefore, the images
+in the range from k = 2 to k = $k_{\max}$ can be used for comparison
 purposes.
 
 \begin{figure}[H]
@@ -1041,16 +1039,16 @@ purposes.
 \includegraphics[width=1\textwidth]
 {/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/128035_rgb_14.png} 
 \subcaption{k = 14} 
-\end{subfigure}\caption{Gallery example from the Berkeley Database clustered in RGB-color
+\end{subfigure}\caption{Gallery example from the Berkeley Database clustered in RGB color
 space}
 \end{figure}
 
 The calculated cluster count of 8 in Figure 4.4 is the first cluster
-count where, the red shirt builds its own cluster. It seems as in
-a smaller cluster counts the inter cluster distance is bigger. In
+count where the red shirt is assigned its own cluster. It seems as in
+a smaller cluster count the inter cluster distance is bigger. In
 k > 8 the intra cluster distance seems to be minimized but has only
 minimal visible impact, because of the higher inter cluster distance
-before. Thus k = 8 seem to be the right choice. 
+before. Thus k = 8 seems to be the right choice. 
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.5\textwidth}
@@ -1070,17 +1068,16 @@ before. Thus k = 8 seem to be the right choice.
 \subcaption{k = 10} 
 \end{subfigure}
 
-\caption{Snow shoes example from the Berkeley Database clustered in RGB-color
+\caption{Snow shoes example from the Berkeley Database clustered in RGB color
 space}
 \end{figure}
 
-The calculated cluster count of 4 in Figure 4.5 seems to retain most
-key features of the image, the results seen in c) for k=3 seem to
-be similarly well. The cluster count of 10 seen in d) might be preferable
+The calculated optimal cluster count of 4 in Figure 4.5 seems to retain most
+key features of the image; the results seen in c) for k=3 seem to
+be similarly good. The cluster count of 10 seen in d) might be preferable
 due to the existence of a cluster solely for the snow shoes. The latter
-impression probably arises of our focus on the image center; but looking
-at the sky reveals that it has already been segmented into 3 sections
-at this point. 
+impression probably arises out of our focus on the image center. 
+However, the sky has been segmented into 3 sections, which might not be desirable.
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.5\textwidth}
@@ -1102,7 +1099,7 @@ at this point.
 \subcaption{k = 8} 
 \end{subfigure}
 
-\caption{Airplane example from the Berkeley Database clustered in RGB-color
+\caption{Airplane example from the Berkeley Database clustered in RGB color
 space}
 \end{figure}
 
@@ -1112,18 +1109,16 @@ the plane better. However, k-means clustering is an unsupervised algorithm
 without prior knowledge, hence the cluster count of 6 retains more
 information of the background as well.
 
-Using the HSV-color space instead of the RGB-color space did not lead
+Using the HSV instead of the RGB color space did not lead
 to considerably better results. Strikingly the calculated optimal
-cluster count was mostly higher in HSV as for example seen in Figure
-4.7. Otherwise the same findings as in the RGB-color space could be
-made. Overall the comparison did not favor any color space. The results
+cluster count was mostly higher in HSV (Figure
+4.7). Otherwise the same findings as in the RGB color space were
+made. Overall, the comparison did not favor either color space. The results
 were subjectively examined on the same level. The determination of
-which color space to use, should depend on the final task of the clustering
-algorithm. Because the following work is rather on an abstract level
-than on implementing the algorithm on a particular task and because
-the underlying algorithm for determining the cluster count was originally
-proposed for the RGB color space, the latter one will be used in the
-evaluation of the dynamic cluster count on video sequences. 
+which color space to use should depend on the specific task of the clustering
+algorithm. 
+For simplicity and compatibility with the original algorithm, the RGB color space
+will be used for evaluating video sequences as well.
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.5\textwidth}
@@ -1153,16 +1148,16 @@ evaluation of the dynamic cluster count on video sequences.
 
 \subsection{On synthetic video sequences}
 
-Implementing the dynamical cluster count as described in algorithm
-3.1 into a simple synthetic video sequence revealed that the cluster
-count incremented correctly when necessary, but failed to detect required
-reductions of k.
+Applying the dynamical cluster count algorithm (Algorithm
+3.1) on a simple synthetic video sequence revealed that the cluster
+count incremented correctly when a new cluster appeared, but failed reduce k
+when clusters were leaving the frame.
 
 Figure 4.8 shows an example of a video sequence. In image a) to d)
 the cluster count stays the same and is recognized correctly. The
-new appearance of a rectangle in cluster e) leads to a new cluster
-count calculation. In cluster g) the green rectangle is gone and a
-new cluster count calculation should be the result. Unfortunately
+new appearance of a rectangle in cluster e) leads to an increased cluster
+count. In cluster g) the green rectangle is gone and a
+decreased cluster count should be the result. Unfortunately,
 the algorithm fails to identify the change and keeps the old cluster
 count. 
 
@@ -1203,7 +1198,7 @@ count.
 \subcaption{k = 3}
 \end{subfigure}
 
-\caption{\foreignlanguage{ngerman}{A simple video sequence in which areas are moving out of the video}}
+\caption{\foreignlanguage{ngerman}{A simple video sequence in which areas are moving in and out of the video.}}
 \end{figure}
 
 This and similar tests showed that as long as something is added to
@@ -1216,28 +1211,28 @@ the validity measure will usually decrease if the number of clusters
 is increased, this is the same principle used in Algorithm 2.2. Even
 if the algorithm for identifying the optimal cluster count would have
 split clusters in a different way if run on the current image, the
-disparity can still be regulated. For the transformation from k to
+disparity can still be compensated. For the transformation from k to
 k+1, the k-means algorithm splits the cluster with the highest variance
 on the current image. In contrast the initialization points for k-1
-are solely received via the calculation on previous frames. Therefore
+are solely based on the calculation in previous frames. Therefore
 the calculations of the validity for k-1 needs to be improved. One
 possibility for doing so is to use the same procedure as k+1 received
 already. Instead of calculating the validity for k-1 immediately,
 the cluster centers for k-2 (if k>3) will be used as initialization
 points. The new clusters will be split once again as described in
 2.3 and the arising cluster centers will be used to calculate the
-validity for k-1. Another improvement can be achieved, when the order
+validity for k-1. Another improvement can be achieved if the order
 of the validity checks is changed. The validity for k-1 will be checked
 first, the generated clusters will be split twice and used to calculate
 the validity for k and k+1.
 
-With this slight modification the algorithm achieved the right cluster
-count results on all self-generated simple video sequences similar
+With this slight modification the algorithm calculated the right cluster
+count on all synthetic simple video sequences similar
 to Figure 4.8 as long as the conditions remained constant. The considered
-cases included appearing and disappearing areas both solely and simultaneously. 
+cases included appearing and disappearing areas both individually and simultaneously. 
 
 However, adding blurring, noise or light effects to an image resulted
-most often in a different cluster count than before, indicating unstableness
+mostly in a different cluster count than before, indicating unstableness
 in real images on changing conditions. But the impact of these effects
 on simple images with only few features is found to be stronger and
 less subtle than in most real occurring condition changes seen in
@@ -1245,12 +1240,12 @@ natural video sequences.
 
 To actually compare the produced cluster centers over several frames,
 the generated cluster centers of the first frame were used as the
-first centers of ``super-clusters'' (=merged clusters of frames).
+first centers of ``super-clusters'' (merged clusters of frames).
 On each iteration of the algorithm, after the optimal number of clusters
 has been identified, the new cluster centers are compared to the centers
 of existing super-clusters. For comparison the usual Euclidean color
 space distance and the Euclidean distance of the coordinate centers
-of the cluster centers and the super-clusters were calculated. In
+of the clusters and the super-clusters were calculated. In
 order to add them, they had to be normalized.
 
 \[
@@ -1270,7 +1265,7 @@ the normalized center of the super-cluster. $v_{color}$ only includes
 the color information and $v_{coord}$ only includes the center coordinates.
 
 If the sum of both distances of the closest super-cluster was smaller
-than a self-determined $\delta_{dis}$ the cluster center belonged
+than a specified $\delta_{dis}$ the cluster center belonged
 to the super-center. 
 
 \[
@@ -1278,18 +1273,18 @@ d_{v1\,v2}<d_{max\cdot\delta}=\delta_{dis}
 \]
 In this case the center of the super-cluster had to be updated. Thus
 the old center of the super-cluster is simply replaced with the newest
-member. To get to a good $\delta_{dis}$ the maximal possible distance
+member. To get to a good $\delta_{dis}$ the maximum possible distance
 has to be considered and scaled accordingly. An alternative approach
 is to add the center of the cluster to the center of the super-cluster
 and divide it by 2. This led to more stable results. As soon as one
-outlier appears the center is shifted in the wrong direction. Because
+outlier appears the center is shifted in the wrong direction, because
 it is likely that new clusters will not be assigned to the right super-cluster.
 Normally we expect clusters to move continuously in the same direction,
 hence the first method led mostly to better results.
 
 Otherwise if the distance to the closest super-cluster was bigger
 than $\delta_{dis}$ the cluster center is not part of an existing
-supercluster and its values will be the initial values of a new super-cluster.
+super-cluster and its values will be the initial values of a new super-cluster.
 
 This method generated the right results for simple synthetic video
 sequences using a reasonable $\delta$. For example, the video sequence
@@ -1300,20 +1295,20 @@ into a single super-cluster.
 
 \subsection{On real video sequences}
 
-To evaluate the performace of algorithm 3.1 its calculated adaptive
+To evaluate the performace of Algorithm 3.1, its calculated adaptive
 cluster count was compared to the outcome produced by its predecessor
-algorithm developed by Ray and Rose H. Turi\footnote{Algorithm 2.2},
+algorithm developed by Ray and Rose H. Turi (Algorithm 2.2),
 where each frame was processed individually. This was done on video
-sequences of the Freiburg-Berkeley Motion Segmentation Dataset\cite{Ochs2014},
-one example consisting of only 19 frames can be seen in Figure 4.9.
+sequences of the Freiburg-Berkeley Motion Segmentation Dataset \cite{Ochs2014}.
+One example consisting of only 19 frames can be seen in Figure 4.9.
 
 The adapted and unadapted algorithms produced the same cluster count
 on most frames, however, the adapted algorithm tended to switch the
-cluster count less times than the unadapted one. This outcome had
-to be expected, as described in 3.1 the adapted algorithm will not
+cluster count less often than the unadapted one. This outcome was
+expected, as the adapted algorithm will not
 change the cluster count if the validity currently constitutes a local
-minima, whereas the unandapted algorithm will always go with the global
-minima.
+minimum, whereas the unandapted algorithm will always go with the global
+minimum.
 
 \begin{figure}[H]
 \begin{center}
@@ -1386,8 +1381,7 @@ Table 4.1 shows the calculated number of clusters and the respective
 super-clusters for the video sequence seen in Figure 4.9. The index
 on the list of super-clusters corresponds to the cluster of each frame
 which is assigned to the respective super-cluster. In this particular
-case the adapted algorithm produced only in 3 out of 19 frames a different
-outcome.
+case the adapted algorithm produced a different result in only in 3 of the 19 frames.
 
 The different results produced in the adapted and unadapted algorithm
 don't necessarily mean that the calculated cluster count of the adapted
@@ -1440,18 +1434,18 @@ process.
 
 \section{Evaluation of k-means clustering with a 5d-feature vector}
 
-Using a 5d-feature vector, consisting of the color space and the coordinates
+Using a 5d-feature vector consisting of the color space and the coordinates
 promises two main advantages. Clustered regions would be closer to
-semantic knowledge, because regions with similar colors are already
+what humans expect, because regions with similar colors are already
 split and thus the results are more useful for comparing clusters
 over the cause of a video sequence. Furthermore after the k-means
 algorithm has clustered each frame separately, the whole outcome can
 build a new dataset, which then again could be clustered via k-means
 to fuse the clusters of each frame into super-clusters holding information
-of the whole video sequence. The requirement to do so are reliable
-and reasonable generated results when clustering single images. 
+about the whole video sequence. The requirement for this are reliable
+and reasonable results when clustering single images. 
 
-To get reasonable images the 5d-feature vector has to be normalized
+To get reasonable results, the 5d-feature vector has to be normalized
 first.
 
 \[
@@ -1474,18 +1468,18 @@ y
 \end{array}
 \]
 
-Where $\alpha$ is the scaling factor. Usually the color space will
+Where $\alpha$ is the scaling factor. Usually the colors will
 be seen as more important than the geometric features, so $\alpha$
 will be close to zero. 
 
-The same normalization procedure should theoretically be applied on
+The same normalization procedure should theoretically be applied to
 the variance calculation as well. Unfortunately due to the incoherent
 shape of the background, the cluster containing the background area
-had often the highest variance out of the calculated clusters. Figure
-4.11 shows an example of this occurrence; the white area represents
-the not contained area of the specific cluster. While the algorithm
+often has the highest variance out of the calculated clusters. Figure
+4.11 shows an example of this; the white area represents
+the area not contained in the specific cluster. While the algorithm
 gets the expected result for k=2 and $\alpha=0.004$ (a ratio of 250:1),
-it fails for k=3-5 and splits the background further.\footnote{Using the Algorithm 2.2 to determine the optimal cluster count}
+it fails for k=3-5 and splits the background further\footnote{Using the Algorithm 2.2 to determine the optimal cluster count}.
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.2\textwidth} 
@@ -1513,14 +1507,14 @@ it fails for k=3-5 and splits the background further.\footnote{Using the Algorit
 a 5d-feature vector}
 \end{figure}
 
-Ignoring the geometrical features while calculating the variance lead
-to better results in the case of Figure 4.11, but only by chance the
-rectangles were the first cluster in k=2. In order to split the right
-cluster a different measurement than the variance would be needed.
+Ignoring the geometrical features while calculating the variance led
+to better results in the case of Figure 4.11, but the
+rectangles were the first cluster in k=2 only by chance. In order to split the right
+cluster, a different measurement than the variance would be needed.
 Even if the problem of finding the right cluster to split is ignored
-and the right cluster is assigned manually, it didn't generate reasonable
-results. The major problem hereby is to find a scale of the geometric
-features to the color features. In some images this scale could be
+and the right cluster is assigned manually, the algorithm didn't generate reasonable
+results. The major problem here is to find a scale of the geometric
+features compared to the color features. In some images this scale could be
 found, but did not result in equally good clusters on different images.
 The requirement to produce results on any image would be to assign
 the scale dynamically to each image. But for some images there might
@@ -1530,21 +1524,21 @@ of this will be further discussed in section 4.4.
 
 \section{Evaluation of the alternative approach}
 
-Due to the inefficiency using a 5d-feature vector, especially with
+Due to the inefficiency of using a 5d-feature vector, especially with
 the problem of getting a right measure for the optimal cluster count,
 it seems easier to separate the splitting according to color features
 and the splitting according to geometrical features into two processes.
 Instead of clustering with a 5d-feature vector, the well performing
-3d-vector including only the color space can be retained and each
+3d-vector including only the color can be retained and each
 cluster might be further divided. 
 
 We only want to divide clusters with clear geometrical boundaries
-further. Hence if it is possible to draw several polygons without
-overlapping, where the area of the polygons is made up by the pixels
-of the clusters, the polygons will build new clusters.
+further. Therefore, if it is possible to draw several polygons without
+overlapping where the area of the polygons is made up by the pixels
+of the clusters, the polygons will form new clusters.
 
-This can be achieved using the openCV library\cite{openCV_doc}.\footnote{see section 3.2}
-Hereby one major problem needs to be considered. The cluster(s) which
+This can be achieved using the openCV library \cite{openCV_doc}\footnote{see section 3.2}.
+Here one major problem needs to be considered. The cluster(s) which
 hold the color information of the background might lead to the same
 detected boundaries as the clusters which are actually surrounded
 by the background.
@@ -1575,11 +1569,11 @@ boundaries}
 
 The first image of Fig 4.12 shows the image which will be clustered.
 This will result in two clusters, when determining the optimal cluster
-count for color segmentation. The first one will only hold the two
+count using color segmentation. The first one will only hold the two
 red rectangles, while the second one will hold the background. The
 cluster containing the background can be seen in b). The last two
 images c) and d) show the calculated boundaries. Unfortunately these
-boundaries can be calculated using any of the two clusters. Hence
+boundaries can be calculated using any of the two clusters. Therefore,
 if adding the calculated polygons of each cluster to the number of
 cluster centers, the optimal cluster count would be determined as
 4 instead of 3. Thus the calculated polygons should only increase
@@ -1606,7 +1600,7 @@ of each polygon.
 \If {Several polygons are detected and the pixels inside the polygons are part of the current cluster }
 \State {Delete the old cluster center of this cluster center}
 \State {Calculate the mean of the coordinates inside the boundary}
-\State {Built new cluster centers according to the calculated coordinates and the old color feature}
+\State {Create new cluster centers according to the calculated coordinates and the old color feature}
 \EndIf
 \EndFor
 \end{algorithmic}
@@ -1614,23 +1608,23 @@ of each polygon.
 \caption{Find geometrical features of clusters}
 \end{algorithm}
 
-One of the advantages of the k-means algorithm is, that each pixel
-is assigned to the corresponding cluster center. The assignment could
+One of the advantages of the k-means algorithm is that each pixel
+is assigned to its corresponding cluster. The assignment can
 be done in different ways. Because the splitting of the clusters happens
 according to the calculated boundaries, it seems logical to check
 whether the pixels of the original cluster lie inside the calculated
 polygon and assign them accordingly. Alternatively the calculated
 cluster centers could be used as starting points for k-means clustering
 with either the 5d-vector of section 4.3 or using a 2d-vector consisting
-of the coordinates on the particular cluster.
+of the coordinates of the particular cluster.
 
-Both assignment methods have some flaws, illustrated in 4.13. The
+Both assignment methods have some flaws as illustrated in Figure 4.13. The
 created boundaries are not completely accurate, hence some pixels
 are not inside the polygon and will fall through the first method
 as seen in b). The second method doesn't consider boundaries at all,
 the k-means algorithm will simply check which pixel is on the shortest
 distance to the specific cluster. Adjusting the scale value $\alpha$
-did not lead to the desired result and only adjusted distribution
+did not lead to the desired result and only adjusted the distribution
 of the clusters slightly. The areas are too close together. Either
 the pixel distance, or the colors are required to be further divided
 in order to get correct results. 
@@ -1655,19 +1649,19 @@ in order to get correct results.
 
 \caption{Comparison of boundary cluster assignment and k-means}
 \end{figure}
-On simpler images as for example seen in Figure 4.1 both methods work
+On simpler images (e.g. Figure 4.1) both methods work
 fine and lead to the expected results. Overall, the method of checking
 whether a pixel lies within the calculated polygon seems to get closer
 to the expected results. The problem of assigning only few pixels
-to the wrong cluster could easily be solved. For example by implementing
+to the wrong cluster could easily be solved, for example by implementing
 a noise filter. 
 
-On natural images however the described method didn't lead to an increased
+On natural images, however, the described method didn't lead to an increased
 cluster count. In all tested images the contour detection failed to
 find useful polygons. Despite using a nearly optimal binary image
 in Figure 4.14, the resulting contours are not completely aligned.
 Printing all contours in one image shows the potential and might indicate
-how an improved detecting algorithm will improve the results. 
+how an improved detection algorithm will improve the results. 
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.31\textwidth}
@@ -1713,23 +1707,23 @@ remained unchanged.
 
 \chapter{Discussion and conclusion}
 
-Testing the described algorithm by Ray and Rose H. Turi on images
-verified the formerly reported results. Although some flaws need to
+Testing the described algorithm by Siddheswar Ray and Rose H. Turi on images
+verified the results reported by them, although some flaws need to
 be considered before using it. On very simplistic images the calculated
 cluster count will separate the image into too many clusters due to
 the possible reduction of the intra cluster distance. Besides this,
 it should be known beforehand whether the investigated image will
 be a synthetic or a real one. Usually this should be no problem and
-is no new finding, because it is already stated in the original article.\cite{Ray1999}
+is no new finding, because it is already stated in the original article \cite{Ray1999}.
 
 Adapting the algorithm to generate an adaptive cluster count on video
 sequences proved to work well on synthetic video sequences. On natural
 video sequences the results were satisfactory but did not always produce
-identical results in comparison to the independent calculated ones.
+identical results in comparison to the independently calculated ones.
 Due to the high computation time, the effective use of this algorithm
-would require some further improvements for most of the possible tasks.
+would require some further improvements for most practical tasks.
 Even if the current cluster count of a frame in a video sequence constitutes
-a local minimum in the next frame the basic k-mean algorithm has to
+a local minimum in the next frame the basic k-means algorithm has to
 be repeated 4 times. Otherwise the basic k-means algorithm will be
 repeated until $k_{\max}$ is reached. 
 
@@ -1739,36 +1733,36 @@ only if the object has been lost. In addition the algorithm could
 implement multi-threading to improve the calculation time.
 
 Creating super-clusters which include color- and coordinate information,
-by comparison of cluster center over several frames, provides knowledge
+by comparison of cluster centers over several frames provides knowledge
 of the movement and continuity of existing clusters. The information
 yield and specification of a good threshold $\delta_{dis}$ or even
 the suggested procedure for creating super-clusters in general can
 only be properly evaluated if the generated clusters are closer to
-semantic knowledge. This could be achieved by including more features
+what humans expect. This could be achieved by including more features
 in clustering than just the color information. The attempt of including
 geometric features via a 5d-feature vector while retaining the basic
 k-means algorithm did not lead to improved results. The main problem
-was to find a working ratio of the colors and coordinates, this ratio
+was to find a working ratio of the colors and coordinates. This ratio
 should furthermore be dynamic to be universal applicable. On some
 images the 5d-feature vectors did not deliver the desired outcome
 independent on the scaling ratio. This was probably caused by one
-of the big flaws of k-means clustering, it can only produce spherically
+of the big flaws of k-means clustering: it can only produce spherically
 formed clusters. This is especially problematic when the coordinates
-are included in the clustering process. In this cases other clustering
-methods as for example mean-shift would produce better results.
+are included in the clustering process. In this case other clustering
+methods such as mean-shift would produce better results.
 
 The alternative approach combined the region based image segmentation
 of k-means clustering with a boundary detection approach. Although
 the splitting of clusters did ultimately not work in real images,
 the found edges in single clusters showed some promise. The next step
 would be to include actual semantic knowledge in order to find objects
-or features, and create clusters solely for them.
+or features and create clusters solely for them.
 
 The concept of super-clusters seemed to work quite well and merged
 similar clusters correctly. But besides data compression, no other
-field of use could be tested in this thesis. However, if semantic
+use case could be evaluated in this thesis. However, if semantic
 knowledge could actually be implemented in the clustering process,
-the serial identity of clusters in video sequences would drastically
+the recognition of the serial identity of clusters in video sequences would drastically
 increase and therefore also the fundamental suitability of super-clusters.
 
 \bibliographystyle{unsrt}
