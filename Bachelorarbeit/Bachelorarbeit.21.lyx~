@@ -125,6 +125,8 @@
 
 \usepackage{color, colortbl}
 \definecolor{LightCyan}{rgb}{0.88,1,1}
+
+\usepackage{url}
 %In dieser Arbeit wird auf die Nomenklatur als Abkürzungsverzeichnis verzichtet. Bei Wunsch wieder aktivieren.
 %Nomenklatur als Abkürzungsverzeichnis verwenden
 %\renewcommand{\nomname}{Abkürzungsverzeichnis}
@@ -2776,7 +2778,7 @@ y unconnected, might already be separated and don't share the same super-cluster
 \begin_layout Standard
 Without including the coordinates in any way, clusters cannot include any
  information about shape and may contain disjointed areas.
- For example in Figure 3.1 the optimal cluster count so far would be determined
+ For example in Figure 3.2 the optimal cluster count so far would be determined
  as 2, because it only consists of 2 colors and a pure color segmentation
  algorithm is applied.
  One cluster contains the black background and the second one the red rectangles.
@@ -2838,7 +2840,7 @@ end{center}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Example of an image with optimal cluster count of 2 on purecolor segmentation
+Example of an image with optimal cluster count of 2 on pure color segmentation
  and optimal cluster count of 3 when including geomatrical features
 \end_layout
 
@@ -2852,15 +2854,16 @@ Example of an image with optimal cluster count of 2 on purecolor segmentation
 A different approach to include geometrical knowledge is to detect shapes
  in the already separated clusters, created by the k-means color segmentation
  algorithm.
- The OpenCV library already implements the necessary functions for doing
- so.
- The relevant clusters first have to be converted into a blurred grayscale
- image and the saturation has to be adjusted.
- This leads to a better thresholding, when converting the grayscale image
- into a pure binary one.
- The binary image will then be used to detect the edges via a canny edge
- detector algorithm.
- The openCV method 
+ The OpenCV library
+\begin_inset CommandInset citation
+LatexCommand cite
+key "openCV_doc"
+
+\end_inset
+
+ already implements the necessary functions for doing so.
+ First a canny algorithm will detect the edges of the respective cluster,
+ before the openCV method 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2872,8 +2875,9 @@ findContours(...)
  Contours can be seen as boundaries, and in contrast to edges they form
  closed curvatures.
  If there are several contours convoluted in each other as for example seen
- in Fig 3.2, only the most outer one is relevant and will represent a cluster.
- In the case of the image in Fig 3.2 the only relevant contours are labeled
+ in Figure 3.3, only the most outer one is relevant and will represent a
+ cluster.
+ In the case of the image in Figure 3.3 the only relevant contours are labeled
  from 0-2, because the remaining contours are all enclosed in contour 2.
  
 \end_layout
@@ -2914,7 +2918,7 @@ begin{center}
 Example for hierachy in edge detection
 \begin_inset CommandInset citation
 LatexCommand cite
-key "openCV_doc"
+key "openCV_doc_hiearch"
 
 \end_inset
 
@@ -2969,9 +2973,9 @@ key "Ray1999"
 \end_inset
 
  on synthetic images described in 2.3, could mostly be verified.
- Notice that this section is only concerned about color segmentation.
  On very simple images as seen in Fig 4.1 the automatically specified cluster
  count matches the actual used colors.
+ Notice that this section is only concerned about color segmentation.
 \end_layout
 
 \begin_layout Standard
@@ -3034,8 +3038,9 @@ Surprisingly the calculated optimal cluster count using the RGB color space
  Each rectangle consists of only of one specific color, whereas the circle
  can be distinguished into several RGB-values.
  The core of the circle and everything in close distance has only one color
- value, but the closer the distance to the boundary the pixel color changes
- in order to achieve an effect of anti-aliasing.
+ value, but the closer the distance to the boundary the more the color changes
+ in order to achieve an effect of anti-aliasing, this can be seen in Figure
+ 4.3.
  Anti-aliasing makes the rectangle shape of pixels on a computer display
  less visible for the human eye.
  In this specific case the circle consists of 49 different RGB values.
@@ -3047,14 +3052,15 @@ Surprisingly the calculated optimal cluster count using the RGB color space
  As described in 2.4 the different nature of the RGB color space and HSV
  color space results in different distances in between colors.
  Many of the 49 RGB colors will probably share the same hue value, but can
- be further clustered according to the saturation and brightness, which
- therefore results in different clusters in comparison to the RGB color
+ be further clustered according to the saturation and brightness.
+ Therefore this results in different clusters in comparison to the RGB color
  space and with it to a rise of the calculated optimal cluster count.
 \end_layout
 
 \begin_layout Standard
-Given that the used colors in a natural images is expected to be a lot higher
- than 53, the performed clustering will never be on a comparable fine level.
+Given that the used colors in a natural images are expected to be a lot
+ more than 53, the performed clustering will never be on a comparable fine
+ level.
  The decrease of the intra cluster distance would lead to a lower inter
  cluster distance and supposedly the validity would increase.
 \end_layout
@@ -3073,38 +3079,101 @@ status open
 
 
 \backslash
-begin{center}
+begin{subfigure}[c]{0.3
+\backslash
+textwidth} 
 \end_layout
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/circle.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/circle_HSV.png
-	scale 50
-
-\end_inset
-
-
-\begin_inset ERT
-status open
 
 \begin_layout Plain Layout
 
 
 \backslash
-end{center}
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{images/circle.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Source image} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.3
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+textwidth]{images/circle_HSV.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{converted into HSV} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.3
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+textwidth]{images/circle_anti_aliasing.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{zoomed in circle} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
 \end_layout
 
 \end_inset
@@ -3136,9 +3205,7 @@ Increasing the number of circles and adding more colors overall to testing
  The particular image is built of 4564 RGB values and the right cluster
  count of 10 is calculated.
  Transferring this image into the HSV color space resulted in the computation
- of 10 as well, when using the normal Euclidean distance.
- The conversion into the HSV color space is expected to be closer to the
- human expectation in natural images.
+ of 10 as well.
  
 \end_layout
 
@@ -3284,28 +3351,206 @@ Until now the cluster count was only tested on self-generated images with
 
 \begin_layout Standard
 The algorithm was tested clustering images of the Berkeley Segmentation
- Dataset and provided satisfactory results.
- To evaluate the dynamic cluster count it was compared to the images generated
- with a higher/lower number of clusters.
- These clustered images are generated with algorithm 2.2 by incrementing
- the number of clusters succesively.
- The starting clusters includes every pixel and continues to split the cluster
- with highest variance.
- 
+ Dataset
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arbelaez2011"
+
+\end_inset
+
+ and provided satisfactory results.
+ To evaluate the dynamic cluster count the clustered images, were compared
+ to the images generated with a higher/lower number of clusters.
+ These are also generated with algorithm 2.2.
+ It increments the number of clusters succesively until 
+\begin_inset Formula $k_{\max}$
+\end_inset
+
+ is reached, hence the images in the range from k = 2 to k = 
+\begin_inset Formula $k_{\max}$
+\end_inset
+
+can be used for comparison purposes.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-Zwar kein optimaler Wert bekannt, könnte aber mit kleineren K verglichen
- werden
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]{images/128035.jpg} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{Source image}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/128035_rgb_8_opti
+mal.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{calculated k = 8} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=
+\backslash
+textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/128035_
+rgb_6.png} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{k = 6} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{subfigure}[c]{0.5
+\backslash
+textwidth} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=1
+\backslash
+textwidth]
+\end_layout
+
+\begin_layout Plain Layout
+
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/128035_rgb_14.png}
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+subcaption{k = 14} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{subfigure}
 \end_layout
 
 \end_inset
 
 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gallery example from the Berkeley Database clustered in RGB-color space
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The calculated cluster count of 8 in Figure 4.4 is the first cluster count
+ where, the red shirt builds its own cluster.
+ It seems as in a smaller cluster counts the inter cluster distance is bigger.
+ In k > 8 the intra cluster distance seems to be minimized but has only
+ minimal visible impact, because of the higher inter cluster distance before.
+ Thus k = 8 seem to be the right choice.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3473,12 +3718,15 @@ Snow shoes example from the Berkeley Database clustered in RGB-color space
 \end_layout
 
 \begin_layout Standard
-The calculated cluster count of 4 in Fig 4.4 seems to retain most key features
- of the image, the results seen in c) and b) seem to be similarly good and
- the cluster count of 10 might be preferable due to the existence of a cluster
- solely for the snow shoes.
+The calculated cluster count of 4 in Figure 4.5 seems to retain most key
+ features of the image, the results seen in c) for k = seem to be similarly
+ good.
+ The cluster count of 10 seen in d) might be preferable due to the existence
+ of a cluster solely for the snow shoes.
  The latter impression probably arises of our focus on the image center;
- the clustering algorithm values each pixel likewise.
+ but looking at the sky reveals that it has already been segmented into
+ 3 sections at this point.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3656,192 +3904,11 @@ Airplane example from the Berkeley Database clustered in RGB-color space
 \end_layout
 
 \begin_layout Standard
-The calculated optimal cluster count of 6 in Fig 4.5 seems to be the most
+The calculated optimal cluster count of 6 in Figure 4.6 seems to be the most
  adequate cluster number, although k=3 seems to highlight the plane better.
  However k-means clustering is an unsupervised algorithm without prior knowledge
 , hence the cluster count of 6 retains more information of the background
  as well.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{subfigure}[c]{0.5
-\backslash
-textwidth}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics[width=1
-\backslash
-textwidth]{images/128035.jpg} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-subcaption{Source image}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{subfigure}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{subfigure}[c]{0.5
-\backslash
-textwidth} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics[width=1
-\backslash
-textwidth]
-\end_layout
-
-\begin_layout Plain Layout
-
-{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/128035_rgb_8_opti
-mal.png} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-subcaption{calculated k = 8} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{subfigure}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{subfigure}[c]{0.5
-\backslash
-textwidth} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics[width=
-\backslash
-textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/128035_
-rgb_6.png} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-subcaption{k = 6} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{subfigure}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{subfigure}[c]{0.5
-\backslash
-textwidth} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-includegraphics[width=1
-\backslash
-textwidth]
-\end_layout
-
-\begin_layout Plain Layout
-
-{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/128035_rgb_14.png}
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-subcaption{k = 14} 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{subfigure}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Gallery example from the Berkeley Database clustered in RGB-color space
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The calculated cluster count of 8 in Figure 4.6 is the first cluster count
- where, the red shirt builds its own cluster.
- It seems as in a smaller cluster counts the inter cluster distance might
- be bigger.
- In k > 8 the intra cluster distance seems to be minimized but has only
- minimal, because the key features are already visible.
- Thus k = 8 seem to be the right choice.
- 
 \end_layout
 
 \begin_layout Standard
@@ -3851,13 +3918,14 @@ Using the HSV-color space instead of the RGB-color space did not lead to
  as for example seen in Figure 4.7.
  Otherwise the same findings as in the RGB-color space could be made.
  Overall the comparison did not favor any color space.
- The results were on a subjective focus on the same level.
+ The results were subjectively examined on the same level.
  To determine which, color space should be used should depend on the final
  task of the clustering algorithm.
  Because the following work is rather on an abstract level than on implementing
  the algorithm on a particular task and because the underlying algorithm
  for determining the cluster count was originally proposed for the RGB color
- space, the latter one will be used on the implementation for video sequences.
+ space, the latter one will be used in the evaluation of the dynamic cluster
+ count on video sequences.
  
 \end_layout
 
@@ -4044,19 +4112,20 @@ On synthetic video sequences
 \end_layout
 
 \begin_layout Standard
-Implementing the dynamical cluster count into a simple synthetic video sequence
- as describe in algorithm 3.1, revealed that the cluster count incremented
+Implementing the dynamical cluster count as described in algorithm 3.1 into
+ a simple synthetic video sequence, revealed that the cluster count incremented
  correctly when necessary, but failed to detect required reductions of k.
 \end_layout
 
 \begin_layout Standard
 Figure 4.8 shows an example of a video sequence.
- In image 1 to 4 the cluster count stays the same and is recognized correctly.
- The new appearance of a rectangle in cluster 5 leads to a new cluster count
- calculation.
- In cluster 6 the green rectangle is gone and a new cluster count calculation
- should be the result, but the algorithm fails to identify the change and
- keeps the old cluster count.
+ In image a) to d) the cluster count stays the same and is recognized correctly.
+ The new appearance of a rectangle in cluster e) leads to a new cluster
+ count calculation.
+ In cluster g) the green rectangle is gone and a new cluster count calculation
+ should be the result.
+ Unfortunately the algorithm fails to identify the change and keeps the
+ old cluster count.
  
 \end_layout
 
@@ -4378,9 +4447,9 @@ Example of a simply videosequence
 \end_layout
 
 \begin_layout Standard
-As long as something is added to the scene, the variance calculation of
- previous runs for determining the cluster count will still be meaningful
- for the current frame.
+This and similar tests showed that as long as something is added to the
+ scene, the variance calculation of previous runs for determining the cluster
+ count will still be meaningful for the current frame.
  If the clusters are calculated with k-means using the cluster centers of
  the previous frame as initialization points, the generated clusters will
  have a higher variance if a new area is added to the scene.
@@ -4408,16 +4477,20 @@ As long as something is added to the scene, the variance calculation of
 
 \begin_layout Standard
 With this slight modification the algorithm achieved the right cluster count
- results on simple video sequences (as for example seen in Figure 4.14) as
- long as the conditions remained constant.
- The considered cases included appearing and disappearing areas (solely
- and simultaneously).
- Adding blurring, noise or light effects to an image however resulted most
+ results on all self-generated simple video sequences similar to Figure
+ 4.8 as long as the conditions remained constant.
+ The considered cases included appearing and disappearing areas both solely
+ and simultaneously.
+ 
+\end_layout
+
+\begin_layout Standard
+Adding blurring, noise or light effects to an image however resulted most
  often in a different cluster count than before, indicating unstableness
  in real images on changing conditions.
  But the impact of these effects on simple images with only few features
- is found to be stronger and less subtle than real occurring condition changes
- in most video sequences.
+ is found to be stronger and less subtle than in most real occurring condition
+ changes seen in natural video sequences.
 \end_layout
 
 \begin_layout Standard
@@ -4431,9 +4504,9 @@ super-clusters
 \begin_inset Quotes erd
 \end_inset
 
- (merged clusters of frames).
+ (=merged clusters of frames).
  On each iteration of the algorithm, after the optimal number of clusters
- has been identified, the new cluster centers will be compared to the centers
+ has been identified, the new cluster centers are compared to the centers
  of existing super-clusters.
  For comparison the usual Euclidean color space distance and the Euclidean
  distance of the coordinate centers of the cluster centers and the super-cluster
@@ -4543,12 +4616,12 @@ Otherwise if the distance to the closest super-cluster was bigger than
 
 \begin_layout Standard
 This method generated the right results for simple synthetic video sequences
- and a reasonable 
+ using a reasonable 
 \begin_inset Formula $\delta$
 \end_inset
 
 .
- For example for the video sequence seen in Fig 4.14 
+ For example for the video sequence seen in Fig 4.8 
 \begin_inset Formula $\sim0.06<\delta<0.6$
 \end_inset
 
@@ -4557,7 +4630,12 @@ This method generated the right results for simple synthetic video sequences
 \begin_inset Formula $\delta=0.15$
 \end_inset
 
- was found to be a good threshold.
+ was found to be a good threshold, a higher value for 
+\begin_inset Formula $\delta$
+\end_inset
+
+ often resulted in putting several clusters of one frame into a single super-clu
+ster.
 \end_layout
 
 \begin_layout Subsection
@@ -4565,9 +4643,9 @@ On real video sequences
 \end_layout
 
 \begin_layout Standard
-The adapted algorithm was tested on real video sequences and the adaptive
- cluster count was compared to the outcome produced by it's predecessor
- algorithm developed by Ray and Rose H.
+To evaluate the performace of algorithm 3.1 its calculated adaptive cluster
+ count was compared to the outcome produced by its predecessor algorithm
+ developed by Ray and Rose H.
  Turi
 \begin_inset Foot
 status open
@@ -4579,14 +4657,34 @@ algorithm 2.2
 \end_inset
 
 , where each frame was processed individually.
- 
+ This was done on video sequences of the Freiburg-Berkeley Motion Segmentation
+ Dataset
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ochs2014"
+
+\end_inset
+
+, one example consisting of only 19 frames can be seen in Figure 4.9.
 \end_layout
 
 \begin_layout Standard
 The adapted and unadapted algorithms produced the same cluster count on
  most frames, however the adapted algorithm tended to switch the cluster
  count less times than the unadapted one.
- This outcome had to be expected, as described in 3.1 the adapted algorithm
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+In xy tested video sequences, the adapted algorithm produced the same cluster
+ count in xy% of alltogether xy frames.
+ 
+\end_layout
+
+\end_inset
+
+This outcome had to be expected, as described in 3.1 the adapted algorithm
  will not change the cluster count if the validity currently constitutes
  a local minima, whereas the unandapted algorithm will always go with the
  global minima.
@@ -4622,213 +4720,214 @@ status open
 begin{center}
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset Graphics
-	filename images/cars1_01.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_02.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_03.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_04.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_05.jpg
-	scale 15
-
-\end_inset
-
-
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_01.jpg}}
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/cars1_06.jpg
-	scale 15
-
-\end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_07.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_08.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_09.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_10.jpg
-	scale 15
-
-\end_inset
-
-
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_02.jpg}} 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/cars1_11.jpg
-	scale 15
-
-\end_inset
 
 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_12.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_13.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_14.jpg
-	scale 15
-
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_15.jpg
-	scale 15
-
-\end_inset
-
-
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_03.jpg}}
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename images/cars1_16.jpg
-	scale 15
-
-\end_inset
 
 
-\begin_inset space ~
-\end_inset
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_04.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
 
 
-\begin_inset Graphics
-	filename images/cars1_17.jpg
-	scale 15
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_05.jpg}} 
+\end_layout
 
-\end_inset
-
-
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Graphics
-	filename images/cars1_18.jpg
-	scale 15
-
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset space ~
-\end_inset
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_06.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
 
 
-\begin_inset Graphics
-	filename images/cars1_19.jpg
-	scale 15
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_07.jpg}}
+\end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
-\begin_inset ERT
-status open
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_08.jpg}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_09.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_10.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_11.jpg}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_12.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_13.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_14.jpg}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_15.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_16.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_17.jpg}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_18.jpg}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/cars1_19.jpg}}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -4928,7 +5027,7 @@ midrule
 
 \begin_layout Plain Layout
 
-	1 & 6 &  0 1 2 3 4 5 
+	1-2 & 6 &  0 1 2 3 4 5 
 \backslash
 
 \backslash
@@ -4937,7 +5036,7 @@ midrule
 
 \begin_layout Plain Layout
 
-	2 & 6 &  0 1 2 3 4 5 
+	3-11 & 5 & 0 2 1 3 4 
 \backslash
 
 \backslash
@@ -4946,18 +5045,7 @@ midrule
 
 \begin_layout Plain Layout
 
-	3-7 & 5 & 0 1 2 3 6 
-\backslash
-
-\backslash
-
-\end_layout
-
-\begin_layout Plain Layout
-
-	
-\backslash
-rowcolor{LightCyan}8 & 6 & 0 3 2 4 1 5 
+	12-16 & 5 & 0 1 2 3 4 
 \backslash
 
 \backslash
@@ -4968,7 +5056,7 @@ rowcolor{LightCyan}8 & 6 & 0 3 2 4 1 5
 
 	
 \backslash
-rowcolor{LightCyan}9 & 8 & 0 5 2 4 1 6 3 5 
+rowcolor{LightCyan}17 & 6 & 0 3 2 4 1 5  
 \backslash
 
 \backslash
@@ -4979,20 +5067,11 @@ rowcolor{LightCyan}9 & 8 & 0 5 2 4 1 6 3 5
 
 	
 \backslash
-rowcolor{LightCyan}10 & 8 & 0 5 2 4 1 6 3 5 
+rowcolor{LightCyan}18-19 & 8 & 0 5 2 4 1 4 3 5
 \backslash
 
 \backslash
 
-\end_layout
-
-\begin_layout Plain Layout
-
-	11-19 & 5 & 0 2 1 7 6 
-\backslash
-
-\backslash
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5018,7 +5097,7 @@ end{tabular}
 
 	
 \backslash
-caption{results for Fig 4.14 using the unadapted algorithm}
+caption{results for Fig 4.9 using the unadapted algorithm}
 \end_layout
 
 \begin_layout Plain Layout
@@ -5076,16 +5155,7 @@ midrule
 
 \begin_layout Plain Layout
 
-	1 & 6 &  0 1 2 3 4 5 
-\backslash
-
-\backslash
- 
-\end_layout
-
-\begin_layout Plain Layout
-
-	2 & 6 &  0 1 2 3 4 5 
+	1-2 & 6 &  0 1 2 3 4 5 
 \backslash
 
 \backslash
@@ -5094,7 +5164,7 @@ midrule
 
 \begin_layout Plain Layout
 
-	3-7 & 5 & 0 1 2 3 6 
+	3-11 & 5 & 0 2 1 3 4 
 \backslash
 
 \backslash
@@ -5103,9 +5173,7 @@ midrule
 
 \begin_layout Plain Layout
 
-	
-\backslash
-rowcolor{LightCyan}8 & 5 & 0 1 2 3 6 
+	12-16 & 5 & 0 1 2 3 4 
 \backslash
 
 \backslash
@@ -5116,7 +5184,7 @@ rowcolor{LightCyan}8 & 5 & 0 1 2 3 6
 
 	
 \backslash
-rowcolor{LightCyan}9 & 5 & 0 1 2 3 6 
+rowcolor{LightCyan}17 & 5 & 0 1 2 3 4 
 \backslash
 
 \backslash
@@ -5127,20 +5195,11 @@ rowcolor{LightCyan}9 & 5 & 0 1 2 3 6
 
 	
 \backslash
-rowcolor{LightCyan}10 & 5 & 0 1 2 3 6 
+rowcolor{LightCyan}18-19 & 5 & 0 1 2 3 4 
 \backslash
 
 \backslash
 
-\end_layout
-
-\begin_layout Plain Layout
-
-	11-19 & 5 & 0 1 2 3 6 
-\backslash
-
-\backslash
- 
 \end_layout
 
 \begin_layout Plain Layout
@@ -5166,7 +5225,7 @@ end{tabular}
 
 	
 \backslash
-caption{results for Fig 4.14 using the adapted algorithm}
+caption{results for Fig 4.9 using the adapted algorithm}
 \end_layout
 
 \begin_layout Plain Layout
@@ -5187,7 +5246,11 @@ end{subtable}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The results produced on the video sequence of Figure 4.10 in RGB
+The results produced on the video sequence of Figure 4.9 in RGB with 
+\begin_inset Formula $\delta=0.2$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5201,9 +5264,18 @@ The results produced on the video sequence of Figure 4.10 in RGB
 \end_layout
 
 \begin_layout Standard
-The different results found in the adapted and unadapted algorithm presented
- in Table 4.1 don't necessarily mean that the adapted algorithm calculates
- a worse cluster count.
+Table 4.1 shows the calculated number of clusters and the respective super-cluste
+rs for the video sequence seen in Figure 4.9.
+ The index on the list of super-clusters corresponds to the cluster of each
+ frame which is assigned to the respective super-cluster.
+ In this particular case the adapted algorithm produced only in 3 out of
+ 19 frames a different outcome.
+\end_layout
+
+\begin_layout Standard
+The different results produced in the adapted and unadapted algorithm don't
+ necessarily mean that the calculated cluster count of the adapted algorithm
+ is worse.
  Sometimes it might be reasonable to keep the cluster count more stable.
  If the cluster count is mostly unchanged, the generated clusters are more
  similar and thus merge into fewer super-clusters.
@@ -5211,21 +5283,283 @@ The different results found in the adapted and unadapted algorithm presented
  If the object is recognized in one of the clusters of the first frame,
  the corresponding super-cluster might ease the recognition in the following
  clusters.
- However it is unlikely that the features of an object are completely put
+ Figure 4.10 for example shows the super-cluster labeled as 4 in Table 4.1,
+ where most key features of the car are visible.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_0.png}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_1.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_2.png}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_3.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_4.png}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_5.png}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_6.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_7.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_8.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_9.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_10.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_11.png}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_12.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_13.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_14.png}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_15.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_15.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_17.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame{
+\backslash
+includegraphics[width=0.22
+\backslash
+textwidth]{images/4_18.png}} 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The clusters, which are put into the super-cluster 4 in Table 4.1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However it is unlikely that the features of an object are completely put
  into one cluster.
 \end_layout
 
 \begin_layout Standard
 The super-clusters could also be used to compress the data size of the video
  sequence.
- The whole video can be encoded to only 7 colors when using the adapted
- algorithm.
+ The video sequence of Figure 4.9 could be encoded to only 7 colors when
+ using the adapted algorithm.
  For other purposes it is hardly possible to rate the performance of this
  algorithm in reference to the super-clusters, due to the lack of similar
  scientific work.
  If the clusters would actually possess striking visual features the super-clust
 ers could be evaluated further.
- Therefore it makes sense to try to include geometrical features as well.
+ Therefore it makes sense to try to include geometrical features into the
+ segmentation process.
 \end_layout
 
 \begin_layout Section
@@ -5233,19 +5567,17 @@ Evaluation of k-means clustering with a 5d-feature vector
 \end_layout
 
 \begin_layout Standard
-Using a 5D-feature vector, consisting of the color space and the geometric
- features promises two main advantages.
+Using a 5D-feature vector, consisting of the color space and the coordinates
+ promises two main advantages.
  Clustered regions would be closer to semantic knowledge, since regions
  with similar colors are already split and thus the results are more useful
  for comparing clusters over the cause of a video sequence.
- Overall the expectation is, that the resulting outcome is closer to semantical
- knowledge.
  Furthermore after the k-means algorithm has clustered each frame separately,
- the whole outcome can build a new dataset, which then again can be clustered
+ the whole outcome can build a new dataset, which then again could be clustered
  via k-means to fuse the clusters of each frame into super-clusters holding
  information of the whole video sequence.
- The requirement to do so are reliable generated reasonable results when
- clustering single images.
+ The requirement to do so are reliable and reasonable generated results
+ when clustering single images.
  
 \end_layout
 
@@ -5306,23 +5638,15 @@ Where
 The same normalization procedure should theoretically be applied on the
  variance calculation as well.
  Unfortunately due to the incoherent shape of the background, the cluster
- containing the background area often had the highest variance out of the
+ containing the background area had often the highest variance out of the
  calculated clusters.
- Figure 4.9 shows an example of this occurrence; the white area represents
+ Figure 4.11 shows an example of this occurrence; the white area represents
  the not contained area of the specific cluster.
- The algorithm gets the right result for 
-\begin_inset Formula $k=2$
-\end_inset
-
- and 
+ While the algorithm gets the expected result for k=2 and 
 \begin_inset Formula $\alpha=0.004$
 \end_inset
 
- (a ratio of 250:1), but it splits the background further for 
-\begin_inset Formula $k=3-5.$
-\end_inset
-
-
+ (a ratio of 250:1), it fails for k=3-5 and splits the background further.
 \begin_inset Foot
 status open
 
@@ -5387,7 +5711,7 @@ end{subfigure}
 
 
 \backslash
-begin{subfigure}[c]{0.25
+begin{subfigure}[c]{0.2
 \backslash
 textwidth} 
 \end_layout
@@ -5521,16 +5845,12 @@ Example of single clusters when splitting the wrong cluster using a 5d-feature
 
 \begin_layout Standard
 Ignoring the geometrical features while calculating the variance lead to
- better results in the case of Figure 4.9, but only by chance since the rectangle
-s were the first cluster in 
-\begin_inset Formula $k=2$
-\end_inset
-
-.
+ better results in the case of Figure 4.11, but only by chance since the
+ rectangles were the first cluster in k=2.
  In order to split the right cluster a different measurement than the variance
  would be needed.
  Even if the problem of finding the right cluster to split is ignored and
- the right cluster is assigned maually, it didn't generate reasonable results.
+ the right cluster is assigned manually, it didn't generate reasonable results.
  The major problem hereby is to find a scale of the geometric features to
  the color features.
  In some images this scale could be found, but did not result in equally
@@ -5539,18 +5859,8 @@ s were the first cluster in
  scale dynamically to each image.
  But for some images there might even exists no appropriate ratio of color
  features and geometrical features, which would lead to meaningful clusters.
- A potential instance of this will be further discussed later in 4.4.
+ A potential instance of this will be further discussed in section 4.4.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Besssere? Verknüpfung zu Ergebnissen aus 4.4
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -5576,12 +5886,19 @@ We only want to divide clusters with clear geometrical boundaries further.
 \end_layout
 
 \begin_layout Standard
-This can be achieved using the openCV library.
+This can be achieved using the openCV library
+\begin_inset CommandInset citation
+LatexCommand cite
+key "openCV_doc"
+
+\end_inset
+
+.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-specific process explained in 3.4
+see section 3.2
 \end_layout
 
 \end_inset
@@ -5779,9 +6096,9 @@ The first image of Fig 4.11 shows the image which will be clustered.
  cluster centers, the optimal cluster count would be determined as 4 instead
  of 3.
  Thus the calculated polygons should only increase the cluster count if
- the comprised area is filled of the pixels which are part of the cluster,
- which was used for calculating it.
- Thus this needs to be checked.
+ the comprised area is filled of the pixels which are part of the cluster
+ used for calculating it.
+ This check needs to be implemented in the algorithm.
  
 \end_layout
 
@@ -5795,9 +6112,9 @@ Furthermore cluster centers should also include coordinates in order to
 \end_layout
 
 \begin_layout Standard
-When splitting the cluster further using the described method, the new cluster
- centers will be built up of the same color feature but will be separated
- according to the new mean of the coordinates of each polygon.
+When splitting the cluster further using the method described in 2.4, the
+ new cluster centers will be built up of the same color feature but will
+ be separated according to the new mean of the coordinates of each polygon.
 \end_layout
 
 \begin_layout Standard
@@ -5829,20 +6146,6 @@ State {calculate the mean of the coordinates of each cluster}
 
 \backslash
 State {update the cluster center including the coordinate information}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-State {convert each cluster into a grayscale image and adjust the saturation}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-State {convert each cluster into a binary image}
 \end_layout
 
 \begin_layout Plain Layout
@@ -5940,18 +6243,17 @@ One of the advantages of the k-means algorithm is, that each pixel is assigned
  boundaries, it seems logical to check whether the pixels of the original
  cluster lie inside of the calculated polygon and assign them accordingly.
  Alternatively the calculated cluster centers could be used as starting
- points for k-means clustering with either the 5d-vector of 4.2 or using
- a 2d-vector consisting of the coordinates on the particular cluster.
+ points for k-means clustering with either the 5d-vector of section 4.3 or
+ using a 2d-vector consisting of the coordinates on the particular cluster.
 \end_layout
 
 \begin_layout Standard
-Both assignment methods have some flaws.
- The created boundaries are not completely accurate and hence some pixels
- are not inside of the polygon and will fall through the first method.
+Both assignment methods have some flaws, illustraded in 4.13.
+ The created boundaries are not completely accurate, hence some pixels are
+ not inside of the polygon and will fall through the first method.
  The second method doesn't consider boundaries at all, the k-means algorithm
  will simply check which pixel is on the shortest distance to the specific
  cluster.
- The last image of Figure 4.11 shows this quite good.
  Adjusting the scale value 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -6117,22 +6419,22 @@ Comparison of boundary cluter assignment and k-means
 
 \end_inset
 
-On simpler images (as for example the ones seen in Figure 4.2) both methods
- work fine and lead to the expected results.
+On simpler images as for example seen in Figure 4.1 both methods work fine
+ and lead to the expected results.
  Overall the method of checking whether a pixel lies inside of the calculated
- polygon seems to get the closer to the expected results.
+ polygon seems to get closer to the expected results.
  The problem of assigning only few pixels to the wrong cluster could easily
  be solved.
- For example implementing a noise filter.
+ For example by implementing a noise filter.
  
 \end_layout
 
 \begin_layout Standard
 On natural images however the described method didn't lead to an increased
  cluster count.
- In all tested cases the contour detection failed to find useful polygons.
- As seen in Figure 4.12 despite using a nearly optimal binary image, the
- resulting contours are not completely aligned.
+ In all tested images the contour detection failed to find useful polygons.
+ Despite using a nearly optimal binary image in Figure 4.14, the resulting
+ contours are not completely aligned.
  Printing all contours in one image shows the potential and might indicate
  how an improved detecting algorithm will improve the results.
  
@@ -6288,11 +6590,11 @@ Example of a flawed boundary detection
 \end_layout
 
 \begin_layout Standard
-The original image of 4.13 presents two snowshoes, the goal would be to split
- the particular cluster so that one features the left snowshoe and one features
- the right one.
+The source image of Figure 4.15 presents two snowshoes.
+ The goal in segmenting this image would be to split the particular cluster
+ so that one features the left snowshoe and one features the right one.
  Unfortunately no fitting polygon could be calculated and the clusters remained
- the same.
+ unchanged.
 \end_layout
 
 \begin_layout Standard
@@ -6411,14 +6713,15 @@ Discussion and conclusion
 
 \begin_layout Standard
 Testing the described algorithm by Ray and Rose H.
- Turi lead to mostly similar results as formerly reported.
+ Turi on images verified the formerly reported results.
  Although some flaws need to be considered before using it.
  On very simplistic images the calculated cluster count will separate the
  image into too many clusters due to the possible reduction of the intra
  cluster distance.
- Besides it should be known beforehand whether the investigated image will
- be a synthetic or a real one, but usually this should be no problem and
- is already stated in the original article.
+ Besides, it should be known beforehand whether the investigated image will
+ be a synthetic or a real one.
+ Usually this should be no problem and is no new finding, since it already
+ stated in the original article.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ray1999"
@@ -6433,54 +6736,78 @@ Adapting the algorithm to generate an adaptive cluster count on video sequences
  proved to work well on synthetic video sequences.
  On natural video sequences the results were satisfactory but did not always
  produce identical results in comparison to the independent calculated ones.
- The effective use of this algorithm would require some further improvements
- for most possible tasks, due to the high computation time.
- Even if the current cluster count constitutes a local minima the basic
- k-mean algorithm has to be repeated 4 times, otherwise it will additionally
- be repeated up to the given maximal k.
+ Due to the high computation time, the effective use of this algorithm would
+ require some further improvements for most possible tasks.
+ Even if the current cluster count of a frame in a video sequence constitutes
+ a local minima in the next frame the basic k-mean algorithm has to be repeated
+ 4 times.
+ Otherwise the basic k-means algorithm will be repeated until 
+\begin_inset Formula $k_{\max}$
+\end_inset
+
+is reached.
  
 \end_layout
 
 \begin_layout Standard
-Creating super-clusters through comparison of cluster center, which includes
- color- and coordinate information provides knowledge of the movement and
- continuity of existing clusters.
+The improvements should be tailored to the final task.
+ One idea for object-tracking for example would be, to only recalculate
+ the cluster count if the obect has been lost.
+ In addition the algorithm could implement multi-threading to improve the
+ calculation time.
+\end_layout
+
+\begin_layout Standard
+Creating super-clusters which include color- and coordinate information,
+ through comparison of cluster center over several frames, provides knowledge
+ of the movement and continuity of existing clusters.
  The information yield and specification of a good threshold 
 \begin_inset Formula $\delta_{dis}$
 \end_inset
 
  or even the suggested procedure for creating super-clusters in general
- can only be properly evaluated if the created clusters are closer to semantic
- knowledge.
+ can only be properly evaluated if the generated clusters are closer to
+ semantic knowledge.
  This could be achieved through including more features in clustering that
  just the color information.
  The attempt of including geometric features via a 5d-feature vector while
  retaining the basic k-means algorithm did not lead to improved results.
  The main problem was to find a working ratio of the colors and coordinates,
  this ratio should furthermore be dynamic to be universal applicable.
- On some images the 5d-feature vectors could be tested with an approximate
- fitting ratio but could not produce the desired outcome.
- This might be due to one of the big flaws of k-means clustering, it can
- only produce spherically formed clusters, which is especially problematic
- when the coordinates are included in the clustering process.
+ On some images the 5d-feature vectors did not produce the desired outcome
+ independent on the scaling ratio.
+ This was probably caused by one of the big flaws of k-means clustering,
+ it can only produce spherically formed clusters.
+ This is especially problematic when the coordinates are included in the
+ clustering process.
+ In this cases other clustering methods as for example mean-shift would
+ produce better results.
 \end_layout
 
 \begin_layout Standard
 The alternative approach combined the region based image segmentation of
  k-means clustering with a boundary detection approach.
  Although the splitting of clusters did ultimately not work in real images,
- the found edges in single clusters showed some promise if combined with
- semantic knowledge.
- In a case where a particular feature is recognized and should be tracked,
- the serial identity might prove useful.
- 
+ the found edges in single clusters showed some promise.
+ The next step would be to include actual semantic knowledge in order to
+ find objects or features, and create clusters solely for them.
+\end_layout
+
+\begin_layout Standard
+The concept of super-clusters seemed to work quite and merged similar clusters
+ correctly.
+ But besides data compression, no other field of use could be tested in
+ this thesis.
+ If semantic knowledge could actually be implemented in the clustering process
+ however, the serial identity of clusters in video sequences would drastically
+ increase and with it the concept of super-clusters.
 \end_layout
 
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "../bibtex-daten/bachelorarbeit-info"
-options "plain"
+options "unsrt"
 
 \end_inset
 
