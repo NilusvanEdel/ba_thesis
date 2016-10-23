@@ -533,7 +533,7 @@ Universität Osnabrück
 \begin_inset Text
 
 \begin_layout Plain Layout
-sentor:
+mentor:
 \end_layout
 
 \end_inset
@@ -767,18 +767,18 @@ K-means clustering is one of the most often used clustering algorithms for
  Image segmentation is the basis for many image analysis techniques and
  thus highly values reliable results and computing time.
  While k-means clustering offers a great deal for the latter part, reliable
- results are sensitive towards the starting positions.
- The starting position is defined as the chosen initial cluster number and
- their respective position.
+ results are sensitive towards the initial condition.
+ The initial condition is defined as the chosen initial cluster number and
+ its respective position.
  
 \end_layout
 
 \begin_layout Standard
 So far there exists no generally acknowledged optimal solution to compute
- the optimal number of clusters for any given data set a priori.
+ the optimal number of clusters for any given data set beforehand.
  One common bypass is to run the algorithm several times with different
  starting points.
- Especially for image segmentation however, many proposals have been made
+ Especially for image segmentation, however, many proposals have been made
  to create good starting points for clustering images
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -790,23 +790,23 @@ key "ChrisSolomon2011_km"
 \end_layout
 
 \begin_layout Standard
-The goal of this thesis is to adapt one of these algorithms to video sequences
- and improve it through the gained knowledge from continuous frames.
- The created clusters for each frame should then be compared to its predecessor,
- to determine whether clusters of previous frames persisted.
- Creating an algorithm to identify good starting positions for k-means clusterin
-g in video sequences can already be used for video compression on its own,
- but it could also be useful for many fields of video analysis as for example
- feature extraction and object recognition.
- If a cluster contains most visible features of an object, the identification
- of the serial identity of this particular clusters can especially be applicable
- in fields as object tracking.
+The first aim of this thesis is to adapt one of these algorithms to video
+ sequences and improve it through the gained knowledge from continuous frames.
+ The created clusters for each frame should then be compared to their predecesso
+r to determine whether clusters of previous frames persisted.
+ An algorithm to identify good starting positions for k-means clustering
+ in video sequences could be used for video compression on its own, it could
+ also be useful for many fields of video analysis as for example feature
+ extraction and object recognition.
+ If a cluster contains the most visible features of an object, the identificatio
+n of the serial identity of this particular cluster can especially be applicable
+ in fields such as object tracking.
 \end_layout
 
 \begin_layout Standard
 The organization of this thesis is as follows.
- Chapter 2 provides some information on clustering and image segmentation
- fundamentals.
+ Chapter 2 provides information on clustering and image segmentation fundamental
+s.
  It introduces k-means clustering and an algorithm to find good starting
  positions for k-means clustering in image segmentation.
 \end_layout
@@ -1296,7 +1296,8 @@ end{subfigure}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Example of k-means clustering on data with distinct groups
+Example of k-means clustering on data with distinct groups and random initial
+ centers, the differing shapes symbolize the clusters
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Pang-NingTan2005"
@@ -3410,7 +3411,7 @@ Gallery example from the Berkeley Database clustered in RGB-color space
 The calculated cluster count of 8 in Figure 4.4 is the first cluster count
  where the red shirt builds its own cluster.
  It seems as the outcome of a smaller cluster count might have the bigger
- inter cluster distance, wherea in k>8 the intra cluster distance seems
+ inter cluster distance, whereas in k>8 the intra cluster distance seems
  to be minimized.
  Incrementing the number of clusters above 8 has only minimal visible impact,
  because of the higher inter cluster distance before.
