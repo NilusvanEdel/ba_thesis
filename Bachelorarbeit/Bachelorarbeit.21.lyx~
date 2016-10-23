@@ -2440,8 +2440,8 @@ Consider for example the validity chart in Fig 3.1.
  As discussed in 2.3 the best validity in natural images would be at k =
  8, because it is the minmal value after the first local maximum.
  But if the previous frame would have had 13 clusters, the adapted algorithm
- would continue to work with those clusters, since k = 13 constitutes a
- local minimum.
+ would continue to work with those clusters, because k = 13 constitutes
+ a local minimum.
 \end_layout
 
 \begin_layout Standard
@@ -4435,7 +4435,7 @@ end{subfigure}
 \begin_layout Plain Layout
 
 \lang ngerman
-A simple videosequence in which areas are moving out of the video
+A simple video sequence in which areas are moving out of the video
 \end_layout
 
 \end_inset
@@ -5574,7 +5574,7 @@ Evaluation of k-means clustering with a 5d-feature vector
 \begin_layout Standard
 Using a 5d-feature vector, consisting of the color space and the coordinates
  promises two main advantages.
- Clustered regions would be closer to semantic knowledge, since regions
+ Clustered regions would be closer to semantic knowledge, because regions
  with similar colors are already split and thus the results are more useful
  for comparing clusters over the cause of a video sequence.
  Furthermore after the k-means algorithm has clustered each frame separately,
@@ -6171,8 +6171,8 @@ For {each cluster}
 
 
 \backslash
-If {Several polygons are detected and the pixels inside of the polygons
- are part of the current cluster }
+If {Several polygons are detected and the pixels inside the polygons are
+ part of the current cluster }
 \end_layout
 
 \begin_layout Plain Layout
@@ -6186,7 +6186,7 @@ State {Delete the old cluster center of this cluster center}
 
 
 \backslash
-State {Calculate the mean of the coordinates inside of the boundary}
+State {Calculate the mean of the coordinates inside the boundary}
 \end_layout
 
 \begin_layout Plain Layout
@@ -6246,7 +6246,7 @@ One of the advantages of the k-means algorithm is, that each pixel is assigned
  The assignment could be done in different ways.
  Because the splitting of the clusters happens according to the calculated
  boundaries, it seems logical to check whether the pixels of the original
- cluster lie inside of the calculated polygon and assign them accordingly.
+ cluster lie inside the calculated polygon and assign them accordingly.
  Alternatively the calculated cluster centers could be used as starting
  points for k-means clustering with either the 5d-vector of section 4.3 or
  using a 2d-vector consisting of the coordinates on the particular cluster.
@@ -6255,7 +6255,8 @@ One of the advantages of the k-means algorithm is, that each pixel is assigned
 \begin_layout Standard
 Both assignment methods have some flaws, illustrated in 4.13.
  The created boundaries are not completely accurate, hence some pixels are
- not inside of the polygon and will fall through the first method.
+ not inside the polygon and will fall through the first method as seen in
+ b).
  The second method doesn't consider boundaries at all, the k-means algorithm
  will simply check which pixel is on the shortest distance to the specific
  cluster.
@@ -6414,7 +6415,7 @@ end{subfigure}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Comparison of boundary cluter assignment and k-means
+Comparison of boundary cluster assignment and k-means
 \end_layout
 
 \end_inset
@@ -6426,7 +6427,7 @@ Comparison of boundary cluter assignment and k-means
 
 On simpler images as for example seen in Figure 4.1 both methods work fine
  and lead to the expected results.
- Overall the method of checking whether a pixel lies inside of the calculated
+ Overall, the method of checking whether a pixel lies within the calculated
  polygon seems to get closer to the expected results.
  The problem of assigning only few pixels to the wrong cluster could easily
  be solved.
@@ -6723,10 +6724,10 @@ Testing the described algorithm by Ray and Rose H.
  On very simplistic images the calculated cluster count will separate the
  image into too many clusters due to the possible reduction of the intra
  cluster distance.
- Besides, it should be known beforehand whether the investigated image will
- be a synthetic or a real one.
- Usually this should be no problem and is no new finding, since it already
- stated in the original article.
+ Besides this, it should be known beforehand whether the investigated image
+ will be a synthetic or a real one.
+ Usually this should be no problem and is no new finding, because it is
+ already stated in the original article.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ray1999"
@@ -6742,29 +6743,29 @@ Adapting the algorithm to generate an adaptive cluster count on video sequences
  On natural video sequences the results were satisfactory but did not always
  produce identical results in comparison to the independent calculated ones.
  Due to the high computation time, the effective use of this algorithm would
- require some further improvements for most possible tasks.
+ require some further improvements for most of the possible tasks.
  Even if the current cluster count of a frame in a video sequence constitutes
- a local minima in the next frame the basic k-mean algorithm has to be repeated
- 4 times.
+ a local minimum in the next frame the basic k-mean algorithm has to be
+ repeated 4 times.
  Otherwise the basic k-means algorithm will be repeated until 
 \begin_inset Formula $k_{\max}$
 \end_inset
 
-is reached.
+ is reached.
  
 \end_layout
 
 \begin_layout Standard
 The improvements should be tailored to the final task.
- One idea for object-tracking for example would be, to only recalculate
- the cluster count if the obect has been lost.
+ For example, one idea for object-tracking would be to recalculate the cluster
+ count only if the object has been lost.
  In addition the algorithm could implement multi-threading to improve the
  calculation time.
 \end_layout
 
 \begin_layout Standard
 Creating super-clusters which include color- and coordinate information,
- through comparison of cluster center over several frames, provides knowledge
+ by comparison of cluster center over several frames, provides knowledge
  of the movement and continuity of existing clusters.
  The information yield and specification of a good threshold 
 \begin_inset Formula $\delta_{dis}$
@@ -6773,13 +6774,13 @@ Creating super-clusters which include color- and coordinate information,
  or even the suggested procedure for creating super-clusters in general
  can only be properly evaluated if the generated clusters are closer to
  semantic knowledge.
- This could be achieved through including more features in clustering that
- just the color information.
+ This could be achieved by including more features in clustering than just
+ the color information.
  The attempt of including geometric features via a 5d-feature vector while
  retaining the basic k-means algorithm did not lead to improved results.
  The main problem was to find a working ratio of the colors and coordinates,
  this ratio should furthermore be dynamic to be universal applicable.
- On some images the 5d-feature vectors did not produce the desired outcome
+ On some images the 5d-feature vectors did not deliver the desired outcome
  independent on the scaling ratio.
  This was probably caused by one of the big flaws of k-means clustering,
  it can only produce spherically formed clusters.
@@ -6799,13 +6800,13 @@ The alternative approach combined the region based image segmentation of
 \end_layout
 
 \begin_layout Standard
-The concept of super-clusters seemed to work quite and merged similar clusters
- correctly.
+The concept of super-clusters seemed to work quite well and merged similar
+ clusters correctly.
  But besides data compression, no other field of use could be tested in
  this thesis.
- If semantic knowledge could actually be implemented in the clustering process
- however, the serial identity of clusters in video sequences would drastically
- increase and with it the concept of super-clusters.
+ However, if semantic knowledge could actually be implemented in the clustering
+ process, the serial identity of clusters in video sequences would drastically
+ increase and therefore also the concept of super-clusters.
 \end_layout
 
 \begin_layout Standard
