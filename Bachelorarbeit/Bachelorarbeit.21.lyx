@@ -911,8 +911,8 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-K-means clustering is one of the most used clustering algorithms for image
- segmentation.
+K-means clustering is one of the most often used clustering algorithms for
+ image segmentation.
  Image segmentation is the basis for many image analysis techniques and
  thus highly values reliable results and computing time.
  While k-means clustering offers a great deal for the latter part, reliable
@@ -1028,7 +1028,7 @@ key "VladimirCherkassky2007"
 \end_inset
 
 .
- This separation into a number of groups, called clusters happens according
+ This separation into a number of groups, called clusters, happens according
  to a measure of similarity.
  The goal of the algorithm is to find clusters in a way, that samples within
  are more similar to each other than samples from different clusters and
@@ -1163,14 +1163,14 @@ F(z)=R^{m}\rightarrow R^{d}
 \end_layout
 
 \begin_layout Standard
-Hence the reduced output can be decoded to the original input with, without
- losing much information.
+Hence the reduced output can be decoded to the original input without losing
+ to much information.
  Thus the main features can be kept, while the amount of data is reduced.
 \end_layout
 
 \begin_layout Standard
 Clusters can either be described hierarchically (i.e.
- described in tree structures) or the can be purely partitional.
+ described in tree structures) or they can be purely partitional.
  The latter sort can be further divided into 2 groups.
  The first one is called 
 \begin_inset Quotes gld
@@ -1674,8 +1674,8 @@ Image color segmentation
 \begin_layout Standard
 One of the many applications for the k-means clustering algorithm is color
  segmentation.
- Image segmentation in general is the process of splitting/ classifying
- an image into several parts, so that each region builds a homogenous segment.
+ Image segmentation in general is the process of splitting/classifying an
+ image into several parts, so that each region builds a homogenous segment.
  Combining any of the homogenous segments would result in a heterogenous
  segment
 \begin_inset CommandInset citation
@@ -1695,7 +1695,7 @@ Segmentation algorithms are often the very first step in image processing.
  classified.
  The segmentation outcome will always be dependent on the underlying image
  and the object, or feature which should be identified.
- Thus there is no single perfect clustering for an image, this complicates
+ Therefore there is no single perfect clustering for an image, this complicates
  the evaluation process
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1856,9 +1856,9 @@ where
 \end_layout
 
 \begin_layout Standard
-Only the minimum of each distance is considered, since we always want to
- maximize the smallest distances.
- The maximized values of larger values will be automatically bigger as well.
+Only the minimum of each distance is considered, because we always want
+ to maximize the smallest distances.
+ The maximized values of larger values will be automatically larger as well.
 \end_layout
 
 \begin_layout Standard
@@ -2086,7 +2086,7 @@ Due to the larger inter-cluster distance, small cluster numbers tend to
  In synthetic images, with an actual perfect cluster count the calculated
  minimal validity will be the optimal cluster count.
  In natural images the best number of clusters is usually prefered.
- To overcome to effect of a large inter-cluster distance with a small k,
+ To overcome the effect of a large inter-cluster distance with a small k,
  the first local maximum in the validity measure needs to be found.
  
 \end_layout
@@ -2116,9 +2116,9 @@ The adjusted best validity measure will be the smallest validity in between
 \end_layout
 
 \begin_layout Standard
-Important to notice is that this algorithm is supposed for image segmentation
+It is important to notice that this algorithm is supposed for image segmentation
  in RGB-color space, although it can also be implemented on a different
- featurespace as long as the attributes can be scaled properly.
+ feature space as long as the attributes can be scaled properly.
 \end_layout
 
 \begin_layout Section
@@ -2135,11 +2135,11 @@ s.
  The most used color space is the RGB-color space.
  It is based on the tristimulus theory of color in the human visual system.
  Its name describes the 3 used color channels; red, green and blue.
- Similar to the three types of cones in the human eye which absorb the respectiv
-e electromagnetic wavelengths.
+ This is similar to the three types of cones in the human eye which absorb
+ the respective electromagnetic wavelengths.
  In normal 24-bit images, each channel is usually scaled to 0–255 for the
  common 1 byte per colour channel.
- Important to notice is that the color channels overlap.
+ Therefore it is important to notice is that the color channels overlap.
  A perceived blue item will have the highest peak in the blue channel, but
  it will also have milder components of red and green
 \begin_inset CommandInset citation
@@ -2244,7 +2244,7 @@ The HSV-color space is advantageous in comparison to the RGB-color space
  in color based image segmentation, because image objects are more consistently
  contained in the resulting hue field than in the channels of the RGB representa
 tion.
- This does especially apply for changing light conditions
+ This applies in particular to changing light conditions
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011"
@@ -2311,7 +2311,7 @@ key "ChrisSolomon2011"
 \end_layout
 
 \begin_layout Standard
-However both RGB and HSV spaces are not perceptually uniform; the distances
+Both RGB and HSV spaces are however, not perceptually uniform; the distances
  among colors perceived by the human are not mirrored by similar distances
  between the points representing those colors in such spaces
 \begin_inset CommandInset citation
@@ -2329,12 +2329,12 @@ Adaptive K-means clustering
 
 \begin_layout Standard
 One of the logical extensions of the k-means algorithm used for color segmentati
-on seems to be to implement the algorithm not only on images, but on whole
- video sequences.
+on seems to implement the algorithm not only on images, but on whole video
+ sequences.
  The existing algorithms for determining the optimal cluster count could
  be transferred on whole videos, by simply processing them frame by frame.
- Usually the resulting processing time of them would prove unfit for most
- practical use if the algorithm is applied on each frame of the video.
+ Usually the resulting processing time would prove unfit for most practical
+ use if the algorithm is applied on each frame of the video.
  While the regular k-means computing time is feasible, at least if an iteration
  limit is implemented, the computing time for dynamic cluster count identificati
 on as discussed in 2.4 is tremendous, due to the repeated use of the basic
@@ -2343,8 +2343,8 @@ on as discussed in 2.4 is tremendous, due to the repeated use of the basic
 \end_layout
 
 \begin_layout Standard
-Hence the first task of this bachelor thesis is to find a way to adapt the
- identification of the optimal cluster number from images to video sequences.
+Hence, the first task of this bachelor thesis is to find a way to adapt
+ the identification of the optimal cluster number from images to video sequences.
  
 \end_layout
 
@@ -2359,7 +2359,7 @@ Without further investigation the resulting cluster have only a limited
 \end_layout
 
 \begin_layout Standard
-The second task of this bachelor thesis is thus, to implement a similarity
+Thus, the second task of this bachelor thesis is to implement a similarity
  measurement for clusters to merge them over several frames.
  In order to distinguish the clusters which are calculated using the k-means
  algorithm in a single image and the clusters which are generated through
@@ -2381,8 +2381,8 @@ Dynamic cluster count algorithm in video sequences
 \end_layout
 
 \begin_layout Standard
-Since color segmentation in video sequences and images are essentially the
- same problem, the proposed algorithm by Siddheswar Ray and Rose H.
+Due to color segmentation in video sequences and images being essentially
+ the same problem, the proposed algorithm by Siddheswar Ray and Rose H.
  Turi, would also work in videos.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2414,10 +2414,10 @@ Often the optimal cluster count will be unchanged from one frame to the
 \begin_layout Standard
 As described in 2.3 the measure to evaluate the number of clusters is the
  validity, its optimal value always falls on a local minimum in comparison
- to a higher/ lower cluster count.
- From this follows that if the cluster centers of the previous frame still
- constitute a local minima in the current frame it is likely that the optimal
- cluster count is unchanged.
+ to a higher/lower cluster count.
+ Which means that if the cluster centers of the previous frame still constitute
+ a local minima in the current frame it is likely that the optimal cluster
+ count is unchanged.
  
 \end_layout
 
@@ -2561,10 +2561,10 @@ see 2.3 Optimal cluster count
  the clusters who have previously belonged together.
  Instead for getting the validity for k-1 the corresponding cluster centers
  of the previous cycle has to be used as initialization point for k-means
- clustering (9), although this cluster centers haven been generated using
+ clustering (9), although this cluster centers have been generated using
  a previous frame.
- Therefore it is important to save all calculated cluster centers, since
- they might later be used.
+ Therefore it is important to save all calculated cluster centers, because
+ they might be used later.
  After running k-means clustering and calculating the variance it can finally
  be checked, if the validity for k consitutes a minimum (12).
 \end_layout
@@ -2768,19 +2768,19 @@ Similarity measurement of clusters occurring over several frames
 \begin_layout Standard
 In order to find a suitable similarity measurement for comparing clusters,
  it is important to keep track of the goal.
- The fusion of several similar clusters, into one super-cluster should finally
+ The fusion of several similar clusters into one super-cluster should finally
  provide information of the whole video.
  The basic k-means color segmentation algorithm as described in 2.2 is repeatedly
- used in 2.3, would ultimately only provide minimal information via the cluster
+ used in 2.3, would ultimately provide only minimal information via the cluster
  centers.
  
 \end_layout
 
 \begin_layout Standard
-For example if only the Euclidean distance of each cluster center would
+For example, if only the Euclidean distance of each cluster center would
  be compared and the most similar ones would be merged, the gained information
  could be seen as color histogram of the whole video sequence.
- One improvement step is to not only include the color spaces, but also
+ One improvement step is not only to include the color spaces, but also
  the size to compare clusters.
  Thus clusters which share a color with another cluster center but are ultimatel
 y unconnected, might already be separated and don't share the same super-cluster.
@@ -3731,8 +3731,8 @@ Snow shoes example from the Berkeley Database clustered in RGB-color space
 
 \begin_layout Standard
 The calculated cluster count of 4 in Figure 4.5 seems to retain most key
- features of the image, the results seen in c) for k = seem to be similarly
- good.
+ features of the image, the results seen in c) for k=3 seem to be similarly
+ well.
  The cluster count of 10 seen in d) might be preferable due to the existence
  of a cluster solely for the snow shoes.
  The latter impression probably arises of our focus on the image center;
@@ -3918,9 +3918,9 @@ Airplane example from the Berkeley Database clustered in RGB-color space
 \begin_layout Standard
 The calculated optimal cluster count of 6 in Figure 4.6 seems to be the most
  adequate cluster number, although k=3 seems to highlight the plane better.
- However k-means clustering is an unsupervised algorithm without prior knowledge
-, hence the cluster count of 6 retains more information of the background
- as well.
+ However, k-means clustering is an unsupervised algorithm without prior
+ knowledge, hence the cluster count of 6 retains more information of the
+ background as well.
 \end_layout
 
 \begin_layout Standard
@@ -3931,7 +3931,7 @@ Using the HSV-color space instead of the RGB-color space did not lead to
  Otherwise the same findings as in the RGB-color space could be made.
  Overall the comparison did not favor any color space.
  The results were subjectively examined on the same level.
- To determine which, color space should be used should depend on the final
+ The determination of which color space to use, should depend on the final
  task of the clustering algorithm.
  Because the following work is rather on an abstract level than on implementing
  the algorithm on a particular task and because the underlying algorithm
@@ -4125,7 +4125,7 @@ On synthetic video sequences
 
 \begin_layout Standard
 Implementing the dynamical cluster count as described in algorithm 3.1 into
- a simple synthetic video sequence, revealed that the cluster count incremented
+ a simple synthetic video sequence revealed that the cluster count incremented
  correctly when necessary, but failed to detect required reductions of k.
 \end_layout
 
@@ -4435,17 +4435,7 @@ end{subfigure}
 \begin_layout Plain Layout
 
 \lang ngerman
-A simple videosequence where areas are moving out of the video
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-Example of a simply videosequence
-\end_layout
-
-\end_inset
-
-
+A simple videosequence in which areas are moving out of the video
 \end_layout
 
 \end_inset
@@ -4564,20 +4554,20 @@ With
 \begin_inset Formula $v_{1}$
 \end_inset
 
-being the normalized cluster center and 
+ being the normalized cluster center and 
 \begin_inset Formula $v_{2}$
 \end_inset
 
-being the normalized center of the super-cluster.
+ being the normalized center of the super-cluster.
  
 \begin_inset Formula $v_{color}$
 \end_inset
 
-only includes the color information and 
+ only includes the color information and 
 \begin_inset Formula $v_{coord}$
 \end_inset
 
-only includes the center coordinates.
+ only includes the center coordinates.
 \end_layout
 
 \begin_layout Standard
