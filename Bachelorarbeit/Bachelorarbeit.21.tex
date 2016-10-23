@@ -288,7 +288,7 @@ So far there exists no generally acknowledged optimal solution to
 compute the optimal number of clusters for any given data set a priori.
 One common bypass is to run the algorithm several times with different
 starting points. Especially for image segmentation however, many proposals
-have been made to create good starting points for clustering images\cite{ChrisSolomon2011_km}.
+have been made to create good starting points for clustering images \cite{ChrisSolomon2011_km}.
 
 The goal of this thesis is to adapt one of these algorithms to video
 sequences and improve it through the gained knowledge from continuous
@@ -319,90 +319,94 @@ Chapter 5 reviews the evaluation and concludes the thesis.
 \chapter{Theoretical basis}
 
 \section{Clustering}
-
+% TODO: insert space before every \cite{
 Clustering can broadly be described as classification of data into
 several groups. Clustering algorithms are unsupervised learning algorithms,
-which means they make no prior assumptions about the ouput components\cite{Lucchese_colorimage}.
+which means they make no prior assumptions about the ouput components \cite{Lucchese_colorimage}.
 
 The vague objective is to find ``\textit{interesting} groupings
-of training samples``\cite{VladimirCherkassky2007}. This separation
+of training samples`` \cite{VladimirCherkassky2007}. This separation
 into a number of groups, called clusters, happens according to a measure
 of similarity. The goal of the algorithm is to find clusters in a
-way, that samples within are more similar to each other than samples
-from different clusters and thus minimizing the prediction error.
+way that samples within a cluster are more similar to each other than samples
+from different clusters and thereby minimize the prediction error.
 This is often summarized as the weighting of ``intra-cluster'' and
-``inter-cluster'' distance. The first one describes the distinction
-from samples within a cluster, whereas the latter is the distance
-of one cluster to another one\cite{Ray1999}.
+``inter-cluster'' distance. The first one describes the distances
+of samples within a cluster, whereas the latter is the distance
+of one cluster to another one \cite{Ray1999}.
 
-Hereby the similarity measurement reflects a priori knowledge, for
+The similarity measurement reflects a priori knowledge, for
 example using standard Euclidean distance on a RGB color space equals
 the assumption that all values have equal importance. Nevertheless
-is the clustering process usually ,,ad hoc``; the underlying clustering
+% TODO: clarify what ad hoc means?
+the clustering process is usually ``ad hoc``; the underlying clustering
 process defines the relevant information itself. This makes clustering
-very generalizable\cite{VladimirCherkassky2007}.
+very generalizable \cite{VladimirCherkassky2007}.
 
-Often clustering algorithms create prototypes. A prototype is a data
+Often clustering algorithms create so-called ``prototypes``. A prototype is a data
 object that is representative of all other objects in the cluster.
 In most cases this is simply the average of each data point within
 the cluster. Protoypes can be used in many ways, they ease the comparison
 of clusters among each other and can be used for data compression.
 Therefore they are often used as input for further data processing
-or data analysis techniques\cite{Pang-NingTan2005}.
+or data analysis techniques \cite{Pang-NingTan2005}.
 
 One of the most common usage of clustering algorithms is dimensionality
-reduction. The goal is to find a mapping from a $d-$dimensional input
-space $R^{d}$to some $m$ dimensional output space $R^{m}$, where
-$m<d$\cite{VladimirCherkassky2007}.
+reduction. The goal is to find a mapping from a $d$-dimensional input
+space $R^{d}$ to some $m$-dimensional output space $R^{m}$, where
+$m<d$ \cite{VladimirCherkassky2007}.
 
 \[
 G(x):R^{d}\rightarrow R^{m}
 \]
 
-A good mapping should also possess the inverse function.
+A good mapping should also possess the inverse function:
 
 \[
 F(z)=R^{m}\rightarrow R^{d}
 \]
 
-Hence the reduced output can be decoded to the original input without
-losing to much information. Thus the main features can be kept, while
+If this is the case, the original input can be losslessly decoded from the
+reduced output.
+Thus the main characteristics of the data are preserved while
 the amount of data is reduced.
 
 Clusters can either be described hierarchically (i.e. described in
-tree structures) or they can be purely partitional. The latter sort
-can be further divided into 2 groups. The first one is called ,,hard
-clustering``, each sample is definitely placed in only one cluster.
-The second one is called ,,soft clustering`` and in alternative
+tree structures) or they can be purely partitional. The latter 
+can be further divided into 2 groups. The first one is called ``hard
+clustering`` where each sample is definitely placed in only one cluster.
+The second one is called ``soft clustering`` and 
 each sample can belong to serveral clusters according to a related
-probability distribution.\cite{Poole2010}
+probability distribution. \cite{Poole2010}
 
 \section{K-means clustering}
 
 K-means clustering is one of the oldest and most widely used clustering
 algorithms. It requires an explicit distance measure, an input of
 training samples and the number of classes k. It belongs to the class
-of hard clustering algorithms.\cite{Poole2010} 
+of hard clustering algorithms. \cite{Poole2010} 
 
 The main concept is to represent each cluster by the vector of mean
 attribute values for numeric attributes or by a vector of the most
-frequent values for nominal attributes that are assigned to that cluster\cite{IBM_BigInsights}.
+frequent values for nominal attributes that are assigned to that cluster \cite{IBM_BigInsights}.
 In contrast to numeric values, nominal attributes can not simply be
+% how is this relevant?
 ordered and have only a limited set of values. This kind of representation
-is also called cluster center and acts as a prototype.\cite{Pang-NingTan2005}
+is also called cluster center and acts as a prototype \cite{Pang-NingTan2005}.
 
-The operation of k-means clustering can be seen in algorithm 2.1.
-It starts with initializing random points as centroid of a cluster.
-This initialization process will be repeated until the desired number
-K of clusters is generated. The next step is to assign every training
-sample to the closest cluster center and update it by shifting it
+The operation of k-means clustering can be seen in Algorithm 2.1.
+It starts with initializing k random points as centroid of the clusters.
+The next step is to assign every training
+sample to the closest cluster center and update the centroid by shifting it
 to the mean of all cluster members for each attribute. This step has
-to be repeated until it converges, due to bad initialization points
+% should probably mention convergence to local minimum here
+to be repeated until the algorithm converges. Due to bad initialization points
 this might take many iterations. Hence the usual implementation either
 uses a limit for the number of iterations or stops if the number of
-changes fall below a certain $\epsilon$. 
+changes fall below a certain threshold $\epsilon$. 
 
 \begin{algorithm}[H]
+% here you should have used a \label or something so that you don't have to write algo 2.1
 \caption{Basic K-means algorithm}
 
 \begin{algorithmic}[1]
@@ -414,6 +418,9 @@ changes fall below a certain $\epsilon$.
 \end{algorithmic}
 \end{algorithm}
 
+
+% the crosses still seem wrong, isn't there one cross for each cluster???
+% why are there triangles in the first image and other stuff in the right image???
 \begin{figure}[H]
 \begin{subfigure}[c]{0.5\textwidth} 
 \frame{\includegraphics[width=\textwidth]
@@ -426,7 +433,7 @@ changes fall below a certain $\epsilon$.
 \subcaption{Cluster centers with k = 3} 
 \end{subfigure}
 
-\caption{Example of k-means clustering on data with distinct groups\cite{Pang-NingTan2005}}
+\caption{Example of k-means clustering on data with distinct groups \cite{Pang-NingTan2005}}
 \end{figure}
 
 The k-means algorithm aims to minimize an objective squared error
@@ -435,23 +442,24 @@ function:
 \[
 J=\sum_{j=1}^{k}\sum_{\forall i}|x_{i}^{j}-c_{j}|^{2}
 \]
-hereby $c_{j}$ is the coordinate vector of the $j$th cluster, $\{x_{i}^{j}\}$
+where $c_{j}$ is the coordinate vector of the $j$th cluster, $\{x_{i}^{j}\}$
 are the points assigned to the $j$th cluster and $|x_{i}^{j}-c_{j}|$
-describes the distance\cite{ChrisSolomon2011_km}. It can be shown
-that the k-means algorithm converges to a local minimum\cite{Fu1981}.
+describes the distance of a point to its centroid \cite{ChrisSolomon2011_km}. It can be shown
+that the k-means algorithm converges to a local minimum \cite{Fu1981}.
 
 The relevant distance measure can be chosen dependent on the task,
-but most of the times the normal Euclidean distance is used. \\
+but most of the time the Euclidean distance is used. \\
+% where did you get this? use something like https://en.wikipedia.org/wiki/Euclidean_distance
 \[
 \text{Euclidean distance: }\frac{1}{I}\cdot\forall i\left(\sqrt{x_{i}-c_{i}}\right)^{2}
 \]
 
-An advange of k-means clustering is its low complexity but it has
-some weaknesses. K-means struggle with outliers, which highly influence
+An advange of k-means clustering is its low complexity, but it also has
+some weaknesses. K-means is sensitive to outliers, which highly influence
 the results. It can also only be used on data for which there is a
 centroid and it cannot handle non-globular clusters as seen in Figure
-2.2. Finally it has the requirement of getting an accurate number
-of clusters as input a priori\cite{Bora2015,Pang-NingTan2005}.
+2.2. Finally it has the requirement of needing an accurate estimation of the expected number
+of clusters as input a priori \cite{Bora2015,Pang-NingTan2005}.
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.5\textwidth} 
@@ -462,73 +470,74 @@ of clusters as input a priori\cite{Bora2015,Pang-NingTan2005}.
 \begin{subfigure}[c]{0.5\textwidth} 
 \frame {\includegraphics[width=1\textwidth]
 {/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_noglobal.png}}
+% really k=3 or more likely k=2??
 \subcaption{Cluster centers with k = 3} 
-\end{subfigure}\caption{Example of k-means clustering on data with non-globular clusters\cite{Pang-NingTan2005}}
+\end{subfigure}\caption{Example of k-means clustering on data with non-globular clusters \cite{Pang-NingTan2005}}
 \end{figure}
 
 
 \section{Image color segmentation}
 
-One of the many applications for the k-means clustering algorithm
+One of the many applications for the k-means clustering algorithms
 is color segmentation. Image segmentation in general is the process
 of splitting/classifying an image into several parts, so that each
-region builds a homogenous segment. Combining any of the homogenous
-segments would result in a heterogenous segment\cite{Bora2015} .
+region builds a homogeneous segment. Combining any of the homogeneous
+segments would result in a heterogenous segment \cite{Bora2015}.
 
 Segmentation algorithms are often the very first step in image processing.
 Subsequent steps as for example feature extraction and classification
 are highly reliant on the successful generation of homogenous parts.
 If the respective object can not be identified, it can certainly not
 be classified. The segmentation outcome will always be dependent on
-the underlying image and the object, or feature which should be identified.
-Therefore there is no single perfect clustering for an image, this
-complicates the evaluation process\cite{ChrisSolomon2011}.
+the underlying image and the object or feature which should be identified.
+Therefore there is no single perfect clustering for an image, which
+complicates the evaluation process \cite{ChrisSolomon2011}.
 
-Segmentation algorithm can be divided into two main groups. The first
-one is the edge/boundary group; the associated algorithms aim to detect
-edges to find boundaries in between groups of pixels. The second group
+Segmentation algorithms can be divided into two main groups. The first
+is the edge/boundary group; the associated algorithms aim to detect
+edges to find boundaries between groups of pixels. The second group
 is region based and tries to order pixels according to their mutual
-similarity\cite{ChrisSolomon2011} .
+similarity \cite{ChrisSolomon2011}.
 
-Color image segmentation is usually residing in the second group.
+Color image segmentation usually belongs to the second group.
 Combined with texture segmentation, it is mostly used in tasks concerned
-about content based retrieval\cite{Lucchese_colorimage}. Hereby images
-are organised/searched according to their pictured content. 
+with content based retrieval \cite{Lucchese_colorimage}. Hereby images
+are organised/searched according to their content. 
 
-Clustering algorithms share the same problem as region based segmentation
+Clustering algorithms share the same problem as region based segmentation algorithms
 and can thus be used for color segmentation. The problem of using
 k-means clustering for image segmentation is once again the requirement
-to assing the number of clusters beforehand. If a good number of clusters
-is known however it is optimal in minimizing the average distortion\cite{Park1998}.
+to choosing the number of clusters beforehand. If a good number of clusters
+is known however, it is optimal in minimizing the average distortion \cite{Park1998}.
 
-\section{Finding the optimal numbers of clusters for k-means clustering}
+\section{Finding the optimal number of clusters for k-means clustering}
 
-Although the k-means clustering is relatively easy to implement on
-a relative wide field, it has some drawbacks. The final results of
+Although k-means clustering is relatively easy to implement on
+a relatively wide field, it has some drawbacks. The final results of
 the clustering algorithm vary depending on the number of clusters
 and especially on their initialization. So if the initial clusters
 are chosen randomly, it will lead to different results\cite{IMCIP-2015}.
 
 In order to find the optimal number of clusters and initialize them
-automatically Siddheswar Ray and Rose H. Turi proposed an algorithm
+automatically, Siddheswar Ray and Rose H. Turi proposed an algorithm
 which uses ``a simple validity measure based on the intra-cluster
-and inter-cluster distance measure''\cite{Ray1999}. 
+and inter-cluster distance measure'' \cite{Ray1999}. 
 
-The basic k-means algorithm minimizes the sum of squared distanced
-from all points to their cluster centers, hence the distances from
-each point to their cluster centers provides the information whether
-the clusters are compact. The averages of all these distances constitute
-the intra-cluster measurement.
+The basic k-means algorithm minimizes the sum of squared distances
+from all points to their cluster centers. This means the distances from
+each point to its cluster center provides the information whether
+or not a cluster is compact. The averages of all these distances constitute
+the intra-cluster measurement:
 
 \[
 \text{intra}=\frac{1}{N}\sum_{i=1}^{K}\|x-z_{i}\|^{2}
 \]
 
 where $N$ is the number of all pixels, $K$ is the cluster count
-and $z_{i}$ is the actual cluster center. To be as compact as possible,
-we obviously want to minimize this measurement. The inter-cluster
+and $z_{i}$ is the current cluster center. To be as compact as possible,
+we want to minimize this measurement. The inter-cluster
 measurement in contrast describes the distances between the cluster
-centers and should be maximized. 
+centers and should be maximized:
 
 \[
 \text{inter}=\min\left(\|z_{i}-z_{j}\|^{2}\right),i=1,2,...,K-1,j=i+1,...,K
@@ -538,9 +547,9 @@ Only the minimum of each distance is considered, because we always
 want to maximize the smallest distances. The maximized values of larger
 values will be automatically larger as well.
 
-In an optimal clustering we obviously want to have compact clusters,
-which are as distant as possible. Thus the validity measurement is
-defined as the ratio of the intra and inter measure.
+In an optimal clustering we want to have compact clusters,
+which are as distant from each other as possible. Thus the validity measurement is
+defined as the ratio of the intra- to the inter-measure.
 
 \[
 \text{validity}=\frac{\text{intra}}{\text{inter}}
@@ -549,21 +558,22 @@ defined as the ratio of the intra and inter measure.
 The optimal cluster count should posses the smallest validity. 
 
 The proposed algorithm of Siddheswar Ray and Rose H. Turi can be seen
-in algorithm 2.2. It starts with initialising every single data point
-into one cluster and using the average of each data point as cluster
-center (line 1). Repeatedly the variance of each data point will be
-calculated and added up, the sum of all points will be used as divisor
-(line 3). The cluster with the largest value will be split (line 4).
-Due to the occurring minimization of intra-cluster distance in k-means
+in Algorithm 2.2. It starts with initialising one cluster containing each data point
+with their average as the cluster center
+(line 1). In a loop, the variance for each cluster is
+calculated 
+(line 3) and the cluster with the largest value is split (line 4).
+Due to the minimization of intra-cluster distances in k-means
+% TODO: don't understand the following
 clustering, this cluster would most likely be split when increasing
 the cluster count. Before the process will be repeated, the normal
-k-means clustering is executed and the validity calculated according
-to the new calculated cluster centers (line 5). This processes is
-repeated until a self-assigned number of clusters $k_{\text{max}}$
+k-means clustering is executed and the validity is calculated according
+to the newly calculated cluster centers (line 5). This processes is
+repeated until the parameterized maximum number of clusters $k_{\text{max}}$
 is reached. From this follows that the basic k-means algorithm will
 be run $k_{\text{max}}$ times.
 
-The clusters will be split, according to the old cluster center and
+The clusters will be split according to the old cluster center and
 with regard to the minimum and maximum of each attribute.
 
 \[
@@ -574,9 +584,10 @@ z_{i}^{'}=\left(z_{i1}-a_{1},z_{i2}-a_{2},z_{i3}-a_{3}\right)
 z_{i}^{''}=\left(z_{i1}+a_{1},z_{i2}+a_{2},z_{i3}+a_{3}\right)
 \]
 
-With $z_{i}^{'}$ and $z_{i}^{''}$ being the two new cluster centers,
+With $z_{i}^{'}$ and $z_{i}^{''}$ being the two new cluster centers and
 $z_{i}$ being the the old cluster centers with index $1,2,3$ for
 each attribute. 
+% TODO: and a_i?? explain the next equation.
 
 \[
 a_{j}=\frac{z_{ij}-\max_{j}}{2}
@@ -593,17 +604,19 @@ Where $\max_{j}$ is the maximum value for the $j$-component.
 \State {calculate the variance of each attribute $\sigma_{i}$ and add them up $\sum_{i=1}^{I}\frac{1}{I}\sigma_{i}$ }
 \State {split the cluster centers with the biggest variance}
 \State {use the standard k-means algorithm and calculate the validity}
-\Until {a self-assinged limit $k_\text{max}$ is reached}
+\Until {a parameterized limit $k_\text{max}$ is reached}
 \end{algorithmic}
 \end{algorithm}
 
 Due to the larger inter-cluster distance, small cluster numbers tend
-to be selected more often. In synthetic images, with an actual perfect
+to be selected more often. In synthetic images, with an objectively perfect
 cluster count the calculated minimal validity will be the optimal
-cluster count. In natural images the best number of clusters is usually
+cluster count.
+% The next sentence makes no sense
+In natural images the best number of clusters is usually
 prefered. To overcome the effect of a large inter-cluster distance
 with a small k, the first local maximum in the validity measure needs
-to be found. 
+to be found:
 
 \[
 \text{val}(k-1)<\text{val}(k)>\text{val}(k+1)
@@ -612,7 +625,7 @@ to be found.
 The adjusted best validity measure will be the smallest validity in
 between the range of $\text{val}(k)$ and $\text{val}(k_{\max})$.
 
-It is important to notice that this algorithm is supposed for image
+It is important to notice that this algorithm is supposed to be used for image
 segmentation in RGB-color space, although it can also be implemented
 on a different feature space as long as the attributes can be scaled
 properly.
@@ -621,60 +634,62 @@ properly.
 
 A color space is a specific combination of color channels which forms
 a reproducible representation of colors in both digital and analog
-representations. An image is only a spatially organized set of numbers,
+representations. An image is a spatially organized set of numbers,
 where pixels describe the particular combination of color channels
-at a specific position. A gray image for example is a 2d-array limited
-to a single color channel. The most used color space is the RGB-color
-space. It is based on the tristimulus theory of color in the human
-visual system. Its name describes the 3 used color channels; red,
+at a specific position. A gray scale image for example is a 2d-array
+of brightness values. The RGB color space is very popular.
+It is based on the tristimulus theory of color in the human
+visual system. Its name describes the 3 color channels used: red,
 green and blue. This is similar to the three types of cones in the
 human eye which absorb the respective electromagnetic wavelengths.
-In normal 24-bit images, each channel is usually scaled to 0\textendash 255
+In 24-bit images, each channel is usually scaled to 0\textendash 255
 for the common 1 byte per colour channel. Therefore it is important
 to notice is that the color channels overlap. A perceived blue item
 will have the highest peak in the blue channel, but it will also have
-milder components of red and green\cite{ChrisSolomon2011,Lucchese_colorimage}.
+milder components of red and green \cite{ChrisSolomon2011,Lucchese_colorimage}.
 
 \begin{figure}[H]
 \centering
 
 \includegraphics[scale=0.45]{images/rgb_cube}
 
-\caption{A representation of the 3d RGB cube\cite{ChrisSolomon2011}}
+\caption{A representation of the 3d RGB cube \cite{ChrisSolomon2011}}
 
 \end{figure}
 
-The main problem with the RGB-colorspace in image processing is its
-non-linearity. Moving in a certain way in the cube might not produce
+The main problem with the RGB colorspace in image processing is its
+non-linearity. Moving in a certain direction inside the cube might not produce
 a color that is perceptually consistent with the change in each of
 the channels.
 
-The HSV-color space is closer to the human idea of color, because
+The HSV-color space is closer to the human perception of color, because
 it is easier to think of a color in terms of H(ue), S(aturation) and
 V(alue). The value determines the brightness. The color space can
-be represented in a 3d-hexagone, where the central vertical axis represents
+% the thing you're showing is not a hexagon, but a cone...
+be represented in a 3d-hexagon, where the central vertical axis represents
 the Intensity. Hue is defined as an angle in the range $[0,2\pi]$
 and Saturation is the depth or purity of the color, it is measured
-as a radial distance from the central axis\cite{Sural}.
+as a radial distance from the central axis \cite{Sural}.
 
 The HSV-color space is advantageous in comparison to the RGB-color
 space in color based image segmentation, because image objects are
 more consistently contained in the resulting hue field than in the
 channels of the RGB representation. This applies in particular to
-changing light conditions\cite{ChrisSolomon2011}.
+changing lighting conditions \cite{ChrisSolomon2011}.
 
 \begin{figure}[H]
 \centering
 
 \includegraphics[scale=0.45]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/hsv_representation}
 
-\caption{A representation of the HSV colorspace cone\cite{ChrisSolomon2011}}
+\caption{A representation of the HSV colorspace cone \cite{ChrisSolomon2011}}
 \end{figure}
 
-Both RGB and HSV spaces are however, not perceptually uniform; the
-distances among colors perceived by the human are not mirrored by
+Both the RGB and HSV spaces are, however, not perceptually uniform; the
+distances among colors perceived by the human eye are not mirrored by
 similar distances between the points representing those colors in
-such spaces\cite{Lucchese_colorimage}.
+such spaces \cite{Lucchese_colorimage}.
+% and now I would expect a proposal of what color space to use or why there isn't a suitable one
 
 \chapter{Adaptive K-means clustering}
 
