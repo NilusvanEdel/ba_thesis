@@ -218,45 +218,6 @@ sentor: & MS Julius Schöning\tabularnewline
 \multicolumn{2}{l}{Osnabrück, \today}\tabularnewline
 \end{tabular}
 
-\begin{flushleft}
-\newpage{}
-\par\end{flushleft}
-
-\selectlanguage{ngerman}%
-~
-
-\vspace{17.1mm}
-
-\begin{flushleft}
-\textbf{\huge{}Declaration of authorship}
-\par\end{flushleft}{\huge \par}
-
-I hereby certify that the work presented here is, to the best of my
-knowledge and belief, original and the result of my own investigations,
-except as acknowledged, and has not been submitted, either in part
-or whole, for a degree at this or any other university.
-
-\vspace{2cm}
-
-\begin{center}
-\begin{tabular*}{15cm}{@{\extracolsep{\fill}}cl}
-Osnabrück, \today & \selectlanguage{british}%
-\begin{comment}
-Unterschrift
-\end{comment}
-\selectlanguage{ngerman}%
-\tabularnewline
-\selectlanguage{british}%
-\selectlanguage{ngerman}%
- & \selectlanguage{british}%
-Linus Edelkott\selectlanguage{ngerman}%
-\tabularnewline
-\end{tabular*}
-\par\end{center}
-
-\newpage{}
-
-\selectlanguage{british}%
 \tableofcontents{}
 
 \newpage{}
@@ -694,7 +655,7 @@ Hence, the first task of this bachelor thesis is to find a way to
 adapt the identification of the optimal cluster number from images
 to video sequences. 
 
-Without further investigation the resulting cluster have only a limited
+Without further investigation the resulting clusters have only a limited
 application use and can only represent the gathered knowledge of a
 single frame. In order to include the information of the whole video
 it is necessary to compare the resulting clusters of each frame. A
@@ -748,9 +709,10 @@ k.
 Consider for example the validity chart in Fig 3.1. Searching for
 the minimal validity would result in only 2 clusters. As discussed
 in 2.3 the best validity in natural images would be at k = 8, because
-it is the minmal value after the first local maximum. But if the previous
-frame would have had 13 clusters, the adapted algorithm would continue
-to work with those clusters, because k = 13 constitutes a local minimum.
+it is the minimal value after the first local maximum. But if the
+previous frame would have had 13 clusters, the adapted algorithm would
+continue to work with those clusters, because k = 13 constitutes a
+local minimum.
 
 \begin{figure}[H]
 \centering
@@ -864,7 +826,7 @@ algorithm is applied. One cluster contains the black background and
 the second one the red rectangles. To split clusters not only according
 to their color, but also according to their geometrical distinctness,
 the coordinates of each pixel need to be considered when calculating
-the clusters. If the geomatrical distinctness is considered, the optimal
+the clusters. If the geometrical distinctness is considered, the optimal
 clustercount in Figure 3.2 changes from 2 to 3, because the rectangles
 are not connected.
 
@@ -876,7 +838,7 @@ a 5d-vector which also includes the XY-coordinates.
 
 \begin{figure}[H]
 \begin{center}\includegraphics{images/beispiel}\end{center}\caption{Example of an image with optimal cluster count of 2 on pure color
-segmentation and optimal cluster count of 3 when including geomatrical
+segmentation and optimal cluster count of 3 when including geometrical
 features}
 \end{figure}
 A different approach to include geometrical knowledge is to detect
@@ -908,7 +870,7 @@ the remaining contours are all enclosed in contour 2.
 \subsection{On synthetic images}
 
 The results reported from Siddheswar Ray and Rose H. Turi \cite{Ray1999}
-on synthetic images described in 2.3, could mostly be verified. On
+on synthetic images described in 2.3, could mostly be verified. In
 very simple images as seen in Fig 4.1 the automatically specified
 cluster count matches the actual used colors. Notice that this section
 is only concerned about color segmentation.
@@ -921,24 +883,24 @@ Surprisingly the calculated optimal cluster count using the RGB color
 space and a maximal cluster count of 25 in Figure 4.2 was determined
 as 10 instead of the expected 5 clusters. This error occurs due to
 the different numbers of colors used in differing shapes. Each rectangle
-consists of only of one specific color, whereas the circle can be
-distinguished into several RGB-values. The core of the circle and
-everything in close distance has only one color value, but the closer
-the distance to the boundary the more the color changes in order to
-achieve an effect of anti-aliasing, this can be seen in Figure 4.3.
-Anti-aliasing makes the rectangle shape of pixels on a computer display
-less visible for the human eye. In this specific case the circle consists
-of 49 different RGB values. Due to the relationship of inter cluster
-distance and intra cluster distance the circle is split into 5 different
-clusters. The conversion into HSV did not result in a calculated cluster
-count of 5 either; instead it went up to 13 (keeping the Euclidean
-distance as distance measurement). As described in 2.4 the different
-nature of the RGB color space and HSV color space results in different
-distances in between colors. Many of the 49 RGB colors will probably
-share the same hue value, but can be further clustered according to
-the saturation and brightness. Therefore this results in different
-clusters in comparison to the RGB color space and with it to a rise
-of the calculated optimal cluster count.
+consists of only one specific color, whereas the circle can be distinguished
+into several RGB-values. The core of the circle and everything in
+close distance has only one color value, but the closer the distance
+to the boundary the more the color changes in order to achieve an
+effect of anti-aliasing, this can be seen in Figure 4.3. Anti-aliasing
+makes the rectangle shape of pixels on a computer display less visible
+for the human eye. In this specific case the circle consists of 49
+different RGB values. Due to the relationship of inter cluster distance
+and intra cluster distance the circle is split into 5 different clusters.
+The conversion into HSV did not result in a calculated cluster count
+of 5 either; instead it went up to 13 (keeping the Euclidean distance
+as distance measurement). As described in 2.4 the different nature
+of the RGB color space and HSV color space results in different distances
+in between colors. Many of the 49 RGB colors will probably share the
+same hue value, but can be further clustered according to the saturation
+and brightness. Therefore this results in different clusters in comparison
+to the RGB color space and with it to a rise of the calculated optimal
+cluster count.
 
 Given that the used colors in a natural images are expected to be
 a lot more than 53, the performed clustering will never be on a comparable
@@ -1000,7 +962,7 @@ evaluate the dynamic cluster count the clustered images, were compared
 to the images generated with a higher/lower number of clusters. These
 are also generated with algorithm 2.2. It increments the number of
 clusters succesively until $k_{\max}$ is reached, hence the images
-in the range from k = 2 to k = $k_{\max}$can be used for comparison
+in the range from k = 2 to k = $k_{\max}$ can be used for comparison
 purposes.
 
 \begin{figure}[H]
@@ -1026,11 +988,12 @@ space}
 \end{figure}
 
 The calculated cluster count of 8 in Figure 4.4 is the first cluster
-count where, the red shirt builds its own cluster. It seems as in
-a smaller cluster counts the inter cluster distance is bigger. In
-k > 8 the intra cluster distance seems to be minimized but has only
-minimal visible impact, because of the higher inter cluster distance
-before. Thus k = 8 seem to be the right choice. 
+count where the red shirt builds its own cluster. It seems as the
+outcome of a smaller cluster count might have the bigger inter cluster
+distance, wherea in k>8 the intra cluster distance seems to be minimized.
+Incrementing the number of clusters above 8 has only minimal visible
+impact, because of the higher inter cluster distance before. Thus
+k=8 seem to be the right choice. 
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.5\textwidth}
@@ -1225,9 +1188,9 @@ natural video sequences.
 
 To actually compare the produced cluster centers over several frames,
 the generated cluster centers of the first frame were used as the
-first centers of ``super-clusters'' (=merged clusters of frames).
-On each iteration of the algorithm, after the optimal number of clusters
-has been identified, the new cluster centers are compared to the centers
+first centers of super-clusters (=merged clusters of frames). On each
+iteration of the algorithm, after the optimal number of clusters has
+been identified, the new cluster centers are compared to the centers
 of existing super-clusters. For comparison the usual Euclidean color
 space distance and the Euclidean distance of the coordinate centers
 of the cluster centers and the super-clusters were calculated. In
@@ -1280,7 +1243,7 @@ into a single super-cluster.
 
 \subsection{On real video sequences}
 
-To evaluate the performace of algorithm 3.1 its calculated adaptive
+To evaluate the performance of algorithm 3.1 its calculated adaptive
 cluster count was compared to the outcome produced by its predecessor
 algorithm developed by Ray and Rose H. Turi\footnote{algorithm 2.2},
 where each frame was processed individually. This was done on video
@@ -1563,7 +1526,7 @@ boundaries can be calculated using any of the two clusters. Hence
 if adding the calculated polygons of each cluster to the number of
 cluster centers, the optimal cluster count would be determined as
 4 instead of 3. Thus the calculated polygons should only increase
-the cluster count if the comprised area is filled of the pixels which
+the cluster count if the comprised area is filled with pixels which
 are part of the cluster used for calculating it. This check needs
 to be implemented in the algorithm. 
 
@@ -1583,7 +1546,7 @@ of each polygon.
 \State {update the cluster center including the coordinate information}
 \State {detect the (outer) boundaries of each cluster}
 \For {each cluster}
-\If {Several polygons are detected and the pixels inside the polygons are part of the current cluster }
+\If {several polygons are detected and the pixels inside the polygons are part of the current cluster }
 \State {Delete the old cluster center of this cluster center}
 \State {Calculate the mean of the coordinates inside the boundary}
 \State {Built new cluster centers according to the calculated coordinates and the old color feature}
@@ -1591,7 +1554,7 @@ of each polygon.
 \EndFor
 \end{algorithmic}
 
-\caption{Find geomatrical features of clusters}
+\caption{Find geometrical features of clusters}
 \end{algorithm}
 
 One of the advantages of the k-means algorithm is, that each pixel
@@ -1694,7 +1657,7 @@ remained unchanged.
 \chapter{Discussion and conclusion}
 
 Testing the described algorithm by Ray and Rose H. Turi on images
-verified the formerly reported results. Although some flaws need to
+verified the formerly reported results, although some flaws need to
 be considered before using it. On very simplistic images the calculated
 cluster count will separate the image into too many clusters due to
 the possible reduction of the intra cluster distance. Besides this,
@@ -1719,7 +1682,7 @@ only if the object has been lost. In addition the algorithm could
 implement multi-threading to improve the calculation time.
 
 Creating super-clusters which include color- and coordinate information,
-by comparison of cluster center over several frames, provides knowledge
+by comparison of cluster centers over several frames, provides knowledge
 of the movement and continuity of existing clusters. The information
 yield and specification of a good threshold $\delta_{dis}$ or even
 the suggested procedure for creating super-clusters in general can
@@ -1729,7 +1692,7 @@ in clustering than just the color information. The attempt of including
 geometric features via a 5d-feature vector while retaining the basic
 k-means algorithm did not lead to improved results. The main problem
 was to find a working ratio of the colors and coordinates, this ratio
-should furthermore be dynamic to be universal applicable. On some
+should furthermore be dynamic to be universally applicable. On some
 images the 5d-feature vectors did not deliver the desired outcome
 independent on the scaling ratio. This was probably caused by one
 of the big flaws of k-means clustering, it can only produce spherically
@@ -1753,5 +1716,39 @@ increase and therefore also the fundamental suitability of super-clusters.
 
 \bibliographystyle{unsrt}
 \bibliography{../bibtex-daten/bachelorarbeit-info}
+
+\newpage{}
+
+\selectlanguage{ngerman}%
+\vspace{17.1mm}
+
+\begin{flushleft}
+\textbf{\huge{}Declaration of authorship}
+\par\end{flushleft}{\huge \par}
+
+I hereby certify that the work presented here is, to the best of my
+knowledge and belief, original and the result of my own investigations,
+except as acknowledged, and has not been submitted, either in part
+or whole, for a degree at this or any other university.
+
+\vspace{2cm}
+
+\begin{center}
+\begin{tabular*}{15cm}{@{\extracolsep{\fill}}cl}
+Osnabrück, \today & \selectlanguage{british}%
+\begin{comment}
+Unterschrift
+\end{comment}
+\selectlanguage{ngerman}%
+\tabularnewline
+\selectlanguage{british}%
+\selectlanguage{ngerman}%
+ & \selectlanguage{british}%
+\selectlanguage{ngerman}%
+\tabularnewline
+\end{tabular*}
+\par\end{center}
+
+\newpage{}\selectlanguage{british}%
 
 \end{document}

@@ -668,155 +668,6 @@ today
 \end_inset
 
 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align left
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang ngerman
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang ngerman
-\begin_inset VSpace 17.1mm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align left
-
-\series bold
-\size huge
-\lang ngerman
-Declaration of authorship
-\end_layout
-
-\begin_layout Standard
-
-\lang ngerman
-I hereby certify that the work presented here is, to the best of my knowledge
- and belief, original and the result of my own investigations, except as
- acknowledged, and has not been submitted, either in part or whole, for
- a degree at this or any other university.
-\end_layout
-
-\begin_layout Standard
-
-\lang ngerman
-\begin_inset VSpace 2cm
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align center
-
-\lang ngerman
-\begin_inset Tabular
-<lyxtabular version="3" rows="2" columns="2">
-<features tabularvalignment="middle" tabularwidth="15cm">
-<column alignment="center" valignment="top" width="0pt">
-<column alignment="left" valignment="top" width="0pt">
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\lang ngerman
-Osnabrück, 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-today
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-\begin_inset Note Comment
-status open
-
-\begin_layout Plain Layout
-Unterschrift
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Linus Edelkott
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang ngerman
-\begin_inset Newpage newpage
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -2349,7 +2200,7 @@ Hence, the first task of this bachelor thesis is to find a way to adapt
 \end_layout
 
 \begin_layout Standard
-Without further investigation the resulting cluster have only a limited
+Without further investigation the resulting clusters have only a limited
  application use and can only represent the gathered knowledge of a single
  frame.
  In order to include the information of the whole video it is necessary
@@ -2438,7 +2289,7 @@ Unfortunately there are two major problems with this conclusion.
 Consider for example the validity chart in Fig 3.1.
  Searching for the minimal validity would result in only 2 clusters.
  As discussed in 2.3 the best validity in natural images would be at k =
- 8, because it is the minmal value after the first local maximum.
+ 8, because it is the minimal value after the first local maximum.
  But if the previous frame would have had 13 clusters, the adapted algorithm
  would continue to work with those clusters, because k = 13 constitutes
  a local minimum.
@@ -2797,7 +2648,7 @@ Without including the coordinates in any way, clusters cannot include any
  To split clusters not only according to their color, but also according
  to their geometrical distinctness, the coordinates of each pixel need to
  be considered when calculating the clusters.
- If the geomatrical distinctness is considered, the optimal clustercount
+ If the geometrical distinctness is considered, the optimal clustercount
  in Figure 3.2 changes from 2 to 3, because the rectangles are not connected.
 \end_layout
 
@@ -2853,7 +2704,7 @@ end{center}
 
 \begin_layout Plain Layout
 Example of an image with optimal cluster count of 2 on pure color segmentation
- and optimal cluster count of 3 when including geomatrical features
+ and optimal cluster count of 3 when including geometrical features
 \end_layout
 
 \end_inset
@@ -2985,7 +2836,7 @@ key "Ray1999"
 \end_inset
 
  on synthetic images described in 2.3, could mostly be verified.
- On very simple images as seen in Fig 4.1 the automatically specified cluster
+ In very simple images as seen in Fig 4.1 the automatically specified cluster
  count matches the actual used colors.
  Notice that this section is only concerned about color segmentation.
 \end_layout
@@ -3047,7 +2898,7 @@ Surprisingly the calculated optimal cluster count using the RGB color space
  of the expected 5 clusters.
  This error occurs due to the different numbers of colors used in differing
  shapes.
- Each rectangle consists of only of one specific color, whereas the circle
+ Each rectangle consists of only one specific color, whereas the circle
  can be distinguished into several RGB-values.
  The core of the circle and everything in close distance has only one color
  value, but the closer the distance to the boundary the more the color changes
@@ -3382,7 +3233,7 @@ key "Arbelaez2011"
 \begin_inset Formula $k_{\max}$
 \end_inset
 
-can be used for comparison purposes.
+ can be used for comparison purposes.
 \end_layout
 
 \begin_layout Standard
@@ -3557,11 +3408,13 @@ Gallery example from the Berkeley Database clustered in RGB-color space
 
 \begin_layout Standard
 The calculated cluster count of 8 in Figure 4.4 is the first cluster count
- where, the red shirt builds its own cluster.
- It seems as in a smaller cluster counts the inter cluster distance is bigger.
- In k > 8 the intra cluster distance seems to be minimized but has only
- minimal visible impact, because of the higher inter cluster distance before.
- Thus k = 8 seem to be the right choice.
+ where the red shirt builds its own cluster.
+ It seems as the outcome of a smaller cluster count might have the bigger
+ inter cluster distance, wherea in k>8 the intra cluster distance seems
+ to be minimized.
+ Incrementing the number of clusters above 8 has only minimal visible impact,
+ because of the higher inter cluster distance before.
+ Thus k=8 seem to be the right choice.
  
 \end_layout
 
@@ -4498,15 +4351,7 @@ However, adding blurring, noise or light effects to an image resulted most
 \begin_layout Standard
 To actually compare the produced cluster centers over several frames, the
  generated cluster centers of the first frame were used as the first centers
- of 
-\begin_inset Quotes eld
-\end_inset
-
-super-clusters
-\begin_inset Quotes erd
-\end_inset
-
- (=merged clusters of frames).
+ of super-clusters (=merged clusters of frames).
  On each iteration of the algorithm, after the optimal number of clusters
  has been identified, the new cluster centers are compared to the centers
  of existing super-clusters.
@@ -4644,7 +4489,7 @@ On real video sequences
 \end_layout
 
 \begin_layout Standard
-To evaluate the performace of algorithm 3.1 its calculated adaptive cluster
+To evaluate the performance of algorithm 3.1 its calculated adaptive cluster
  count was compared to the outcome produced by its predecessor algorithm
  developed by Ray and Rose H.
  Turi
@@ -4673,19 +4518,7 @@ key "Ochs2014"
 The adapted and unadapted algorithms produced the same cluster count on
  most frames, however, the adapted algorithm tended to switch the cluster
  count less times than the unadapted one.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-In xy tested video sequences, the adapted algorithm produced the same cluster
- count in xy% of alltogether xy frames.
- 
-\end_layout
-
-\end_inset
-
-This outcome had to be expected, as described in 3.1 the adapted algorithm
+ This outcome had to be expected, as described in 3.1 the adapted algorithm
  will not change the cluster count if the validity currently constitutes
  a local minima, whereas the unandapted algorithm will always go with the
  global minima.
@@ -6101,7 +5934,7 @@ The first image of Fig 4.12 shows the image which will be clustered.
  cluster centers, the optimal cluster count would be determined as 4 instead
  of 3.
  Thus the calculated polygons should only increase the cluster count if
- the comprised area is filled of the pixels which are part of the cluster
+ the comprised area is filled with pixels which are part of the cluster
  used for calculating it.
  This check needs to be implemented in the algorithm.
  
@@ -6171,7 +6004,7 @@ For {each cluster}
 
 
 \backslash
-If {Several polygons are detected and the pixels inside the polygons are
+If {several polygons are detected and the pixels inside the polygons are
  part of the current cluster }
 \end_layout
 
@@ -6227,7 +6060,7 @@ end{algorithmic}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Find geomatrical features of clusters
+Find geometrical features of clusters
 \end_layout
 
 \end_inset
@@ -6719,8 +6552,8 @@ Discussion and conclusion
 
 \begin_layout Standard
 Testing the described algorithm by Ray and Rose H.
- Turi on images verified the formerly reported results.
- Although some flaws need to be considered before using it.
+ Turi on images verified the formerly reported results, although some flaws
+ need to be considered before using it.
  On very simplistic images the calculated cluster count will separate the
  image into too many clusters due to the possible reduction of the intra
  cluster distance.
@@ -6765,7 +6598,7 @@ The improvements should be tailored to the final task.
 
 \begin_layout Standard
 Creating super-clusters which include color- and coordinate information,
- by comparison of cluster center over several frames, provides knowledge
+ by comparison of cluster centers over several frames, provides knowledge
  of the movement and continuity of existing clusters.
  The information yield and specification of a good threshold 
 \begin_inset Formula $\delta_{dis}$
@@ -6779,7 +6612,7 @@ Creating super-clusters which include color- and coordinate information,
  The attempt of including geometric features via a 5d-feature vector while
  retaining the basic k-means algorithm did not lead to improved results.
  The main problem was to find a working ratio of the colors and coordinates,
- this ratio should furthermore be dynamic to be universal applicable.
+ this ratio should furthermore be dynamic to be universally applicable.
  On some images the 5d-feature vectors did not deliver the desired outcome
  independent on the scaling ratio.
  This was probably caused by one of the big flaws of k-means clustering,
@@ -6815,6 +6648,140 @@ LatexCommand bibtex
 bibfiles "../bibtex-daten/bachelorarbeit-info"
 options "unsrt"
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset VSpace 17.1mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+
+\series bold
+\size huge
+\lang ngerman
+Declaration of authorship
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+I hereby certify that the work presented here is, to the best of my knowledge
+ and belief, original and the result of my own investigations, except as
+ acknowledged, and has not been submitted, either in part or whole, for
+ a degree at this or any other university.
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\lang ngerman
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="2">
+<features tabularvalignment="middle" tabularwidth="15cm">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang ngerman
+Osnabrück, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Note Comment
+status open
+
+\begin_layout Plain Layout
+Unterschrift
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang ngerman
+\begin_inset Newpage newpage
 \end_inset
 
 
