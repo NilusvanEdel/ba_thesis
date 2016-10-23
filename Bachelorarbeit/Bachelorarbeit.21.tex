@@ -691,32 +691,35 @@ similar distances between the points representing those colors in
 such spaces \cite{Lucchese_colorimage}.
 % and now I would expect a proposal of what color space to use or why there isn't a suitable one
 
-\chapter{Adaptive K-means clustering}
+\chapter{Adaptive k-means clustering}
 
 One of the logical extensions of the k-means algorithm used for color
 segmentation seems to implement the algorithm not only on images,
-but on whole video sequences. The existing algorithms for determining
-the optimal cluster count could be transferred on whole videos, by
-simply processing them frame by frame. Usually the resulting processing
-time would prove unfit for most practical use if the algorithm is
+but on whole video sequences. The existing algorithm for determining
+the optimal cluster count could be transferred to whole videos by
+processing them frame by frame. 
+The resulting processing time, however, would prove too high for most practical uses
+if the algorithm is
 applied on each frame of the video. While the regular k-means computing
 time is feasible, at least if an iteration limit is implemented, the
 computing time for dynamic cluster count identification as discussed
-in 2.4 is tremendous, due to the repeated use of the basic k-means
+in 2.4 is considerable, due to the repeated use of the basic k-means
 algorithm. 
 
-Hence, the first task of this bachelor thesis is to find a way to
+Hence, the first aim of this bachelor thesis is to find a way to
 adapt the identification of the optimal cluster number from images
 to video sequences. 
 
-Without further investigation the resulting cluster have only a limited
-application use and can only represent the gathered knowledge of a
+% don't understand 'investigation'
+Without further investigation the resulting clusters have only a limited
+use and can only represent the knowledge gathered in a
+% include where?
 single frame. In order to include the information of the whole video
-it is necessary to compare the resulting clusters of each frame. A
-continuous occurring in several frames should eventually be recognized. 
+it is necessary to compare the clusters of each frame to those of the neighbouring frames.
+Clusters occuring in several frames should be recognized to enable tracking them.
 
-Thus, the second task of this bachelor thesis is to implement a similarity
-measurement for clusters to merge them over several frames. In order
+Thus, the second aim of this bachelor thesis is to implement a similarity
+measure for clusters to merge them over several frames. In order
 to distinguish the clusters which are calculated using the k-means
 algorithm in a single image and the clusters which are generated through
 merging clusters of a video sequence, the latter kind will be referred
@@ -724,46 +727,47 @@ to as ``super-clusters''.
 
 \section{Dynamic cluster count algorithm in video sequences}
 
-Due to color segmentation in video sequences and images being essentially
-the same problem, the proposed algorithm by Siddheswar Ray and Rose
-H. Turi, would also work in videos\cite{Ray1999} .Due to the assumption
+The algorithm by Siddheswar Ray and Rose H. Turi can be transferred to video sequences
+in a straightforward manner \cite{Ray1999}.
+Due to the assumption
 that we are only looking at continuous video sequences, calculating
 the optimal cluster count for each frame individually, without including
 any knowledge gained from the previous calculations, would result
 in redundant calculations for most videos. Thus the aim is to reduce
-the calcuation time, while maintaining the same results algorithm
-2.2 would produce if applied on each frame individually.
+the calculation time while maintaining the same results that algorithm
+2.2 would produce if applied to each frame individually.
 
 Often the optimal cluster count will be unchanged from one frame to
-the subsequent one. The resulting cluster will only vary slightly,
-either due to an occurred movement or due to a change of the lightning
-condition. Hence it seems reasonable to look for an effective way
-to include the gained knowledge of the previous frames. One option
+the subsequent one. The resulting clusters will only vary slightly,
+either due to a movement that occurred or due to changes in the lighting
+conditions. It therefore seems reasonable to look for an effective way
+to include the knowledge gained from previous frames. One option
 would be to check whether cluster centers of the previous frame could
-be kept as initial center for the k-means algorithm of the current
+be kept as the initial centers for the k-means algorithm of the current
 frame. 
 
 As described in 2.3 the measure to evaluate the number of clusters
 is the validity, its optimal value always falls on a local minimum
-in comparison to a higher/lower cluster count. Which means that if
+% unclear sentence
+in comparison to a higher/lower cluster count. This means that if
 the cluster centers of the previous frame still constitute a local
-minima in the current frame it is likely that the optimal cluster
+minimum in the current frame it is likely that the optimal cluster
 count is unchanged. 
 
-Unfortunately there are two major problems with this conclusion. Even
+Unfortunately there are two major challenges for this conclusion. Even
 if the old cluster centers constitute a local minimum on the current
 frame it is not guaranteed that it is the optimal solution. As described
 in 2.3 the optimal cluster count for a synthetic image seems to be
-the global minima and in case of a real image it would be the smallest
-validity after the first local maxima. Neither for synthetic images,
-nor for natural images can be checked whether the current minimum
-constitutes the optimum without calculating the validity for each
-k. 
+the global minimum while for real images it would be the smallest
+validity after the first local maximum. Neither for synthetic nor
+Whether the current minimum is optimal requires the calculation of the validity at each k in both synthetic and
+natural images.
 
 Consider for example the validity chart in Fig 3.1. Searching for
 the minimal validity would result in only 2 clusters. As discussed
 in 2.3 the best validity in natural images would be at k = 8, because
-it is the minmal value after the first local maximum. But if the previous
+% could be clearer
+it is the minimal value after the first local maximum. But if the previous
 frame would have had 13 clusters, the adapted algorithm would continue
 to work with those clusters, because k = 13 constitutes a local minimum.
 
@@ -776,59 +780,61 @@ to work with those clusters, because k = 13 constitutes a local minimum.
 \end{figure}
 
 Even if the optimal number of clusters in a frame would equal the
-used number of clusters in a former one, the old cluster centers might
+used number of clusters in the previous one, the old cluster centers might
 be unfit as initialization points for k-means clustering in the current
 frame. To get a good initialization point, the algorithm of Siddheswar
 Ray and Rose H. Turi puts the whole image into a single cluster at
-first. The mean of each pixel builds its cluster center. Continually
-the cluster with the highest variance is split into two parts. Thus
+first with the mean of all pixels as the cluster center.
+The cluster with the highest variance is then repeatedly split into two parts. Thus
 using the old cluster centers as initialization points for k-means
-clustering implies the assumption, that each time a cluster had the
+clustering implies the assumption that each time a cluster had the
 highest variance in the previous frame, the same cluster would have
 the highest variance in the current frame as well. 
 
-Despite the occurring problems, using the local minima assumption
+Despite these problems, using the local minimum assumption
 seems to be a good indicator to either keep the old cluster centers
-as initialization points or start all over. The stated problems are
-expected to occure rarely, due to mostly small occurring changes when
-transitioning from one frame to another. The impact of identifying
+as initialization points or to start over. The stated problems are
+expected to occure rarely, due to the mostly small changes between
+framres. The impact of identifying
 the wrong cluster count in a video sequence will be further discussed
-in the evaluation of this algorithm.\footnote{see 4.4 implementation in a video sequence}
+% you need to use labels for linking instead of hardcoding numbers...
+in the evaluation of this algorithm in 4.2.
 
-At the beginning of this algorithm, the normal algorithm 2.2 will
+% a heading like 'explanation of the adaptive ... algorithm' would be good
+To initialize Algorithm 3.1, the known Algorithm 2.2 will
 be used on the first frame to get a good starting point to cluster
-the remaining frames. In each iteration of algorithm 2.2 the cluster
+the remaining frames. In each iteration of Algorithm 2.2 the cluster
 centers for the current k have to be saved (line 2). This is necessary
-in order to check whether the old cluster centers still constitutes
-a local minima in the validity chart on the next frame. First the
+in order to check whether the old cluster centers still constitute
+a local minimum in the validity chart on the next frame. First the
 validity of the best cluster centers in the first frame has to be
 calculated on the current frame (line 4). As in all following steps
 as well, the adapted cluster centers for k have to be stored (line
-5). To check whether this validity constitutes a local minimum, the
+5). To check whether the current validity constitutes a local minimum, the
 validity for k+1 and k-1 is needed. To get this for k+1 the same process
 as previously described can be used and the cluster with the highest
 variance will be split (line 6). Afterwards the basic k-means algorithm
-is applied and the validity is calculated (line 7).\footnote{see 2.3 Optimal cluster count}
+is applied and the validity is calculated (line 7)\footnote{see 2.3 Optimal cluster count}.
 Unfortunately it is not possible to simply remerge two clusters, because
-there is no similar indicator as the variance for splitting, which
-defines the clusters who have previously belonged together. Instead
-for getting the validity for k-1 the corresponding cluster centers
-of the previous cycle has to be used as initialization point for k-means
-clustering (line 9), although this cluster centers have been generated
+there is no indication of which
+clusters previously belonged together. Instead
+of getting the validity for k-1 the corresponding cluster centers
+of the previous cycle have to be used as the initialization for k-means
+clustering (line 9), although these cluster centers have been generated
 using a previous frame. Therefore it is important to save all calculated
-cluster centers, because they might be used later. After running k-means
-clustering and calculating the variance it can finally be checked,
-if the validity for k consitutes a minimum (line 12).
+cluster centers, because they might be required later. After running k-means
+clustering and calculating the variance it can finally be checked
+whether the validity for k constitutes a minimum (line 12).
 
 If this is the case the described steps can simply be repeated on
-the next frame. Otherwise the old cluster center seem to be unoptimal
-and thus the whole algorithm 2.2 will be repeated on the current frame
+the next frame. Otherwise the old cluster centers have to be discarded
+and Algorithm 2.2 will be repeated on the current frame
 (line 15).
 
 \begin{algorithm}[H]
 \begin{algorithmic}[1]
 \State {Split the video sequence into frames} 
-\State {Use algorithm 2.2 to find the optimal k for the first frame and save the cluster centers for each number of clusters}
+\State {Use Algorithm 2.2 to find the optimal k for the first frame and save the cluster centers for each number of clusters}
 \Repeat{ for each frame}
 \State {Use standard k-means with existing cluster centers of k and calculate the validity}
 \State {Save the new cluster centers for k}
@@ -841,7 +847,7 @@ and thus the whole algorithm 2.2 will be repeated on the current frame
 \If {validity of k-1 > validity of k <= validity of k+1}
 \State { \textbf{continue} }
 \Else 
-\State {Use algorithm 2.2 and save the cluster centers for each number of clusters}
+\State {Use Algorithm 2.2 and save the cluster centers for each number of clusters}
 \EndIf
 \Until {all frames are processed}
 \State {Group the clusters into super-clusters according to a similarity measurement}
@@ -850,60 +856,59 @@ and thus the whole algorithm 2.2 will be repeated on the current frame
 \caption{The adapted algorithm to find the optimal cluster count in video sequences}
 \end{algorithm}
 
-This algorithm will save computational time in cost of accuracy. In
-some special cases it will provide non optimal solutions, this will
+This algorithm will speed up computational time with a loss in accuracy. In
+some special cases it will provide non optimal solutions, which will
 further be outlined in chapter 4. 
 
-\section{Similarity measurement of clusters occurring over several frames}
+\section{Similarity measure of clusters occurring over several frames}
 
-In order to find a suitable similarity measurement for comparing clusters,
+In order to find a suitable similarity measure for comparing clusters,
 it is important to keep track of the goal. The fusion of several similar
 clusters into one super-cluster should finally provide information
-of the whole video. The basic k-means color segmentation algorithm
-as described in 2.2 is repeatedly used in 2.3, would ultimately provide
+about the whole video sequence. The basic k-means color segmentation algorithm
+as described in 2.2 and used repeatedly in 2.3, would ultimately provide
 only minimal information via the cluster centers. 
 
 For example, if only the Euclidean distance of each cluster center
-would be compared and the most similar ones would be merged, the gained
-information could be seen as color histogram of the whole video sequence.
-One improvement step is not only to include the color spaces, but
-also the size to compare clusters. Thus clusters which share a color
-with another cluster center but are ultimately unconnected, might
+would be compared and the most similar ones would be merged, this
+could be seen as a color histogram of the whole video sequence.
+One improvement is to not only include the colors, but
+also the sizes of the clusters in the similarity measure. Thus clusters which share a color
+with another cluster but are ultimately unconnected might
 already be separated and don't share the same super-cluster. 
 
 Without including the coordinates in any way, clusters cannot include
-any information about shape and may contain disjointed areas. For
-example in Figure 3.2 the optimal cluster count so far would be determined
+any information about shape and may contain disjoint areas. For
+example in Figure 3.2 the optimal cluster count based on colors would be determined
 as 2, because it only consists of 2 colors and a pure color segmentation
 algorithm is applied. One cluster contains the black background and
 the second one the red rectangles. To split clusters not only according
 to their color, but also according to their geometrical distinctness,
 the coordinates of each pixel need to be considered when calculating
-the clusters. If the geomatrical distinctness is considered, the optimal
-clustercount in Figure 3.2 changes from 2 to 3, because the rectangles
+the clusters. If the geometrical distinctness is considered, the optimal
+cluster count in Figure 3.2 changes from 2 to 3, because the rectangles
 are not connected.
 
 There are several ways to include geometrical features, but it would
-be optimal if reasonable results could be achieved with the k-means
+be convenient if reasonable results could be achieved with the k-means
 clustering algorithm itself. The basic idea hereby is to extend the
-feature space from a 3d-vector which includes the color space, to
+feature space from a 3d-vector which includes the colors to
 a 5d-vector which also includes the XY-coordinates. 
 
 \begin{figure}[H]
 \begin{center}\includegraphics{images/beispiel}\end{center}\caption{Example of an image with optimal cluster count of 2 on pure color
-segmentation and optimal cluster count of 3 when including geomatrical
-features}
+segmentation and optimal cluster count of 3 when including geometrical features.}
 \end{figure}
-A different approach to include geometrical knowledge is to detect
-shapes in the already separated clusters, created by the k-means color
-segmentation algorithm. The OpenCV library\cite{openCV_doc} already
-implements the necessary functions for doing so. First a canny algorithm
-will detect the edges of the respective cluster, before the openCV
-method ``findContours(...)'' will finally try to calculate the corresponding
+A different approach for including geometrical knowledge is to detect
+shapes in the already separated clusters created by the k-means color
+segmentation algorithm. The OpenCV library \cite{openCV_doc} already
+implements the necessary functions for doing so. First a Canny algorithm
+detects the edges of the respective cluster, before the openCV
+method ``findContours(...)'' tries to calculate the corresponding
 contours. Contours can be seen as boundaries, and in contrast to edges
-they form closed curvatures. If there are several contours convoluted
-in each other as for example seen in Figure 3.3, only the most outer
-one is relevant and will represent a cluster. In the case of the image
+they form closed curvatures. If there are several contours nested
+within each other as for example seen in Figure 3.3, only the outermost
+is relevant and will represent a cluster. In the case of the image
 in Figure 3.3 the only relevant contours are labeled from 0-2, because
 the remaining contours are all enclosed in contour 2. 
 
@@ -1013,7 +1018,7 @@ The algorithm was tested clustering images of the Berkeley Segmentation
 Dataset\cite{Arbelaez2011} and provided satisfactory results. To
 evaluate the dynamic cluster count the clustered images, were compared
 to the images generated with a higher/lower number of clusters. These
-are also generated with algorithm 2.2. It increments the number of
+are also generated with Algorithm 2.2. It increments the number of
 clusters succesively until $k_{\max}$ is reached, hence the images
 in the range from k = 2 to k = $k_{\max}$can be used for comparison
 purposes.
@@ -1208,7 +1213,7 @@ If the clusters are calculated with k-means using the cluster centers
 of the previous frame as initialization points, the generated clusters
 will have a higher variance if a new area is added to the scene. Thus
 the validity measure will usually decrease if the number of clusters
-is increased, this is the same principle used in algorithm 2.2. Even
+is increased, this is the same principle used in Algorithm 2.2. Even
 if the algorithm for identifying the optimal cluster count would have
 split clusters in a different way if run on the current image, the
 disparity can still be regulated. For the transformation from k to
@@ -1297,7 +1302,7 @@ into a single super-cluster.
 
 To evaluate the performace of algorithm 3.1 its calculated adaptive
 cluster count was compared to the outcome produced by its predecessor
-algorithm developed by Ray and Rose H. Turi\footnote{algorithm 2.2},
+algorithm developed by Ray and Rose H. Turi\footnote{Algorithm 2.2},
 where each frame was processed individually. This was done on video
 sequences of the Freiburg-Berkeley Motion Segmentation Dataset\cite{Ochs2014},
 one example consisting of only 19 frames can be seen in Figure 4.9.
@@ -1480,7 +1485,7 @@ had often the highest variance out of the calculated clusters. Figure
 4.11 shows an example of this occurrence; the white area represents
 the not contained area of the specific cluster. While the algorithm
 gets the expected result for k=2 and $\alpha=0.004$ (a ratio of 250:1),
-it fails for k=3-5 and splits the background further.\footnote{Using the algorithm 2.2 to determine the optimal cluster count}
+it fails for k=3-5 and splits the background further.\footnote{Using the Algorithm 2.2 to determine the optimal cluster count}
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.2\textwidth} 
@@ -1606,7 +1611,7 @@ of each polygon.
 \EndFor
 \end{algorithmic}
 
-\caption{Find geomatrical features of clusters}
+\caption{Find geometrical features of clusters}
 \end{algorithm}
 
 One of the advantages of the k-means algorithm is, that each pixel
