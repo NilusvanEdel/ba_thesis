@@ -285,7 +285,7 @@ titlepage
 \begin_inset Text
 
 \begin_layout Plain Layout
-Fakultät Humanwissenschaften
+Institute of Cognitive Science
 \begin_inset space \hspace{}
 \length 2.5cm
 \end_inset
@@ -428,7 +428,7 @@ Clustering of video sequences with dynamic cluster count and recognition
 \begin_inset Text
 
 \begin_layout Plain Layout
-eingereicht von:
+submitted by:
 \begin_inset space \hspace{}
 \length 1cm
 \end_inset
@@ -462,7 +462,7 @@ Linus Edelkott
 \begin_inset Text
 
 \begin_layout Plain Layout
-Matrikelnummer: 950499
+Matriculation number: 950499
 \end_layout
 
 \end_inset
@@ -482,7 +482,7 @@ Matrikelnummer: 950499
 \begin_inset Text
 
 \begin_layout Plain Layout
-Studiengang: Cognitive Science
+Course of studies: Cognitive Science
 \end_layout
 
 \end_inset
@@ -533,7 +533,7 @@ Universität Osnabrück
 \begin_inset Text
 
 \begin_layout Plain Layout
-Betreuer:
+Mentor:
 \end_layout
 
 \end_inset
@@ -6806,7 +6806,7 @@ The concept of super-clusters seemed to work quite well and merged similar
  this thesis.
  However, if semantic knowledge could actually be implemented in the clustering
  process, the serial identity of clusters in video sequences would drastically
- increase and therefore also the concept of super-clusters.
+ increase and therefore also the fundamental suitability of super-clusters.
 \end_layout
 
 \begin_layout Standard
