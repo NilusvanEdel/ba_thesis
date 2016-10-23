@@ -931,7 +931,7 @@ So far there exists no generally acknowledged optimal solution to compute
  to create good starting points for clustering images
 \begin_inset CommandInset citation
 LatexCommand cite
-key "ChrisSolomon2011"
+key "ChrisSolomon2011_km"
 
 \end_inset
 
@@ -1354,7 +1354,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1501,7 +1501,7 @@ th cluster and
  describes the distance
 \begin_inset CommandInset citation
 LatexCommand cite
-key "ChrisSolomon2011"
+key "ChrisSolomon2011_km"
 
 \end_inset
 
@@ -1888,16 +1888,16 @@ The optimal cluster count should posses the smallest validity.
 The proposed algorithm of Siddheswar Ray and Rose H.
  Turi can be seen in algorithm 2.2.
  It starts with initialising every single data point into one cluster and
- using the average of each data point as cluster center (1).
+ using the average of each data point as cluster center (line 1).
  Repeatedly the variance of each data point will be calculated and added
- up, the sum of all points will be used as divisor (3).
- The cluster with the largest value will be split (4).
+ up, the sum of all points will be used as divisor (line 3).
+ The cluster with the largest value will be split (line 4).
  Due to the occurring minimization of intra-cluster distance in k-means
  clustering, this cluster would most likely be split when increasing the
  cluster count.
  Before the process will be repeated, the normal k-means clustering is executed
  and the validity calculated according to the new calculated cluster centers
- (5).
+ (line 5).
  This processes is repeated until a self-assigned number of clusters 
 \begin_inset Formula $k_{\text{max}}$
 \end_inset
@@ -2176,7 +2176,7 @@ centering
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/rgb_cube.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -2279,7 +2279,7 @@ centering
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename /home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/hsv_representation.png
-	scale 60
+	scale 45
 
 \end_inset
 
@@ -2383,14 +2383,14 @@ Dynamic cluster count algorithm in video sequences
 \begin_layout Standard
 Due to color segmentation in video sequences and images being essentially
  the same problem, the proposed algorithm by Siddheswar Ray and Rose H.
- Turi, would also work in videos.
+ Turi, would also work in videos
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ray1999"
 
 \end_inset
 
- Due to the assumption that we are only looking at continuous video sequences,
+ .Due to the assumption that we are only looking at continuous video sequences,
  calculating the optimal cluster count for each frame individually, without
  including any knowledge gained from the previous calculations, would result
  in redundant calculations for most videos.
@@ -2534,19 +2534,19 @@ At the beginning of this algorithm, the normal algorithm 2.2 will be used
  on the first frame to get a good starting point to cluster the remaining
  frames.
  In each iteration of algorithm 2.2 the cluster centers for the current k
- have to be saved (2).
+ have to be saved (line 2).
  This is necessary in order to check whether the old cluster centers still
  constitutes a local minima in the validity chart on the next frame.
  First the validity of the best cluster centers in the first frame has to
- be calculated on the current frame (4).
+ be calculated on the current frame (line 4).
  As in all following steps as well, the adapted cluster centers for k have
- to be stored (5).
+ to be stored (line 5).
  To check whether this validity constitutes a local minimum, the validity
  for k+1 and k-1 is needed.
  To get this for k+1 the same process as previously described can be used
- and the cluster with the highest variance will be split (6).
+ and the cluster with the highest variance will be split (line 6).
  Afterwards the basic k-means algorithm is applied and the validity is calculate
-d (7).
+d (line 7).
 \begin_inset Foot
 status open
 
@@ -2561,19 +2561,19 @@ see 2.3 Optimal cluster count
  the clusters who have previously belonged together.
  Instead for getting the validity for k-1 the corresponding cluster centers
  of the previous cycle has to be used as initialization point for k-means
- clustering (9), although this cluster centers have been generated using
- a previous frame.
+ clustering (line 9), although this cluster centers have been generated
+ using a previous frame.
  Therefore it is important to save all calculated cluster centers, because
  they might be used later.
  After running k-means clustering and calculating the variance it can finally
- be checked, if the validity for k consitutes a minimum (12).
+ be checked, if the validity for k consitutes a minimum (line 12).
 \end_layout
 
 \begin_layout Standard
 If this is the case the described steps can simply be repeated on the next
  frame.
  Otherwise the old cluster center seem to be unoptimal and thus the whole
- algorithm 2.2 will be repeated on the current frame (15).
+ algorithm 2.2 will be repeated on the current frame (line 15).
 \end_layout
 
 \begin_layout Standard
