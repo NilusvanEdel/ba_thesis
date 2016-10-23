@@ -779,7 +779,7 @@ So far there exists no generally acknowledged optimal solution to compute
  One common bypass is to run the algorithm several times with different
  starting points.
  Especially for image segmentation, however, many proposals have been made
- to create good starting points for clustering images
+ to create good starting points for clustering images 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011_km"
@@ -839,7 +839,7 @@ Clustering
 Clustering can broadly be described as classification of data into several
  groups.
  Clustering algorithms are unsupervised learning algorithms, which means
- they make no prior assumptions about the ouput components
+ they make no prior assumptions about the ouput components 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lucchese_colorimage"
@@ -871,7 +871,7 @@ textit{interesting}
 \begin_inset Quotes grd
 \end_inset
 
-
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "VladimirCherkassky2007"
@@ -881,9 +881,9 @@ key "VladimirCherkassky2007"
 .
  This separation into a number of groups, called clusters, happens according
  to a measure of similarity.
- The goal of the algorithm is to find clusters in a way, that samples within
+ The goal of the algorithm is to find clusters in a way that samples within
  are more similar to each other than samples from different clusters and
- thus minimizing the prediction error.
+ thereby minimize the prediction error.
  This is often summarized as the weighting of 
 \begin_inset Quotes eld
 \end_inset
@@ -901,8 +901,8 @@ inter-cluster
 \end_inset
 
  distance.
- The first one describes the distinction from samples within a cluster,
- whereas the latter is the distance of one cluster to another one
+ The first one describes the distances of samples within a cluster, whereas
+ the latter is the distance of one cluster to another one 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ray1999"
@@ -913,8 +913,8 @@ key "Ray1999"
 \end_layout
 
 \begin_layout Standard
-Hereby the similarity measurement reflects a priori knowledge, for example
- using standard Euclidean distance on a RGB color space equals the assumption
+The similarity measurement reflects a priori knowledge, for example using
+ standard Euclidean distance on a RGB color space equals the assumption
  that all values have equal importance.
  Nevertheless is the clustering process usually 
 \begin_inset Quotes gld
@@ -925,7 +925,7 @@ ad hoc
 \end_inset
 
 ; the underlying clustering process defines the relevant information itself.
- This makes clustering very generalizable
+ This makes clustering very generalizable 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "VladimirCherkassky2007"
@@ -936,7 +936,15 @@ key "VladimirCherkassky2007"
 \end_layout
 
 \begin_layout Standard
-Often clustering algorithms create prototypes.
+Often clustering algorithms create so-called 
+\begin_inset Quotes eld
+\end_inset
+
+prototypes
+\begin_inset Quotes erd
+\end_inset
+
+.
  A prototype is a data object that is representative of all other objects
  in the cluster.
  In most cases this is simply the average of each data point within the
@@ -944,7 +952,7 @@ Often clustering algorithms create prototypes.
  Protoypes can be used in many ways, they ease the comparison of clusters
  among each other and can be used for data compression.
  Therefore they are often used as input for further data processing or data
- analysis techniques
+ analysis techniques 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Pang-NingTan2005"
@@ -958,10 +966,10 @@ key "Pang-NingTan2005"
 One of the most common usage of clustering algorithms is dimensionality
  reduction.
  The goal is to find a mapping from a 
-\begin_inset Formula $d-$
+\begin_inset Formula $d$
 \end_inset
 
-dimensional input space 
+-dimensional input space 
 \begin_inset Formula $R^{d}$
 \end_inset
 
@@ -969,7 +977,7 @@ to some
 \begin_inset Formula $m$
 \end_inset
 
- dimensional output space 
+-dimensional output space 
 \begin_inset Formula $R^{m}$
 \end_inset
 
@@ -977,7 +985,7 @@ to some
 \begin_inset Formula $m<d$
 \end_inset
 
-
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "VladimirCherkassky2007"
@@ -999,7 +1007,7 @@ G(x):R^{d}\rightarrow R^{m}
 \end_layout
 
 \begin_layout Standard
-A good mapping should also possess the inverse function.
+A good mapping should also possess the inverse function:
 \end_layout
 
 \begin_layout Standard
@@ -1014,26 +1022,27 @@ F(z)=R^{m}\rightarrow R^{d}
 \end_layout
 
 \begin_layout Standard
-Hence the reduced output can be decoded to the original input without losing
- to much information.
- Thus the main features can be kept, while the amount of data is reduced.
+If this is the case, the original input can be losslessly decoded from the
+ reduced output.
+ Thus the main characteristics of the data are preserved while the amount
+ of data is reduced.
 \end_layout
 
 \begin_layout Standard
 Clusters can either be described hierarchically (i.e.
  described in tree structures) or they can be purely partitional.
- The latter sort can be further divided into 2 groups.
+ The latter can be further divided into 2 groups.
  The first one is called 
-\begin_inset Quotes gld
+\begin_inset Quotes eld
 \end_inset
 
 hard clustering
 \begin_inset Quotes grd
 \end_inset
 
-, each sample is definitely placed in only one cluster.
+ where each sample is definitely placed in only one cluster.
  The second one is called 
-\begin_inset Quotes gld
+\begin_inset Quotes eld
 \end_inset
 
 soft clustering
@@ -1041,14 +1050,14 @@ soft clustering
 \end_inset
 
  and in alternative each sample can belong to serveral clusters according
- to a related probability distribution.
+ to a related probability distribution 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Poole2010"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Section
@@ -1060,20 +1069,20 @@ K-means clustering is one of the oldest and most widely used clustering
  algorithms.
  It requires an explicit distance measure, an input of training samples
  and the number of classes k.
- It belongs to the class of hard clustering algorithms.
+ It belongs to the class of hard clustering algorithms 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Poole2010"
 
 \end_inset
 
- 
+.
 \end_layout
 
 \begin_layout Standard
 The main concept is to represent each cluster by the vector of mean attribute
  values for numeric attributes or by a vector of the most frequent values
- for nominal attributes that are assigned to that cluster
+ for nominal attributes that are assigned to that cluster 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IBM_BigInsights"
@@ -1081,31 +1090,27 @@ key "IBM_BigInsights"
 \end_inset
 
 .
- In contrast to numeric values, nominal attributes can not simply be ordered
- and have only a limited set of values.
  This kind of representation is also called cluster center and acts as a
- prototype.
+ prototype 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Pang-NingTan2005"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
-The operation of k-means clustering can be seen in algorithm 2.1.
- It starts with initializing random points as centroid of a cluster.
- This initialization process will be repeated until the desired number K
- of clusters is generated.
+The operation of k-means clustering can be seen in Algorithm 2.1.
+ It starts with initializing k random points as centroid of the clusters.
  The next step is to assign every training sample to the closest cluster
- center and update it by shifting it to the mean of all cluster members
- for each attribute.
- This step has to be repeated until it converges, due to bad initialization
- points this might take many iterations.
+ center and update the centroid by shifting it to the mean of all cluster
+ members for each attribute.
+ This step has to be repeated until it converges to a local minimu.
+ Due to bad initialization points this might take many iterations.
  Hence the usual implementation either uses a limit for the number of iterations
- or stops if the number of changes fall below a certain 
+ or stops if the number of changes fall below a certain threshold 
 \begin_inset Formula $\epsilon$
 \end_inset
 
@@ -1297,7 +1302,7 @@ end{subfigure}
 
 \begin_layout Plain Layout
 Example of k-means clustering on data with distinct groups and random initial
- centers
+ centers, the differing shapes symbolize the clusters 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Pang-NingTan2005"
@@ -1330,7 +1335,7 @@ J=\sum_{j=1}^{k}\sum_{\forall i}|x_{i}^{j}-c_{j}|^{2}
 
 \end_inset
 
-hereby 
+where 
 \begin_inset Formula $c_{j}$
 \end_inset
 
@@ -1350,7 +1355,7 @@ th cluster and
 \begin_inset Formula $|x_{i}^{j}-c_{j}|$
 \end_inset
 
- describes the distance
+ describes the distance of a point to its centroid 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011_km"
@@ -1359,6 +1364,7 @@ key "ChrisSolomon2011_km"
 
 .
  It can be shown that the k-means algorithm converges to a local minimum
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Fu1981"
@@ -1378,7 +1384,7 @@ The relevant distance measure can be chosen dependent on the task, but most
 
 \begin_inset Formula 
 \[
-\text{Euclidean distance: }\frac{1}{I}\cdot\forall i\left(\sqrt{x_{i}-c_{i}}\right)^{2}
+\text{Euclidean distance: }d(c,x)=d(x,c)=\sqrt{\sum_{i=1}^{n}(c_{i}-x_{i})^{2}}
 \]
 
 \end_inset
@@ -1387,13 +1393,13 @@ The relevant distance measure can be chosen dependent on the task, but most
 \end_layout
 
 \begin_layout Standard
-An advange of k-means clustering is its low complexity but it has some weaknesse
-s.
- K-means struggle with outliers, which highly influence the results.
+An advantage of k-means clustering is its low complexity, but it also has
+ some weaknesses.
+ K-means is sensitive to outliers, which highly influence the results.
  It can also only be used on data for which there is a centroid and it cannot
  handle non-globular clusters as seen in Figure 2.2.
- Finally it has the requirement of getting an accurate number of clusters
- as input a priori
+ Finally it has the requirement of needing an accurate estimation of the
+ expected number of clusters as input a priori 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bora2015,Pang-NingTan2005"
@@ -1483,7 +1489,7 @@ global.png}}
 
 
 \backslash
-subcaption{Cluster centers with k = 3} 
+subcaption{Cluster centers with k = 2} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1499,7 +1505,7 @@ end{subfigure}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Example of k-means clustering on data with non-globular clusters
+Example of k-means clustering on data with non-globular clusters 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Pang-NingTan2005"
@@ -1524,12 +1530,12 @@ Image color segmentation
 \end_layout
 
 \begin_layout Standard
-One of the many applications for the k-means clustering algorithm is color
+One of the many applications for the k-means clustering algorithms is color
  segmentation.
  Image segmentation in general is the process of splitting/classifying an
- image into several parts, so that each region builds a homogenous segment.
- Combining any of the homogenous segments would result in a heterogenous
- segment
+ image into several parts, so that each region builds a homogeneous segment.
+ Combining any of the homogeneous segments would result in a heterogenous
+ segment 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Bora2015"
@@ -1546,9 +1552,9 @@ Segmentation algorithms are often the very first step in image processing.
  If the respective object can not be identified, it can certainly not be
  classified.
  The segmentation outcome will always be dependent on the underlying image
- and the object, or feature which should be identified.
- Therefore there is no single perfect clustering for an image, this complicates
- the evaluation process
+ and the object or feature which should be identified.
+ Therefore there is no single perfect clustering for an image, which complicates
+ the evaluation process 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011"
@@ -1559,11 +1565,11 @@ key "ChrisSolomon2011"
 \end_layout
 
 \begin_layout Standard
-Segmentation algorithm can be divided into two main groups.
- The first one is the edge/boundary group; the associated algorithms aim
- to detect edges to find boundaries in between groups of pixels.
+Segmentation algorithms can be divided into two main groups.
+ The first is the edge/boundary group; the associated algorithms aim to
+ detect edges to find boundaries between groups of pixels.
  The second group is region based and tries to order pixels according to
- their mutual similarity
+ their mutual similarity 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011"
@@ -1574,9 +1580,9 @@ key "ChrisSolomon2011"
 \end_layout
 
 \begin_layout Standard
-Color image segmentation is usually residing in the second group.
+Color image segmentation usually belongs to the second group.
  Combined with texture segmentation, it is mostly used in tasks concerned
- about content based retrieval
+ with content based retrieval 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lucchese_colorimage"
@@ -1584,17 +1590,17 @@ key "Lucchese_colorimage"
 \end_inset
 
 .
- Hereby images are organised/searched according to their pictured content.
+ Hereby images are organised/searched according to their content.
  
 \end_layout
 
 \begin_layout Standard
 Clustering algorithms share the same problem as region based segmentation
- and can thus be used for color segmentation.
+ algorithms and can thus be used for color segmentation.
  The problem of using k-means clustering for image segmentation is once
- again the requirement to assing the number of clusters beforehand.
- If a good number of clusters is known however it is optimal in minimizing
- the average distortion
+ again the requirement to choose the number of clusters beforehand.
+ If a good number of clusters is known however, it is optimal in minimizing
+ the average distortion 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Park1998"
@@ -1605,11 +1611,11 @@ key "Park1998"
 \end_layout
 
 \begin_layout Section
-Finding the optimal numbers of clusters for k-means clustering
+Finding the optimal number of clusters for k-means clustering
 \end_layout
 
 \begin_layout Standard
-Although the k-means clustering is relatively easy to implement on a relative
+Although k-means clustering is relatively easy to implement on a relatively
  wide field, it has some drawbacks.
  The final results of the clustering algorithm vary depending on the number
  of clusters and especially on their initialization.
@@ -1626,7 +1632,7 @@ key "IMCIP-2015"
 
 \begin_layout Standard
 In order to find the optimal number of clusters and initialize them automaticall
-y Siddheswar Ray and Rose H.
+y, Siddheswar Ray and Rose H.
  Turi
 \begin_inset Note Note
 status open
@@ -1646,7 +1652,7 @@ a simple validity measure based on the intra-cluster and inter-cluster distance
 \begin_inset Quotes erd
 \end_inset
 
-
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ray1999"
@@ -1658,11 +1664,11 @@ key "Ray1999"
 \end_layout
 
 \begin_layout Standard
-The basic k-means algorithm minimizes the sum of squared distanced from
- all points to their cluster centers, hence the distances from each point
- to their cluster centers provides the information whether the clusters
- are compact.
- The averages of all these distances constitute the intra-cluster measurement.
+The basic k-means algorithm minimizes the sum of squared distances from
+ all points to their cluster centers.
+ This means the distances from each point to its cluster center provides
+ the information whether or not a cluster is compact.
+ The averages of all these distances constitute the intra-cluster measurement:
 \end_layout
 
 \begin_layout Standard
@@ -1689,11 +1695,10 @@ where
 \begin_inset Formula $z_{i}$
 \end_inset
 
- is the actual cluster center.
- To be as compact as possible, we obviously want to minimize this measurement.
+ is the current cluster center.
+ To be as compact as possible, we want to minimize this measurement.
  The inter-cluster measurement in contrast describes the distances between
- the cluster centers and should be maximized.
- 
+ the cluster centers and should be maximized:
 \end_layout
 
 \begin_layout Standard
@@ -1714,10 +1719,10 @@ Only the minimum of each distance is considered, because we always want
 \end_layout
 
 \begin_layout Standard
-In an optimal clustering we obviously want to have compact clusters, which
- are as distant as possible.
- Thus the validity measurement is defined as the ratio of the intra and
- inter measure.
+In an optimal clustering we want to have compact clusters, which are as
+ distant from each other as possible.
+ Thus the validity measurement is defined as the ratio of the intra- to
+ the inter-measure.
 \end_layout
 
 \begin_layout Standard
@@ -1738,19 +1743,18 @@ The optimal cluster count should posses the smallest validity.
 
 \begin_layout Standard
 The proposed algorithm of Siddheswar Ray and Rose H.
- Turi can be seen in algorithm 2.2.
- It starts with initialising every single data point into one cluster and
- using the average of each data point as cluster center (line 1).
- Repeatedly the variance of each data point will be calculated and added
- up, the sum of all points will be used as divisor (line 3).
- The cluster with the largest value will be split (line 4).
- Due to the occurring minimization of intra-cluster distance in k-means
- clustering, this cluster would most likely be split when increasing the
- cluster count.
+ Turi can be seen in Algorithm 2.2.
+ It starts with initialising one cluster containing each data point with
+ their average as the cluster center (line 1).
+ In a loop, the variance for each cluster is calculated (line 3) and the
+ cluster with the largest value is split (line 4).
+ Due to the minimization of intra-cluster distances in k-means clustering,
+ this cluster would most likely be split when increasing the cluster count.
  Before the process will be repeated, the normal k-means clustering is executed
- and the validity calculated according to the new calculated cluster centers
- (line 5).
- This processes is repeated until a self-assigned number of clusters 
+ and the validity is calculated according to the newly calculated cluster
+ centers (line 5).
+ This processes is repeated until the parameterized maximum number of clusters
+ 
 \begin_inset Formula $k_{\text{max}}$
 \end_inset
 
@@ -1763,7 +1767,7 @@ The proposed algorithm of Siddheswar Ray and Rose H.
 \end_layout
 
 \begin_layout Standard
-The clusters will be split, according to the old cluster center and with
+The clusters will be split according to the old cluster center and with
  regard to the minimum and maximum of each attribute.
 \end_layout
 
@@ -1798,7 +1802,7 @@ With
 \begin_inset Formula $z_{i}^{''}$
 \end_inset
 
- being the two new cluster centers, 
+ being the two new cluster centers and 
 \begin_inset Formula $z_{i}$
 \end_inset
 
@@ -1910,7 +1914,7 @@ State {use the standard k-means algorithm and calculate the validity}
 
 
 \backslash
-Until {a self-assinged limit $k_
+Until {a parameterized limit $k_
 \backslash
 text{max}$ is reached}
 \end_layout
@@ -1935,12 +1939,11 @@ end{algorithmic}
 \begin_layout Standard
 Due to the larger inter-cluster distance, small cluster numbers tend to
  be selected more often.
- In synthetic images, with an actual perfect cluster count the calculated
+ In synthetic images, with an objectively perfect cluster count the calculated
  minimal validity will be the optimal cluster count.
- In natural images the best number of clusters is usually prefered.
+ In natural images a higher number of clusters is usually prefered.
  To overcome the effect of a large inter-cluster distance with a small k,
- the first local maximum in the validity measure needs to be found.
- 
+ the first local maximum in the validity measure needs to be found:
 \end_layout
 
 \begin_layout Standard
@@ -1968,9 +1971,9 @@ The adjusted best validity measure will be the smallest validity in between
 \end_layout
 
 \begin_layout Standard
-It is important to notice that this algorithm is supposed for image segmentation
- in RGB-color space, although it can also be implemented on a different
- feature space as long as the attributes can be scaled properly.
+It is important to notice that this algorithm is supposed to be used for
+ image segmentation in RGB color space, although it can also be implemented
+ on a different feature space as long as the attributes can be scaled properly.
 \end_layout
 
 \begin_layout Section
@@ -1981,19 +1984,19 @@ Color spaces
 A color space is a specific combination of color channels which forms a
  reproducible representation of colors in both digital and analog representation
 s.
- An image is only a spatially organized set of numbers, where pixels describe
+ An image is a spatially organized set of numbers, where pixels describe
  the particular combination of color channels at a specific position.
- A gray image for example is a 2d-array limited to a single color channel.
- The most used color space is the RGB-color space.
+ A gray scale image for example is a 2d-array of brightness values.
+ The RGB color space is very popular.
  It is based on the tristimulus theory of color in the human visual system.
- Its name describes the 3 used color channels; red, green and blue.
+ Its name describes the 3 color channels used: red, green and blue.
  This is similar to the three types of cones in the human eye which absorb
  the respective electromagnetic wavelengths.
- In normal 24-bit images, each channel is usually scaled to 0–255 for the
- common 1 byte per colour channel.
+ In 24-bit images, each channel is usually scaled to 0–255 for the common
+ 1 byte per colour channel.
  Therefore it is important to notice is that the color channels overlap.
  A perceived blue item will have the highest peak in the blue channel, but
- it will also have milder components of red and green
+ it will also have milder components of red and green 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011,Lucchese_colorimage"
@@ -2039,7 +2042,7 @@ centering
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-A representation of the 3d RGB cube
+A representation of the 3d RGB cube 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011"
@@ -2064,24 +2067,24 @@ key "ChrisSolomon2011"
 \end_layout
 
 \begin_layout Standard
-The main problem with the RGB-colorspace in image processing is its non-linearit
+The main problem with the RGB colorspace in image processing is its non-linearit
 y.
- Moving in a certain way in the cube might not produce a color that is perceptua
-lly consistent with the change in each of the channels.
+ Moving in a certain direction inside the cube might not produce a color
+ that is perceptually consistent with the change in each of the channels.
 \end_layout
 
 \begin_layout Standard
-The HSV-color space is closer to the human idea of color, because it is
- easier to think of a color in terms of H(ue), S(aturation) and V(alue).
+The HSV color space is closer to the human perception of color, because
+ it is easier to think of a color in terms of H(ue), S(aturation) and V(alue).
  The value determines the brightness.
- The color space can be represented in a 3d-hexagone, where the central
- vertical axis represents the Intensity.
+ The color space can be represented in a cone, where the central vertical
+ axis represents the Intensity.
  Hue is defined as an angle in the range 
 \begin_inset Formula $[0,2\pi]$
 \end_inset
 
  and Saturation is the depth or purity of the color, it is measured as a
- radial distance from the central axis
+ radial distance from the central axis 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Sural"
@@ -2092,11 +2095,11 @@ key "Sural"
 \end_layout
 
 \begin_layout Standard
-The HSV-color space is advantageous in comparison to the RGB-color space
+The HSV color space is advantageous in comparison to the RGB color space
  in color based image segmentation, because image objects are more consistently
  contained in the resulting hue field than in the channels of the RGB representa
 tion.
- This applies in particular to changing light conditions
+ This applies in particular to changing light conditions 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011"
@@ -2142,7 +2145,7 @@ centering
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-A representation of the HSV colorspace cone
+A representation of the HSV colorspace cone 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011"
@@ -2163,9 +2166,9 @@ key "ChrisSolomon2011"
 \end_layout
 
 \begin_layout Standard
-Both RGB and HSV spaces are however, not perceptually uniform; the distances
- among colors perceived by the human are not mirrored by similar distances
- between the points representing those colors in such spaces
+Both the RGB and HSV spaces are, however, not perceptually uniform; the
+ distances among colors perceived by the human eye are not mirrored by similar
+ distances between the points representing those colors in such spaces 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Lucchese_colorimage"
@@ -2176,43 +2179,42 @@ key "Lucchese_colorimage"
 \end_layout
 
 \begin_layout Chapter
-Adaptive K-means clustering
+Adaptive k-means clustering
 \end_layout
 
 \begin_layout Standard
 One of the logical extensions of the k-means algorithm used for color segmentati
 on seems to implement the algorithm not only on images, but on whole video
  sequences.
- The existing algorithms for determining the optimal cluster count could
- be transferred on whole videos, by simply processing them frame by frame.
- Usually the resulting processing time would prove unfit for most practical
- use if the algorithm is applied on each frame of the video.
+ The existing algorithm for determining the optimal cluster count could
+ be transferred to whole videos by processing them frame by frame.
+ The resulting processing time, however, would prove too high for most practical
+ uses +if the algorithm is applied on each frame of the video.
  While the regular k-means computing time is feasible, at least if an iteration
  limit is implemented, the computing time for dynamic cluster count identificati
-on as discussed in 2.4 is tremendous, due to the repeated use of the basic
+on as discussed in 2.4 is considerable, due to the repeated use of the basic
  k-means algorithm.
  
 \end_layout
 
 \begin_layout Standard
-Hence, the first task of this bachelor thesis is to find a way to adapt
- the identification of the optimal cluster number from images to video sequences.
+Hence, the first aim of this bachelor thesis is to find a way to adapt the
+ identification of the optimal cluster number from images to video sequences.
  
 \end_layout
 
 \begin_layout Standard
-Without further investigation the resulting clusters have only a limited
- application use and can only represent the gathered knowledge of a single
- frame.
+Without further analysis the resulting clusters have only a limited use
+ and can only represent the knowledge gathered in asingle frame.
  In order to include the information of the whole video it is necessary
- to compare the resulting clusters of each frame.
- A continuous occurring in several frames should eventually be recognized.
- 
+ to compare the clusters of each frame to those of the neighbouring frames.
+ Clusters occuring in several frames should be recognized to enable tracking
+ them.
 \end_layout
 
 \begin_layout Standard
-Thus, the second task of this bachelor thesis is to implement a similarity
- measurement for clusters to merge them over several frames.
+Thus, the second aim of this bachelor thesis is to implement a similarity
+ measure for clusters to merge them over several frames.
  In order to distinguish the clusters which are calculated using the k-means
  algorithm in a single image and the clusters which are generated through
  merging clusters of a video sequence, the latter kind will be referred
@@ -2233,32 +2235,33 @@ Dynamic cluster count algorithm in video sequences
 \end_layout
 
 \begin_layout Standard
-Due to color segmentation in video sequences and images being essentially
- the same problem, the proposed algorithm by Siddheswar Ray and Rose H.
- Turi, would also work in videos
+The algorithm by Siddheswar Ray and Rose H.
+ Turi can be transferred to video sequences in a straightforward manner
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ray1999"
 
 \end_inset
 
- .Due to the assumption that we are only looking at continuous video sequences,
+.
+ Due to the assumption that we are only looking at continuous video sequences,
  calculating the optimal cluster count for each frame individually, without
  including any knowledge gained from the previous calculations, would result
  in redundant calculations for most videos.
- Thus the aim is to reduce the calcuation time, while maintaining the same
- results algorithm 2.2 would produce if applied on each frame individually.
+ Thus the aim is to reduce the calculation time while maintaining the same
+ results that algorithm 2.2 would produce if applied to each frame individually.
 \end_layout
 
 \begin_layout Standard
 Often the optimal cluster count will be unchanged from one frame to the
- subsequent one.
- The resulting cluster will only vary slightly, either due to an occurred
- movement or due to a change of the lightning condition.
- Hence it seems reasonable to look for an effective way to include the gained
- knowledge of the previous frames.
+ the subsequent one.
+ The resulting clusters will only vary slightly, either due to a movement
+ that occurred or due to changes in the lighting conditions.
+ It therefore seems reasonable to look for an effective way to include the
+ knowledge gained from previous frames.
  One option would be to check whether cluster centers of the previous frame
- could be kept as initial center for the k-means algorithm of the current
+ could be kept as the initial centers for the k-means algorithm of the current
  frame.
  
 \end_layout
@@ -2268,22 +2271,21 @@ As described in 2.3 the measure to evaluate the number of clusters is the
  validity, its optimal value always falls on a local minimum in comparison
  to a higher/lower cluster count.
  Which means that if the cluster centers of the previous frame still constitute
- a local minima in the current frame it is likely that the optimal cluster
+ a local minimum in the current frame it is likely that the optimal cluster
  count is unchanged.
  
 \end_layout
 
 \begin_layout Standard
-Unfortunately there are two major problems with this conclusion.
+Unfortunately there are two major challenges for this conclusion.
  Even if the old cluster centers constitute a local minimum on the current
  frame it is not guaranteed that it is the optimal solution.
  As described in 2.3 the optimal cluster count for a synthetic image seems
- to be the global minima and in case of a real image it would be the smallest
- validity after the first local maxima.
- Neither for synthetic images, nor for natural images can be checked whether
- the current minimum constitutes the optimum without calculating the validity
- for each k.
- 
+ to be the global minimum while for real images it would be the smallest
+ validity after the first local maximum.
+ Neither for synthetic nor for natural images.
+ Whether the current minimum is optimal requires the calculation of the
+ validity at each k in both synthetic and natural images.
 \end_layout
 
 \begin_layout Standard
@@ -2347,26 +2349,27 @@ Example of a validity chart
 
 \begin_layout Standard
 Even if the optimal number of clusters in a frame would equal the used number
- of clusters in a former one, the old cluster centers might be unfit as
- initialization points for k-means clustering in the current frame.
+ of clusters in the previous one, the old cluster centers might be unfit
+ as initialization points for k-means clustering in the current frame.
  To get a good initialization point, the algorithm of Siddheswar Ray and
  Rose H.
- Turi puts the whole image into a single cluster at first.
- The mean of each pixel builds its cluster center.
- Continually the cluster with the highest variance is split into two parts.
+ Turi puts the whole image into a single cluster at first with the mean
+ of all pixels as the cluster center.
+ The cluster with the highest variance is then repeatedly split into two
+ parts.
  Thus using the old cluster centers as initialization points for k-means
- clustering implies the assumption, that each time a cluster had the highest
+ clustering implies the assumption that each time a cluster had the highest
  variance in the previous frame, the same cluster would have the highest
  variance in the current frame as well.
  
 \end_layout
 
 \begin_layout Standard
-Despite the occurring problems, using the local minima assumption seems
- to be a good indicator to either keep the old cluster centers as initialization
- points or start all over.
- The stated problems are expected to occure rarely, due to mostly small
- occurring changes when transitioning from one frame to another.
+Despite these problems, using the local minimum assumption seems to be a
+ good indicator to either keep the old cluster centers as initialization
+ points or to start over.
+ The stated problems are expected to occure rarely, due to the mostly small
+ changes between frames.
  The impact of identifying the wrong cluster count in a video sequence will
  be further discussed in the evaluation of this algorithm.
 \begin_inset Foot
@@ -2382,23 +2385,22 @@ see 4.4 implementation in a video sequence
 \end_layout
 
 \begin_layout Standard
-At the beginning of this algorithm, the normal algorithm 2.2 will be used
- on the first frame to get a good starting point to cluster the remaining
- frames.
- In each iteration of algorithm 2.2 the cluster centers for the current k
+To initialize Algorithm 3.1, the known Algorithm 2.2 will be used on the first
+ frame to get a good starting point to cluster the remaining frames.
+ In each iteration of Algorithm 2.2 the cluster centers for the current k
  have to be saved (line 2).
  This is necessary in order to check whether the old cluster centers still
- constitutes a local minima in the validity chart on the next frame.
+ constitute a local minimum in the validity chart on the next frame.
  First the validity of the best cluster centers in the first frame has to
  be calculated on the current frame (line 4).
  As in all following steps as well, the adapted cluster centers for k have
  to be stored (line 5).
- To check whether this validity constitutes a local minimum, the validity
- for k+1 and k-1 is needed.
+ To check whether the current validity constitutes a local minimum, the
+ validity for k+1 and k-1 is needed.
  To get this for k+1 the same process as previously described can be used
  and the cluster with the highest variance will be split (line 6).
  Afterwards the basic k-means algorithm is applied and the validity is calculate
-d (line 7).
+d (line 7)
 \begin_inset Foot
 status open
 
@@ -2408,24 +2410,24 @@ see 2.3 Optimal cluster count
 
 \end_inset
 
+.
  Unfortunately it is not possible to simply remerge two clusters, because
- there is no similar indicator as the variance for splitting, which defines
- the clusters who have previously belonged together.
- Instead for getting the validity for k-1 the corresponding cluster centers
- of the previous cycle has to be used as initialization point for k-means
- clustering (line 9), although this cluster centers have been generated
+ there is no indication of which clusters previously belonged together.
+ Instead of getting the validity for k-1 the corresponding cluster centers
+ of the previous cycle have to be used as the initialization for k-means
+ clustering (line 9), although these cluster centers have been generated
  using a previous frame.
  Therefore it is important to save all calculated cluster centers, because
- they might be used later.
+ they might be required later.
  After running k-means clustering and calculating the variance it can finally
- be checked, if the validity for k consitutes a minimum (line 12).
+ be checked whether the validity for k constitutes a minimum (line 12).
 \end_layout
 
 \begin_layout Standard
 If this is the case the described steps can simply be repeated on the next
  frame.
- Otherwise the old cluster center seem to be unoptimal and thus the whole
- algorithm 2.2 will be repeated on the current frame (line 15).
+ Otherwise the old cluster centers have to be discarded and Algorithm 2.2
+ will be repeated on the current frame (line 15).
 \end_layout
 
 \begin_layout Standard
@@ -2456,7 +2458,7 @@ State {Split the video sequence into frames}
 
 
 \backslash
-State {Use algorithm 2.2 to find the optimal k for the first frame and save
+State {Use Algorithm 2.2 to find the optimal k for the first frame and save
  the cluster centers for each number of clusters}
 \end_layout
 
@@ -2551,7 +2553,7 @@ Else
 
 
 \backslash
-State {Use algorithm 2.2 and save the cluster centers for each number of
+State {Use Algorithm 2.2 and save the cluster centers for each number of
  clusters}
 \end_layout
 
@@ -2607,58 +2609,58 @@ The adapted algorithm to find the optimal cluster count in video sequences
 \end_layout
 
 \begin_layout Standard
-This algorithm will save computational time in cost of accuracy.
- In some special cases it will provide non optimal solutions, this will
+This algorithm will speed up computational time with a loss in accuracy.
+ In some special cases it will provide non optimal solutions, which will
  further be outlined in chapter 4.
  
 \end_layout
 
 \begin_layout Section
-Similarity measurement of clusters occurring over several frames
+Similarity measure of clusters occurring over several frames
 \end_layout
 
 \begin_layout Standard
-In order to find a suitable similarity measurement for comparing clusters,
- it is important to keep track of the goal.
+In order to find a suitable similarity measure for comparing clusters, it
+ is important to keep track of the goal.
  The fusion of several similar clusters into one super-cluster should finally
- provide information of the whole video.
- The basic k-means color segmentation algorithm as described in 2.2 is repeatedly
- used in 2.3, would ultimately provide only minimal information via the cluster
- centers.
+ provide information about the whole video sequence.
+ The basic k-means color segmentation algorithm as described in 2.2 and used
+ repeatedly in 2.3, would ultimately provide only minimal information via
+ the cluster centers.
  
 \end_layout
 
 \begin_layout Standard
 For example, if only the Euclidean distance of each cluster center would
- be compared and the most similar ones would be merged, the gained information
- could be seen as color histogram of the whole video sequence.
- One improvement step is not only to include the color spaces, but also
- the size to compare clusters.
- Thus clusters which share a color with another cluster center but are ultimatel
-y unconnected, might already be separated and don't share the same super-cluster.
+ be compared and the most similar ones would be merged, this could be seen
+ as a color histogram of the whole video sequence.
+ One improvement is to not only include the colors, but also the sizes of
+ the clusters in the similarity measure.
+ Thus clusters which share a color with another cluster but are ultimately
+ unconnected might already be separated and don't share the same super-cluster.
  
 \end_layout
 
 \begin_layout Standard
 Without including the coordinates in any way, clusters cannot include any
- information about shape and may contain disjointed areas.
- For example in Figure 3.2 the optimal cluster count so far would be determined
- as 2, because it only consists of 2 colors and a pure color segmentation
- algorithm is applied.
+ information about shape and may contain disjoint areas.
+ For example in Figure 3.2 the optimal cluster count based on colors would
+ be determined as 2, because it only consists of 2 colors and a pure color
+ segmentation algorithm is applied.
  One cluster contains the black background and the second one the red rectangles.
  To split clusters not only according to their color, but also according
  to their geometrical distinctness, the coordinates of each pixel need to
  be considered when calculating the clusters.
- If the geometrical distinctness is considered, the optimal clustercount
+ If the geometrical distinctness is considered, the optimal cluster count
  in Figure 3.2 changes from 2 to 3, because the rectangles are not connected.
 \end_layout
 
 \begin_layout Standard
 There are several ways to include geometrical features, but it would be
- optimal if reasonable results could be achieved with the k-means clustering
+ convenient if reasonable results could be achieved with the k-means clustering
  algorithm itself.
  The basic idea hereby is to extend the feature space from a 3d-vector which
- includes the color space, to a 5d-vector which also includes the XY-coordinates.
+ includes the colors to a 5d-vector which also includes the XY-coordinates.
  
 \end_layout
 
@@ -2705,7 +2707,7 @@ end{center}
 
 \begin_layout Plain Layout
 Example of an image with optimal cluster count of 2 on pure color segmentation
- and optimal cluster count of 3 when including geometrical features
+ and optimal cluster count of 3 when including geometrical features.
 \end_layout
 
 \end_inset
@@ -2715,8 +2717,8 @@ Example of an image with optimal cluster count of 2 on pure color segmentation
 
 \end_inset
 
-A different approach to include geometrical knowledge is to detect shapes
- in the already separated clusters, created by the k-means color segmentation
+A different approach for including geometrical knowledge is to detect shapes
+ in the already separated clusters created by the k-means color segmentation
  algorithm.
  The OpenCV library
 \begin_inset CommandInset citation
@@ -2726,8 +2728,8 @@ key "openCV_doc"
 \end_inset
 
  already implements the necessary functions for doing so.
- First a canny algorithm will detect the edges of the respective cluster,
- before the openCV method 
+ First a Canny algorithm detects the edges of the respective cluster, before
+ the openCV method 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2735,12 +2737,13 @@ findContours(...)
 \begin_inset Quotes erd
 \end_inset
 
- will finally try to calculate the corresponding contours.
+ tries to calculate the corresponding contours.
  Contours can be seen as boundaries, and in contrast to edges they form
  closed curvatures.
- If there are several contours convoluted in each other as for example seen
- in Figure 3.3, only the most outer one is relevant and will represent a
- cluster.
+ If there are several contours nested within each other as for example seen
+ in Figure 3.3, only the outermost is relevant and will represent a cluster.
+ In the case of the image in Figure 3.3, only the most outer one is relevant
+ and will represent a cluster.
  In the case of the image in Figure 3.3 the only relevant contours are labeled
  from 0-2, because the remaining contours are all enclosed in contour 2.
  
@@ -2780,9 +2783,17 @@ begin{center}
 
 \begin_layout Plain Layout
 Example for hierachy in edge detection
-\begin_inset CommandInset citation
-LatexCommand cite
-key "openCV_doc_hiearch"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+protect
+\backslash
+footnote{}
+\end_layout
 
 \end_inset
 
@@ -2815,6 +2826,25 @@ end{center}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+footnotetext{
+\backslash
+url{http://docs.opencv.org/trunk/d9/d8b/tutorial_py_contours_hierarchy.html}}
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Results and Evaluation
 \end_layout
@@ -2828,7 +2858,7 @@ On synthetic images
 \end_layout
 
 \begin_layout Standard
-The results reported from Siddheswar Ray and Rose H.
+The results reported by Siddheswar Ray and Rose H.
  Turi 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2838,8 +2868,8 @@ key "Ray1999"
 
  on synthetic images described in 2.3, could mostly be verified.
  In very simple images as seen in Fig 4.1 the automatically specified cluster
- count matches the actual used colors.
- Notice that this section is only concerned about color segmentation.
+ count matches the actually used colors.
+ Note that this section is only concerned with color segmentation.
 \end_layout
 
 \begin_layout Standard
@@ -2894,39 +2924,36 @@ Simple generated images with known used number of colours (2, 5, 4)
 \end_layout
 
 \begin_layout Standard
-Surprisingly the calculated optimal cluster count using the RGB color space
+Surprisingly, the calculated optimal cluster count using the RGB color space
  and a maximal cluster count of 25 in Figure 4.2 was determined as 10 instead
  of the expected 5 clusters.
- This error occurs due to the different numbers of colors used in differing
- shapes.
- Each rectangle consists of only one specific color, whereas the circle
- can be distinguished into several RGB-values.
- The core of the circle and everything in close distance has only one color
- value, but the closer the distance to the boundary the more the color changes
- in order to achieve an effect of anti-aliasing, this can be seen in Figure
- 4.3.
- Anti-aliasing makes the rectangle shape of pixels on a computer display
- less visible for the human eye.
+ This error occurs due to the fact that more than one color is used in one
+ shape.
+ Each rectangle consists of only of one specific color, whereas the circle
+ contains several RGB values.
+ The core of the circle and everything in close proximity has only one color
+ value, but closer to the boundary the color changes in order to achieve
+ an effect of anti-aliasing (Figure 4.2).
  In this specific case the circle consists of 49 different RGB values.
  Due to the relationship of inter cluster distance and intra cluster distance
  the circle is split into 5 different clusters.
  The conversion into HSV did not result in a calculated cluster count of
  5 either; instead it went up to 13 (keeping the Euclidean distance as distance
  measurement).
- As described in 2.4 the different nature of the RGB color space and HSV
- color space results in different distances in between colors.
+ As described in 2.4 the different nature of the RGB and HSV color space
+ result in different distances in between colors.
  Many of the 49 RGB colors will probably share the same hue value, but can
- be further clustered according to the saturation and brightness.
+ be further clustered according to their saturation and brightness.
  Therefore this results in different clusters in comparison to the RGB color
- space and with it to a rise of the calculated optimal cluster count.
+ space and thereby a rise of the calculated optimal cluster count.
 \end_layout
 
 \begin_layout Standard
-Given that the used colors in a natural images are expected to be a lot
- more than 53, the performed clustering will never be on a comparable fine
- level.
+Given that the number of colors occuring in natural images are expected
+ to be a lot higher than 53, the performed clustering will never be on a
+ comparably fine level.
  The decrease of the intra cluster distance would lead to a lower inter
- cluster distance and supposedly the validity would increase.
+ cluster distance and presumably the validity would increase.
 \end_layout
 
 \begin_layout Standard
@@ -3064,8 +3091,8 @@ Simple generated image including a circle converted into HSV
 
 \begin_layout Standard
 Increasing the number of circles and adding more colors overall to testing
- images as for example seen in Figure 4.3, resulted in a correct computation
- of the cluster count in RGB color space.
+ images (Figure 4.3), resulted in a correct computation of the cluster count
+ in RGB color space.
  The particular image is built of 4564 RGB values and the right cluster
  count of 10 is calculated.
  Transferring this image into the HSV color space resulted in the computation
@@ -3208,14 +3235,14 @@ On real images
 \end_layout
 
 \begin_layout Standard
-Until now the cluster count was only tested on self-generated images with
- known optimal cluster count.
- On real images this is usually only roughly estimable.
+Until now the cluster count was only tested on synthetic images with a known
+ optimal cluster count.
+ On real images this count can usually only be estimated.
 \end_layout
 
 \begin_layout Standard
-The algorithm was tested clustering images of the Berkeley Segmentation
- Dataset
+The algorithm was tested on images of the Berkeley Segmentation Dataset
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Arbelaez2011"
@@ -3223,14 +3250,15 @@ key "Arbelaez2011"
 \end_inset
 
  and provided satisfactory results.
- To evaluate the dynamic cluster count the clustered images, were compared
+ To evaluate the dynamic cluster count the clustered images were compared
  to the images generated with a higher/lower number of clusters.
- These are also generated with algorithm 2.2.
- It increments the number of clusters succesively until 
+ These are also generated with Algorithm 2.2.
+ It increments the number of clusters successively until 
 \begin_inset Formula $k_{\max}$
 \end_inset
 
- is reached, hence the images in the range from k = 2 to k = 
+ is reached.
+ Therefore the images in the range from k = 2 to k = 
 \begin_inset Formula $k_{\max}$
 \end_inset
 
@@ -3394,7 +3422,7 @@ end{subfigure}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Gallery example from the Berkeley Database clustered in RGB-color space
+Gallery example from the Berkeley Database clustered in RGB color space
 \end_layout
 
 \end_inset
@@ -3409,13 +3437,13 @@ Gallery example from the Berkeley Database clustered in RGB-color space
 
 \begin_layout Standard
 The calculated cluster count of 8 in Figure 4.4 is the first cluster count
- where the red shirt builds its own cluster.
+ where the red shirt is assigned its own cluster.
  It seems as the outcome of a smaller cluster count might have the bigger
  inter cluster distance, whereas in k>8 the intra cluster distance seems
  to be minimized.
  Incrementing the number of clusters above 8 has only minimal visible impact,
  because of the higher inter cluster distance before.
- Thus k=8 seem to be the right choice.
+ Thus k=8 seems to be the right choice.
  
 \end_layout
 
@@ -3570,7 +3598,7 @@ end{subfigure}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Snow shoes example from the Berkeley Database clustered in RGB-color space
+Snow shoes example from the Berkeley Database clustered in RGB color space
 \end_layout
 
 \end_inset
@@ -3584,15 +3612,14 @@ Snow shoes example from the Berkeley Database clustered in RGB-color space
 \end_layout
 
 \begin_layout Standard
-The calculated cluster count of 4 in Figure 4.5 seems to retain most key
- features of the image, the results seen in c) for k=3 seem to be similarly
- well.
- The cluster count of 10 seen in d) might be preferable due to the existence
+The calculated optimal cluster count of 4 in Figure 4.5 seems to retain most
+ key features of the image; the results seen in c) for k=3 seem to be similarly
+ good.
+ The cluster count of 10 seen in d) might be preferabledue to the existence
  of a cluster solely for the snow shoes.
- The latter impression probably arises of our focus on the image center;
- but looking at the sky reveals that it has already been segmented into
- 3 sections at this point.
- 
+ The latter impression probably arises out of our focus on the image center.
+ However, the sky has been segmented into 3 sections, which might not be
+ desirable.
 \end_layout
 
 \begin_layout Standard
@@ -3756,7 +3783,7 @@ end{subfigure}
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Airplane example from the Berkeley Database clustered in RGB-color space
+Airplane example from the Berkeley Database clustered in RGB color space
 \end_layout
 
 \end_inset
@@ -3778,21 +3805,17 @@ The calculated optimal cluster count of 6 in Figure 4.6 seems to be the most
 \end_layout
 
 \begin_layout Standard
-Using the HSV-color space instead of the RGB-color space did not lead to
+Using the HSV color space instead of the RGB color space did not lead to
  considerably better results.
  Strikingly the calculated optimal cluster count was mostly higher in HSV
- as for example seen in Figure 4.7.
- Otherwise the same findings as in the RGB-color space could be made.
- Overall the comparison did not favor any color space.
+ (Figure 4.7).
+ Otherwise the same findings as in the RGB color space were made.
+ Overall, the comparison did not favor either color space.
  The results were subjectively examined on the same level.
- The determination of which color space to use, should depend on the final
+ The determination of which color space to use should depend on the specific
  task of the clustering algorithm.
- Because the following work is rather on an abstract level than on implementing
- the algorithm on a particular task and because the underlying algorithm
- for determining the cluster count was originally proposed for the RGB color
- space, the latter one will be used in the evaluation of the dynamic cluster
- count on video sequences.
- 
+ For simplicity and compatibility with the original algorithm, the RGB color
+ space will be used for evaluating video sequences as well.
 \end_layout
 
 \begin_layout Standard
@@ -3978,19 +4001,20 @@ On synthetic video sequences
 \end_layout
 
 \begin_layout Standard
-Implementing the dynamical cluster count as described in algorithm 3.1 into
- a simple synthetic video sequence revealed that the cluster count incremented
- correctly when necessary, but failed to detect required reductions of k.
+Applying the dynamical cluster count (Algorithm 3.1) on a simple synthetic
+ video sequence revealed that the cluster count incremented correctly when
+ a new cluster appeared, but failed to reduce k when clusters were leaving
+ the frame.
 \end_layout
 
 \begin_layout Standard
 Figure 4.8 shows an example of a video sequence.
  In image a) to d) the cluster count stays the same and is recognized correctly.
- The new appearance of a rectangle in cluster e) leads to a new cluster
- count calculation.
- In cluster g) the green rectangle is gone and a new cluster count calculation
+ The new appearance of a rectangle in cluster e) leads to an increased cluster
+ count.
+ In cluster g) the green rectangle is gone and a decreased cluster count
  should be the result.
- Unfortunately the algorithm fails to identify the change and keeps the
+ Unfortunately, the algorithm fails to identify the change and keeps the
  old cluster count.
  
 \end_layout
@@ -4289,7 +4313,7 @@ end{subfigure}
 \begin_layout Plain Layout
 
 \lang ngerman
-A simple video sequence in which areas are moving out of the video
+A simple video sequence in which areas are moving in and out of the video.
 \end_layout
 
 \end_inset
@@ -4310,14 +4334,14 @@ This and similar tests showed that as long as something is added to the
  the previous frame as initialization points, the generated clusters will
  have a higher variance if a new area is added to the scene.
  Thus the validity measure will usually decrease if the number of clusters
- is increased, this is the same principle used in algorithm 2.2.
+ is increased, this is the same principle used in Algorithm 2.2.
  Even if the algorithm for identifying the optimal cluster count would have
  split clusters in a different way if run on the current image, the disparity
- can still be regulated.
+ can still be compensated.
  For the transformation from k to k+1, the k-means algorithm splits the
  cluster with the highest variance on the current image.
- In contrast the initialization points for k-1 are solely received via the
- calculation on previous frames.
+ In contrast the initialization points for k-1 are solely based on the calculati
+on in previous frames.
  Therefore the calculations of the validity for k-1 needs to be improved.
  One possibility for doing so is to use the same procedure as k+1 received
  already.
@@ -4325,25 +4349,25 @@ This and similar tests showed that as long as something is added to the
  for k-2 (if k>3) will be used as initialization points.
  The new clusters will be split once again as described in 2.3 and the arising
  cluster centers will be used to calculate the validity for k-1.
- Another improvement can be achieved, when the order of the validity checks
+ Another improvement can be achieved if the order of the validity checks
  is changed.
  The validity for k-1 will be checked first, the generated clusters will
  be split twice and used to calculate the validity for k and k+1.
 \end_layout
 
 \begin_layout Standard
-With this slight modification the algorithm achieved the right cluster count
- results on all self-generated simple video sequences similar to Figure
- 4.8 as long as the conditions remained constant.
- The considered cases included appearing and disappearing areas both solely
- and simultaneously.
+With this slight modification the algorithm calculated the right cluster
+ count on all synthetic simple video sequences similar to Figure 4.8 as long
+ as the conditions remained constant.
+ The considered cases included appearing and disappearing areas both individuall
+y and simultaneously.
  
 \end_layout
 
 \begin_layout Standard
-However, adding blurring, noise or light effects to an image resulted most
- often in a different cluster count than before, indicating unstableness
- in real images on changing conditions.
+However, adding blurring, noise or light effects to an image resulted mostly
+ in a different cluster count than before, indicating unstableness in real
+ images on changing conditions.
  But the impact of these effects on simple images with only few features
  is found to be stronger and less subtle than in most real occurring condition
  changes seen in natural video sequences.
@@ -4352,13 +4376,20 @@ However, adding blurring, noise or light effects to an image resulted most
 \begin_layout Standard
 To actually compare the produced cluster centers over several frames, the
  generated cluster centers of the first frame were used as the first centers
- of super-clusters (=merged clusters of frames).
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+super-clusters
+\begin_inset Quotes erd
+\end_inset
+
+ (merged clusters of frames).
  On each iteration of the algorithm, after the optimal number of clusters
  has been identified, the new cluster centers are compared to the centers
  of existing super-clusters.
  For comparison the usual Euclidean color space distance and the Euclidean
- distance of the coordinate centers of the cluster centers and the super-cluster
-s were calculated.
+ distance of the clusters and the super-clusters were calculated.
  In order to add them, they had to be normalized.
 \end_layout
 
@@ -4418,7 +4449,7 @@ With
 
 \begin_layout Standard
 If the sum of both distances of the closest super-cluster was smaller than
- a self-determined 
+ a specified 
 \begin_inset Formula $\delta_{dis}$
 \end_inset
 
@@ -4441,12 +4472,12 @@ In this case the center of the super-cluster had to be updated.
 \begin_inset Formula $\delta_{dis}$
 \end_inset
 
- the maximal possible distance has to be considered and scaled accordingly.
+ the maximum possible distance has to be considered and scaled accordingly.
  An alternative approach is to add the center of the cluster to the center
  of the super-cluster and divide it by 2.
  This led to more stable results.
- As soon as one outlier appears the center is shifted in the wrong direction.
- Because it is likely that new clusters will not be assigned to the right
+ As soon as one outlier appears the center is shifted in the wrong direction,
+ because it is likely that new clusters will not be assigned to the right
  super-cluster.
  Normally we expect clusters to move continuously in the same direction,
  hence the first method led mostly to better results.
@@ -4457,7 +4488,7 @@ Otherwise if the distance to the closest super-cluster was bigger than
 \begin_inset Formula $\delta_{dis}$
 \end_inset
 
- the cluster center is not part of an existing supercluster and its values
+ the cluster center is not part of an existing super-cluster and its values
  will be the initial values of a new super-cluster.
 \end_layout
 
@@ -4490,52 +4521,29 @@ On real video sequences
 \end_layout
 
 \begin_layout Standard
-To evaluate the performance of algorithm 3.1 its calculated adaptive cluster
+To evaluate the performance of Algorithm 3.1 its calculated adaptive cluster
  count was compared to the outcome produced by its predecessor algorithm
  developed by Ray and Rose H.
- Turi
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-algorithm 2.2
-\end_layout
-
-\end_inset
-
-, where each frame was processed individually.
+ Turi (Algorithm 2.2), where each frame was processed individually.
  This was done on video sequences of the Freiburg-Berkeley Motion Segmentation
- Dataset
+ Dataset 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ochs2014"
 
 \end_inset
 
-, one example consisting of only 19 frames can be seen in Figure 4.9.
+.
+ One example consisting of only 19 frames can be seen in Figure 4.9.
 \end_layout
 
 \begin_layout Standard
 The adapted and unadapted algorithms produced the same cluster count on
  most frames, however, the adapted algorithm tended to switch the cluster
- count less times than the unadapted one.
- This outcome had to be expected, as described in 3.1 the adapted algorithm
- will not change the cluster count if the validity currently constitutes
- a local minima, whereas the unandapted algorithm will always go with the
- global minima.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Wenn Zeit Tabelle und Abb auf eine Seite
-\end_layout
-
-\end_inset
-
-
+ count less often than the unadapted one.
+ This outcome was expected, as the adapted algorithm will not change the
+ cluster count if the validity currently constitutes a local minimum, whereas
+ the unandapted algorithm will always go with the global minimum.
 \end_layout
 
 \begin_layout Standard
@@ -5107,8 +5115,8 @@ Table 4.1 shows the calculated number of clusters and the respective super-clust
 rs for the video sequence seen in Figure 4.9.
  The index on the list of super-clusters corresponds to the cluster of each
  frame which is assigned to the respective super-cluster.
- In this particular case the adapted algorithm produced only in 3 out of
- 19 frames a different outcome.
+ In this particular case the adapted algorithm produced a different result
+ in only in 3 of the 19 frames.
 \end_layout
 
 \begin_layout Standard
@@ -5124,6 +5132,11 @@ The different results produced in the adapted and unadapted algorithm don't
  clusters.
  Figure 4.10 for example shows the super-cluster labeled as 4 in Table 4.1,
  where most key features of the car are visible.
+\end_layout
+
+\begin_layout Standard
+However, it is unlikely that the features of an object are completely put
+ into one cluster.
 \end_layout
 
 \begin_layout Standard
@@ -5383,11 +5396,6 @@ The clusters, which are put into the super-cluster 4 in Table 4.1
 \end_layout
 
 \begin_layout Standard
-However, it is unlikely that the features of an object are completely put
- into one cluster.
-\end_layout
-
-\begin_layout Standard
 The super-clusters could also be used to compress the data size of the video
  sequence.
  The video sequence of Figure 4.9 could be encoded to only 7 colors when
@@ -5406,7 +5414,7 @@ Evaluation of k-means clustering with a 5d-feature vector
 \end_layout
 
 \begin_layout Standard
-Using a 5d-feature vector, consisting of the color space and the coordinates
+Using a 5d-feature vector consisting of the color space and the coordinates
  promises two main advantages.
  Clustered regions would be closer to semantic knowledge, because regions
  with similar colors are already split and thus the results are more useful
@@ -5414,14 +5422,14 @@ Using a 5d-feature vector, consisting of the color space and the coordinates
  Furthermore after the k-means algorithm has clustered each frame separately,
  the whole outcome can build a new dataset, which then again could be clustered
  via k-means to fuse the clusters of each frame into super-clusters holding
- information of the whole video sequence.
- The requirement to do so are reliable and reasonable generated results
+ information about the whole video sequence.
+ The requirement for this are reliable and reasonable generated results
  when clustering single images.
  
 \end_layout
 
 \begin_layout Standard
-To get reasonable images the 5d-feature vector has to be normalized first.
+To get reasonable results the 5d-feature vector has to be normalized first.
 \end_layout
 
 \begin_layout Standard
@@ -5464,8 +5472,8 @@ Where
 \end_inset
 
  is the scaling factor.
- Usually the color space will be seen as more important than the geometric
- features, so 
+ Usually the colors will be seen as more important than the geometric features,
+ so 
 \begin_inset Formula $\alpha$
 \end_inset
 
@@ -5474,28 +5482,28 @@ Where
 \end_layout
 
 \begin_layout Standard
-The same normalization procedure should theoretically be applied on the
+The same normalization procedure should theoretically be applied to the
  variance calculation as well.
  Unfortunately due to the incoherent shape of the background, the cluster
- containing the background area had often the highest variance out of the
+ containing the background area often has the highest variance out of the
  calculated clusters.
- Figure 4.11 shows an example of this occurrence; the white area represents
- the not contained area of the specific cluster.
+ Figure 4.11 shows an example of this; the white area represents the area
+ not contained in the specific cluster.
  While the algorithm gets the expected result for k=2 and 
 \begin_inset Formula $\alpha=0.004$
 \end_inset
 
- (a ratio of 250:1), it fails for k=3-5 and splits the background further.
+ (a ratio of 250:1), it fails for k=3-5 and splits the background further
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Using the algorithm 2.2 to determine the optimal cluster count
+Using the Algorithm 2.2 to determine the optimal cluster count
 \end_layout
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -5683,15 +5691,16 @@ Example of single clusters when splitting the wrong cluster using a 5d-feature
 \end_layout
 
 \begin_layout Standard
-Ignoring the geometrical features while calculating the variance lead to
- better results in the case of Figure 4.11, but only by chance the rectangles
- were the first cluster in k=2.
- In order to split the right cluster a different measurement than the variance
+Ignoring the geometrical features while calculating the variance led to
+ better results in the case of Figure 4.11, but the rectangles were the first
+ cluster in k=2 only by chance.
+ In order to split the right cluster, a different measurement than the variance
  would be needed.
  Even if the problem of finding the right cluster to split is ignored and
- the right cluster is assigned manually, it didn't generate reasonable results.
- The major problem hereby is to find a scale of the geometric features to
- the color features.
+ the right cluster is assigned manually, the algorithm didn't generate reasonabl
+e results.
+ The major problem here is to find a scale of the geometric features compared
+ to the color features.
  In some images this scale could be found, but did not result in equally
  good clusters on different images.
  The requirement to produce results on any image would be to assign the
@@ -5707,21 +5716,21 @@ Evaluation of the alternative approach
 \end_layout
 
 \begin_layout Standard
-Due to the inefficiency using a 5d-feature vector, especially with the problem
- of getting a right measure for the optimal cluster count, it seems easier
- to separate the splitting according to color features and the splitting
+Due to the inefficiency of using a 5d-feature vector, especially with the
+ problem of getting a right measure for the optimal cluster count, it seems
+ easier to separate the splitting according to color features and the splitting
  according to geometrical features into two processes.
  Instead of clustering with a 5d-feature vector, the well performing 3d-vector
- including only the color space can be retained and each cluster might be
- further divided.
+ including only the color can be retained and each cluster might be further
+ divided.
  
 \end_layout
 
 \begin_layout Standard
 We only want to divide clusters with clear geometrical boundaries further.
- Hence if it is possible to draw several polygons without overlapping, where
- the area of the polygons is made up by the pixels of the clusters, the
- polygons will build new clusters.
+ Therefore, if it is possible to draw several polygons without overlapping
+ where the area of the polygons is made up by the pixels of the clusters,
+ the polygons will form new clusters.
 \end_layout
 
 \begin_layout Standard
@@ -5923,17 +5932,17 @@ Example images for the occurring background problem when calculating boundaries
 \end_layout
 
 \begin_layout Standard
-The first image of Fig 4.12 shows the image which will be clustered.
+The first image of Figure 4.12 shows the image which will be clustered.
  This will result in two clusters, when determining the optimal cluster
- count for color segmentation.
+ count using color segmentation.
  The first one will only hold the two red rectangles, while the second one
  will hold the background.
  The cluster containing the background can be seen in b).
  The last two images c) and d) show the calculated boundaries.
  Unfortunately these boundaries can be calculated using any of the two clusters.
- Hence if adding the calculated polygons of each cluster to the number of
- cluster centers, the optimal cluster count would be determined as 4 instead
- of 3.
+ Therefore, if adding the calculated polygons of each cluster to the number
+ of cluster centers, the optimal cluster count would be determined as 4
+ instead of 3.
  Thus the calculated polygons should only increase the cluster count if
  the comprised area is filled with pixels which are part of the cluster
  used for calculating it.
@@ -6027,7 +6036,7 @@ State {Calculate the mean of the coordinates inside the boundary}
 
 
 \backslash
-State {Built new cluster centers according to the calculated coordinates
+State {Create new cluster centers according to the calculated coordinates
  and the old color feature}
 \end_layout
 
@@ -6075,19 +6084,19 @@ Find geometrical features of clusters
 \end_layout
 
 \begin_layout Standard
-One of the advantages of the k-means algorithm is, that each pixel is assigned
- to the corresponding cluster center.
- The assignment could be done in different ways.
+One of the advantages of the k-means algorithm is that each pixel is assigned
+ to its corresponding cluster center.
+ The assignment can be done in different ways.
  Because the splitting of the clusters happens according to the calculated
  boundaries, it seems logical to check whether the pixels of the original
  cluster lie inside the calculated polygon and assign them accordingly.
  Alternatively the calculated cluster centers could be used as starting
  points for k-means clustering with either the 5d-vector of section 4.3 or
- using a 2d-vector consisting of the coordinates on the particular cluster.
+ using a 2d-vector consisting of the coordinates of the particular cluster.
 \end_layout
 
 \begin_layout Standard
-Both assignment methods have some flaws, illustrated in 4.13.
+Both assignment methods have some flaws as illustrated in Figure 4.13.
  The created boundaries are not completely accurate, hence some pixels are
  not inside the polygon and will fall through the first method as seen in
  b).
@@ -6098,8 +6107,8 @@ Both assignment methods have some flaws, illustrated in 4.13.
 \begin_inset Formula $\alpha$
 \end_inset
 
- did not lead to the desired result and only adjusted distribution of the
- clusters slightly.
+ did not lead to the desired result and only adjusted the distribution of
+ the clusters slightly.
  The areas are too close together.
  Either the pixel distance, or the colors are required to be further divided
  in order to get correct results.
@@ -6259,24 +6268,23 @@ Comparison of boundary cluster assignment and k-means
 
 \end_inset
 
-On simpler images as for example seen in Figure 4.1 both methods work fine
- and lead to the expected results.
+On simpler images (e.g.
+ in Figure 4.1) both methods work fine and lead to the expected results.
  Overall, the method of checking whether a pixel lies within the calculated
  polygon seems to get closer to the expected results.
  The problem of assigning only few pixels to the wrong cluster could easily
- be solved.
- For example by implementing a noise filter.
+ be solved, for example by implementing a noise filter.
  
 \end_layout
 
 \begin_layout Standard
-On natural images however the described method didn't lead to an increased
+On natural images, however, the described method didn't lead to an increased
  cluster count.
  In all tested images the contour detection failed to find useful polygons.
  Despite using a nearly optimal binary image in Figure 4.14, the resulting
  contours are not completely aligned.
  Printing all contours in one image shows the potential and might indicate
- how an improved detecting algorithm will improve the results.
+ how an improved detection algorithm will improve the results.
  
 \end_layout
 
@@ -6552,8 +6560,8 @@ Discussion and conclusion
 \end_layout
 
 \begin_layout Standard
-Testing the described algorithm by Ray and Rose H.
- Turi on images verified the formerly reported results, although some flaws
+Testing the described algorithm by Siddheswar Ray and Rose H.
+ Turi on images verified the results reported by them, although some flaws
  need to be considered before using it.
  On very simplistic images the calculated cluster count will separate the
  image into too many clusters due to the possible reduction of the intra
@@ -6561,25 +6569,26 @@ Testing the described algorithm by Ray and Rose H.
  Besides this, it should be known beforehand whether the investigated image
  will be a synthetic or a real one.
  Usually this should be no problem and is no new finding, because it is
- already stated in the original article.
+ already stated in the original article 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ray1999"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
 Adapting the algorithm to generate an adaptive cluster count on video sequences
  proved to work well on synthetic video sequences.
  On natural video sequences the results were satisfactory but did not always
- produce identical results in comparison to the independent calculated ones.
+ produce identical results in comparison to the independently calculated
+ ones.
  Due to the high computation time, the effective use of this algorithm would
- require some further improvements for most of the possible tasks.
+ require some further improvements for most practical tasks.
  Even if the current cluster count of a frame in a video sequence constitutes
- a local minimum in the next frame the basic k-mean algorithm has to be
+ a local minimum in the next frame the basic k-means algorithm has to be
  repeated 4 times.
  Otherwise the basic k-means algorithm will be repeated until 
 \begin_inset Formula $k_{\max}$
@@ -6607,21 +6616,21 @@ Creating super-clusters which include color- and coordinate information,
 
  or even the suggested procedure for creating super-clusters in general
  can only be properly evaluated if the generated clusters are closer to
- semantic knowledge.
+ what humans expect.
  This could be achieved by including more features in clustering than just
  the color information.
  The attempt of including geometric features via a 5d-feature vector while
  retaining the basic k-means algorithm did not lead to improved results.
- The main problem was to find a working ratio of the colors and coordinates,
- this ratio should furthermore be dynamic to be universally applicable.
+ The main problem was to find a working ratio of the colors and coordinates.
+ This ratio should furthermore be dynamic to be universally applicable.
  On some images the 5d-feature vectors did not deliver the desired outcome
  independent on the scaling ratio.
- This was probably caused by one of the big flaws of k-means clustering,
+ This was probably caused by one of the big flaws of k-means clustering:
  it can only produce spherically formed clusters.
  This is especially problematic when the coordinates are included in the
  clustering process.
- In this cases other clustering methods as for example mean-shift would
- produce better results.
+ In this case other clustering methods such as mean-shift would produce
+ better results.
 \end_layout
 
 \begin_layout Standard
@@ -6630,14 +6639,14 @@ The alternative approach combined the region based image segmentation of
  Although the splitting of clusters did ultimately not work in real images,
  the found edges in single clusters showed some promise.
  The next step would be to include actual semantic knowledge in order to
- find objects or features, and create clusters solely for them.
+ find objects or features and create clusters solely for them.
 \end_layout
 
 \begin_layout Standard
 The concept of super-clusters seemed to work quite well and merged similar
  clusters correctly.
- But besides data compression, no other field of use could be tested in
- this thesis.
+ But besides data compression, no other use case could be evaluated in this
+ thesis.
  However, if semantic knowledge could actually be implemented in the clustering
  process, the serial identity of clusters in video sequences would drastically
  increase and therefore also the fundamental suitability of super-clusters.
