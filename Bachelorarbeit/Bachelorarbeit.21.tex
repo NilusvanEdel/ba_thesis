@@ -416,14 +416,14 @@ changes fall below a certain $\epsilon$.
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.5\textwidth} 
-\includegraphics[width=\textwidth]
-{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_original.png} 
+\frame{\includegraphics[width=\textwidth]
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans.png}}
 \subcaption{Original points} 
 \end{subfigure}
 \begin{subfigure}[c]{0.5\textwidth} 
-\includegraphics[width=1\textwidth]
-{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans.png} 
-\subcaption{Cluster centers with k = 2} 
+\frame{\includegraphics[width=1\textwidth]
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_original.png}}
+\subcaption{Cluster centers with k = 3} 
 \end{subfigure}
 
 \caption{Example of k-means clustering on data with distinct groups\cite{Pang-NingTan2005}}
@@ -435,14 +435,15 @@ function:
 \[
 J=\sum_{j=1}^{k}\sum_{\forall i}|x_{i}^{j}-c_{j}|^{2}
 \]
-hereby $c_{j}$is the coordinate vector of the $j$th cluster and
-$\{x_{i}^{j}\}$ are the points assigned to the $j$th cluster\cite{ChrisSolomon2011}.
-It can be shown that the k-means algorithm converges to a local minimum\cite{Fu1981}.
+hereby $c_{j}$ is the coordinate vector of the $j$th cluster, $\{x_{i}^{j}\}$
+are the points assigned to the $j$th cluster and $|x_{i}^{j}-c_{j}|$
+describes the distance\cite{ChrisSolomon2011}. It can be shown that
+the k-means algorithm converges to a local minimum\cite{Fu1981}.
 
 The relevant distance measure can be chosen dependent on the task,
 but most of the times the normal Euclidean distance is used. \\
 \[
-\text{Euclidean distance: }\frac{1}{I}\cdot\forall i\sqrt{x_{i}-c_{i}}^{2}
+\text{Euclidean distance: }\frac{1}{I}\cdot\forall i\left(\sqrt{x_{i}-c_{i}}\right)^{2}
 \]
 
 An advange of k-means clustering is its low complexity but it has
@@ -454,14 +455,14 @@ of clusters as input a priori\cite{Bora2015,Pang-NingTan2005}.
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.5\textwidth} 
-\includegraphics[width=\textwidth]
-{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_noglobal_source.png} 
+\frame {\includegraphics[width=\textwidth]
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_noglobal_source.png}}
 \subcaption{Original points} 
 \end{subfigure}
 \begin{subfigure}[c]{0.5\textwidth} 
-\includegraphics[width=1\textwidth]
-{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_noglobal.png} 
-\subcaption{Cluster centers with k = 2} 
+\frame {\includegraphics[width=1\textwidth]
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_noglobal.png}}
+\subcaption{Cluster centers with k = 3} 
 \end{subfigure}\caption{Example of k-means clustering on data with non-globular clusters\cite{Pang-NingTan2005}}
 \end{figure}
 

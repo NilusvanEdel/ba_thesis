@@ -1354,7 +1354,7 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -1369,6 +1369,8 @@ textwidth}
 
 
 \backslash
+frame{
+\backslash
 includegraphics[width=
 \backslash
 textwidth]
@@ -1376,8 +1378,8 @@ textwidth]
 
 \begin_layout Plain Layout
 
-{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_or
-iginal.png} 
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans.png
+}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1407,6 +1409,8 @@ textwidth}
 
 
 \backslash
+frame{
+\backslash
 includegraphics[width=1
 \backslash
 textwidth]
@@ -1414,15 +1418,15 @@ textwidth]
 
 \begin_layout Plain Layout
 
-{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans.png
-} 
+{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_or
+iginal.png}}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-subcaption{Cluster centers with k = 2} 
+subcaption{Cluster centers with k = 3} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -1478,11 +1482,11 @@ hereby
 \begin_inset Formula $c_{j}$
 \end_inset
 
-is the coordinate vector of the 
+ is the coordinate vector of the 
 \begin_inset Formula $j$
 \end_inset
 
-th cluster and 
+th cluster, 
 \begin_inset Formula $\{x_{i}^{j}\}$
 \end_inset
 
@@ -1490,7 +1494,11 @@ th cluster and
 \begin_inset Formula $j$
 \end_inset
 
-th cluster
+th cluster and 
+\begin_inset Formula $|x_{i}^{j}-c_{j}|$
+\end_inset
+
+ describes the distance
 \begin_inset CommandInset citation
 LatexCommand cite
 key "ChrisSolomon2011"
@@ -1518,7 +1526,7 @@ The relevant distance measure can be chosen dependent on the task, but most
 
 \begin_inset Formula 
 \[
-\text{Euclidean distance: }\frac{1}{I}\cdot\forall i\sqrt{x_{i}-c_{i}}^{2}
+\text{Euclidean distance: }\frac{1}{I}\cdot\forall i\left(\sqrt{x_{i}-c_{i}}\right)^{2}
 \]
 
 \end_inset
@@ -1566,6 +1574,8 @@ textwidth}
 
 
 \backslash
+frame {
+\backslash
 includegraphics[width=
 \backslash
 textwidth]
@@ -1574,7 +1584,7 @@ textwidth]
 \begin_layout Plain Layout
 
 {/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_no
-global_source.png} 
+global_source.png}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -1604,6 +1614,8 @@ textwidth}
 
 
 \backslash
+frame {
+\backslash
 includegraphics[width=1
 \backslash
 textwidth]
@@ -1612,14 +1624,14 @@ textwidth]
 \begin_layout Plain Layout
 
 {/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/example_kmeans_no
-global.png} 
+global.png}}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-subcaption{Cluster centers with k = 2} 
+subcaption{Cluster centers with k = 3} 
 \end_layout
 
 \begin_layout Plain Layout
