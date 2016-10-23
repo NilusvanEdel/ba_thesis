@@ -2383,14 +2383,14 @@ Dynamic cluster count algorithm in video sequences
 \begin_layout Standard
 Due to color segmentation in video sequences and images being essentially
  the same problem, the proposed algorithm by Siddheswar Ray and Rose H.
- Turi, would also work in videos.
+ Turi, would also work in videos
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Ray1999"
 
 \end_inset
 
- Due to the assumption that we are only looking at continuous video sequences,
+ .Due to the assumption that we are only looking at continuous video sequences,
  calculating the optimal cluster count for each frame individually, without
  including any knowledge gained from the previous calculations, would result
  in redundant calculations for most videos.
@@ -4487,7 +4487,7 @@ With this slight modification the algorithm achieved the right cluster count
 \end_layout
 
 \begin_layout Standard
-Adding blurring, noise or light effects to an image however resulted most
+However, adding blurring, noise or light effects to an image resulted most
  often in a different cluster count than before, indicating unstableness
  in real images on changing conditions.
  But the impact of these effects on simple images with only few features
@@ -4598,13 +4598,12 @@ In this case the center of the super-cluster had to be updated.
  the maximal possible distance has to be considered and scaled accordingly.
  An alternative approach is to add the center of the cluster to the center
  of the super-cluster and divide it by 2.
- This lead to more stable results.
- Because as soon as one outlier appears and the center is shifted in the
- wrong direction.
+ This led to more stable results.
+ As soon as one outlier appears the center is shifted in the wrong direction.
  Because it is likely that new clusters will not be assigned to the right
  super-cluster.
  Normally we expect clusters to move continuously in the same direction,
- hence the first method lead mostly to better results.
+ hence the first method led mostly to better results.
 \end_layout
 
 \begin_layout Standard
@@ -4623,7 +4622,7 @@ This method generated the right results for simple synthetic video sequences
 \end_inset
 
 .
- For example for the video sequence seen in Fig 4.8 
+ For example, the video sequence seen in Fig 4.8 
 \begin_inset Formula $\sim0.06<\delta<0.6$
 \end_inset
 
@@ -4672,7 +4671,7 @@ key "Ochs2014"
 
 \begin_layout Standard
 The adapted and unadapted algorithms produced the same cluster count on
- most frames, however the adapted algorithm tended to switch the cluster
+ most frames, however, the adapted algorithm tended to switch the cluster
  count less times than the unadapted one.
  
 \begin_inset Note Note
@@ -5099,7 +5098,9 @@ end{tabular}
 
 	
 \backslash
-caption{results for Fig 4.9 using the unadapted algorithm}
+caption{results for Fig 4.9 using the unadapted  
+\backslash
+mbox{algorithm}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -5227,7 +5228,9 @@ end{tabular}
 
 	
 \backslash
-caption{results for Fig 4.9 using the adapted algorithm}
+caption{results for Fig 4.9 using the adapted  
+\backslash
+mbox{algorithm}}
 \end_layout
 
 \begin_layout Plain Layout
@@ -5546,7 +5549,7 @@ The clusters, which are put into the super-cluster 4 in Table 4.1
 \end_layout
 
 \begin_layout Standard
-However it is unlikely that the features of an object are completely put
+However, it is unlikely that the features of an object are completely put
  into one cluster.
 \end_layout
 
@@ -5569,7 +5572,7 @@ Evaluation of k-means clustering with a 5d-feature vector
 \end_layout
 
 \begin_layout Standard
-Using a 5D-feature vector, consisting of the color space and the coordinates
+Using a 5d-feature vector, consisting of the color space and the coordinates
  promises two main advantages.
  Clustered regions would be closer to semantic knowledge, since regions
  with similar colors are already split and thus the results are more useful
@@ -5847,8 +5850,8 @@ Example of single clusters when splitting the wrong cluster using a 5d-feature
 
 \begin_layout Standard
 Ignoring the geometrical features while calculating the variance lead to
- better results in the case of Figure 4.11, but only by chance since the
- rectangles were the first cluster in k=2.
+ better results in the case of Figure 4.11, but only by chance the rectangles
+ were the first cluster in k=2.
  In order to split the right cluster a different measurement than the variance
  would be needed.
  Even if the problem of finding the right cluster to split is ignored and
@@ -5859,7 +5862,7 @@ Ignoring the geometrical features while calculating the variance lead to
  good clusters on different images.
  The requirement to produce results on any image would be to assign the
  scale dynamically to each image.
- But for some images there might even exists no appropriate ratio of color
+ But for some images there might even exist no appropriate ratio of color
  features and geometrical features, which would lead to meaningful clusters.
  A potential instance of this will be further discussed in section 4.4.
  
@@ -6086,7 +6089,7 @@ Example images for the occurring background problem when calculating boundaries
 \end_layout
 
 \begin_layout Standard
-The first image of Fig 4.11 shows the image which will be clustered.
+The first image of Fig 4.12 shows the image which will be clustered.
  This will result in two clusters, when determining the optimal cluster
  count for color segmentation.
  The first one will only hold the two red rectangles, while the second one
@@ -6250,7 +6253,7 @@ One of the advantages of the k-means algorithm is, that each pixel is assigned
 \end_layout
 
 \begin_layout Standard
-Both assignment methods have some flaws, illustraded in 4.13.
+Both assignment methods have some flaws, illustrated in 4.13.
  The created boundaries are not completely accurate, hence some pixels are
  not inside of the polygon and will fall through the first method.
  The second method doesn't consider boundaries at all, the k-means algorithm
