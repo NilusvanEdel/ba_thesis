@@ -196,8 +196,9 @@ Institute of Cognitive Science\hspace{2.5cm} & \tabularnewline
 {\large{}Adaptive K-Means Clustering of Data Sequences}
 \par\end{flushleft}{\large \par}
 
-Clustering of video sequences with dynamic cluster count and recognition
-of their serial identity
+Clustering of video sequences with dynamic cluster count 
+
+and recognition of their serial identity
 
 \begin{flushleft}
 {\Large{}\vspace{1.5cm}
@@ -210,7 +211,7 @@ submitted by:\hspace{1cm} & Linus Edelkott \tabularnewline
  & course of studies: Cognitive Science\tabularnewline
  & Universität Osnabrück\tabularnewline
  & \tabularnewline
-mentor: & MS Julius Schöning\tabularnewline
+mentors: & MS Julius Schöning\tabularnewline
  & Universität Osnabrück\tabularnewline
  & Prof. Dr. Gunther Heidemann\tabularnewline
  & Universität Osnabrück\tabularnewline
@@ -218,9 +219,36 @@ mentor: & MS Julius Schöning\tabularnewline
 \multicolumn{2}{l}{Osnabrück, \today}\tabularnewline
 \end{tabular}
 
+\pagenumbering{roman}
+\setcounter{page}{1}
+
+\newpage{}
+
+\thispagestyle{empty}$ $\newpage{}
+\begin{center}
+\textbf{\Large{}Abstract}
+\par\end{center}{\Large \par}
+
+Image segmentation is the process of classifying an image into different
+homogeneous groups. Clustering is a frequently chosen procedure for
+this image segmentation task. K-means clustering is one of the most
+often used clustering algorithms, although the results are very sensitive
+towards the supplied number of clusters, K. Siddheswar Ray and Rose
+H. Turi proposed an algorithm which allows the number of clusters
+to be determined automatically. This thesis presents a version of
+this algorithm tweaked for image segmentation in video sequences.
+Its performance is evaluated on synthetic and natural video sequences.
+Additionally, the created clusters for each frame are compared to
+their predecessors in order to identify their serial identity.
+
+\newpage{}
+
 \tableofcontents{}
 
 \newpage{}
+
+\pagenumbering{roman}
+\setcounter{page}{4}
 
 \listof{algorithm}{List of Algorithms}
 
@@ -231,7 +259,6 @@ mentor: & MS Julius Schöning\tabularnewline
 \newpage{}
 
 \pagenumbering{arabic}
-\setcounter{page}{3}
 
 \renewcommand{\chaptername}{}
 
@@ -255,7 +282,7 @@ images \cite{ChrisSolomon2011_km}.
 The first aim of this thesis is to adapt one of these algorithms to
 video sequences and improve it through the gained knowledge from continuous
 frames. The created clusters for each frame should then be compared
-to their predecessor to determine whether clusters of previous frames
+to their predecessors to determine whether clusters of previous frames
 persisted. An algorithm to identify good starting positions for k-means
 clustering in video sequences could be used for video compression
 on its own, it could also be useful for many fields of video analysis
@@ -658,7 +685,7 @@ the identification of the optimal cluster number from images to video
 sequences. 
 
 Without further analysis the resulting clusters have only a limited
-use and can only represent the knowledge gathered in asingle frame.
+use and can only represent the knowledge gathered in a single frame.
 In order to include the information of the whole video it is necessary
 to compare the clusters of each frame to those of the neighbouring
 frames. Clusters occuring in several frames should be recognized to
@@ -843,15 +870,15 @@ features.}
 \end{figure}
 A different approach for including geometrical knowledge is to detect
 shapes in the already separated clusters created by the k-means color
-segmentation algorithm. The OpenCV library\cite{openCV_doc} already
-implements the necessary functions for doing so. First a Canny algorithm
-detects the edges of the respective cluster, before the openCV method
-``findContours(...)'' tries to calculate the corresponding contours.
-Contours can be seen as boundaries, and in contrast to edges they
-form closed curvatures. If there are several contours nested within
-each other as for example seen in Figure 3.3, only the outermost is
-relevant and will represent a cluster. In the case of the image in
-Figure 3.3, only the most outer one is relevant and will represent
+segmentation algorithm. The OpenCV library \cite{opencv_library}
+already implements the necessary functions for doing so. First a Canny
+algorithm detects the edges of the respective cluster, before the
+openCV method ``findContours(...)'' tries to calculate the corresponding
+contours. Contours can be seen as boundaries, and in contrast to edges
+they form closed curvatures. If there are several contours nested
+within each other as for example seen in Figure 3.3, only the outermost
+is relevant and will represent a cluster. In the case of the image
+in Figure 3.3, only the most outer one is relevant and will represent
 a cluster. In the case of the image in Figure 3.3 the only relevant
 contours are labeled from 0-2, because the remaining contours are
 all enclosed in contour 2. 
@@ -1068,20 +1095,20 @@ will be used for evaluating video sequences as well.
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.5\textwidth}
-\includegraphics[width=0.5\textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046.jpg} 
+\includegraphics[width=1\textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046.jpg} 
 \subcaption{Source image}
 \end{subfigure}
 \begin{subfigure}[c]{0.5\textwidth} 
-\includegraphics[width=0.5\textwidth]
+\includegraphics[width=1\textwidth]
 {/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046_rgb_4.png} 
 \subcaption{calculated k = 4 (RGB)} 
 \end{subfigure}
 \begin{subfigure}[c]{0.5\textwidth} 
-\includegraphics[width=0.5\textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046_hsv_6.png} 
+\includegraphics[width=1\textwidth]{/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046_hsv_6.png} 
 \subcaption{calculated k = 6 (HSV)} 
 \end{subfigure}
 \begin{subfigure}[c]{0.5\textwidth} 
-\includegraphics[width=0.5\textwidth]
+\includegraphics[width=1\textwidth]
 {/home/nilus/Dokumente/LyxBachelorarbeit/Bachelorarbeit/images/6046_hsv_6_to_rgb.png} 
 \subcaption{c) converted into RGB} 
 \end{subfigure}
@@ -1108,37 +1135,38 @@ to identify the change and keeps the old cluster count.
 
 \begin{figure}[H]
 \begin{subfigure}[c]{0.22\textwidth}
-\frame {\includegraphics[width=1\textwidth]
+\frame {\includegraphics[height=3cm]
 {images/simple_VidExample0.png}}
 \subcaption{k = 3}
 \end{subfigure}
 \begin{subfigure}[c]{0.22\textwidth}
-\frame {\includegraphics[width=1\textwidth]
+\frame {\includegraphics[height=3cm]
 {images/simple_VidExample1.png}}
 \subcaption{k = 3}
 \end{subfigure}
 \begin{subfigure}[c]{0.22\textwidth}
-\frame {\includegraphics[width=1\textwidth]
+\frame {\includegraphics[height=3cm]
 {images/simple_VidExample2.png}}
 \subcaption{k = 3}
 \end{subfigure}
 \begin{subfigure}[c]{0.22\textwidth}
-\frame {\includegraphics[width=1\textwidth]
+\frame {\includegraphics[height=3cm]
 {images/simple_VidExample3.png}}
 \subcaption{k = 3}
 \end{subfigure}
-\begin{subfigure}[c]{0.325\textwidth}
-\frame {\includegraphics[width=0.67\textwidth]
+\centering
+\begin{subfigure}[c]{0.22\textwidth}
+\frame {\includegraphics[height=3cm]
 {images/simple_VidExample4.png}}
 \subcaption{k = 4}
 \end{subfigure}
-\begin{subfigure}[c]{0.325\textwidth}
-\frame {\includegraphics[width=0.67\textwidth]
+\begin{subfigure}[c]{0.22\textwidth}
+\frame {\includegraphics[height=3cm]
 {images/simple_VidExample5.png}}
 \subcaption{k = 4}
 \end{subfigure}
-\begin{subfigure}[c]{0.325\textwidth}
-\frame {\includegraphics[width=0.67\textwidth]
+\begin{subfigure}[c]{0.22\textwidth}
+\frame {\includegraphics[height=3cm]
 {images/simple_VidExample6.png}}
 \subcaption{k = 3}
 \end{subfigure}
